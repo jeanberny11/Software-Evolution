@@ -111,6 +111,9 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="AppData.cs" />
+    <Compile Include="customcontrols\CuentaContablePicker.cs">
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="customcontrols\EvCheckBox.cs">
       <SubType>Component</SubType>
     </Compile>
@@ -150,8 +153,22 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="managers\contabilidad\CuentasContablesManager.cs" />
+    <Compile Include="managers\general\PreferenciasManager.cs" />
     <Compile Include="managers\general\UsuariosManager.cs" />
     <Compile Include="managers\general\VendedoresManager.cs" />
+    <Compile Include="modalviews\CuentasContablesGet.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="modalviews\CuentasContablesGet.Designer.cs">
+      <DependentUpon>CuentasContablesGet.cs</DependentUpon>
+    </Compile>
+    <Compile Include="modalviews\PermisosUsuario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="modalviews\PermisosUsuario.Designer.cs">
+      <DependentUpon>PermisosUsuario.cs</DependentUpon>
+    </Compile>
     <Compile Include="modalviews\VendedorPickerForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -161,6 +178,10 @@
     <Compile Include="models\Usuario.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="repositorios\PeriodosContablesRepository.cs" />
+    <Compile Include="repositorios\PreferenciasRepository.cs" />
+    <Compile Include="repositorios\Repository.cs" />
+    <Compile Include="repositorios\SecuenciaRepository.cs" />
     <Compile Include="utils\clases\BaseForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -172,6 +193,12 @@
     </Compile>
     <Compile Include="utils\clases\InnerForm.Designer.cs">
       <DependentUpon>InnerForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="views\general\InCambiarClave.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="views\general\InCambiarClave.Designer.cs">
+      <DependentUpon>InCambiarClave.cs</DependentUpon>
     </Compile>
     <Compile Include="views\general\InUsuarios.cs">
       <SubType>Form</SubType>
@@ -191,17 +218,32 @@
     <Compile Include="views\general\OutUsuarios.Designer.cs">
       <DependentUpon>OutUsuarios.cs</DependentUpon>
     </Compile>
+    <Compile Include="views\general\Preferencias.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="views\general\Preferencias.Designer.cs">
+      <DependentUpon>Preferencias.cs</DependentUpon>
+    </Compile>
     <Compile Include="views\general\Principal.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="views\general\Principal.Designer.cs">
       <DependentUpon>Principal.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="customcontrols\CuentaContablePicker.resx">
+      <DependentUpon>CuentaContablePicker.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="customcontrols\VendedorPickerPanel.resx">
       <DependentUpon>VendedorPickerPanel.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="modalviews\CuentasContablesGet.resx">
+      <DependentUpon>CuentasContablesGet.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="modalviews\PermisosUsuario.resx">
+      <DependentUpon>PermisosUsuario.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="modalviews\VendedorPickerForm.resx">
       <DependentUpon>VendedorPickerForm.cs</DependentUpon>
@@ -219,6 +261,9 @@
     <EmbeddedResource Include="utils\clases\InnerForm.resx">
       <DependentUpon>InnerForm.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="views\general\InCambiarClave.resx">
+      <DependentUpon>InCambiarClave.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="views\general\InUsuarios.resx">
       <DependentUpon>InUsuarios.cs</DependentUpon>
     </EmbeddedResource>
@@ -227,6 +272,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="views\general\OutUsuarios.resx">
       <DependentUpon>OutUsuarios.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="views\general\Preferencias.resx">
+      <DependentUpon>Preferencias.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="views\general\Principal.resx">
       <DependentUpon>Principal.cs</DependentUpon>

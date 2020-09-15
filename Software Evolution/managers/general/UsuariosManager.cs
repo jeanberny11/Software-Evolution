@@ -8,6 +8,7 @@ using System.Security.Cryptography;
 using Software_Evolution.models;
 using Npgsql;
 using System.Data;
+using System.Windows.Forms;
 
 namespace Software_Evolution.managers.general
 {
@@ -16,10 +17,11 @@ namespace Software_Evolution.managers.general
         private readonly QueryManager queryManager = QueryManager.Instance;
 
         public Usuario AuthUser(String username,String password)
-        {            
+        {
+            var clave = (username == "postgres") ? password : ToMD5(password);
             try
             {
-                var conexion = ConexionManager.Instance.GetConnection(username, password);
+                var conexion = ConexionManager.Instance.GetConnection(username, clave);
                 conexion.Open();
                 NpgsqlDataAdapter da = new NpgsqlDataAdapter($"select * from t_usuario where  f_id_usuario='{username}' and f_activo=true", conexion);
                 NpgsqlCommandBuilder comando = new NpgsqlCommandBuilder(da);
@@ -32,8 +34,7 @@ namespace Software_Evolution.managers.general
                 {
                     throw new Exception("La cuenta de su usuario esta desactivado");
                 }
-                var res = tabla.Rows[0];
-                var clave = (username == "postgres") ? password : res.Field<String>("f_password");
+                var res = tabla.Rows[0];                
                 var usuario =new Usuario(res.Field<int>("f_codigo_usuario"), res.Field<String>("f_id_usuario"), clave,
                     res.Field<String>("f_apellido"), res.Field<String>("f_nombre"), res.Field<String>("f_direccion"), res.Field<int>("f_id_grupo"), res.Field<Boolean>("f_permisos_libre"),
                     res.Field<String>("f_telefono"), res.Field<String>("f_email"));
@@ -205,5 +206,189 @@ namespace Software_Evolution.managers.general
             AsignarPermisosTablas(datos["f_id_usuario"].ToString(), 1);
             AsignarPermisosTablas(datos["f_id_usuario"].ToString(), 2);
         }
+
+        public string UpdateUserPassword(string username,string clave)
+        {
+            try
+            {
+                var md5pass = ToMD5(clave);
+                queryManager.Execute($"alter user \"{username}\" with PASSWORD '{md5pass}'");
+                queryManager.Execute($"update t_usuario set f_password='{md5pass}' where f_id_usuario='{username}'");
+                return md5pass;
+            }
+            catch(Exception ex)
+            {
+                throw ex;
+            }
+        }
+
+        public void permisos_de_usuarios2(MenuStrip menu,int usuarioid, int opcion,string tabla)
+        {
+            int id;
+            try
+            {
+                queryManager.Open();
+                var sql = $"select *,cast(f_columna as varchar)||'-'||cast(f_fila as varchar)||'-'||cast(f_submenu as varchar) as c from {tabla} where f_usuario={usuarioid}";
+                var permisos = queryManager.Query(sql);
+                queryManager.Execute("delete from t_permisos_usuario_temp");
+                List<Dictionary<string, object>> permisos_temp = new List<Dictionary<string, object>>();
+                id = 0;
+              
+              
+                for(int columna=0;columna< menu.Items.Count;columna++)
+                {
+                    id++;
+                    var modulo = menu.Items[columna] as ToolStripMenuItem;
+                    var marcadocol = permisos.Select($"c='{columna}-{0}-0'").Length > 0;
+                    var rcol =new Dictionary<string, object>();
+                    rcol["f_id"] = id;
+                    rcol["f_fila"] = 0;
+                    rcol["f_columna"] = columna;
+                    rcol["f_caption"] = modulo.Text.Replace("&","");
+                    rcol["f_caption_columna"]= modulo.Text.Replace("&", "");   
+                    rcol["f_marcado"] = marcadocol;
+                    permisos_temp.Add(rcol);
+
+                    for(int fila=0;fila<modulo.DropDownItems.Count;fila++)
+                    {
+                        id++;
+                        var marcadofil = permisos.Select($"c='{columna}-{fila + 1}-{0}'").Length > 0;
+                        var rfil = new Dictionary<string, object>
+                        {
+                            ["f_id"] = id,
+                            ["f_fila"] = fila + 1,
+                            ["f_columna"] = columna,
+                            ["f_caption"] = modulo.DropDownItems[fila].Text.Replace("&", ""),
+                            ["f_caption_columna"] = modulo.Text.Replace("&", ""),
+                            ["f_marcado"] = marcadofil
+                        };
+                        permisos_temp.Add(rfil);
+                        if (modulo.DropDownItems[fila] is ToolStripMenuItem menuopt)
+                        {
+                            for (int submenu=0;submenu<menuopt.DropDownItems.Count; submenu++)
+                            {
+                                if (menuopt.DropDownItems[submenu] is ToolStripMenuItem submenuopt)
+                                {
+                                    id++;
+                                    var marcadosub = permisos.Select($"c='{columna}-{fila + 2}-{submenu + 1}'").Length > 0;
+                                    var rsub = new Dictionary<string, object>();
+                                    rsub["f_id"] = id;
+                                    rsub["f_fila"] = fila + 2;
+                                    rsub["f_columna"] = columna;
+                                    rsub["f_submenu"] = submenu + 1;
+                                    rsub["f_caption"] = submenuopt.Text.Replace("&", "");
+                                    rsub["f_caption_columna"] = modulo.Text.Replace("&", "");
+                                    rsub["f_marcado"] = marcadosub;
+                                    permisos_temp.Add(rsub);                                 
+                                }                                 
+                            }
+                        }
+                        
+                      
+                    }
+  
+                }
+                foreach(Dictionary<String,object> val in permisos_temp)
+                {
+                    queryManager.CreateRecord("t_permisos_usuario_temp", val);
+                }
+                queryManager.Close();
+            }catch(Exception ex)
+            {
+                throw ex;
+            }
+        }
+
+        public DataTable GetPermisosTemp() {
+            queryManager.Open();
+            var result = queryManager.Query($"select * from t_permisos_usuario_temp order by f_columna");
+            queryManager.Close();
+            return result;
+        }
+
+        public void Salvar_permisos2(int usuarioid,string tabla,DataTable data)
+        {
+            try
+            {
+                queryManager.BeginWork();
+                if (tabla == "t_permisos_usuario")
+                {
+                    queryManager.Execute($"update t_usuario set f_permisos_libre=true where f_codigo_usuario={usuarioid}");
+                }
+                queryManager.Execute($"delete from {tabla} where f_usuario={usuarioid}");
+                foreach(DataRow row in data.Rows)
+                {
+                    if (row.Field<bool>("f_marcado"))
+                    {
+                        var insert = $"insert into {tabla} (f_usuario,f_fila,f_columna,f_submenu,f_marcado,f_id) values " +
+                            $"({usuarioid},{row.Field<int>("f_fila")},{row.Field<int>("f_columna")},{row.Field<int>("f_submenu")},true,{row.Field<int>("f_id")})";
+                        queryManager.Execute(insert);
+                    }                    
+                }
+                queryManager.Execute("delete from t_permisos_usuario_temp");
+                queryManager.CommitWork();
+
+            }catch(Exception ex)
+            {
+                queryManager.RollBack();
+                throw ex;
+            }
+        }
+
+        public void IniciarMenu(MenuStrip menu, bool visible)
+        {
+            for (int columna = 0; columna < menu.Items.Count; columna++)
+            {
+                menu.Items[columna].Visible = visible;
+
+                for (int fila = 0; fila < (menu.Items[columna] as ToolStripMenuItem).DropDownItems.Count; fila++)
+                {
+                    (menu.Items[columna] as ToolStripMenuItem).DropDownItems[fila].Visible = visible;
+                    if ((menu.Items[columna] as ToolStripMenuItem).DropDownItems[fila] is ToolStripMenuItem subm)
+                    {
+                        for (int submenu = 0; submenu < subm.DropDownItems.Count; submenu++)
+                        {
+                            subm.DropDownItems[submenu].Visible = visible;
+                        }
+                    }
+                }
+
+            }
+        }
+
+        public void PermisosUsuarios(MenuStrip menu, int usuarioid)
+        {
+
+            var usuario = getUsuarioById(usuarioid);
+            if(usuario is null)
+            {
+                throw new Exception("El usuario no es valido");
+            }
+            var sql = usuario.Field<bool>("f_permisos_libre") ? $"select *,cast(f_columna as varchar)||'-'||cast(f_fila as varchar)||'-'||cast(f_submenu as varchar) as c from t_permisos_usuario where f_usuario={usuarioid}" :
+                                                              $"select *,cast(f_columna as varchar)||'-'||cast(f_fila as varchar)||'-'||cast(f_submenu as varchar) as c from t_permisos_grupo where f_usuario={usuario.Field<int>("f_id_grupo")}";
+            var permisos = queryManager.Query(sql);
+
+            for (int columna = 0; columna < menu.Items.Count; columna++)
+            {
+                var marcadocol = permisos.Select($"c='{columna}-{0}-0'").Length > 0;
+                menu.Items[columna].Visible = marcadocol;
+
+                for (int fila = 0; fila < (menu.Items[columna] as ToolStripMenuItem).DropDownItems.Count; fila++)
+                {
+                    var marcadofil = permisos.Select($"c='{columna}-{fila+1}-0'").Length > 0;
+                    (menu.Items[columna] as ToolStripMenuItem).DropDownItems[fila].Visible = marcadofil;
+                    if ((menu.Items[columna] as ToolStripMenuItem).DropDownItems[fila] is ToolStripMenuItem subm)
+                    {
+                        for (int submenu = 0; submenu < subm.DropDownItems.Count; submenu++)
+                        {
+                            var marcadosub = permisos.Select($"c='{columna}-{fila+2}-{submenu+1}'").Length > 0;
+                            subm.DropDownItems[submenu].Visible = marcadosub;
+                        }
+                    }
+                }
+
+            }
+        }
+
     }
 }

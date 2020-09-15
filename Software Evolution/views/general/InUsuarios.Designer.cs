@@ -137,6 +137,8 @@
             this.evLabel2 = new Software_Evolution.customcontrols.EvLabel();
             this.txtidusuario = new Software_Evolution.customcontrols.EvIntegerTextBox();
             this.evLabel1 = new Software_Evolution.customcontrols.EvLabel();
+            this.evLabel13 = new Software_Evolution.customcontrols.EvLabel();
+            this.button3 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider)).BeginInit();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
@@ -213,6 +215,8 @@
             // panel2
             // 
             this.panel2.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.panel2.Controls.Add(this.button3);
+            this.panel2.Controls.Add(this.evLabel13);
             this.panel2.Controls.Add(this.cmbgrupo);
             this.panel2.Controls.Add(this.lblgrupo);
             this.panel2.Controls.Add(this.tabControl1);
@@ -1766,6 +1770,29 @@
             this.evLabel1.TabIndex = 0;
             this.evLabel1.Text = "Codigo";
             // 
+            // evLabel13
+            // 
+            this.evLabel13.AutoSize = true;
+            this.evLabel13.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.evLabel13.Location = new System.Drawing.Point(18, 440);
+            this.evLabel13.Name = "evLabel13";
+            this.evLabel13.Size = new System.Drawing.Size(175, 17);
+            this.evLabel13.TabIndex = 30;
+            this.evLabel13.Text = "Asignar Permisos ===>";
+            // 
+            // button3
+            // 
+            this.button3.FlatAppearance.BorderSize = 0;
+            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button3.Image = ((System.Drawing.Image)(resources.GetObject("button3.Image")));
+            this.button3.Location = new System.Drawing.Point(206, 427);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(60, 44);
+            this.button3.TabIndex = 31;
+            this.toolTip1.SetToolTip(this.button3, "Cerrar");
+            this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
+            // 
             // InUsuarios
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -1921,5 +1948,7 @@
         private customcontrols.EvLabel evLabel1;
         private customcontrols.EvComboBox cmbgrupo;
         private customcontrols.EvLabel lblgrupo;
+        private System.Windows.Forms.Button button3;
+        private customcontrols.EvLabel evLabel13;
     }
 }

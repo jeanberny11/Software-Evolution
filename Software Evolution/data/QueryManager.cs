@@ -132,6 +132,42 @@ namespace Software_Evolution.data
             }
         }
 
+        public DataSet QueryLive(string sql)
+        {
+            try
+            {
+                Open();
+                var dataadapter = new NpgsqlDataAdapter(sql, connection);
+                var result = new DataSet();
+                dataadapter.FillSchema(result, SchemaType.Source);
+                dataadapter.Fill(result);
+                Close();
+                return result;
+            }catch(NpgsqlException ex)
+            {
+                throw ex;
+            }
+        }
+
+        public int SaveFromDataset(string tablename,DataSet dataSet)
+        {
+            try
+            {
+                Open();
+                var dataadapter = new NpgsqlDataAdapter($"select * from {tablename}", connection);
+                var cmb = new NpgsqlCommandBuilder(dataadapter);
+                var result = dataadapter.Update(dataSet);
+                dataadapter.Dispose();
+                cmb.Dispose();
+                Close();
+                return result;
+            }
+            catch (NpgsqlException ex)
+            {
+                throw ex;
+            }
+        }
+
         public int Execute(String sql)
         {
             try

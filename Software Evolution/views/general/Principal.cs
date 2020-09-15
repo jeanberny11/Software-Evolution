@@ -1,4 +1,5 @@
-﻿using Software_Evolution.utils.clases;
+﻿using Software_Evolution.managers.general;
+using Software_Evolution.utils.clases;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -13,6 +14,8 @@ namespace Software_Evolution.views.general
 {
     public partial class Principal : BaseForm
     {
+        public MenuStrip MenuPrincipal { get=>this.menuStrip1; set=>this.menuStrip1=value; }
+
         public Principal()
         {
             InitializeComponent();
@@ -65,6 +68,23 @@ namespace Software_Evolution.views.general
                     form.Show();
                 }
             }
+        }
+
+        private void Principal_Load(object sender, EventArgs e)
+        {
+            var manager = new UsuariosManager();
+            manager.IniciarMenu(menuStrip1, false);
+            manager.PermisosUsuarios(menuStrip1, AppData.Instance.Currentuser.Codigousuario);
+        }
+
+        private void cambiarContraseñaToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            ShowOrFocusForm(new InCambiarClave());
+        }
+
+        private void preferenciasToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            ShowOrFocusForm(new Preferencias());
         }
     }
 }

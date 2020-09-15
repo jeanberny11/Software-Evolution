@@ -159,5 +159,12 @@ namespace Software_Evolution.views.general
             tabControl1.SelectedIndex = 0;
             base.Limpiar();
         }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            PermisosUsuario permisos = new PermisosUsuario("t_permisos_usuario",txtidusuario.Valor);
+            manager.permisos_de_usuarios2((this.MdiParent as Principal).MenuPrincipal, this.txtidusuario.Valor, 2, "t_permisos_usuario");
+            permisos.ShowDialog(this);
+        }
     }
 }

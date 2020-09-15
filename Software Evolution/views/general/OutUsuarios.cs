@@ -90,5 +90,11 @@ namespace Software_Evolution.views.general
                 (this.ParentForm as Principal).ShowOrFocusForm(inusuario);
             }
         }
+
+        private void button9_Click(object sender, EventArgs e)
+        {            
+            var inusuario = new InUsuarios();
+            (this.ParentForm as Principal).ShowOrFocusForm(inusuario);
+        }
     }
 }

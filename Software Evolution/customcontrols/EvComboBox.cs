@@ -80,12 +80,12 @@ namespace Software_Evolution.customcontrols
             this.Properties.DisplayMember = DisplayMemberName;
             this.Properties.Columns.Clear();
             this.Properties.Columns.Add(new DevExpress.XtraEditors.Controls.LookUpColumnInfo(DisplayMemberName,"Descripcion",35));
-            this.Properties.Columns.Add(new DevExpress.XtraEditors.Controls.LookUpColumnInfo(ValueMemberName, "ID", 5));
+            this.Properties.Columns.Add(new DevExpress.XtraEditors.Controls.LookUpColumnInfo(ValueMemberName, "ID", 10));
         }
 
         public bool IsValid()
         {
-            return this.EditValue!=null;
+            return !(this.EditValue is null);
         }
     }
 }

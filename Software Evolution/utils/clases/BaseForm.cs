@@ -64,7 +64,7 @@ namespace Software_Evolution.utils.clases
         // valida si un datagrid esta vacio o no tiene ningun elemento seleccionado.
         protected bool ValidarGrid(GridView gridView)
         {
-            return gridView.GetSelectedRows() != null;
+            return !(gridView.GetSelectedRows() is null);
         }
         // muestra un mensaje de confirmacion antes de cerrar la pantalla
         /// <remarks>
