@@ -257,6 +257,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <EmbeddedResource Include="utils\clases\InnerForm.resx">
       <DependentUpon>InnerForm.cs</DependentUpon>
@@ -297,6 +298,86 @@
     <Content Include="evolutionconfig.xml">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
+    <None Include="Resources\1455554358_line-19_icon-icons.com_53315.ico" />
+    <None Include="Resources\employee__icon-icons.com_769841.ico" />
+    <None Include="Resources\Banking_00006_A_icon-icons.com_598202.ico" />
+    <None Include="Resources\diagram-59_244581.ico" />
+    <None Include="Resources\diagram-61_244561.ico" />
+    <None Include="Resources\vault_114361.ico" />
+    <None Include="Resources\if-advantage-protection-1034363_88839.ico" />
+    <None Include="Resources\Banking_00011_A_icon-icons.com_598311.ico" />
+    <None Include="Resources\Banking_00019_A_icon-icons.com_598191.ico" />
+    <None Include="Resources\Banking_00006_A_icon-icons.com_598201.ico" />
+    <None Include="Resources\diagram-59_24458.ico" />
+    <None Include="Resources\diagram-61_24456.ico" />
+    <None Include="Resources\mobile_news_app_follow_read_icon_1456121.ico" />
+    <None Include="Resources\payment_app_finger_icon_143258.ico" />
+    <None Include="Resources\coin_money_pay_payment_icon_143264.ico" />
+    <None Include="Resources\online_payment_dollar_money_icon_143268.ico" />
+    <None Include="Resources\Banking_00011_A_icon-icons.com_59831.ico" />
+    <None Include="Resources\Banking_00019_A_icon-icons.com_59819.ico" />
+    <None Include="Resources\Banking_00006_A_icon-icons.com_59820.ico" />
+    <None Include="Resources\mobile_news_app_follow_read_icon_145612.ico" />
+    <None Include="Resources\business_computer_desktop_dollar_coin_currency_icon_150707.ico" />
+    <None Include="Resources\invoice_dollar_business_document_dollar_coin_icon_150738.ico" />
+    <None Include="Resources\price_tag_icon_150699.ico" />
+    <None Include="Resources\Bill_icon-icons.com_51203.ico" />
+    <None Include="Resources\ic_assignment_return_128_28215.ico" />
+    <None Include="Resources\ic_assignment_turned_in_128_28214.ico" />
+    <None Include="Resources\inbox-1_icon-icons.com_65974.ico" />
+    <None Include="Resources\refresh_arrows_14418.ico" />
+    <None Include="Resources\creditcard_78919.ico" />
+    <None Include="Resources\registry_settings_15380.ico" />
+    <None Include="Resources\usd-crypto-cryptocurrency-cryptocurrencies-cash-money-bank-payment_957071.ico" />
+    <None Include="Resources\Banking_00017_A_icon-icons.com_59837.ico" />
+    <None Include="Resources\shoppaymentorderbuy-08_icon-icons.com_738851.ico" />
+    <None Include="Resources\credit_card_22167.ico" />
+    <None Include="Resources\Forklift_35553.ico" />
+    <None Include="Resources\globe_world_22289.ico" />
+    <None Include="Resources\new_add_user_16734.ico" />
+    <None Include="Resources\3298599-buy-cart-trolley_1069921.ico" />
+    <None Include="Resources\minuscirclehd_1061081.ico" />
+    <None Include="Resources\datainboth_directions_transfer_arrow_3091.ico" />
+    <None Include="Resources\add_icon-icons.com_74429.ico" />
+    <None Include="Resources\minuscirclehd_106108.ico" />
+    <None Include="Resources\business_application_addthedatabase_add_insert_database_db_2313.ico" />
+    <None Include="Resources\business_inventory_maintenance_product_box_boxes_2326.ico" />
+    <None Include="Resources\actions_document_print_15785.ico" />
+    <None Include="Resources\folder_type_component_opened_icon_130002.ico" />
+    <None Include="Resources\barcode_shop_online_ecommerce_shopping-1_icon-icons.com_61653.ico" />
+    <None Include="Resources\1486394955-13-tax_80558.ico" />
+    <None Include="Resources\group_people_people_military_1720.ico" />
+    <None Include="Resources\winprops_config_5990.ico" />
+    <None Include="Resources\iconfinder-documents01-1622837_1219521.ico" />
+    <None Include="Resources\1491254081-19document-list_82931.ico" />
+    <None Include="Resources\file_manager_19718.ico" />
+    <None Include="Resources\technicalsupport_support_representative_person_people_man_1641.ico" />
+    <None Include="Resources\customer-service_405411.ico" />
+    <None Include="Resources\customer-service_40541.ico" />
+    <None Include="Resources\user_accounts_15362.ico" />
+    <None Include="Resources\edit_icon_129126.ico" />
+    <None Include="Resources\businessapplication_database_database_accepteitheracceptthedatabase_connect_connectdatabase_negocios_aplicacion_basededato_2310.ico" />
+    <None Include="Resources\system_102355.ico" />
+    <None Include="Resources\Sales-by-payment-method_254101.ico" />
+    <None Include="Resources\business_salesreport_salesreport_negocio_2353.ico" />
+    <None Include="Resources\box_full_products_14639.ico" />
+    <None Include="Resources\Administrative_Tools_26312.ico" />
+    <None Include="Resources\iconfinder-documents01-1622837_121952.ico" />
+    <None Include="Resources\analytics_117968.ico" />
+    <None Include="Resources\transfer_viral_transmission_infection_human_communication_engagement_icon_133624.ico" />
+    <None Include="Resources\folder_configurations_21361.ico" />
+    <None Include="Resources\programs_97512.ico" />
+    <None Include="Resources\billprinter_119613.ico" />
+    <None Include="Resources\shoppaymentorderbuy-08_icon-icons.com_73885.ico" />
+    <None Include="Resources\buyhand_106610.ico" />
+    <None Include="Resources\3298599-buy-cart-trolley_106992.ico" />
+    <None Include="Resources\employee__icon-icons.com_76984.ico" />
+    <None Include="Resources\usd-crypto-cryptocurrency-cryptocurrencies-cash-money-bank-payment_95707.ico" />
+    <None Include="Resources\Sales-by-payment-method_25410.ico" />
+    <None Include="Resources\help_question_1566.ico" />
+    <None Include="Resources\box_search_product_ean_barcode_icon_148907.ico" />
+    <None Include="Resources\Cost-per-Click-%28CPC%29_icon-icons.com_53723.ico" />
+    <None Include="Resources\folder_settings_tools_22597.ico" />
   </ItemGroup>
   <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
