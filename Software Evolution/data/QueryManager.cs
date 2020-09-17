@@ -290,48 +290,122 @@ namespace Software_Evolution.data
             }
         }
 
-        public int UpdateRecord(String tabla, Dictionary<String, object> record,string whereclause)
-        {          
-            String values = "";
-            foreach (KeyValuePair<string, object> entry in record)
-            {
-                values += $",{entry.Key}=";
-                if (entry.Value is string)
-                {
-                    values += $"'{entry.Value}'";
-                }
-                else if (entry.Value is int)
-                {
-                    values += $"{Convert.ToInt32(entry.Value)}";
-                }
-                else if (entry.Value is double)
-                {
-                    values += $"{Convert.ToDouble(entry.Value)}";
-                }
-                else if (entry.Value is bool)
-                {
-                    values += $"{entry.Value}";
-                }
-                else if (entry.Value is DateTime val)
-                {
-                    values += $"'{val.ToString("yyyyMMdd")}'";
-                }
-                else
-                {
-                    values += $"'{entry.Value}'";
-                }
-            }
-
+        public int UpdateRecord(string tabla, Dictionary<String, object> record,string whereclause)
+        {
             try
             {
-                var sql = $"update {tabla} set {values.Substring(1)} {whereclause}";
-                Console.WriteLine(sql);
                 Open();
-                var cmd = new NpgsqlCommand(sql, connection);
-                var result = cmd.ExecuteNonQuery();
-                cmd.Dispose();
+                var adapter = new NpgsqlDataAdapter($"Select * From {tabla} {whereclause}", connection);
+                var dataset = new DataSet("dataset" + tabla);
+                adapter.FillSchema(dataset, SchemaType.Source, tabla);
+                adapter.Fill(dataset, tabla);
+                var datatable = dataset.Tables[tabla];
+                var row = datatable.Rows.Count > 0 ? datatable.Rows[0] : datatable.NewRow();
+                row.BeginEdit();
+                foreach (KeyValuePair<string, object> entry in record)
+                {
+                    row[entry.Key] = entry.Value;
+                }
+                row.EndEdit();                
+                var command = new NpgsqlCommandBuilder(adapter);
+                int result = adapter.Update(dataset, tabla);
                 Close();
                 return result;
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+            /* String values = "";
+             foreach (KeyValuePair<string, object> entry in record)
+             {
+                 values += $",{entry.Key}=";
+                 if (entry.Value is string)
+                 {
+                     values += $"'{entry.Value}'";
+                 }
+                 else if (entry.Value is int)
+                 {
+                     values += $"{Convert.ToInt32(entry.Value)}";
+                 }
+                 else if (entry.Value is double)
+                 {
+                     values += $"{Convert.ToDouble(entry.Value)}";
+                 }
+                 else if (entry.Value is bool)
+                 {
+                     values += $"{entry.Value}";
+                 }
+                 else if (entry.Value is DateTime val)
+                 {
+                     values += $"'{val.ToString("yyyyMMdd")}'";
+                 }
+                 else
+                 {
+                     values += $"'{entry.Value}'";
+                 }
+             }
+
+             try
+             {
+                 var sql = $"update {tabla} set {values.Substring(1)} {whereclause}";
+                 Console.WriteLine(sql);
+                 Open();
+                 var cmd = new NpgsqlCommand(sql, connection);
+                 var result = cmd.ExecuteNonQuery();
+                 cmd.Dispose();
+                 Close();
+                 return result;
+             }
+             catch (Exception ex)
+             {
+                 throw ex;
+             }*/
+        }
+
+        public void SaveRecord(String tabla, Dictionary<String, object> record)
+        {
+            try
+            {
+                Open();
+                var adapter = new NpgsqlDataAdapter($"Select * From {tabla} limit 0", connection);
+                var dataset = new DataSet("dataset" + tabla);
+                adapter.FillSchema(dataset, SchemaType.Source, tabla);
+                adapter.Fill(dataset, tabla);
+                var datatable = dataset.Tables[tabla];
+                var row = datatable.NewRow();
+                foreach (KeyValuePair<string, object> entry in record)
+                {
+                    row[entry.Key] = entry.Value;
+                }
+                datatable.Rows.Add(row);
+                var command = new NpgsqlCommandBuilder(adapter);
+                adapter.Update(dataset, tabla);
+                Close();
+            }catch(Exception ex)
+            {
+                throw ex;
+            }
+        }
+        public void SaveRecord(String tabla, DataRow data)
+        {
+            try
+            {
+                Open();
+                var adapter = new NpgsqlDataAdapter($"Select * From {tabla} limit 0", connection);
+                var dataset = new DataSet("dataset" + tabla);
+                adapter.FillSchema(dataset, SchemaType.Source, tabla);
+                adapter.Fill(dataset, tabla);
+                var datatable = dataset.Tables[tabla];
+                var row = datatable.NewRow();
+                foreach (DataColumn column in row.Table.Columns)
+                {
+                    row[column.ColumnName] = data[column.ColumnName];
+                }
+                datatable.Rows.Add(row);
+                var command = new NpgsqlCommandBuilder(adapter);
+                adapter.Update(dataset, tabla);
+                Close();
             }
             catch (Exception ex)
             {

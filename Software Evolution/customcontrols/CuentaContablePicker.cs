@@ -144,9 +144,9 @@ namespace Software_Evolution.customcontrols
             // 
             this.txtcuenta.EnterTab = true;
             this.txtcuenta.FieldName = "";
-            this.txtcuenta.IsLimpiar = true;
-            this.txtcuenta.IsSalvar = true;
-            this.txtcuenta.IsValidar = true;
+            this.txtcuenta.IsLimpiar = false;
+            this.txtcuenta.IsSalvar = false;
+            this.txtcuenta.IsValidar = false;
             this.txtcuenta.Location = new System.Drawing.Point(0, 0);
             this.txtcuenta.Name = "txtcuenta";
             this.txtcuenta.Size = new System.Drawing.Size(100, 22);
@@ -159,9 +159,9 @@ namespace Software_Evolution.customcontrols
             this.txtdescripcion.Enabled = false;
             this.txtdescripcion.EnterTab = true;
             this.txtdescripcion.FieldName = "";
-            this.txtdescripcion.IsLimpiar = true;
-            this.txtdescripcion.IsSalvar = true;
-            this.txtdescripcion.IsValidar = true;
+            this.txtdescripcion.IsLimpiar = false;
+            this.txtdescripcion.IsSalvar = false;
+            this.txtdescripcion.IsValidar = false;
             this.txtdescripcion.Location = new System.Drawing.Point(0, 0);
             this.txtdescripcion.Name = "txtdescripcion";
             this.txtdescripcion.Size = new System.Drawing.Size(100, 22);

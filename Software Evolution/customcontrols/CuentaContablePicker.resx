@@ -121,16 +121,16 @@
     <value>17, 60</value>
   </metadata>
   <metadata name="labelarea.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>391, 60</value>
+    <value>17, 232</value>
   </metadata>
   <metadata name="idarea.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>509, 60</value>
+    <value>17, 146</value>
   </metadata>
   <metadata name="nombrearea.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>350, 103</value>
+    <value>17, 189</value>
   </metadata>
   <metadata name="txtcuenta.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>275, 60</value>
+    <value>17, 103</value>
   </metadata>
   <metadata name="txtdescripcion.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>252, 17</value>

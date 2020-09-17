@@ -5,6 +5,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -64,7 +65,9 @@ namespace Software_Evolution.utils.clases
         // valida si un datagrid esta vacio o no tiene ningun elemento seleccionado.
         protected bool ValidarGrid(GridView gridView)
         {
-            return !(gridView.GetSelectedRows() is null);
+            if (gridView.RowCount == 0)
+                return false;
+            return gridView.GetSelectedRows().Length>0;
         }
         // muestra un mensaje de confirmacion antes de cerrar la pantalla
         /// <remarks>
@@ -81,6 +84,46 @@ namespace Software_Evolution.utils.clases
             }
             base.OnFormClosing(e);
         }
+
+        // Convierte un string base 64 en una imagen
+        /// <remarks>
+        /// Esto dara un invalide image file si el formato del string es incorrecto
+        /// </remarks>
+        public Image Base64ToImage(string base64String)
+        {
+            // Convert base 64 string to byte[]
+            byte[] imageBytes = Convert.FromBase64String(base64String);
+            // Convert byte[] to Image
+            using (var ms = new MemoryStream(imageBytes, 0, imageBytes.Length))
+            {
+                Image image = Image.FromStream(ms, true);
+                using (MemoryStream ms2 = new MemoryStream())
+                {
+                    image.Save(ms2, System.Drawing.Imaging.ImageFormat.Jpeg);
+                    return new Bitmap(ms2);
+                }
+            }
+        }
+
+        // Convierte una imagen a string base 64
+        /// <remarks>
+        /// Esto dara un invalide image file si el formato del string es incorrecto
+        /// </remarks>
+        public string ImageToBase64(Image image)
+        {
+            using (MemoryStream ms = new MemoryStream())
+            {
+                // Convert Image to byte[]
+                image.Save(ms, System.Drawing.Imaging.ImageFormat.Jpeg);
+                byte[] imageBytes = ms.ToArray();
+
+                // Convert byte[] to base 64 string
+                string base64String = Convert.ToBase64String(imageBytes);
+                return base64String;
+            }
+        }
+
+
         //limpia todos los objetos de la pantalla.
         /// <remarks>
         /// Solo limpia los objetos donde la propiedad <c>IsLimpiar</c> esta verdadera.
@@ -571,7 +614,7 @@ namespace Software_Evolution.utils.clases
                             values[(control as IEvBaseComponent<String>).FieldName] = (control as IEvBaseComponent<String>).Valor;
                         }
                     }
-                }
+                }else
                 if (control is IEvBaseComponent<int>)
                 {
                     if ((control as IEvBaseComponent<int>).IsSalvar && !((control as IEvBaseComponent<int>).FieldName is null))
@@ -581,7 +624,7 @@ namespace Software_Evolution.utils.clases
                             values[(control as IEvBaseComponent<int>).FieldName] = (control as IEvBaseComponent<int>).Valor;
                         }
                     }
-                }
+                }else
                 if (control is IEvBaseComponent<bool>)
                 {
                     if ((control as IEvBaseComponent<bool>).IsSalvar && !((control as IEvBaseComponent<bool>).FieldName is null))
@@ -591,7 +634,7 @@ namespace Software_Evolution.utils.clases
                             values[(control as IEvBaseComponent<bool>).FieldName] = (control as IEvBaseComponent<bool>).Valor;
                         }
                     }
-                }
+                }else
                 if (control is IEvBaseComponent<double>)
                 {
                     if ((control as IEvBaseComponent<double>).IsSalvar && !((control as IEvBaseComponent<double>).FieldName is null))
@@ -602,6 +645,7 @@ namespace Software_Evolution.utils.clases
                         }
                     }
                 }
+                else
                 if (control is IEvBaseComponent<object>)
                 {
                     if ((control as IEvBaseComponent<object>).IsSalvar && !((control as IEvBaseComponent<object>).FieldName is null))
@@ -612,6 +656,7 @@ namespace Software_Evolution.utils.clases
                         }
                     }
                 }
+                else
                 if (control is IEvBaseComponent<DateTime>)
                 {
                     if ((control as IEvBaseComponent<DateTime>).IsSalvar && !((control as IEvBaseComponent<DateTime>).FieldName is null))
@@ -622,14 +667,17 @@ namespace Software_Evolution.utils.clases
                         }
                     }
                 }
+                else
                 if (control is Panel)
                 {
                     Grabar(control as Panel, values);
                 }
+                else
                 if (control is TabControl)
                 {
                     Grabar(control as TabControl, values);
                 }
+                else
                 if (control is GroupBox)
                 {
                     Grabar(control as GroupBox, values);
@@ -732,7 +780,7 @@ namespace Software_Evolution.utils.clases
                                 values[(control as IEvBaseComponent<String>).FieldName] = (control as IEvBaseComponent<String>).Valor;
                             }
                         }
-                    }
+                    }else
                     if (control is IEvBaseComponent<int>)
                     {
                         if ((control as IEvBaseComponent<int>).IsSalvar && !((control as IEvBaseComponent<int>).FieldName is null))
@@ -743,6 +791,7 @@ namespace Software_Evolution.utils.clases
                             }
                         }
                     }
+                    else
                     if (control is IEvBaseComponent<bool>)
                     {
                         if ((control as IEvBaseComponent<bool>).IsSalvar && !((control as IEvBaseComponent<bool>).FieldName is null))
@@ -753,6 +802,7 @@ namespace Software_Evolution.utils.clases
                             }
                         }
                     }
+                    else
                     if (control is IEvBaseComponent<double>)
                     {
                         if ((control as IEvBaseComponent<double>).IsSalvar && !((control as IEvBaseComponent<double>).FieldName is null))
@@ -763,6 +813,7 @@ namespace Software_Evolution.utils.clases
                             }
                         }
                     }
+                    else
                     if (control is IEvBaseComponent<object>)
                     {
                         if ((control as IEvBaseComponent<object>).IsSalvar && !((control as IEvBaseComponent<object>).FieldName is null))
@@ -773,6 +824,7 @@ namespace Software_Evolution.utils.clases
                             }
                         }
                     }
+                    else
                     if (control is IEvBaseComponent<DateTime>)
                     {
                         if ((control as IEvBaseComponent<DateTime>).IsSalvar && !((control as IEvBaseComponent<DateTime>).FieldName is null))
@@ -782,7 +834,7 @@ namespace Software_Evolution.utils.clases
                                 values[(control as IEvBaseComponent<DateTime>).FieldName] = (control as IEvBaseComponent<DateTime>).Valor;
                             }
                         }
-                    }
+                    }else
                     if (control is Panel)
                     {
                         Grabar(control as Panel, values);
@@ -790,6 +842,11 @@ namespace Software_Evolution.utils.clases
                     if (control is GroupBox)
                     {
                         Grabar(control as GroupBox, values);
+                    }
+                        else
+                if (control is TabControl)
+                    {
+                        Grabar(control as TabControl, values);
                     }
                 }
             }
@@ -876,7 +933,13 @@ namespace Software_Evolution.utils.clases
                     {
                         if (!obj.FieldName.Equals(""))
                         {
-                            obj.Valor = data.Field<string>(obj.FieldName)??"";
+                            try
+                            {
+                                obj.Valor = data.Field<string>(obj.FieldName) ?? "";
+                            }catch(Exception ex)
+                            {
+                                throw new Exception($"Error asignando el valor del objeto {control.Name} en el campo: {obj.FieldName} \n {ex.Message}");
+                            }
                         }
                     }
                 }else if (control is IEvBaseComponent<int> obji)
@@ -885,17 +948,30 @@ namespace Software_Evolution.utils.clases
                     {
                         if (!obji.FieldName.Equals(""))
                         {
-                            obji.Valor = data.Field<int?>(obji.FieldName)??0;
+                            try
+                            {
+                                obji.Valor = data.Field<int?>(obji.FieldName) ?? 0;
+                            }
+                            catch (Exception ex)
+                            {
+                                throw new Exception($"Error asignando el valor del objeto {control.Name} en el campo: {obji.FieldName} \n {ex.Message}");
+                            }                            
                         }
                     }
-                }else
-                if (control is IEvBaseComponent<bool> objb)
+                }else if (control is IEvBaseComponent<bool> objb)
                 {
                     if (!(objb.FieldName is null))
                     {
                         if (!objb.FieldName.Equals(""))
                         {
-                            objb.Valor = data.Field<bool?>(objb.FieldName)??false;
+                            try
+                            {
+                                objb.Valor = data.Field<bool?>(objb.FieldName)??false;
+                            }
+                            catch (Exception ex)
+                            {
+                                throw new Exception($"Error asignando el valor del objeto {control.Name} en el campo: {objb.FieldName} \n {ex.Message}");
+                            }                            
                         }
                     }
                 }
@@ -905,27 +981,46 @@ namespace Software_Evolution.utils.clases
                     {
                         if (!objd.FieldName.Equals(""))
                         {
-                            objd.Valor = Convert.ToDouble(data.Field<Decimal?>(objd.FieldName) ?? 0);
+                            try
+                            {
+                                objd.Valor = Convert.ToDouble(data.Field<Decimal?>(objd.FieldName) ?? 0);
+                            }
+                            catch (Exception ex)
+                            {
+                                throw new Exception($"Error asignando el valor del objeto {control.Name} en el campo: {objd.FieldName} \n {ex.Message}");
+                            }                            
                         }
                     }
-                }else
-                if (control is IEvBaseComponent<object> objo)
+                }else if (control is IEvBaseComponent<object> objo)
                 {
                     if (!(objo.FieldName is null))
                     {
                         if (!objo.FieldName.Equals(""))
                         {
-                            objo.Valor = data.Field<object>(objo.FieldName);
+                            try
+                            {
+                                objo.Valor = data.Field<object>(objo.FieldName);
+                            }
+                            catch (Exception ex)
+                            {
+                                throw new Exception($"Error asignando el valor del objeto {control.Name} en el campo: {objo.FieldName} \n {ex.Message}");
+                            }                            
                         }
                     }
-                } else
-                if (control is IEvBaseComponent<DateTime> objt)
+                } else if (control is IEvBaseComponent<DateTime> objt)
                 {
                     if (!(objt.FieldName is null))
                     {
                         if (!objt.FieldName.Equals(""))
                         {
-                            objt.Valor = data.Field<DateTime?>(objt.FieldName)?? DateTime.Now;
+                            try
+                            {
+                                objt.Valor = data.Field<DateTime?>(objt.FieldName) ?? DateTime.Now;
+                            }
+                            catch (Exception ex)
+                            {
+                                throw new Exception($"Error asignando el valor del objeto {control.Name} en el campo: {objt.FieldName} \n {ex.Message}");
+                            }                            
                         }
                     }
                 }else
@@ -954,7 +1049,14 @@ namespace Software_Evolution.utils.clases
                     {
                         if (!obj.FieldName.Equals(""))
                         {
-                            obj.Valor = data.Field<string>(obj.FieldName) ?? "";
+                            try
+                            {
+                                obj.Valor = data.Field<string>(obj.FieldName) ?? "";
+                            }
+                            catch (Exception ex)
+                            {
+                                throw new Exception($"Error asignando el valor del objeto {control.Name} en el campo: {obj.FieldName} \n {ex.Message}");
+                            }
                         }
                     }
                 }
@@ -964,18 +1066,31 @@ namespace Software_Evolution.utils.clases
                     {
                         if (!obji.FieldName.Equals(""))
                         {
-                            obji.Valor = data.Field<int?>(obji.FieldName) ?? 0;
+                            try
+                            {
+                                obji.Valor = data.Field<int?>(obji.FieldName) ?? 0;
+                            }
+                            catch (Exception ex)
+                            {
+                                throw new Exception($"Error asignando el valor del objeto {control.Name} en el campo: {obji.FieldName} \n {ex.Message}");
+                            }
                         }
                     }
                 }
-                else
-               if (control is IEvBaseComponent<bool> objb)
+                else if (control is IEvBaseComponent<bool> objb)
                 {
                     if (!(objb.FieldName is null))
                     {
                         if (!objb.FieldName.Equals(""))
                         {
-                            objb.Valor = data.Field<bool?>(objb.FieldName) ?? false;
+                            try
+                            {
+                                objb.Valor = data.Field<bool?>(objb.FieldName) ?? false;
+                            }
+                            catch (Exception ex)
+                            {
+                                throw new Exception($"Error asignando el valor del objeto {control.Name} en el campo: {objb.FieldName} \n {ex.Message}");
+                            }
                         }
                     }
                 }
@@ -985,40 +1100,59 @@ namespace Software_Evolution.utils.clases
                     {
                         if (!objd.FieldName.Equals(""))
                         {
-                            objd.Valor = Convert.ToDouble(data.Field<Decimal?>(objd.FieldName) ?? 0);
+                            try
+                            {
+                                objd.Valor = Convert.ToDouble(data.Field<Decimal?>(objd.FieldName) ?? 0);
+                            }
+                            catch (Exception ex)
+                            {
+                                throw new Exception($"Error asignando el valor del objeto {control.Name} en el campo: {objd.FieldName} \n {ex.Message}");
+                            }
                         }
                     }
                 }
-                else
-                if (control is IEvBaseComponent<object> objo)
+                else if (control is IEvBaseComponent<object> objo)
                 {
                     if (!(objo.FieldName is null))
                     {
                         if (!objo.FieldName.Equals(""))
                         {
-                            objo.Valor = data.Field<object>(objo.FieldName);
+                            try
+                            {
+                                objo.Valor = data.Field<object>(objo.FieldName);
+                            }
+                            catch (Exception ex)
+                            {
+                                throw new Exception($"Error asignando el valor del objeto {control.Name} en el campo: {objo.FieldName} \n {ex.Message}");
+                            }
                         }
                     }
                 }
-                else
-                if (control is IEvBaseComponent<DateTime> objt)
+                else if (control is IEvBaseComponent<DateTime> objt)
                 {
                     if (!(objt.FieldName is null))
                     {
                         if (!objt.FieldName.Equals(""))
                         {
-                            objt.Valor = data.Field<DateTime?>(objt.FieldName) ?? DateTime.Now;
+                            try
+                            {
+                                objt.Valor = data.Field<DateTime?>(objt.FieldName) ?? DateTime.Now;
+                            }
+                            catch (Exception ex)
+                            {
+                                throw new Exception($"Error asignando el valor del objeto {control.Name} en el campo: {objt.FieldName} \n {ex.Message}");
+                            }
                         }
                     }
                 }
-                else
-                if (control is Panel pane)
+                else if (control is Panel pane)
                 {
                     Modificar(pane, data);
                 }
-               
-              
-               
+                else if(control is TabControl tabControl)
+                {
+                    Modificar(tabControl, data);
+                }
             }
         }
 
@@ -1034,7 +1168,14 @@ namespace Software_Evolution.utils.clases
                         {
                             if (!obj.FieldName.Equals(""))
                             {
-                                obj.Valor = data.Field<string>(obj.FieldName) ?? "";
+                                try
+                                {
+                                    obj.Valor = data.Field<string>(obj.FieldName) ?? "";
+                                }
+                                catch (Exception ex)
+                                {
+                                    throw new Exception($"Error asignando el valor del objeto {control.Name} en el campo: {obj.FieldName} \n {ex.Message}");
+                                }
                             }
                         }
                     }
@@ -1044,18 +1185,31 @@ namespace Software_Evolution.utils.clases
                         {
                             if (!obji.FieldName.Equals(""))
                             {
-                                obji.Valor = data.Field<int?>(obji.FieldName) ?? 0;
+                                try
+                                {
+                                    obji.Valor = data.Field<int?>(obji.FieldName) ?? 0;
+                                }
+                                catch (Exception ex)
+                                {
+                                    throw new Exception($"Error asignando el valor del objeto {control.Name} en el campo: {obji.FieldName} \n {ex.Message}");
+                                }
                             }
                         }
                     }
-                    else
-                   if (control is IEvBaseComponent<bool> objb)
+                    else if (control is IEvBaseComponent<bool> objb)
                     {
                         if (!(objb.FieldName is null))
                         {
                             if (!objb.FieldName.Equals(""))
                             {
-                                objb.Valor = data.Field<bool?>(objb.FieldName) ?? false;
+                                try
+                                {
+                                    objb.Valor = data.Field<bool?>(objb.FieldName) ?? false;
+                                }
+                                catch (Exception ex)
+                                {
+                                    throw new Exception($"Error asignando el valor del objeto {control.Name} en el campo: {objb.FieldName} \n {ex.Message}");
+                                }
                             }
                         }
                     }
@@ -1065,37 +1219,61 @@ namespace Software_Evolution.utils.clases
                         {
                             if (!objd.FieldName.Equals(""))
                             {
-                                objd.Valor = Convert.ToDouble(data.Field<Decimal?>(objd.FieldName) ?? 0);
+                                try
+                                {
+                                    objd.Valor = Convert.ToDouble(data.Field<Decimal?>(objd.FieldName) ?? 0);
+                                }
+                                catch (Exception ex)
+                                {
+                                    throw new Exception($"Error asignando el valor del objeto {control.Name} en el campo: {objd.FieldName} \n {ex.Message}");
+                                }
                             }
                         }
                     }
-                    else
-                    if (control is IEvBaseComponent<object> objo)
+                    else if (control is IEvBaseComponent<object> objo)
                     {
                         if (!(objo.FieldName is null))
                         {
                             if (!objo.FieldName.Equals(""))
                             {
-                                objo.Valor = data.Field<object>(objo.FieldName);
+                                try
+                                {
+                                    objo.Valor = data.Field<object>(objo.FieldName);
+                                }
+                                catch (Exception ex)
+                                {
+                                    throw new Exception($"Error asignando el valor del objeto {control.Name} en el campo: {objo.FieldName} \n {ex.Message}");
+                                }
                             }
                         }
                     }
-                    else
-                    if (control is IEvBaseComponent<DateTime> objt)
+                    else if (control is IEvBaseComponent<DateTime> objt)
                     {
                         if (!(objt.FieldName is null))
                         {
                             if (!objt.FieldName.Equals(""))
                             {
-                                objt.Valor = data.Field<DateTime?>(objt.FieldName) ?? DateTime.Now;
+                                try
+                                {
+                                    objt.Valor = data.Field<DateTime?>(objt.FieldName) ?? DateTime.Now;
+                                }
+                                catch (Exception ex)
+                                {
+                                    throw new Exception($"Error asignando el valor del objeto {control.Name} en el campo: {objt.FieldName} \n {ex.Message}");
+                                }
                             }
                         }
                     }
-                    else
-                    if (control is Panel pane)
+                    else if (control is Panel pane)
                     {
                         Modificar(pane, data);
-                    }                    
+                    }else if(control is GroupBox groupBox)
+                    {
+                        Modificar(groupBox, data);
+                    }else if(control is TabControl tabControl)
+                    {
+                        Modificar(tabControl, data);
+                    }
                 }
             }
         }
@@ -1110,7 +1288,14 @@ namespace Software_Evolution.utils.clases
                     {
                         if (!obj.FieldName.Equals(""))
                         {
-                            obj.Valor = data.Field<string>(obj.FieldName) ?? "";
+                            try
+                            {
+                                obj.Valor = data.Field<string>(obj.FieldName) ?? "";
+                            }
+                            catch (Exception ex)
+                            {
+                                throw new Exception($"Error asignando el valor del objeto {control.Name} en el campo: {obj.FieldName} \n {ex.Message}");
+                            }
                         }
                     }
                 }
@@ -1120,18 +1305,31 @@ namespace Software_Evolution.utils.clases
                     {
                         if (!obji.FieldName.Equals(""))
                         {
-                            obji.Valor = data.Field<int?>(obji.FieldName) ?? 0;
+                            try
+                            {
+                                obji.Valor = data.Field<int?>(obji.FieldName) ?? 0;
+                            }
+                            catch (Exception ex)
+                            {
+                                throw new Exception($"Error asignando el valor del objeto {control.Name} en el campo: {obji.FieldName} \n {ex.Message}");
+                            }
                         }
                     }
                 }
-                else
-               if (control is IEvBaseComponent<bool> objb)
+                else if (control is IEvBaseComponent<bool> objb)
                 {
                     if (!(objb.FieldName is null))
                     {
                         if (!objb.FieldName.Equals(""))
                         {
-                            objb.Valor = data.Field<bool?>(objb.FieldName) ?? false;
+                            try
+                            {
+                                objb.Valor = data.Field<bool?>(objb.FieldName) ?? false;
+                            }
+                            catch (Exception ex)
+                            {
+                                throw new Exception($"Error asignando el valor del objeto {control.Name} en el campo: {objb.FieldName} \n {ex.Message}");
+                            }
                         }
                     }
                 }
@@ -1140,44 +1338,61 @@ namespace Software_Evolution.utils.clases
                     if (!(objd.FieldName is null))
                     {
                         if (!objd.FieldName.Equals(""))
-                        {                            
-                            objd.Valor = Convert.ToDouble(data.Field<Decimal?>(objd.FieldName) ?? 0);
+                        {
+                            try
+                            {
+                                objd.Valor = Convert.ToDouble(data.Field<Decimal?>(objd.FieldName) ?? 0);
+                            }
+                            catch (Exception ex)
+                            {
+                                throw new Exception($"Error asignando el valor del objeto {control.Name} en el campo: {objd.FieldName} \n {ex.Message}");
+                            }
                         }
                     }
                 }
-                else
-                if (control is IEvBaseComponent<object> objo)
+                else if (control is IEvBaseComponent<object> objo)
                 {
                     if (!(objo.FieldName is null))
                     {
                         if (!objo.FieldName.Equals(""))
                         {
-                            objo.Valor = data.Field<object>(objo.FieldName);
+                            try
+                            {
+                                objo.Valor = data.Field<object>(objo.FieldName);
+                            }
+                            catch (Exception ex)
+                            {
+                                throw new Exception($"Error asignando el valor del objeto {control.Name} en el campo: {objo.FieldName} \n {ex.Message}");
+                            }
                         }
                     }
                 }
-                else
-                if (control is IEvBaseComponent<DateTime> objt)
+                else if (control is IEvBaseComponent<DateTime> objt)
                 {
                     if (!(objt.FieldName is null))
                     {
                         if (!objt.FieldName.Equals(""))
                         {
-                            objt.Valor = data.Field<DateTime?>(objt.FieldName) ?? DateTime.Now;
+                            try
+                            {
+                                objt.Valor = data.Field<DateTime?>(objt.FieldName) ?? DateTime.Now;
+                            }
+                            catch (Exception ex)
+                            {
+                                throw new Exception($"Error asignando el valor del objeto {control.Name} en el campo: {objt.FieldName} \n {ex.Message}");
+                            }
                         }
                     }
                 }
-                else
-                if (control is Panel pane)
+                else if (control is Panel pane)
                 {
                     Modificar(pane, data);
                 }
-                else
-                if (control is TabControl tab)
+                else if (control is TabControl tab)
                 {
                     Modificar(tab, data);
-                }else
-                if (control is GroupBox group)
+                }
+                else if (control is GroupBox group)
                 {
                     Modificar(group, data);
                 }

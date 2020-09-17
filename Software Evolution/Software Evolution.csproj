@@ -178,6 +178,7 @@
     <Compile Include="models\Usuario.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="repositorios\CotizacionMontoRepository.cs" />
     <Compile Include="repositorios\PeriodosContablesRepository.cs" />
     <Compile Include="repositorios\PreferenciasRepository.cs" />
     <Compile Include="repositorios\Repository.cs" />
