@@ -111,5 +111,10 @@ namespace Software_Evolution.views.general
         {
 
         }
+
+        private void bancosToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

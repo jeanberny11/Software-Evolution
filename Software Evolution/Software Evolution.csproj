@@ -298,6 +298,36 @@
     <Content Include="evolutionconfig.xml">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
+    <None Include="Resources\businss_invest_money_icon_127223.ico" />
+    <None Include="Resources\Money_27019.ico" />
+    <None Include="Resources\unnamed %281%29.ico" />
+    <None Include="Resources\IMG-03 %281%29.ico" />
+    <None Include="Resources\IMG-03.png" />
+    <None Include="Resources\Libra_34522.ico" />
+    <None Include="Resources\1457055665_Web_Design_icon-icons.com_54708.ico" />
+    <None Include="Resources\3440907-business-cash-currency-ecommerce-finance-money-payment_1075421.ico" />
+    <None Include="Resources\bank_icon_1290411.ico" />
+    <None Include="Resources\shoppaymentorderbuy-04_icon-icons.com_73886.ico" />
+    <None Include="Resources\shoppaymentorderbuy-23_icon-icons.com_73884.ico" />
+    <None Include="Resources\pay_bill_dollar_money_payment_icon_143261.ico" />
+    <None Include="Resources\bank_icon_129041.ico" />
+    <None Include="Resources\1486564168-finance-bank-check_81495.ico" />
+    <None Include="Resources\1486564175-finance-currency-exchange_81498.ico" />
+    <None Include="Resources\1486564182-finance-safe_81496.ico" />
+    <None Include="Resources\bank_finance_finance_and_business_banking_columns_buildings_icon_128558.ico" />
+    <None Include="Resources\business_award_finance_icon_150736.ico" />
+    <None Include="Resources\business_coin_currency_file_finance_folder_marketing_money_icon_150695.ico" />
+    <None Include="Resources\3440907-business-cash-currency-ecommerce-finance-money-payment_107542.ico" />
+    <None Include="Resources\userpassword_deusuari_787.ico" />
+    <None Include="Resources\adduser_1103.ico" />
+    <None Include="Resources\flight_30822.ico" />
+    <None Include="Resources\1491580635-yumminkysocialmedia26_83102.ico" />
+    <None Include="Resources\facebook_icon-icons.com_59205.ico" />
+    <None Include="Resources\1491579542-yumminkysocialmedia22_83078.ico" />
+    <None Include="Resources\Affiliate-Marketing_icon-icons.com_53702.ico" />
+    <None Include="Resources\4124848-affiliate-marketing-aim-audience-targeting-focus-human-resources_114107.ico" />
+    <None Include="Resources\marketingspeaker_122855.ico" />
+    <None Include="Resources\seotarget_122858.ico" />
     <None Include="Resources\1455554358_line-19_icon-icons.com_53315.ico" />
     <None Include="Resources\employee__icon-icons.com_769841.ico" />
     <None Include="Resources\Banking_00006_A_icon-icons.com_598202.ico" />
