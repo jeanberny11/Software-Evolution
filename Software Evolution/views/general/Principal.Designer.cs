@@ -464,6 +464,7 @@
             this.panel2 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
             this.button2 = new System.Windows.Forms.Button();
+            this.toolStripMenuItem61 = new System.Windows.Forms.ToolStripMenuItem();
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider)).BeginInit();
             this.menuStrip1.SuspendLayout();
             this.panel1.SuspendLayout();
@@ -1474,10 +1475,10 @@
             // 
             // toolStripMenuItem17
             // 
-            this.toolStripMenuItem17.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.toolStripMenuItem17.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.toolStripMenuItem17.Image = global::Software_Evolution.Properties.Resources.price_tag_icon_150699;
             this.toolStripMenuItem17.Name = "toolStripMenuItem17";
-            this.toolStripMenuItem17.Size = new System.Drawing.Size(208, 22);
+            this.toolStripMenuItem17.Size = new System.Drawing.Size(212, 26);
             this.toolStripMenuItem17.Text = "Depurar Pedidos";
             // 
             // toolStripMenuItem18
@@ -1747,18 +1748,18 @@
             // 
             // toolStripMenuItem51
             // 
-            this.toolStripMenuItem51.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.toolStripMenuItem51.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.toolStripMenuItem51.Image = global::Software_Evolution.Properties.Resources.actions_document_print_15785;
             this.toolStripMenuItem51.Name = "toolStripMenuItem51";
-            this.toolStripMenuItem51.Size = new System.Drawing.Size(316, 22);
+            this.toolStripMenuItem51.Size = new System.Drawing.Size(320, 26);
             this.toolStripMenuItem51.Text = "Reporte De Ventas Diarias";
             // 
             // toolStripMenuItem53
             // 
-            this.toolStripMenuItem53.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.toolStripMenuItem53.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.toolStripMenuItem53.Image = global::Software_Evolution.Properties.Resources.actions_document_print_15785;
             this.toolStripMenuItem53.Name = "toolStripMenuItem53";
-            this.toolStripMenuItem53.Size = new System.Drawing.Size(316, 22);
+            this.toolStripMenuItem53.Size = new System.Drawing.Size(320, 26);
             this.toolStripMenuItem53.Text = "Reporte De Venta Por Categoria En Resumen";
             // 
             // toolStripMenuItem52
@@ -1778,10 +1779,10 @@
             // 
             // toolStripMenuItem55
             // 
-            this.toolStripMenuItem55.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.toolStripMenuItem55.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.toolStripMenuItem55.Image = global::Software_Evolution.Properties.Resources.actions_document_print_15785;
             this.toolStripMenuItem55.Name = "toolStripMenuItem55";
-            this.toolStripMenuItem55.Size = new System.Drawing.Size(316, 22);
+            this.toolStripMenuItem55.Size = new System.Drawing.Size(320, 26);
             this.toolStripMenuItem55.Text = "Reporte De Venta Estadisiticas";
             // 
             // toolStripMenuItem56
@@ -1794,10 +1795,10 @@
             // 
             // toolStripMenuItem57
             // 
-            this.toolStripMenuItem57.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.toolStripMenuItem57.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.toolStripMenuItem57.Image = global::Software_Evolution.Properties.Resources.actions_document_print_15785;
             this.toolStripMenuItem57.Name = "toolStripMenuItem57";
-            this.toolStripMenuItem57.Size = new System.Drawing.Size(316, 22);
+            this.toolStripMenuItem57.Size = new System.Drawing.Size(320, 26);
             this.toolStripMenuItem57.Text = "Reporte De Ventas Porductos Menos Vendidos";
             // 
             // toolStripMenuItem58
@@ -2025,7 +2026,7 @@
             // 
             // empleadosToolStripMenuItem
             // 
-            this.empleadosToolStripMenuItem.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.empleadosToolStripMenuItem.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.empleadosToolStripMenuItem.Image = global::Software_Evolution.Properties.Resources.employee__icon_icons1;
             this.empleadosToolStripMenuItem.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
             this.empleadosToolStripMenuItem.Name = "empleadosToolStripMenuItem";
@@ -2084,10 +2085,10 @@
             // 
             // anularNominaDefinitivaToolStripMenuItem
             // 
-            this.anularNominaDefinitivaToolStripMenuItem.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.anularNominaDefinitivaToolStripMenuItem.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.anularNominaDefinitivaToolStripMenuItem.Image = global::Software_Evolution.Properties.Resources.minuscirclehd_106108;
             this.anularNominaDefinitivaToolStripMenuItem.Name = "anularNominaDefinitivaToolStripMenuItem";
-            this.anularNominaDefinitivaToolStripMenuItem.Size = new System.Drawing.Size(224, 22);
+            this.anularNominaDefinitivaToolStripMenuItem.Size = new System.Drawing.Size(228, 26);
             this.anularNominaDefinitivaToolStripMenuItem.Text = "Anular Nomina Definitiva";
             // 
             // ingresosYDeduccionesToolStripMenuItem
@@ -2120,10 +2121,10 @@
             // 
             // registrosDiasFeriadosToolStripMenuItem
             // 
-            this.registrosDiasFeriadosToolStripMenuItem.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.registrosDiasFeriadosToolStripMenuItem.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.registrosDiasFeriadosToolStripMenuItem.Image = global::Software_Evolution.Properties.Resources.coin_money_pay_payment_icon_143264;
             this.registrosDiasFeriadosToolStripMenuItem.Name = "registrosDiasFeriadosToolStripMenuItem";
-            this.registrosDiasFeriadosToolStripMenuItem.Size = new System.Drawing.Size(224, 22);
+            this.registrosDiasFeriadosToolStripMenuItem.Size = new System.Drawing.Size(228, 26);
             this.registrosDiasFeriadosToolStripMenuItem.Text = "Registros Dias Feriados";
             // 
             // vistaNominaToolStripMenuItem
@@ -2215,7 +2216,7 @@
             // 
             // tipoToolStripMenuItem
             // 
-            this.tipoToolStripMenuItem.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tipoToolStripMenuItem.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.tipoToolStripMenuItem.Image = global::Software_Evolution.Properties.Resources._1455554358_line_19_icon_icons_com_53315;
             this.tipoToolStripMenuItem.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
             this.tipoToolStripMenuItem.Name = "tipoToolStripMenuItem";
@@ -2271,10 +2272,10 @@
             // 
             // reporteDeIngresoYDeducionesToolStripMenuItem
             // 
-            this.reporteDeIngresoYDeducionesToolStripMenuItem.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.reporteDeIngresoYDeducionesToolStripMenuItem.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.reporteDeIngresoYDeducionesToolStripMenuItem.Image = global::Software_Evolution.Properties.Resources.actions_document_print_15785;
             this.reporteDeIngresoYDeducionesToolStripMenuItem.Name = "reporteDeIngresoYDeducionesToolStripMenuItem";
-            this.reporteDeIngresoYDeducionesToolStripMenuItem.Size = new System.Drawing.Size(314, 22);
+            this.reporteDeIngresoYDeducionesToolStripMenuItem.Size = new System.Drawing.Size(318, 26);
             this.reporteDeIngresoYDeducionesToolStripMenuItem.Text = "Reporte De ingreso  Y Deducciones";
             // 
             // plantillaDelPersonalFijoToolStripMenuItem
@@ -2314,10 +2315,10 @@
             // 
             // cartelHorasExtraordinariasDeTrabajosDGT2ToolStripMenuItem
             // 
-            this.cartelHorasExtraordinariasDeTrabajosDGT2ToolStripMenuItem.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cartelHorasExtraordinariasDeTrabajosDGT2ToolStripMenuItem.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.cartelHorasExtraordinariasDeTrabajosDGT2ToolStripMenuItem.Image = global::Software_Evolution.Properties.Resources.actions_document_print_15785;
             this.cartelHorasExtraordinariasDeTrabajosDGT2ToolStripMenuItem.Name = "cartelHorasExtraordinariasDeTrabajosDGT2ToolStripMenuItem";
-            this.cartelHorasExtraordinariasDeTrabajosDGT2ToolStripMenuItem.Size = new System.Drawing.Size(314, 22);
+            this.cartelHorasExtraordinariasDeTrabajosDGT2ToolStripMenuItem.Size = new System.Drawing.Size(318, 26);
             this.cartelHorasExtraordinariasDeTrabajosDGT2ToolStripMenuItem.Text = "Cartel Horas Extraordinarias De Trabajos DGT2";
             // 
             // solicitudDeCuentaDeBancoEMpleadosToolStripMenuItem
@@ -2687,10 +2688,10 @@
             // 
             // chequesPorBeneficiarioToolStripMenuItem
             // 
-            this.chequesPorBeneficiarioToolStripMenuItem.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.chequesPorBeneficiarioToolStripMenuItem.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.chequesPorBeneficiarioToolStripMenuItem.Image = global::Software_Evolution.Properties.Resources.actions_document_print_15785;
             this.chequesPorBeneficiarioToolStripMenuItem.Name = "chequesPorBeneficiarioToolStripMenuItem";
-            this.chequesPorBeneficiarioToolStripMenuItem.Size = new System.Drawing.Size(273, 22);
+            this.chequesPorBeneficiarioToolStripMenuItem.Size = new System.Drawing.Size(277, 26);
             this.chequesPorBeneficiarioToolStripMenuItem.Text = "Cheques Por Beneficiario";
             // 
             // flujoDeEfectivoDeCuentaToolStripMenuItem
@@ -2702,10 +2703,10 @@
             // 
             // flujoDeEfectivoDeCuentaDetalladoToolStripMenuItem
             // 
-            this.flujoDeEfectivoDeCuentaDetalladoToolStripMenuItem.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.flujoDeEfectivoDeCuentaDetalladoToolStripMenuItem.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.flujoDeEfectivoDeCuentaDetalladoToolStripMenuItem.Image = global::Software_Evolution.Properties.Resources.actions_document_print_15785;
             this.flujoDeEfectivoDeCuentaDetalladoToolStripMenuItem.Name = "flujoDeEfectivoDeCuentaDetalladoToolStripMenuItem";
-            this.flujoDeEfectivoDeCuentaDetalladoToolStripMenuItem.Size = new System.Drawing.Size(273, 22);
+            this.flujoDeEfectivoDeCuentaDetalladoToolStripMenuItem.Size = new System.Drawing.Size(277, 26);
             this.flujoDeEfectivoDeCuentaDetalladoToolStripMenuItem.Text = "Flujo De Efectivo De Cuenta Detallado";
             // 
             // nominasPagadasConTrasnferenciaToolStripMenuItem
@@ -2764,7 +2765,7 @@
             // 
             // datosMaestroDeCuentasPorCobrarToolStripMenuItem
             // 
-            this.datosMaestroDeCuentasPorCobrarToolStripMenuItem.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.datosMaestroDeCuentasPorCobrarToolStripMenuItem.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.datosMaestroDeCuentasPorCobrarToolStripMenuItem.Image = global::Software_Evolution.Properties.Resources.edit_icon_129126;
             this.datosMaestroDeCuentasPorCobrarToolStripMenuItem.Name = "datosMaestroDeCuentasPorCobrarToolStripMenuItem";
             this.datosMaestroDeCuentasPorCobrarToolStripMenuItem.Size = new System.Drawing.Size(277, 26);
@@ -2774,33 +2775,33 @@
             // 
             this.gestionDeConrosToolStripMenuItem.Image = global::Software_Evolution.Properties.Resources.diagram_59_244581;
             this.gestionDeConrosToolStripMenuItem.Name = "gestionDeConrosToolStripMenuItem";
-            this.gestionDeConrosToolStripMenuItem.Size = new System.Drawing.Size(277, 26);
+            this.gestionDeConrosToolStripMenuItem.Size = new System.Drawing.Size(273, 22);
             this.gestionDeConrosToolStripMenuItem.Text = "Gestion De Cobros";
             // 
             // generarNuevaCuentaPorCobrarToolStripMenuItem
             // 
             this.generarNuevaCuentaPorCobrarToolStripMenuItem.Image = global::Software_Evolution.Properties.Resources.diagram_59_244581;
             this.generarNuevaCuentaPorCobrarToolStripMenuItem.Name = "generarNuevaCuentaPorCobrarToolStripMenuItem";
-            this.generarNuevaCuentaPorCobrarToolStripMenuItem.Size = new System.Drawing.Size(277, 26);
+            this.generarNuevaCuentaPorCobrarToolStripMenuItem.Size = new System.Drawing.Size(273, 22);
             this.generarNuevaCuentaPorCobrarToolStripMenuItem.Text = "Generar Nueva Cuenta Por Cobrar";
             // 
             // recibosDeOtrosIngresosToolStripMenuItem
             // 
             this.recibosDeOtrosIngresosToolStripMenuItem.Image = global::Software_Evolution.Properties.Resources.diagram_59_244581;
             this.recibosDeOtrosIngresosToolStripMenuItem.Name = "recibosDeOtrosIngresosToolStripMenuItem";
-            this.recibosDeOtrosIngresosToolStripMenuItem.Size = new System.Drawing.Size(277, 26);
+            this.recibosDeOtrosIngresosToolStripMenuItem.Size = new System.Drawing.Size(273, 22);
             this.recibosDeOtrosIngresosToolStripMenuItem.Text = "Recibos De Otros Ingresos";
             // 
             // avanceDeClientesToolStripMenuItem
             // 
             this.avanceDeClientesToolStripMenuItem.Image = global::Software_Evolution.Properties.Resources.diagram_59_244581;
             this.avanceDeClientesToolStripMenuItem.Name = "avanceDeClientesToolStripMenuItem";
-            this.avanceDeClientesToolStripMenuItem.Size = new System.Drawing.Size(277, 26);
+            this.avanceDeClientesToolStripMenuItem.Size = new System.Drawing.Size(273, 22);
             this.avanceDeClientesToolStripMenuItem.Text = "Avance De Clientes";
             // 
             // cobrosToolStripMenuItem
             // 
-            this.cobrosToolStripMenuItem.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cobrosToolStripMenuItem.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.cobrosToolStripMenuItem.Image = global::Software_Evolution.Properties.Resources.pay_bill_dollar_money_payment_icon_143261;
             this.cobrosToolStripMenuItem.Name = "cobrosToolStripMenuItem";
             this.cobrosToolStripMenuItem.Size = new System.Drawing.Size(277, 26);
@@ -2810,26 +2811,26 @@
             // 
             this.notasDeCreditosToolStripMenuItem.Image = global::Software_Evolution.Properties.Resources.pay_bill_dollar_money_payment_icon_143261;
             this.notasDeCreditosToolStripMenuItem.Name = "notasDeCreditosToolStripMenuItem";
-            this.notasDeCreditosToolStripMenuItem.Size = new System.Drawing.Size(277, 26);
+            this.notasDeCreditosToolStripMenuItem.Size = new System.Drawing.Size(273, 22);
             this.notasDeCreditosToolStripMenuItem.Text = "Notas De Creditos -";
             // 
             // notasDeDebitoToolStripMenuItem
             // 
             this.notasDeDebitoToolStripMenuItem.Image = global::Software_Evolution.Properties.Resources.pay_bill_dollar_money_payment_icon_143261;
             this.notasDeDebitoToolStripMenuItem.Name = "notasDeDebitoToolStripMenuItem";
-            this.notasDeDebitoToolStripMenuItem.Size = new System.Drawing.Size(277, 26);
+            this.notasDeDebitoToolStripMenuItem.Size = new System.Drawing.Size(273, 22);
             this.notasDeDebitoToolStripMenuItem.Text = "Notas De Debito +";
             // 
             // aplicarNotasDeCreditoDebitoToolStripMenuItem
             // 
             this.aplicarNotasDeCreditoDebitoToolStripMenuItem.Image = global::Software_Evolution.Properties.Resources.pay_bill_dollar_money_payment_icon_143261;
             this.aplicarNotasDeCreditoDebitoToolStripMenuItem.Name = "aplicarNotasDeCreditoDebitoToolStripMenuItem";
-            this.aplicarNotasDeCreditoDebitoToolStripMenuItem.Size = new System.Drawing.Size(277, 26);
+            this.aplicarNotasDeCreditoDebitoToolStripMenuItem.Size = new System.Drawing.Size(273, 22);
             this.aplicarNotasDeCreditoDebitoToolStripMenuItem.Text = "Aplicar Notas De Credito/Debito";
             // 
             // chequesDevueltosToolStripMenuItem
             // 
-            this.chequesDevueltosToolStripMenuItem.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.chequesDevueltosToolStripMenuItem.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.chequesDevueltosToolStripMenuItem.Image = global::Software_Evolution.Properties.Resources._1486564168_finance_bank_check_81495;
             this.chequesDevueltosToolStripMenuItem.Name = "chequesDevueltosToolStripMenuItem";
             this.chequesDevueltosToolStripMenuItem.Size = new System.Drawing.Size(277, 26);
@@ -2849,7 +2850,7 @@
             this.anularChequeDevueltoToolStripMenuItem1});
             this.anulacionesToolStripMenuItem.Image = global::Software_Evolution.Properties.Resources.minuscirclehd_1061081;
             this.anulacionesToolStripMenuItem.Name = "anulacionesToolStripMenuItem";
-            this.anulacionesToolStripMenuItem.Size = new System.Drawing.Size(277, 26);
+            this.anulacionesToolStripMenuItem.Size = new System.Drawing.Size(273, 22);
             this.anulacionesToolStripMenuItem.Text = "Anulaciones";
             // 
             // anularAvanceClienteToolStripMenuItem
@@ -2945,7 +2946,7 @@
             this.reporteDePagosDescontadoAEmpleadosDetalladosToolStripMenuItem});
             this.reportesToolStripMenuItem3.Image = global::Software_Evolution.Properties.Resources.actions_document_print_15785;
             this.reportesToolStripMenuItem3.Name = "reportesToolStripMenuItem3";
-            this.reportesToolStripMenuItem3.Size = new System.Drawing.Size(277, 26);
+            this.reportesToolStripMenuItem3.Size = new System.Drawing.Size(273, 22);
             this.reportesToolStripMenuItem3.Text = "Reportes";
             // 
             // reportesDeCuentasPorCobrarToolStripMenuItem
@@ -3149,7 +3150,7 @@
             // 
             // cuentasPorPagarToolStripMenuItem1
             // 
-            this.cuentasPorPagarToolStripMenuItem1.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cuentasPorPagarToolStripMenuItem1.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.cuentasPorPagarToolStripMenuItem1.Image = global::Software_Evolution.Properties.Resources.edit_icon_129126;
             this.cuentasPorPagarToolStripMenuItem1.Name = "cuentasPorPagarToolStripMenuItem1";
             this.cuentasPorPagarToolStripMenuItem1.Size = new System.Drawing.Size(271, 26);
@@ -3159,26 +3160,26 @@
             // 
             this.cuentasPorPagarToolStripMenuItem2.Image = global::Software_Evolution.Properties.Resources.pay_bill_dollar_money_payment_icon_143261;
             this.cuentasPorPagarToolStripMenuItem2.Name = "cuentasPorPagarToolStripMenuItem2";
-            this.cuentasPorPagarToolStripMenuItem2.Size = new System.Drawing.Size(271, 26);
+            this.cuentasPorPagarToolStripMenuItem2.Size = new System.Drawing.Size(267, 22);
             this.cuentasPorPagarToolStripMenuItem2.Text = "Cuentas Por Pagar";
             // 
             // seleccionDePagosToolStripMenuItem
             // 
             this.seleccionDePagosToolStripMenuItem.Image = global::Software_Evolution.Properties.Resources.pay_bill_dollar_money_payment_icon_143261;
             this.seleccionDePagosToolStripMenuItem.Name = "seleccionDePagosToolStripMenuItem";
-            this.seleccionDePagosToolStripMenuItem.Size = new System.Drawing.Size(271, 26);
+            this.seleccionDePagosToolStripMenuItem.Size = new System.Drawing.Size(267, 22);
             this.seleccionDePagosToolStripMenuItem.Text = "Seleccion De Pagos ";
             // 
             // chequesAnticipadosASuplidoresToolStripMenuItem
             // 
             this.chequesAnticipadosASuplidoresToolStripMenuItem.Image = global::Software_Evolution.Properties.Resources._1486564168_finance_bank_check_81495;
             this.chequesAnticipadosASuplidoresToolStripMenuItem.Name = "chequesAnticipadosASuplidoresToolStripMenuItem";
-            this.chequesAnticipadosASuplidoresToolStripMenuItem.Size = new System.Drawing.Size(271, 26);
+            this.chequesAnticipadosASuplidoresToolStripMenuItem.Size = new System.Drawing.Size(267, 22);
             this.chequesAnticipadosASuplidoresToolStripMenuItem.Text = "Cheques Anticipados A Suplidores";
             // 
             // aplicarPagoACuentasPorPagarToolStripMenuItem
             // 
-            this.aplicarPagoACuentasPorPagarToolStripMenuItem.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.aplicarPagoACuentasPorPagarToolStripMenuItem.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.aplicarPagoACuentasPorPagarToolStripMenuItem.Image = global::Software_Evolution.Properties.Resources.pay_bill_dollar_money_payment_icon_143261;
             this.aplicarPagoACuentasPorPagarToolStripMenuItem.Name = "aplicarPagoACuentasPorPagarToolStripMenuItem";
             this.aplicarPagoACuentasPorPagarToolStripMenuItem.Size = new System.Drawing.Size(271, 26);
@@ -3188,7 +3189,7 @@
             // 
             this.notasDeCreditoToolStripMenuItem.Image = global::Software_Evolution.Properties.Resources.pay_bill_dollar_money_payment_icon_143261;
             this.notasDeCreditoToolStripMenuItem.Name = "notasDeCreditoToolStripMenuItem";
-            this.notasDeCreditoToolStripMenuItem.Size = new System.Drawing.Size(271, 26);
+            this.notasDeCreditoToolStripMenuItem.Size = new System.Drawing.Size(267, 22);
             this.notasDeCreditoToolStripMenuItem.Text = "Notas De Credito -";
             // 
             // notasDeDebitoToolStripMenuItem1
@@ -3196,12 +3197,12 @@
             this.notasDeDebitoToolStripMenuItem1.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.notasDeDebitoToolStripMenuItem1.Image = global::Software_Evolution.Properties.Resources.pay_bill_dollar_money_payment_icon_143261;
             this.notasDeDebitoToolStripMenuItem1.Name = "notasDeDebitoToolStripMenuItem1";
-            this.notasDeDebitoToolStripMenuItem1.Size = new System.Drawing.Size(271, 26);
+            this.notasDeDebitoToolStripMenuItem1.Size = new System.Drawing.Size(267, 22);
             this.notasDeDebitoToolStripMenuItem1.Text = "Notas De Debito +";
             // 
             // devolucionDeComprasToolStripMenuItem
             // 
-            this.devolucionDeComprasToolStripMenuItem.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.devolucionDeComprasToolStripMenuItem.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.devolucionDeComprasToolStripMenuItem.Image = global::Software_Evolution.Properties.Resources.ic_assignment_return_128_28215;
             this.devolucionDeComprasToolStripMenuItem.Name = "devolucionDeComprasToolStripMenuItem";
             this.devolucionDeComprasToolStripMenuItem.Size = new System.Drawing.Size(271, 26);
@@ -3219,7 +3220,7 @@
             this.anularDevolucionToolStripMenuItem});
             this.anularToolStripMenuItem1.Image = global::Software_Evolution.Properties.Resources.minuscirclehd_1061081;
             this.anularToolStripMenuItem1.Name = "anularToolStripMenuItem1";
-            this.anularToolStripMenuItem1.Size = new System.Drawing.Size(271, 26);
+            this.anularToolStripMenuItem1.Size = new System.Drawing.Size(267, 22);
             this.anularToolStripMenuItem1.Text = "Anular";
             // 
             // anularCuentaPorPagarToolStripMenuItem
@@ -3288,7 +3289,7 @@
             this.reporteDeCuentasPorPagarVencidadToolStripMenuItem});
             this.reportesToolStripMenuItem4.Image = global::Software_Evolution.Properties.Resources.actions_document_print_15785;
             this.reportesToolStripMenuItem4.Name = "reportesToolStripMenuItem4";
-            this.reportesToolStripMenuItem4.Size = new System.Drawing.Size(271, 26);
+            this.reportesToolStripMenuItem4.Size = new System.Drawing.Size(267, 22);
             this.reportesToolStripMenuItem4.Text = "Reportes";
             // 
             // cuentasPorPagarToolStripMenuItem3
@@ -3393,21 +3394,21 @@
             // 
             this.diarioGeneralToolStripMenuItem1.Image = global::Software_Evolution.Properties.Resources._1455554358_line_19_icon_icons_com_53315;
             this.diarioGeneralToolStripMenuItem1.Name = "diarioGeneralToolStripMenuItem1";
-            this.diarioGeneralToolStripMenuItem1.Size = new System.Drawing.Size(228, 26);
+            this.diarioGeneralToolStripMenuItem1.Size = new System.Drawing.Size(224, 22);
             this.diarioGeneralToolStripMenuItem1.Text = "Diario General";
             // 
             // entradasDeDiarioToolStripMenuItem
             // 
             this.entradasDeDiarioToolStripMenuItem.Image = global::Software_Evolution.Properties.Resources._1455554358_line_19_icon_icons_com_53315;
             this.entradasDeDiarioToolStripMenuItem.Name = "entradasDeDiarioToolStripMenuItem";
-            this.entradasDeDiarioToolStripMenuItem.Size = new System.Drawing.Size(228, 26);
+            this.entradasDeDiarioToolStripMenuItem.Size = new System.Drawing.Size(224, 22);
             this.entradasDeDiarioToolStripMenuItem.Text = "Entradas De Diario";
             // 
             // modificarEntradasDeDiarioToolStripMenuItem
             // 
             this.modificarEntradasDeDiarioToolStripMenuItem.Image = global::Software_Evolution.Properties.Resources._1455554358_line_19_icon_icons_com_53315;
             this.modificarEntradasDeDiarioToolStripMenuItem.Name = "modificarEntradasDeDiarioToolStripMenuItem";
-            this.modificarEntradasDeDiarioToolStripMenuItem.Size = new System.Drawing.Size(228, 26);
+            this.modificarEntradasDeDiarioToolStripMenuItem.Size = new System.Drawing.Size(224, 22);
             this.modificarEntradasDeDiarioToolStripMenuItem.Text = "Modificar Entradas De Diario";
             // 
             // estadosFinancierosToolStripMenuItem
@@ -3430,49 +3431,49 @@
             // 
             this.balanceDeComprobacionToolStripMenuItem.Image = global::Software_Evolution.Properties.Resources._1486564175_finance_currency_exchange_81498;
             this.balanceDeComprobacionToolStripMenuItem.Name = "balanceDeComprobacionToolStripMenuItem";
-            this.balanceDeComprobacionToolStripMenuItem.Size = new System.Drawing.Size(257, 26);
+            this.balanceDeComprobacionToolStripMenuItem.Size = new System.Drawing.Size(253, 22);
             this.balanceDeComprobacionToolStripMenuItem.Text = "Balance De Comprobacion";
             // 
             // balanceGeneralToolStripMenuItem
             // 
             this.balanceGeneralToolStripMenuItem.Image = global::Software_Evolution.Properties.Resources._1486564175_finance_currency_exchange_81498;
             this.balanceGeneralToolStripMenuItem.Name = "balanceGeneralToolStripMenuItem";
-            this.balanceGeneralToolStripMenuItem.Size = new System.Drawing.Size(257, 26);
+            this.balanceGeneralToolStripMenuItem.Size = new System.Drawing.Size(253, 22);
             this.balanceGeneralToolStripMenuItem.Text = "Balance General";
             // 
             // gananciasYPerdidasDelEjercicioToolStripMenuItem
             // 
             this.gananciasYPerdidasDelEjercicioToolStripMenuItem.Image = global::Software_Evolution.Properties.Resources._1486564175_finance_currency_exchange_81498;
             this.gananciasYPerdidasDelEjercicioToolStripMenuItem.Name = "gananciasYPerdidasDelEjercicioToolStripMenuItem";
-            this.gananciasYPerdidasDelEjercicioToolStripMenuItem.Size = new System.Drawing.Size(257, 26);
+            this.gananciasYPerdidasDelEjercicioToolStripMenuItem.Size = new System.Drawing.Size(253, 22);
             this.gananciasYPerdidasDelEjercicioToolStripMenuItem.Text = "Ganancias Y Perdidas Del Ejercicio";
             // 
             // estadoDeFlujoDeEfectivoToolStripMenuItem
             // 
             this.estadoDeFlujoDeEfectivoToolStripMenuItem.Image = global::Software_Evolution.Properties.Resources._1486564175_finance_currency_exchange_81498;
             this.estadoDeFlujoDeEfectivoToolStripMenuItem.Name = "estadoDeFlujoDeEfectivoToolStripMenuItem";
-            this.estadoDeFlujoDeEfectivoToolStripMenuItem.Size = new System.Drawing.Size(257, 26);
+            this.estadoDeFlujoDeEfectivoToolStripMenuItem.Size = new System.Drawing.Size(253, 22);
             this.estadoDeFlujoDeEfectivoToolStripMenuItem.Text = "Estado De Flujo De Efectivo";
             // 
             // formatoEstadosFinancierosToolStripMenuItem
             // 
             this.formatoEstadosFinancierosToolStripMenuItem.Image = global::Software_Evolution.Properties.Resources._1486564175_finance_currency_exchange_81498;
             this.formatoEstadosFinancierosToolStripMenuItem.Name = "formatoEstadosFinancierosToolStripMenuItem";
-            this.formatoEstadosFinancierosToolStripMenuItem.Size = new System.Drawing.Size(257, 26);
+            this.formatoEstadosFinancierosToolStripMenuItem.Size = new System.Drawing.Size(253, 22);
             this.formatoEstadosFinancierosToolStripMenuItem.Text = "Formato Estados Financieros";
             // 
             // registrosVariablesToolStripMenuItem
             // 
             this.registrosVariablesToolStripMenuItem.Image = global::Software_Evolution.Properties.Resources._1486564175_finance_currency_exchange_81498;
             this.registrosVariablesToolStripMenuItem.Name = "registrosVariablesToolStripMenuItem";
-            this.registrosVariablesToolStripMenuItem.Size = new System.Drawing.Size(257, 26);
+            this.registrosVariablesToolStripMenuItem.Size = new System.Drawing.Size(253, 22);
             this.registrosVariablesToolStripMenuItem.Text = "Registros Variables";
             // 
             // registrosIndicadoresFinancierosToolStripMenuItem
             // 
             this.registrosIndicadoresFinancierosToolStripMenuItem.Image = global::Software_Evolution.Properties.Resources._1486564175_finance_currency_exchange_81498;
             this.registrosIndicadoresFinancierosToolStripMenuItem.Name = "registrosIndicadoresFinancierosToolStripMenuItem";
-            this.registrosIndicadoresFinancierosToolStripMenuItem.Size = new System.Drawing.Size(257, 26);
+            this.registrosIndicadoresFinancierosToolStripMenuItem.Size = new System.Drawing.Size(253, 22);
             this.registrosIndicadoresFinancierosToolStripMenuItem.Text = "Registros Indicadores Financieros";
             // 
             // gastosMenoresToolStripMenuItem
@@ -3491,21 +3492,21 @@
             // 
             this.cajasChicasYAjustesToolStripMenuItem.Image = global::Software_Evolution.Properties.Resources._1486564182_finance_safe_81496;
             this.cajasChicasYAjustesToolStripMenuItem.Name = "cajasChicasYAjustesToolStripMenuItem";
-            this.cajasChicasYAjustesToolStripMenuItem.Size = new System.Drawing.Size(228, 26);
+            this.cajasChicasYAjustesToolStripMenuItem.Size = new System.Drawing.Size(224, 22);
             this.cajasChicasYAjustesToolStripMenuItem.Text = "Cajas Chicas Y Ajustes";
             // 
             // comprobanteDeCajaCHICAToolStripMenuItem
             // 
             this.comprobanteDeCajaCHICAToolStripMenuItem.Image = global::Software_Evolution.Properties.Resources._1486564182_finance_safe_81496;
             this.comprobanteDeCajaCHICAToolStripMenuItem.Name = "comprobanteDeCajaCHICAToolStripMenuItem";
-            this.comprobanteDeCajaCHICAToolStripMenuItem.Size = new System.Drawing.Size(228, 26);
+            this.comprobanteDeCajaCHICAToolStripMenuItem.Size = new System.Drawing.Size(224, 22);
             this.comprobanteDeCajaCHICAToolStripMenuItem.Text = "Comprobante De Caja Chica";
             // 
             // reposicionDeCajaChicaToolStripMenuItem
             // 
             this.reposicionDeCajaChicaToolStripMenuItem.Image = global::Software_Evolution.Properties.Resources._1486564182_finance_safe_81496;
             this.reposicionDeCajaChicaToolStripMenuItem.Name = "reposicionDeCajaChicaToolStripMenuItem";
-            this.reposicionDeCajaChicaToolStripMenuItem.Size = new System.Drawing.Size(228, 26);
+            this.reposicionDeCajaChicaToolStripMenuItem.Size = new System.Drawing.Size(224, 22);
             this.reposicionDeCajaChicaToolStripMenuItem.Text = "Reposicion De Caja Chica";
             // 
             // reportesToolStripMenuItem5
@@ -3516,7 +3517,7 @@
             this.reporteDeReposicionGeneralDetalladoToolStripMenuItem});
             this.reportesToolStripMenuItem5.Image = global::Software_Evolution.Properties.Resources.actions_document_print_15785;
             this.reportesToolStripMenuItem5.Name = "reportesToolStripMenuItem5";
-            this.reportesToolStripMenuItem5.Size = new System.Drawing.Size(228, 26);
+            this.reportesToolStripMenuItem5.Size = new System.Drawing.Size(224, 22);
             this.reportesToolStripMenuItem5.Text = "Reportes";
             // 
             // reportesDeGastosMenoresToolStripMenuItem
@@ -3563,7 +3564,7 @@
             this.gruposDeActivosToolStripMenuItem,
             this.localizacionDeActivosToolStripMenuItem,
             this.conceptosDeActivosToolStripMenuItem});
-            this.datosMaestroDeActivosFIjosToolStripMenuItem.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.datosMaestroDeActivosFIjosToolStripMenuItem.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.datosMaestroDeActivosFIjosToolStripMenuItem.Image = global::Software_Evolution.Properties.Resources.edit_icon_129126;
             this.datosMaestroDeActivosFIjosToolStripMenuItem.Name = "datosMaestroDeActivosFIjosToolStripMenuItem";
             this.datosMaestroDeActivosFIjosToolStripMenuItem.Size = new System.Drawing.Size(281, 26);
@@ -3601,12 +3602,12 @@
             // 
             this.registroDeActivosToolStripMenuItem.Image = global::Software_Evolution.Properties.Resources._1457055665_Web_Design_icon_icons_com_54708;
             this.registroDeActivosToolStripMenuItem.Name = "registroDeActivosToolStripMenuItem";
-            this.registroDeActivosToolStripMenuItem.Size = new System.Drawing.Size(281, 26);
+            this.registroDeActivosToolStripMenuItem.Size = new System.Drawing.Size(277, 22);
             this.registroDeActivosToolStripMenuItem.Text = "Registro De Activos";
             // 
             // salidaDeActivosToolStripMenuItem
             // 
-            this.salidaDeActivosToolStripMenuItem.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.salidaDeActivosToolStripMenuItem.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.salidaDeActivosToolStripMenuItem.Image = global::Software_Evolution.Properties.Resources._1457055665_Web_Design_icon_icons_com_54708;
             this.salidaDeActivosToolStripMenuItem.Name = "salidaDeActivosToolStripMenuItem";
             this.salidaDeActivosToolStripMenuItem.Size = new System.Drawing.Size(281, 26);
@@ -3616,21 +3617,21 @@
             // 
             this.generarDepreciacionDToolStripMenuItem.Image = global::Software_Evolution.Properties.Resources._1457055665_Web_Design_icon_icons_com_54708;
             this.generarDepreciacionDToolStripMenuItem.Name = "generarDepreciacionDToolStripMenuItem";
-            this.generarDepreciacionDToolStripMenuItem.Size = new System.Drawing.Size(281, 26);
+            this.generarDepreciacionDToolStripMenuItem.Size = new System.Drawing.Size(277, 22);
             this.generarDepreciacionDToolStripMenuItem.Text = "Generar Depreciacion De Acrtivos Fijos";
             // 
             // historialDeDespreciacionToolStripMenuItem
             // 
             this.historialDeDespreciacionToolStripMenuItem.Image = global::Software_Evolution.Properties.Resources._1457055665_Web_Design_icon_icons_com_54708;
             this.historialDeDespreciacionToolStripMenuItem.Name = "historialDeDespreciacionToolStripMenuItem";
-            this.historialDeDespreciacionToolStripMenuItem.Size = new System.Drawing.Size(281, 26);
+            this.historialDeDespreciacionToolStripMenuItem.Size = new System.Drawing.Size(277, 22);
             this.historialDeDespreciacionToolStripMenuItem.Text = "Historial De Despreciacion";
             // 
             // activosFijosPendientePorDespreciarToolStripMenuItem
             // 
             this.activosFijosPendientePorDespreciarToolStripMenuItem.Image = global::Software_Evolution.Properties.Resources._1457055665_Web_Design_icon_icons_com_54708;
             this.activosFijosPendientePorDespreciarToolStripMenuItem.Name = "activosFijosPendientePorDespreciarToolStripMenuItem";
-            this.activosFijosPendientePorDespreciarToolStripMenuItem.Size = new System.Drawing.Size(281, 26);
+            this.activosFijosPendientePorDespreciarToolStripMenuItem.Size = new System.Drawing.Size(277, 22);
             this.activosFijosPendientePorDespreciarToolStripMenuItem.Text = "Activos Fijos Pendiente Por Despreciar";
             // 
             // reportesDeActivosFijosToolStripMenuItem
@@ -3642,7 +3643,7 @@
             this.reporteDeActivosFijosPorDepartamentoToolStripMenuItem});
             this.reportesDeActivosFijosToolStripMenuItem.Image = global::Software_Evolution.Properties.Resources.actions_document_print_15785;
             this.reportesDeActivosFijosToolStripMenuItem.Name = "reportesDeActivosFijosToolStripMenuItem";
-            this.reportesDeActivosFijosToolStripMenuItem.Size = new System.Drawing.Size(281, 26);
+            this.reportesDeActivosFijosToolStripMenuItem.Size = new System.Drawing.Size(277, 22);
             this.reportesDeActivosFijosToolStripMenuItem.Text = "Reportes De Activos Fijos";
             // 
             // reporteDeActivoFijosToolStripMenuItem
@@ -3689,21 +3690,21 @@
             // 
             this.cierreModularToolStripMenuItem.Image = global::Software_Evolution.Properties.Resources.Libra_34522;
             this.cierreModularToolStripMenuItem.Name = "cierreModularToolStripMenuItem";
-            this.cierreModularToolStripMenuItem.Size = new System.Drawing.Size(243, 26);
+            this.cierreModularToolStripMenuItem.Size = new System.Drawing.Size(239, 22);
             this.cierreModularToolStripMenuItem.Text = "Cierre Modular";
             // 
             // bloquearPeriodosDeEjerciciosToolStripMenuItem
             // 
             this.bloquearPeriodosDeEjerciciosToolStripMenuItem.Image = global::Software_Evolution.Properties.Resources.Libra_34522;
             this.bloquearPeriodosDeEjerciciosToolStripMenuItem.Name = "bloquearPeriodosDeEjerciciosToolStripMenuItem";
-            this.bloquearPeriodosDeEjerciciosToolStripMenuItem.Size = new System.Drawing.Size(243, 26);
+            this.bloquearPeriodosDeEjerciciosToolStripMenuItem.Size = new System.Drawing.Size(239, 22);
             this.bloquearPeriodosDeEjerciciosToolStripMenuItem.Text = "Bloquear Periodos De Ejercicios";
             // 
             // cierreDePeriodosToolStripMenuItem
             // 
             this.cierreDePeriodosToolStripMenuItem.Image = global::Software_Evolution.Properties.Resources.Libra_34522;
             this.cierreDePeriodosToolStripMenuItem.Name = "cierreDePeriodosToolStripMenuItem";
-            this.cierreDePeriodosToolStripMenuItem.Size = new System.Drawing.Size(243, 26);
+            this.cierreDePeriodosToolStripMenuItem.Size = new System.Drawing.Size(239, 22);
             this.cierreDePeriodosToolStripMenuItem.Text = "Cierre De Periodos";
             // 
             // comprobantesFiscalesToolStripMenuItem
@@ -3731,12 +3732,12 @@
             // 
             this.registrosDeNCFToolStripMenuItem.Image = global::Software_Evolution.Properties.Resources.IMG_03__1_;
             this.registrosDeNCFToolStripMenuItem.Name = "registrosDeNCFToolStripMenuItem";
-            this.registrosDeNCFToolStripMenuItem.Size = new System.Drawing.Size(215, 26);
+            this.registrosDeNCFToolStripMenuItem.Size = new System.Drawing.Size(211, 22);
             this.registrosDeNCFToolStripMenuItem.Text = "Registros De NCF";
             // 
             // solicitudDeNCFToolStripMenuItem
             // 
-            this.solicitudDeNCFToolStripMenuItem.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.solicitudDeNCFToolStripMenuItem.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.solicitudDeNCFToolStripMenuItem.Image = global::Software_Evolution.Properties.Resources.IMG_03__1_;
             this.solicitudDeNCFToolStripMenuItem.Name = "solicitudDeNCFToolStripMenuItem";
             this.solicitudDeNCFToolStripMenuItem.Size = new System.Drawing.Size(215, 26);
@@ -3746,19 +3747,19 @@
             // 
             this.archivoToolStripMenuItem1.Image = global::Software_Evolution.Properties.Resources.IMG_03__1_;
             this.archivoToolStripMenuItem1.Name = "archivoToolStripMenuItem1";
-            this.archivoToolStripMenuItem1.Size = new System.Drawing.Size(215, 26);
+            this.archivoToolStripMenuItem1.Size = new System.Drawing.Size(211, 22);
             this.archivoToolStripMenuItem1.Text = "Archivo 606 NCF";
             // 
             // reporteDeActivosFijosPorCategoriaToolStripMenuItem1
             // 
             this.reporteDeActivosFijosPorCategoriaToolStripMenuItem1.Image = global::Software_Evolution.Properties.Resources.IMG_03__1_;
             this.reporteDeActivosFijosPorCategoriaToolStripMenuItem1.Name = "reporteDeActivosFijosPorCategoriaToolStripMenuItem1";
-            this.reporteDeActivosFijosPorCategoriaToolStripMenuItem1.Size = new System.Drawing.Size(215, 26);
+            this.reporteDeActivosFijosPorCategoriaToolStripMenuItem1.Size = new System.Drawing.Size(211, 22);
             this.reporteDeActivosFijosPorCategoriaToolStripMenuItem1.Text = "Archivo 607 NCF";
             // 
             // archivo608NCFToolStripMenuItem
             // 
-            this.archivo608NCFToolStripMenuItem.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.archivo608NCFToolStripMenuItem.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.archivo608NCFToolStripMenuItem.Image = global::Software_Evolution.Properties.Resources.IMG_03__1_;
             this.archivo608NCFToolStripMenuItem.Name = "archivo608NCFToolStripMenuItem";
             this.archivo608NCFToolStripMenuItem.Size = new System.Drawing.Size(215, 26);
@@ -3768,19 +3769,19 @@
             // 
             this.reporte606NCFToolStripMenuItem.Image = global::Software_Evolution.Properties.Resources.IMG_03__1_;
             this.reporte606NCFToolStripMenuItem.Name = "reporte606NCFToolStripMenuItem";
-            this.reporte606NCFToolStripMenuItem.Size = new System.Drawing.Size(215, 26);
+            this.reporte606NCFToolStripMenuItem.Size = new System.Drawing.Size(211, 22);
             this.reporte606NCFToolStripMenuItem.Text = "Reporte 606 NCF";
             // 
             // reporte607NCFToolStripMenuItem
             // 
             this.reporte607NCFToolStripMenuItem.Image = global::Software_Evolution.Properties.Resources.IMG_03__1_;
             this.reporte607NCFToolStripMenuItem.Name = "reporte607NCFToolStripMenuItem";
-            this.reporte607NCFToolStripMenuItem.Size = new System.Drawing.Size(215, 26);
+            this.reporte607NCFToolStripMenuItem.Size = new System.Drawing.Size(211, 22);
             this.reporte607NCFToolStripMenuItem.Text = "Reporte 607 NCF";
             // 
             // reporte608NCFToolStripMenuItem
             // 
-            this.reporte608NCFToolStripMenuItem.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.reporte608NCFToolStripMenuItem.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.reporte608NCFToolStripMenuItem.Image = global::Software_Evolution.Properties.Resources.IMG_03__1_;
             this.reporte608NCFToolStripMenuItem.Name = "reporte608NCFToolStripMenuItem";
             this.reporte608NCFToolStripMenuItem.Size = new System.Drawing.Size(215, 26);
@@ -3790,35 +3791,36 @@
             // 
             this.cierreComprasNCFToolStripMenuItem.Image = global::Software_Evolution.Properties.Resources.IMG_03__1_;
             this.cierreComprasNCFToolStripMenuItem.Name = "cierreComprasNCFToolStripMenuItem";
-            this.cierreComprasNCFToolStripMenuItem.Size = new System.Drawing.Size(215, 26);
+            this.cierreComprasNCFToolStripMenuItem.Size = new System.Drawing.Size(211, 22);
             this.cierreComprasNCFToolStripMenuItem.Text = "Reporte Impuesto IR-17";
             // 
             // reporteImpuestoIT1ToolStripMenuItem
             // 
             this.reporteImpuestoIT1ToolStripMenuItem.Image = global::Software_Evolution.Properties.Resources.IMG_03__1_;
             this.reporteImpuestoIT1ToolStripMenuItem.Name = "reporteImpuestoIT1ToolStripMenuItem";
-            this.reporteImpuestoIT1ToolStripMenuItem.Size = new System.Drawing.Size(215, 26);
+            this.reporteImpuestoIT1ToolStripMenuItem.Size = new System.Drawing.Size(211, 22);
             this.reporteImpuestoIT1ToolStripMenuItem.Text = "Reporte Impuesto IT-1";
             // 
             // reporteImpuestoXTipoToolStripMenuItem
             // 
             this.reporteImpuestoXTipoToolStripMenuItem.Image = global::Software_Evolution.Properties.Resources.actions_document_print_15785;
             this.reporteImpuestoXTipoToolStripMenuItem.Name = "reporteImpuestoXTipoToolStripMenuItem";
-            this.reporteImpuestoXTipoToolStripMenuItem.Size = new System.Drawing.Size(215, 26);
+            this.reporteImpuestoXTipoToolStripMenuItem.Size = new System.Drawing.Size(211, 22);
             this.reporteImpuestoXTipoToolStripMenuItem.Text = "Reporte Impuesto X Tipo";
             // 
             // reporteComprasSinNCFToolStripMenuItem
             // 
             this.reporteComprasSinNCFToolStripMenuItem.Image = global::Software_Evolution.Properties.Resources.actions_document_print_15785;
             this.reporteComprasSinNCFToolStripMenuItem.Name = "reporteComprasSinNCFToolStripMenuItem";
-            this.reporteComprasSinNCFToolStripMenuItem.Size = new System.Drawing.Size(215, 26);
+            this.reporteComprasSinNCFToolStripMenuItem.Size = new System.Drawing.Size(211, 22);
             this.reporteComprasSinNCFToolStripMenuItem.Text = "Reporte Compras Sin NCF";
             // 
             // mayolGeneralToolStripMenuItem
             // 
             this.mayolGeneralToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.mayolGeneralToolStripMenuItem1,
-            this.acumuladoPorMesToolStripMenuItem});
+            this.acumuladoPorMesToolStripMenuItem,
+            this.toolStripMenuItem61});
             this.mayolGeneralToolStripMenuItem.Image = global::Software_Evolution.Properties.Resources.businss_invest_money_icon_127223;
             this.mayolGeneralToolStripMenuItem.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
             this.mayolGeneralToolStripMenuItem.Name = "mayolGeneralToolStripMenuItem";
@@ -4192,6 +4194,12 @@
             this.button2.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.button2.UseVisualStyleBackColor = true;
             this.button2.Click += new System.EventHandler(this.button2_Click);
+            // 
+            // toolStripMenuItem61
+            // 
+            this.toolStripMenuItem61.Name = "toolStripMenuItem61";
+            this.toolStripMenuItem61.Size = new System.Drawing.Size(186, 26);
+            this.toolStripMenuItem61.Text = ".";
             // 
             // Principal
             // 
@@ -4679,5 +4687,6 @@
         private System.Windows.Forms.ToolStripMenuItem impresionDeCodeBarToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem31;
         private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem7;
+        private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem61;
     }
 }
