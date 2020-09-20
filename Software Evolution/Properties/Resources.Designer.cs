@@ -654,6 +654,16 @@ namespace Software_Evolution.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap exit_closethesession_close_6317 {
+            get {
+                object obj = ResourceManager.GetObject("exit_closethesession_close_6317", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap facebook_icon_icons_com_59205 {
             get {
                 object obj = ResourceManager.GetObject("facebook_icon-icons.com_59205", resourceCulture);

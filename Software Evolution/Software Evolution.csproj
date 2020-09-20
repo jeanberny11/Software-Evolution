@@ -298,6 +298,7 @@
     <Content Include="evolutionconfig.xml">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
+    <None Include="Resources\exit_closethesession_close_6317.ico" />
     <None Include="Resources\businss_invest_money_icon_127223.ico" />
     <None Include="Resources\Money_27019.ico" />
     <None Include="Resources\unnamed %281%29.ico" />
