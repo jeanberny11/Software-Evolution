@@ -27,10 +27,10 @@ namespace Software_Evolution.repositorios
         {
             try
             {
-                manager.SaveRecord(tabla, new Dictionary<string, object>
+                manager.CreateRecord(tabla, new Dictionary<string, object>
                 {
-                    ["f_monto_inicial"] = row.Field<double>("f_monto_inicial"),
-                    ["f_monto_final"] = row.Field<double>("f_monto_final"),
+                    ["f_monto_inicial"] = row.Field<decimal?>("f_monto_inicial"),
+                    ["f_monto_final"] = row.Field<decimal?>("f_monto_final"),
                     ["f_cantidad_cotizaciones"] = row.Field<int>("f_cantidad_cotizaciones"),
                     ["f_id_moneda"] = row.Field<int>("f_id_moneda")
                 });

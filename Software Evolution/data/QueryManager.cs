@@ -412,5 +412,11 @@ namespace Software_Evolution.data
                 throw ex;
             }
         }
+
+        public DateTime CurrentDate()
+        {
+            var res = Query("select current_date as date");
+            return res.Rows[0].Field<DateTime>("date");
+        }
     }
 }

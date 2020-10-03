@@ -14,6 +14,7 @@ namespace Software_Evolution.managers.general
         SecuenciaRepository secuenciaRepository = new SecuenciaRepository();
         PreferenciasRepository preferencias = new PreferenciasRepository();
         CotizacionMontoRepository CotizacionMontoRepository = new CotizacionMontoRepository();
+        MontoMinDepRepository montoMinDepRepository = new MontoMinDepRepository();
 
 
         public DataTable GetPeriodosContables()
@@ -67,6 +68,15 @@ namespace Software_Evolution.managers.general
             foreach(DataRow row in cotizaciones.Rows)
             {
                 CotizacionMontoRepository.Create(row);
+            }
+        }
+
+        public void SaveMontoMinDep(DataTable data)
+        {
+            montoMinDepRepository.DeleteAll();
+            foreach (DataRow row in data.Rows)
+            {
+                montoMinDepRepository.Create(row);
             }
         }
     }

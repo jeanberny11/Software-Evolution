@@ -154,7 +154,9 @@
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
     <Compile Include="managers\contabilidad\CuentasContablesManager.cs" />
+    <Compile Include="managers\general\ClientesManager.cs" />
     <Compile Include="managers\general\PreferenciasManager.cs" />
+    <Compile Include="managers\general\ProductosManager.cs" />
     <Compile Include="managers\general\UsuariosManager.cs" />
     <Compile Include="managers\general\VendedoresManager.cs" />
     <Compile Include="modalviews\CuentasContablesGet.cs">
@@ -169,16 +171,31 @@
     <Compile Include="modalviews\PermisosUsuario.Designer.cs">
       <DependentUpon>PermisosUsuario.cs</DependentUpon>
     </Compile>
+    <Compile Include="modalviews\Qry_Out_Productos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="modalviews\Qry_Out_Productos.Designer.cs">
+      <DependentUpon>Qry_Out_Productos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="modalviews\Qry_provincia_municipio.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="modalviews\Qry_provincia_municipio.Designer.cs">
+      <DependentUpon>Qry_provincia_municipio.cs</DependentUpon>
+    </Compile>
     <Compile Include="modalviews\VendedorPickerForm.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="modalviews\VendedorPickerForm.Designer.cs">
       <DependentUpon>VendedorPickerForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="models\ForeinField.cs" />
+    <Compile Include="models\MasterDetailModel.cs" />
     <Compile Include="models\Usuario.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="repositorios\CotizacionMontoRepository.cs" />
+    <Compile Include="repositorios\MontoMinDepRepository.cs" />
     <Compile Include="repositorios\PeriodosContablesRepository.cs" />
     <Compile Include="repositorios\PreferenciasRepository.cs" />
     <Compile Include="repositorios\Repository.cs" />
@@ -207,11 +224,23 @@
     <Compile Include="views\general\InUsuarios.Designer.cs">
       <DependentUpon>InUsuarios.cs</DependentUpon>
     </Compile>
+    <Compile Include="views\general\In_Clientes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="views\general\In_Clientes.Designer.cs">
+      <DependentUpon>In_Clientes.cs</DependentUpon>
+    </Compile>
     <Compile Include="views\general\Login.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="views\general\Login.Designer.cs">
       <DependentUpon>Login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="views\general\OutClientes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="views\general\OutClientes.Designer.cs">
+      <DependentUpon>OutClientes.cs</DependentUpon>
     </Compile>
     <Compile Include="views\general\OutUsuarios.cs">
       <SubType>Form</SubType>
@@ -231,6 +260,12 @@
     <Compile Include="views\general\Principal.Designer.cs">
       <DependentUpon>Principal.cs</DependentUpon>
     </Compile>
+    <Compile Include="views\mantenimientos\MasterDetailForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="views\mantenimientos\MasterDetailForm.Designer.cs">
+      <DependentUpon>MasterDetailForm.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="customcontrols\CuentaContablePicker.resx">
       <DependentUpon>CuentaContablePicker.cs</DependentUpon>
     </EmbeddedResource>
@@ -245,6 +280,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="modalviews\PermisosUsuario.resx">
       <DependentUpon>PermisosUsuario.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="modalviews\Qry_Out_Productos.resx">
+      <DependentUpon>Qry_Out_Productos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="modalviews\Qry_provincia_municipio.resx">
+      <DependentUpon>Qry_provincia_municipio.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="modalviews\VendedorPickerForm.resx">
       <DependentUpon>VendedorPickerForm.cs</DependentUpon>
@@ -269,8 +310,14 @@
     <EmbeddedResource Include="views\general\InUsuarios.resx">
       <DependentUpon>InUsuarios.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="views\general\In_Clientes.resx">
+      <DependentUpon>In_Clientes.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="views\general\Login.resx">
       <DependentUpon>Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="views\general\OutClientes.resx">
+      <DependentUpon>OutClientes.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="views\general\OutUsuarios.resx">
       <DependentUpon>OutUsuarios.cs</DependentUpon>
@@ -280,6 +327,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="views\general\Principal.resx">
       <DependentUpon>Principal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="views\mantenimientos\MasterDetailForm.resx">
+      <DependentUpon>MasterDetailForm.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
@@ -299,6 +349,37 @@
     <Content Include="evolutionconfig.xml">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
+    <None Include="Resources\exit_closethesession_close_6317.ico" />
+    <None Include="Resources\businss_invest_money_icon_127223.ico" />
+    <None Include="Resources\Money_27019.ico" />
+    <None Include="Resources\unnamed %281%29.ico" />
+    <None Include="Resources\IMG-03 %281%29.ico" />
+    <None Include="Resources\IMG-03.png" />
+    <None Include="Resources\Libra_34522.ico" />
+    <None Include="Resources\1457055665_Web_Design_icon-icons.com_54708.ico" />
+    <None Include="Resources\3440907-business-cash-currency-ecommerce-finance-money-payment_1075421.ico" />
+    <None Include="Resources\bank_icon_1290411.ico" />
+    <None Include="Resources\shoppaymentorderbuy-04_icon-icons.com_73886.ico" />
+    <None Include="Resources\shoppaymentorderbuy-23_icon-icons.com_73884.ico" />
+    <None Include="Resources\pay_bill_dollar_money_payment_icon_143261.ico" />
+    <None Include="Resources\bank_icon_129041.ico" />
+    <None Include="Resources\1486564168-finance-bank-check_81495.ico" />
+    <None Include="Resources\1486564175-finance-currency-exchange_81498.ico" />
+    <None Include="Resources\1486564182-finance-safe_81496.ico" />
+    <None Include="Resources\bank_finance_finance_and_business_banking_columns_buildings_icon_128558.ico" />
+    <None Include="Resources\business_award_finance_icon_150736.ico" />
+    <None Include="Resources\business_coin_currency_file_finance_folder_marketing_money_icon_150695.ico" />
+    <None Include="Resources\3440907-business-cash-currency-ecommerce-finance-money-payment_107542.ico" />
+    <None Include="Resources\userpassword_deusuari_787.ico" />
+    <None Include="Resources\adduser_1103.ico" />
+    <None Include="Resources\flight_30822.ico" />
+    <None Include="Resources\1491580635-yumminkysocialmedia26_83102.ico" />
+    <None Include="Resources\facebook_icon-icons.com_59205.ico" />
+    <None Include="Resources\1491579542-yumminkysocialmedia22_83078.ico" />
+    <None Include="Resources\Affiliate-Marketing_icon-icons.com_53702.ico" />
+    <None Include="Resources\4124848-affiliate-marketing-aim-audience-targeting-focus-human-resources_114107.ico" />
+    <None Include="Resources\marketingspeaker_122855.ico" />
+    <None Include="Resources\seotarget_122858.ico" />
     <None Include="Resources\1455554358_line-19_icon-icons.com_53315.ico" />
     <None Include="Resources\employee__icon-icons.com_769841.ico" />
     <None Include="Resources\Banking_00006_A_icon-icons.com_598202.ico" />

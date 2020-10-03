@@ -43,6 +43,11 @@ namespace Software_Evolution.customcontrols
         [Description("Valor por defecto que se le asigna en case de limpiar la pantalla")]        
         public bool DefaultValue { get; set; }
 
+        [Browsable(true)]
+        [Category("Extended Properties")]
+        [Description("Indica si el componente de puede habilitar y deshabilitar")]
+        public bool IsActivar { get; set; } = true;
+
         [Description("No aplica")]
         public bool IsEmpty()
         {

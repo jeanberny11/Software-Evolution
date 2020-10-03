@@ -19,7 +19,9 @@ namespace Software_Evolution.customcontrols
 
       
         bool IsSalvar { get; set; }
-        
+
+        bool IsActivar { get; set; }
+
         String FieldName { get; set; }
 
         T Valor

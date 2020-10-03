@@ -152,7 +152,7 @@ namespace Software_Evolution.views.general
         {
             if (ValidarGrid(gridView3))
             {
-                gridView3.DeleteRow(gridView3.GetSelectedRows()[0]);
+                cotizacionmonto.Rows.Remove(cotizacionmonto.Rows[gridView3.GetSelectedRows()[0]]);
             }
         }
 
@@ -192,7 +192,7 @@ namespace Software_Evolution.views.general
         {
             if (ValidarGrid(gridView4))
             {
-                gridView4.DeleteRow(gridView4.GetSelectedRows()[0]);
+                cotizaciondep.Rows.Remove(cotizaciondep.Rows[gridView4.GetSelectedRows()[0]]);                
             }
         }
 
@@ -212,18 +212,20 @@ namespace Software_Evolution.views.general
             datos["f_id"] = preferenciaid;
             if(!(pictureBox1.Image is null))
             {
-                var imagestring = ImageToBase64(pictureBox1.Image);
+                var imagestring = ImageToBase64(pictureBox1);
                 datos["f_logo"] = imagestring;
             }
             try
             {
                 manager.SavePreferencias(datos);
                 manager.SaveCotizacionMonto(cotizacionmonto);
+                manager.SaveMontoMinDep(cotizaciondep);
             }catch(Exception ex)
             {
                 Mensaje(ex.Message);
                 return;
             }
+            this.RequireCloseConfirm = false;
             this.Close();
         }
 

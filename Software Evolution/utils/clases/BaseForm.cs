@@ -94,27 +94,38 @@ namespace Software_Evolution.utils.clases
             // Convert base 64 string to byte[]
             byte[] imageBytes = Convert.FromBase64String(base64String);
             // Convert byte[] to Image
-            using (var ms = new MemoryStream(imageBytes, 0, imageBytes.Length))
+            var ms = new MemoryStream(imageBytes, 0, imageBytes.Length);
+            var image = Image.FromStream(ms, true);
+            try
             {
-                Image image = Image.FromStream(ms, true);
-                using (MemoryStream ms2 = new MemoryStream())
-                {
-                    image.Save(ms2, System.Drawing.Imaging.ImageFormat.Jpeg);
-                    return new Bitmap(ms2);
-                }
+                var path = Path.GetTempPath();
+                image.Save(path + "image.jpeg", System.Drawing.Imaging.ImageFormat.Jpeg);
+                return new Bitmap(path + "image.jpeg");
+            }catch(Exception ex)
+            {
+                throw ex;
             }
+            finally
+            {
+                ms.Dispose();
+                ms.Close();
+                image.Dispose();
+            }
+            
+                
+            
         }
 
         // Convierte una imagen a string base 64
         /// <remarks>
         /// Esto dara un invalide image file si el formato del string es incorrecto
         /// </remarks>
-        public string ImageToBase64(Image image)
+        public string ImageToBase64(PictureBox pictureBox)
         {
             using (MemoryStream ms = new MemoryStream())
             {
                 // Convert Image to byte[]
-                image.Save(ms, System.Drawing.Imaging.ImageFormat.Jpeg);
+                pictureBox.Image.Save(ms, System.Drawing.Imaging.ImageFormat.Png);
                 byte[] imageBytes = ms.ToArray();
 
                 // Convert byte[] to base 64 string
@@ -1395,6 +1406,252 @@ namespace Software_Evolution.utils.clases
                 else if (control is GroupBox group)
                 {
                     Modificar(group, data);
+                }
+            }
+        }
+
+
+        protected virtual void Activar(bool activo)
+        {
+            foreach (Control control in this.Controls)
+            {
+                if (control is IEvBaseComponent<String> obj)
+                {
+                    if (obj.IsActivar)
+                    {
+                        control.Enabled = activo;
+                    }
+                }
+                else if (control is IEvBaseComponent<int> obji)
+                {
+                    if (obji.IsActivar)
+                    {
+                        control.Enabled = activo;
+                    }
+                }
+                else if (control is IEvBaseComponent<bool> objb)
+                {
+                    if (objb.IsActivar)
+                    {
+                        control.Enabled = activo;
+                    }
+                }
+                else if (control is IEvBaseComponent<double> objd)
+                {
+                    if (objd.IsActivar)
+                    {
+                        control.Enabled = activo;
+                    }
+                }
+                else if (control is IEvBaseComponent<object> objo)
+                {
+                    if (objo.IsActivar)
+                    {
+                        control.Enabled = activo;
+                    }
+                }
+                else if (control is IEvBaseComponent<DateTime> objt)
+                {
+                    if (objt.IsActivar)
+                    {
+                        control.Enabled = activo;
+                    }
+                }
+                else
+              if (control is Panel panel)
+                {
+                    Activar(panel, activo);
+                }
+                else
+              if (control is TabControl tab)
+                {
+                    Activar(tab, activo);
+                }
+                if (control is GroupBox group)
+                {
+                    Activar(group, activo);
+                }
+            }
+        }
+
+        private void Activar(GroupBox group, bool activo)
+        {
+            foreach (Control control in group.Controls)
+            {
+                if (control is IEvBaseComponent<String> obj)
+                {
+                    if (obj.IsActivar)
+                    {
+                        control.Enabled = activo;
+                    }
+                }
+                else if (control is IEvBaseComponent<int> obji)
+                {
+                    if (obji.IsActivar)
+                    {
+                        control.Enabled = activo;
+                    }
+                }
+                else if (control is IEvBaseComponent<bool> objb)
+                {
+                    if (objb.IsActivar)
+                    {
+                        control.Enabled = activo;
+                    }
+                }
+                else if (control is IEvBaseComponent<double> objd)
+                {
+                    if (objd.IsActivar)
+                    {
+                        control.Enabled = activo;
+                    }
+                }
+                else if (control is IEvBaseComponent<object> objo)
+                {
+                    if (objo.IsActivar)
+                    {
+                        control.Enabled = activo;
+                    }
+                }
+                else if (control is IEvBaseComponent<DateTime> objt)
+                {
+                    if (objt.IsActivar)
+                    {
+                        control.Enabled = activo;
+                    }
+                }
+                else if (control is Panel pane)
+                {
+                    Activar(pane, activo);
+                }
+                else if (control is TabControl tabControl)
+                {
+                    Activar(tabControl, activo);
+                }
+            }
+        }
+
+        private void Activar(TabControl tab, bool activo)
+        {
+            foreach (TabPage page in tab.TabPages)
+            {
+                foreach (Control control in page.Controls)
+                {
+                    if (control is IEvBaseComponent<String> obj)
+                    {
+                        if (obj.IsActivar)
+                        {
+                            control.Enabled = activo;
+                        }
+                    }
+                    else if (control is IEvBaseComponent<int> obji)
+                    {
+                        if (obji.IsActivar)
+                        {
+                            control.Enabled = activo;
+                        }
+                    }
+                    else if (control is IEvBaseComponent<bool> objb)
+                    {
+                        if (objb.IsActivar)
+                        {
+                            control.Enabled = activo;
+                        }
+                    }
+                    else if (control is IEvBaseComponent<double> objd)
+                    {
+                        if (objd.IsActivar)
+                        {
+                            control.Enabled = activo;
+                        }
+                    }
+                    else if (control is IEvBaseComponent<object> objo)
+                    {
+                        if (objo.IsActivar)
+                        {
+                            control.Enabled = activo;
+                        }
+                    }
+                    else if (control is IEvBaseComponent<DateTime> objt)
+                    {
+                        if (objt.IsActivar)
+                        {
+                            control.Enabled = activo;
+                        }
+                    }
+                    else if (control is Panel pane)
+                    {
+                        Activar(pane, activo);
+                    }
+                    else if (control is GroupBox groupBox)
+                    {
+                        Activar(groupBox, activo);
+                    }
+                    else if (control is TabControl tabControl)
+                    {
+                        Activar(tabControl, activo);
+                    }
+                }
+            }
+        }
+
+        private void Activar(Panel panel, bool activo)
+        {
+            foreach (Control control in panel.Controls)
+            {
+                if (control is IEvBaseComponent<String> obj)
+                {
+                    if (obj.IsActivar)
+                    {
+                        control.Enabled = activo;
+                    }
+                }
+                else if (control is IEvBaseComponent<int> obji)
+                {
+                    if (obji.IsActivar)
+                    {
+                        control.Enabled = activo;
+                    }
+                }
+                else if (control is IEvBaseComponent<bool> objb)
+                {
+                    if (objb.IsActivar)
+                    {
+                        control.Enabled = activo;
+                    }
+                }
+                else if (control is IEvBaseComponent<double> objd)
+                {
+                    if (objd.IsActivar)
+                    {
+                        control.Enabled = activo;
+                    }
+                }
+                else if (control is IEvBaseComponent<object> objo)
+                {
+                    if (objo.IsActivar)
+                    {
+                        control.Enabled = activo;
+                    }
+                }
+                else if (control is IEvBaseComponent<DateTime> objt)
+                {
+                    if (objt.IsActivar)
+                    {
+                        control.Enabled = activo;
+                    }
+                }
+                else if (control is Panel pane)
+                {
+                    Activar(pane, activo);
+                }
+                else if (control is TabControl tab)
+                {
+                    Activar(tab, activo);
+                }
+                else if (control is GroupBox group)
+                {
+                    Activar(group, activo);
                 }
             }
         }
