@@ -86,5 +86,35 @@ namespace Software_Evolution.views.general
         {
             ShowOrFocusForm(new Preferencias());
         }
+
+        private void label12_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button12_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button13_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void menuStrip1_ItemClicked(object sender, ToolStripItemClickedEventArgs e)
+        {
+
+        }
+
+        private void bancosToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

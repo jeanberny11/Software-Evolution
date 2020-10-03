@@ -46,7 +46,7 @@
     
     mimetype: application/x-microsoft.net.object.binary.base64
     value   : The object must be serialized with 
-            : System.Serialization.Formatters.Binary.BinaryFormatter
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
             : and then encoded with base64 encoding.
     
     mimetype: application/x-microsoft.net.object.soap.base64
@@ -60,6 +60,7 @@
             : and then encoded with base64 encoding.
     -->
   <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
     <xsd:element name="root" msdata:IsDataSet="true">
       <xsd:complexType>
         <xsd:choice maxOccurs="unbounded">
@@ -68,9 +69,10 @@
               <xsd:sequence>
                 <xsd:element name="value" type="xsd:string" minOccurs="0" />
               </xsd:sequence>
-              <xsd:attribute name="name" type="xsd:string" />
+              <xsd:attribute name="name" use="required" type="xsd:string" />
               <xsd:attribute name="type" type="xsd:string" />
               <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
             </xsd:complexType>
           </xsd:element>
           <xsd:element name="assembly">
@@ -85,9 +87,10 @@
                 <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
                 <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
               </xsd:sequence>
-              <xsd:attribute name="name" type="xsd:string" msdata:Ordinal="1" />
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
               <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
               <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
             </xsd:complexType>
           </xsd:element>
           <xsd:element name="resheader">
@@ -109,9 +112,343 @@
     <value>2.0</value>
   </resheader>
   <resheader name="reader">
-    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <resheader name="writer">
-    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="business_application_addthedatabase_add_insert_database_db_2313" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\business_application_addthedatabase_add_insert_database_db_2313.ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="user_accounts_15362" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\user_accounts_15362.ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="usd-crypto-cryptocurrency-cryptocurrencies-cash-money-bank-payment_957071" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\usd-crypto-cryptocurrency-cryptocurrencies-cash-money-bank-payment_957071.ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="group_people_people_military_1720" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\group_people_people_military_1720.ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Sales-by-payment-method_254101" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Sales-by-payment-method_254101.ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="registry_settings_15380" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\registry_settings_15380.ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Banking_00019_A_icon-icons.com_59819" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Banking_00019_A_icon-icons.com_59819.ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="business_inventory_maintenance_product_box_boxes_2326" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\business_inventory_maintenance_product_box_boxes_2326.ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="bank_finance_finance_and_business_banking_columns_buildings_icon_128558" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\bank_finance_finance_and_business_banking_columns_buildings_icon_128558.ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="3298599-buy-cart-trolley_106992" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\3298599-buy-cart-trolley_106992.ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Cost-per-Click-(CPC)_icon-icons.com_53723" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Cost-per-Click-(CPC)_icon-icons.com_53723.ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="transfer_viral_transmission_infection_human_communication_engagement_icon_133624" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\transfer_viral_transmission_infection_human_communication_engagement_icon_133624.ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="vault_114361" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\vault_114361.ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="price_tag_icon_150699" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\price_tag_icon_150699.ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Banking_00017_A_icon-icons.com_59837" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Banking_00017_A_icon-icons.com_59837.ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="marketingspeaker_122855" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\marketingspeaker_122855.ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Banking_00011_A_icon-icons.com_59831" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Banking_00011_A_icon-icons.com_59831.ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="refresh_arrows_14418" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\refresh_arrows_14418.ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="1486564175-finance-currency-exchange_81498" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\1486564175-finance-currency-exchange_81498.ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="pay_bill_dollar_money_payment_icon_143261" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\pay_bill_dollar_money_payment_icon_143261.ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="flight_30822" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\flight_30822.ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="billprinter_119613" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\billprinter_119613.ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="customer-service_405411" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\customer-service_405411.ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="diagram-61_244561" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\diagram-61_244561.ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="1457055665_Web_Design_icon-icons.com_54708" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\1457055665_Web_Design_icon-icons.com_54708.ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="mobile_news_app_follow_read_icon_145612" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\mobile_news_app_follow_read_icon_145612.ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="shoppaymentorderbuy-08_icon-icons1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\shoppaymentorderbuy-08_icon-icons.com_738851.ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="new_add_user_16734" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\new_add_user_16734.ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="invoice_dollar_business_document_dollar_coin_icon_150738" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\invoice_dollar_business_document_dollar_coin_icon_150738.ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="actions_document_print_15785" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\actions_document_print_15785.ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="online_payment_dollar_money_icon_143268" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\online_payment_dollar_money_icon_143268.ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Banking_00011_A_icon-icons1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Banking_00011_A_icon-icons.com_598311.ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="business_salesreport_salesreport_negocio_2353" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\business_salesreport_salesreport_negocio_2353.ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="shoppaymentorderbuy-04_icon-icons.com_73886" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\shoppaymentorderbuy-04_icon-icons.com_73886.ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="globe_world_22289" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\globe_world_22289.ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="folder_configurations_21361" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\folder_configurations_21361.ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="box_full_products_14639" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\box_full_products_14639.ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="credit_card_22167" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\credit_card_22167.ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="technicalsupport_support_representative_person_people_man_1641" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\technicalsupport_support_representative_person_people_man_1641.ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="employee__icon-icons.com_76984" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\employee__icon-icons.com_76984.ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="3298599-buy-cart-trolley_1069921" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\3298599-buy-cart-trolley_1069921.ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="facebook_icon-icons.com_59205" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\facebook_icon-icons.com_59205.ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="programs_97512" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\programs_97512.ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="1491254081-19document-list_82931" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\1491254081-19document-list_82931.ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="diagram-59_24458" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\diagram-59_24458.ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="usd-crypto-cryptocurrency-cryptocurrencies-cash-money-bank-payment_95707" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\usd-crypto-cryptocurrency-cryptocurrencies-cash-money-bank-payment_95707.ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="businss_invest_money_icon_127223" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\businss_invest_money_icon_127223.ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="analytics_117968" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\analytics_117968.ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="1486564168-finance-bank-check_81495" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\1486564168-finance-bank-check_81495.ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="customer-service_40541" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\customer-service_40541.ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="diagram-59_244581" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\diagram-59_244581.ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="iconfinder-documents01-1622837_121952" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\iconfinder-documents01-1622837_121952.ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="4124848-affiliate-marketing-aim-audience-targeting-focus-human-resources_114107" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\4124848-affiliate-marketing-aim-audience-targeting-focus-human-resources_114107.ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Administrative_Tools_26312" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Administrative_Tools_26312.ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="box_search_product_ean_barcode_icon_148907" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\box_search_product_ean_barcode_icon_148907.ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="seotarget_122858" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\seotarget_122858.ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="coin_money_pay_payment_icon_143264" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\coin_money_pay_payment_icon_143264.ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="payment_app_finger_icon_143258" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\payment_app_finger_icon_143258.ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Sales-by-payment-method_25410" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Sales-by-payment-method_25410.ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="file_manager_19718" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\file_manager_19718.ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="minuscirclehd_106108" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\minuscirclehd_106108.ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ic_assignment_turned_in_128_28214" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ic_assignment_turned_in_128_28214.ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="barcode_shop_online_ecommerce_shopping-1_icon-icons.com_61653" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\barcode_shop_online_ecommerce_shopping-1_icon-icons.com_61653.ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Banking_00006_A_icon-icons.com_59820" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Banking_00006_A_icon-icons.com_59820.ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Banking_00006_A_icon-icons1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Banking_00006_A_icon-icons.com_598201.ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="business_computer_desktop_dollar_coin_currency_icon_150707" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\business_computer_desktop_dollar_coin_currency_icon_150707.ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="shoppaymentorderbuy-08_icon-icons.com_73885" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\shoppaymentorderbuy-08_icon-icons.com_73885.ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Forklift_35553" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Forklift_35553.ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="1491579542-yumminkysocialmedia22_83078" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\1491579542-yumminkysocialmedia22_83078.ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="businessapplication_database_database_accepteitheracceptthedatabase_connect_connectdatabase_negocios_aplicacion_basededato_2310" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\businessapplication_database_database_accepteitheracceptthedatabase_connect_connectdatabase_negocios_aplicacion_basededato_2310.ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="help_question_1566" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\help_question_1566.ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="system_102355" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\system_102355.ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="datainboth_directions_transfer_arrow_3091" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\datainboth_directions_transfer_arrow_3091.ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="3440907-business-cash-currency-ecommerce-finance-money-payment_107542" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\3440907-business-cash-currency-ecommerce-finance-money-payment_107542.ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Banking_00006_A_icon-icons2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Banking_00006_A_icon-icons.com_598202.ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="business_coin_currency_file_finance_folder_marketing_money_icon_150695" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\business_coin_currency_file_finance_folder_marketing_money_icon_150695.ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="1455554358_line-19_icon-icons.com_53315" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\1455554358_line-19_icon-icons.com_53315.ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="mobile_news_app_follow_read_icon_1456121" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\mobile_news_app_follow_read_icon_1456121.ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="1486564182-finance-safe_81496" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\1486564182-finance-safe_81496.ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="inbox-1_icon-icons.com_65974" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\inbox-1_icon-icons.com_65974.ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="unnamed (1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\unnamed (1).ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="IMG-03" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\IMG-03.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Affiliate-Marketing_icon-icons.com_53702" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Affiliate-Marketing_icon-icons.com_53702.ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Money_27019" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Money_27019.ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="add_icon-icons.com_74429" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\add_icon-icons.com_74429.ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="folder_settings_tools_22597" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\folder_settings_tools_22597.ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Bill_icon-icons.com_51203" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Bill_icon-icons.com_51203.ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="folder_type_component_opened_icon_130002" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\folder_type_component_opened_icon_130002.ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="bank_icon_1290411" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\bank_icon_1290411.ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="diagram-61_24456" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\diagram-61_24456.ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="iconfinder-documents01-1622837_1219521" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\iconfinder-documents01-1622837_1219521.ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="winprops_config_5990" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\winprops_config_5990.ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="userpassword_deusuari_787" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\userpassword_deusuari_787.ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ic_assignment_return_128_28215" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ic_assignment_return_128_28215.ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="shoppaymentorderbuy-23_icon-icons.com_73884" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\shoppaymentorderbuy-23_icon-icons.com_73884.ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="buyhand_106610" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\buyhand_106610.ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="edit_icon_129126" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\edit_icon_129126.ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="minuscirclehd_1061081" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\minuscirclehd_1061081.ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Banking_00019_A_icon-icons1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Banking_00019_A_icon-icons.com_598191.ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="adduser_1103" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\adduser_1103.ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Libra_34522" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Libra_34522.ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="creditcard_78919" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\creditcard_78919.ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="3440907-business-cash-currency-ecommerce-finance-money-payment_1075421" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\3440907-business-cash-currency-ecommerce-finance-money-payment_1075421.ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="IMG-03 (1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\IMG-03 (1).ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="employee__icon-icons1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\employee__icon-icons.com_769841.ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="1486394955-13-tax_80558" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\1486394955-13-tax_80558.ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="bank_icon_129041" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\bank_icon_129041.ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="if-advantage-protection-1034363_88839" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\if-advantage-protection-1034363_88839.ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="business_award_finance_icon_150736" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\business_award_finance_icon_150736.ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="1491580635-yumminkysocialmedia26_83102" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\1491580635-yumminkysocialmedia26_83102.ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="exit_closethesession_close_6317" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\exit_closethesession_close_6317.ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
 </root>
