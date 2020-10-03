@@ -101,6 +101,7 @@
             this.evIntegerTextBox1 = new Software_Evolution.customcontrols.EvIntegerTextBox();
             this.evLabel18 = new Software_Evolution.customcontrols.EvLabel();
             this.tabPage4 = new System.Windows.Forms.TabPage();
+            this.evTextBox11 = new Software_Evolution.customcontrols.EvTextBox();
             this.evIntegerTextBox24 = new Software_Evolution.customcontrols.EvIntegerTextBox();
             this.evLabel41 = new Software_Evolution.customcontrols.EvLabel();
             this.evIntegerTextBox22 = new Software_Evolution.customcontrols.EvIntegerTextBox();
@@ -108,7 +109,6 @@
             this.evLabel39 = new Software_Evolution.customcontrols.EvLabel();
             this.evLabel40 = new Software_Evolution.customcontrols.EvLabel();
             this.evIntegerTextBox13 = new Software_Evolution.customcontrols.EvIntegerTextBox();
-            this.evIntegerTextBox14 = new Software_Evolution.customcontrols.EvIntegerTextBox();
             this.evIntegerTextBox15 = new Software_Evolution.customcontrols.EvIntegerTextBox();
             this.evIntegerTextBox16 = new Software_Evolution.customcontrols.EvIntegerTextBox();
             this.evIntegerTextBox17 = new Software_Evolution.customcontrols.EvIntegerTextBox();
@@ -140,12 +140,12 @@
             this.button1 = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.tabPage7 = new System.Windows.Forms.TabPage();
+            this.evTextBox28 = new Software_Evolution.customcontrols.EvTextBox();
             this.evCheckBox13 = new Software_Evolution.customcontrols.EvCheckBox();
             this.evDateTimePicker5 = new Software_Evolution.customcontrols.EvDateTimePicker();
             this.cmb_interfacefacturacion = new Software_Evolution.customcontrols.EvComboBox();
             this.evTextBox20 = new Software_Evolution.customcontrols.EvTextBox();
             this.evTextBox19 = new Software_Evolution.customcontrols.EvTextBox();
-            this.evIntegerTextBox32 = new Software_Evolution.customcontrols.EvIntegerTextBox();
             this.evNumericTextBox9 = new Software_Evolution.customcontrols.EvNumericTextBox();
             this.evTextBox18 = new Software_Evolution.customcontrols.EvTextBox();
             this.evDateTimePicker4 = new Software_Evolution.customcontrols.EvDateTimePicker();
@@ -282,7 +282,7 @@
             this.tabPage14 = new System.Windows.Forms.TabPage();
             this.tabControl3 = new System.Windows.Forms.TabControl();
             this.tabPage15 = new System.Windows.Forms.TabPage();
-            this.gridControl3 = new DevExpress.XtraGrid.GridControl();
+            this.gridcotimonto = new DevExpress.XtraGrid.GridControl();
             this.gridView3 = new DevExpress.XtraGrid.Views.Grid.GridView();
             this.gridColumn8 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.gridColumn9 = new DevExpress.XtraGrid.Columns.GridColumn();
@@ -290,16 +290,16 @@
             this.gridColumn11 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.button5 = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
-            this.evIntegerTextBox33 = new Software_Evolution.customcontrols.EvIntegerTextBox();
-            this.evNumericTextBox15 = new Software_Evolution.customcontrols.EvNumericTextBox();
-            this.evNumericTextBox14 = new Software_Evolution.customcontrols.EvNumericTextBox();
+            this.t_cantidadcoti = new Software_Evolution.customcontrols.EvIntegerTextBox();
+            this.t_montofinal = new Software_Evolution.customcontrols.EvNumericTextBox();
+            this.t_montoinicial = new Software_Evolution.customcontrols.EvNumericTextBox();
             this.cmb_moneda = new Software_Evolution.customcontrols.EvComboBox();
             this.evLabel88 = new Software_Evolution.customcontrols.EvLabel();
             this.evLabel87 = new Software_Evolution.customcontrols.EvLabel();
             this.evLabel86 = new Software_Evolution.customcontrols.EvLabel();
             this.evLabel85 = new Software_Evolution.customcontrols.EvLabel();
             this.tabPage16 = new System.Windows.Forms.TabPage();
-            this.evComboBox5 = new Software_Evolution.customcontrols.EvComboBox();
+            this.cmb_moneda2 = new Software_Evolution.customcontrols.EvComboBox();
             this.evLabel89 = new Software_Evolution.customcontrols.EvLabel();
             this.gridControl4 = new DevExpress.XtraGrid.GridControl();
             this.gridView4 = new DevExpress.XtraGrid.Views.Grid.GridView();
@@ -308,7 +308,7 @@
             this.gridColumn14 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.button6 = new System.Windows.Forms.Button();
             this.button7 = new System.Windows.Forms.Button();
-            this.evNumericTextBox17 = new Software_Evolution.customcontrols.EvNumericTextBox();
+            this.t_montominimo = new Software_Evolution.customcontrols.EvNumericTextBox();
             this.cmb_departamento = new Software_Evolution.customcontrols.EvComboBox();
             this.evLabel91 = new Software_Evolution.customcontrols.EvLabel();
             this.evLabel92 = new Software_Evolution.customcontrols.EvLabel();
@@ -347,7 +347,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.evIntegerTextBox22.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.evIntegerTextBox23.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.evIntegerTextBox13.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.evIntegerTextBox14.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.evIntegerTextBox15.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.evIntegerTextBox16.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.evIntegerTextBox17.Properties)).BeginInit();
@@ -365,7 +364,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.tabPage7.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.cmb_interfacefacturacion.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.evIntegerTextBox32.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.evNumericTextBox9.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.evIntegerTextBox31.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.evIntegerTextBox30.Properties)).BeginInit();
@@ -396,17 +394,17 @@
             this.tabPage14.SuspendLayout();
             this.tabControl3.SuspendLayout();
             this.tabPage15.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.gridControl3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridcotimonto)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.evIntegerTextBox33.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.evNumericTextBox15.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.evNumericTextBox14.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.t_cantidadcoti.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.t_montofinal.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.t_montoinicial.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.cmb_moneda.Properties)).BeginInit();
             this.tabPage16.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.evComboBox5.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.cmb_moneda2.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridControl4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView4)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.evNumericTextBox17.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.t_montominimo.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.cmb_departamento.Properties)).BeginInit();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
@@ -478,7 +476,7 @@
             this.cmb_concepto.FieldName = "f_retencion_iva_venta";
             this.cmb_concepto.IsLimpiar = true;
             this.cmb_concepto.IsSalvar = true;
-            this.cmb_concepto.IsValidar = true;
+            this.cmb_concepto.IsValidar = false;
             this.cmb_concepto.Location = new System.Drawing.Point(216, 459);
             this.cmb_concepto.Name = "cmb_concepto";
             this.cmb_concepto.NombreProcedimiento = "p_concepto_retenciones";
@@ -583,7 +581,7 @@
             // 
             // evTextBox10
             // 
-            this.evTextBox10.EnterTab = true;
+            this.evTextBox10.EnterTab = false;
             this.evTextBox10.FieldName = "f_mensajefactura_cred";
             this.evTextBox10.IsLimpiar = true;
             this.evTextBox10.IsSalvar = true;
@@ -607,7 +605,7 @@
             // 
             // evTextBox9
             // 
-            this.evTextBox9.EnterTab = true;
+            this.evTextBox9.EnterTab = false;
             this.evTextBox9.FieldName = "f_mensajefactura";
             this.evTextBox9.IsLimpiar = true;
             this.evTextBox9.IsSalvar = true;
@@ -856,7 +854,7 @@
             this.evNumericTextBox1.FieldName = "f_itbis";
             this.evNumericTextBox1.IsLimpiar = true;
             this.evNumericTextBox1.IsSalvar = true;
-            this.evNumericTextBox1.IsValidar = false;
+            this.evNumericTextBox1.IsValidar = true;
             this.evNumericTextBox1.Location = new System.Drawing.Point(171, 55);
             this.evNumericTextBox1.Margin = new System.Windows.Forms.Padding(4);
             this.evNumericTextBox1.Name = "evNumericTextBox1";
@@ -923,7 +921,7 @@
             // 
             // evTextBox5
             // 
-            this.evTextBox5.EnterTab = true;
+            this.evTextBox5.EnterTab = false;
             this.evTextBox5.FieldName = "f_direccion";
             this.evTextBox5.IsLimpiar = true;
             this.evTextBox5.IsSalvar = true;
@@ -993,11 +991,11 @@
             // 
             // evTextBox2
             // 
-            this.evTextBox2.EnterTab = true;
+            this.evTextBox2.EnterTab = false;
             this.evTextBox2.FieldName = "f_empresa";
             this.evTextBox2.IsLimpiar = true;
             this.evTextBox2.IsSalvar = true;
-            this.evTextBox2.IsValidar = false;
+            this.evTextBox2.IsValidar = true;
             this.evTextBox2.Location = new System.Drawing.Point(164, 42);
             this.evTextBox2.Multiline = true;
             this.evTextBox2.Name = "evTextBox2";
@@ -1021,7 +1019,7 @@
             this.evTextBox1.FieldName = "f_nombrecia";
             this.evTextBox1.IsLimpiar = true;
             this.evTextBox1.IsSalvar = true;
-            this.evTextBox1.IsValidar = false;
+            this.evTextBox1.IsValidar = true;
             this.evTextBox1.Location = new System.Drawing.Point(164, 13);
             this.evTextBox1.Name = "evTextBox1";
             this.evTextBox1.Size = new System.Drawing.Size(456, 22);
@@ -1101,7 +1099,7 @@
             this.evIntegerTextBox10.FieldName = "f_formato_conduce";
             this.evIntegerTextBox10.IsLimpiar = true;
             this.evIntegerTextBox10.IsSalvar = true;
-            this.evIntegerTextBox10.IsValidar = true;
+            this.evIntegerTextBox10.IsValidar = false;
             this.evIntegerTextBox10.Location = new System.Drawing.Point(568, 94);
             this.evIntegerTextBox10.Margin = new System.Windows.Forms.Padding(8);
             this.evIntegerTextBox10.Name = "evIntegerTextBox10";
@@ -1120,7 +1118,7 @@
             this.evIntegerTextBox11.FieldName = "f_formato_financiamiento";
             this.evIntegerTextBox11.IsLimpiar = true;
             this.evIntegerTextBox11.IsSalvar = true;
-            this.evIntegerTextBox11.IsValidar = true;
+            this.evIntegerTextBox11.IsValidar = false;
             this.evIntegerTextBox11.Location = new System.Drawing.Point(568, 55);
             this.evIntegerTextBox11.Margin = new System.Windows.Forms.Padding(6);
             this.evIntegerTextBox11.Name = "evIntegerTextBox11";
@@ -1139,7 +1137,7 @@
             this.evIntegerTextBox12.FieldName = "f_pagos_adelantado";
             this.evIntegerTextBox12.IsLimpiar = true;
             this.evIntegerTextBox12.IsSalvar = true;
-            this.evIntegerTextBox12.IsValidar = true;
+            this.evIntegerTextBox12.IsValidar = false;
             this.evIntegerTextBox12.Location = new System.Drawing.Point(568, 16);
             this.evIntegerTextBox12.Margin = new System.Windows.Forms.Padding(5);
             this.evIntegerTextBox12.Name = "evIntegerTextBox12";
@@ -1158,7 +1156,7 @@
             this.evIntegerTextBox9.FieldName = "f_formato_cxc";
             this.evIntegerTextBox9.IsLimpiar = true;
             this.evIntegerTextBox9.IsSalvar = true;
-            this.evIntegerTextBox9.IsValidar = true;
+            this.evIntegerTextBox9.IsValidar = false;
             this.evIntegerTextBox9.Location = new System.Drawing.Point(166, 328);
             this.evIntegerTextBox9.Margin = new System.Windows.Forms.Padding(6);
             this.evIntegerTextBox9.Name = "evIntegerTextBox9";
@@ -1177,7 +1175,7 @@
             this.evIntegerTextBox8.FieldName = "f_formato_recibo";
             this.evIntegerTextBox8.IsLimpiar = true;
             this.evIntegerTextBox8.IsSalvar = true;
-            this.evIntegerTextBox8.IsValidar = true;
+            this.evIntegerTextBox8.IsValidar = false;
             this.evIntegerTextBox8.Location = new System.Drawing.Point(166, 289);
             this.evIntegerTextBox8.Margin = new System.Windows.Forms.Padding(6);
             this.evIntegerTextBox8.Name = "evIntegerTextBox8";
@@ -1196,7 +1194,7 @@
             this.evIntegerTextBox7.FieldName = "f_formato_nc";
             this.evIntegerTextBox7.IsLimpiar = true;
             this.evIntegerTextBox7.IsSalvar = true;
-            this.evIntegerTextBox7.IsValidar = true;
+            this.evIntegerTextBox7.IsValidar = false;
             this.evIntegerTextBox7.Location = new System.Drawing.Point(166, 250);
             this.evIntegerTextBox7.Margin = new System.Windows.Forms.Padding(6);
             this.evIntegerTextBox7.Name = "evIntegerTextBox7";
@@ -1215,7 +1213,7 @@
             this.evIntegerTextBox6.FieldName = "f_formato_nd";
             this.evIntegerTextBox6.IsLimpiar = true;
             this.evIntegerTextBox6.IsSalvar = true;
-            this.evIntegerTextBox6.IsValidar = true;
+            this.evIntegerTextBox6.IsValidar = false;
             this.evIntegerTextBox6.Location = new System.Drawing.Point(166, 211);
             this.evIntegerTextBox6.Margin = new System.Windows.Forms.Padding(6);
             this.evIntegerTextBox6.Name = "evIntegerTextBox6";
@@ -1234,7 +1232,7 @@
             this.evIntegerTextBox5.FieldName = "f_formato_factura_dev";
             this.evIntegerTextBox5.IsLimpiar = true;
             this.evIntegerTextBox5.IsSalvar = true;
-            this.evIntegerTextBox5.IsValidar = true;
+            this.evIntegerTextBox5.IsValidar = false;
             this.evIntegerTextBox5.Location = new System.Drawing.Point(166, 172);
             this.evIntegerTextBox5.Margin = new System.Windows.Forms.Padding(6);
             this.evIntegerTextBox5.Name = "evIntegerTextBox5";
@@ -1253,7 +1251,7 @@
             this.evIntegerTextBox4.FieldName = "f_formato_factura";
             this.evIntegerTextBox4.IsLimpiar = true;
             this.evIntegerTextBox4.IsSalvar = true;
-            this.evIntegerTextBox4.IsValidar = true;
+            this.evIntegerTextBox4.IsValidar = false;
             this.evIntegerTextBox4.Location = new System.Drawing.Point(166, 133);
             this.evIntegerTextBox4.Margin = new System.Windows.Forms.Padding(6);
             this.evIntegerTextBox4.Name = "evIntegerTextBox4";
@@ -1272,7 +1270,7 @@
             this.evIntegerTextBox3.FieldName = "f_formato_cotizacion";
             this.evIntegerTextBox3.IsLimpiar = true;
             this.evIntegerTextBox3.IsSalvar = true;
-            this.evIntegerTextBox3.IsValidar = true;
+            this.evIntegerTextBox3.IsValidar = false;
             this.evIntegerTextBox3.Location = new System.Drawing.Point(166, 94);
             this.evIntegerTextBox3.Margin = new System.Windows.Forms.Padding(6);
             this.evIntegerTextBox3.Name = "evIntegerTextBox3";
@@ -1291,7 +1289,7 @@
             this.evIntegerTextBox2.FieldName = "f_formato_nota_entrega";
             this.evIntegerTextBox2.IsLimpiar = true;
             this.evIntegerTextBox2.IsSalvar = true;
-            this.evIntegerTextBox2.IsValidar = true;
+            this.evIntegerTextBox2.IsValidar = false;
             this.evIntegerTextBox2.Location = new System.Drawing.Point(166, 55);
             this.evIntegerTextBox2.Margin = new System.Windows.Forms.Padding(5);
             this.evIntegerTextBox2.Name = "evIntegerTextBox2";
@@ -1420,7 +1418,7 @@
             this.evIntegerTextBox1.FieldName = "f_formato_pedido";
             this.evIntegerTextBox1.IsLimpiar = true;
             this.evIntegerTextBox1.IsSalvar = true;
-            this.evIntegerTextBox1.IsValidar = true;
+            this.evIntegerTextBox1.IsValidar = false;
             this.evIntegerTextBox1.Location = new System.Drawing.Point(166, 16);
             this.evIntegerTextBox1.Margin = new System.Windows.Forms.Padding(4);
             this.evIntegerTextBox1.Name = "evIntegerTextBox1";
@@ -1444,6 +1442,7 @@
             // 
             // tabPage4
             // 
+            this.tabPage4.Controls.Add(this.evTextBox11);
             this.tabPage4.Controls.Add(this.evIntegerTextBox24);
             this.tabPage4.Controls.Add(this.evLabel41);
             this.tabPage4.Controls.Add(this.evIntegerTextBox22);
@@ -1451,7 +1450,6 @@
             this.tabPage4.Controls.Add(this.evLabel39);
             this.tabPage4.Controls.Add(this.evLabel40);
             this.tabPage4.Controls.Add(this.evIntegerTextBox13);
-            this.tabPage4.Controls.Add(this.evIntegerTextBox14);
             this.tabPage4.Controls.Add(this.evIntegerTextBox15);
             this.tabPage4.Controls.Add(this.evIntegerTextBox16);
             this.tabPage4.Controls.Add(this.evIntegerTextBox17);
@@ -1476,6 +1474,19 @@
             this.tabPage4.Text = "Formato Proveedor";
             this.tabPage4.UseVisualStyleBackColor = true;
             // 
+            // evTextBox11
+            // 
+            this.evTextBox11.EnterTab = true;
+            this.evTextBox11.FieldName = "f_formato_cnd";
+            this.evTextBox11.IsLimpiar = true;
+            this.evTextBox11.IsSalvar = true;
+            this.evTextBox11.IsValidar = false;
+            this.evTextBox11.Location = new System.Drawing.Point(235, 277);
+            this.evTextBox11.Name = "evTextBox11";
+            this.evTextBox11.Size = new System.Drawing.Size(181, 22);
+            this.evTextBox11.TabIndex = 45;
+            this.evTextBox11.Valor = "";
+            // 
             // evIntegerTextBox24
             // 
             this.evIntegerTextBox24.EditValue = 0;
@@ -1483,7 +1494,7 @@
             this.evIntegerTextBox24.FieldName = "f_formato_liquidacion";
             this.evIntegerTextBox24.IsLimpiar = true;
             this.evIntegerTextBox24.IsSalvar = true;
-            this.evIntegerTextBox24.IsValidar = true;
+            this.evIntegerTextBox24.IsValidar = false;
             this.evIntegerTextBox24.Location = new System.Drawing.Point(584, 4);
             this.evIntegerTextBox24.Margin = new System.Windows.Forms.Padding(6);
             this.evIntegerTextBox24.Name = "evIntegerTextBox24";
@@ -1512,7 +1523,7 @@
             this.evIntegerTextBox22.FieldName = "f_formato_cxp";
             this.evIntegerTextBox22.IsLimpiar = true;
             this.evIntegerTextBox22.IsSalvar = true;
-            this.evIntegerTextBox22.IsValidar = true;
+            this.evIntegerTextBox22.IsValidar = false;
             this.evIntegerTextBox22.Location = new System.Drawing.Point(235, 393);
             this.evIntegerTextBox22.Margin = new System.Windows.Forms.Padding(10);
             this.evIntegerTextBox22.Name = "evIntegerTextBox22";
@@ -1531,7 +1542,7 @@
             this.evIntegerTextBox23.FieldName = "f_formato_ck";
             this.evIntegerTextBox23.IsLimpiar = true;
             this.evIntegerTextBox23.IsSalvar = true;
-            this.evIntegerTextBox23.IsValidar = true;
+            this.evIntegerTextBox23.IsValidar = false;
             this.evIntegerTextBox23.Location = new System.Drawing.Point(235, 354);
             this.evIntegerTextBox23.Margin = new System.Windows.Forms.Padding(10);
             this.evIntegerTextBox23.Name = "evIntegerTextBox23";
@@ -1570,7 +1581,7 @@
             this.evIntegerTextBox13.FieldName = "f_formato_cnc";
             this.evIntegerTextBox13.IsLimpiar = true;
             this.evIntegerTextBox13.IsSalvar = true;
-            this.evIntegerTextBox13.IsValidar = true;
+            this.evIntegerTextBox13.IsValidar = false;
             this.evIntegerTextBox13.Location = new System.Drawing.Point(235, 316);
             this.evIntegerTextBox13.Margin = new System.Windows.Forms.Padding(8);
             this.evIntegerTextBox13.Name = "evIntegerTextBox13";
@@ -1582,25 +1593,6 @@
             this.evIntegerTextBox13.Size = new System.Drawing.Size(181, 22);
             this.evIntegerTextBox13.TabIndex = 38;
             // 
-            // evIntegerTextBox14
-            // 
-            this.evIntegerTextBox14.EditValue = 0;
-            this.evIntegerTextBox14.EnterTab = true;
-            this.evIntegerTextBox14.FieldName = "f_formato_cnd";
-            this.evIntegerTextBox14.IsLimpiar = true;
-            this.evIntegerTextBox14.IsSalvar = true;
-            this.evIntegerTextBox14.IsValidar = true;
-            this.evIntegerTextBox14.Location = new System.Drawing.Point(235, 277);
-            this.evIntegerTextBox14.Margin = new System.Windows.Forms.Padding(8);
-            this.evIntegerTextBox14.Name = "evIntegerTextBox14";
-            this.evIntegerTextBox14.Properties.Appearance.Options.UseTextOptions = true;
-            this.evIntegerTextBox14.Properties.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Far;
-            this.evIntegerTextBox14.Properties.Mask.EditMask = "f0";
-            this.evIntegerTextBox14.Properties.Mask.MaskType = DevExpress.XtraEditors.Mask.MaskType.Numeric;
-            this.evIntegerTextBox14.Properties.Mask.UseMaskAsDisplayFormat = true;
-            this.evIntegerTextBox14.Size = new System.Drawing.Size(181, 22);
-            this.evIntegerTextBox14.TabIndex = 37;
-            // 
             // evIntegerTextBox15
             // 
             this.evIntegerTextBox15.EditValue = 0;
@@ -1608,7 +1600,7 @@
             this.evIntegerTextBox15.FieldName = "f_formato_compra_dev";
             this.evIntegerTextBox15.IsLimpiar = true;
             this.evIntegerTextBox15.IsSalvar = true;
-            this.evIntegerTextBox15.IsValidar = true;
+            this.evIntegerTextBox15.IsValidar = false;
             this.evIntegerTextBox15.Location = new System.Drawing.Point(235, 238);
             this.evIntegerTextBox15.Margin = new System.Windows.Forms.Padding(8);
             this.evIntegerTextBox15.Name = "evIntegerTextBox15";
@@ -1627,7 +1619,7 @@
             this.evIntegerTextBox16.FieldName = "f_formato_compra";
             this.evIntegerTextBox16.IsLimpiar = true;
             this.evIntegerTextBox16.IsSalvar = true;
-            this.evIntegerTextBox16.IsValidar = true;
+            this.evIntegerTextBox16.IsValidar = false;
             this.evIntegerTextBox16.Location = new System.Drawing.Point(235, 199);
             this.evIntegerTextBox16.Margin = new System.Windows.Forms.Padding(8);
             this.evIntegerTextBox16.Name = "evIntegerTextBox16";
@@ -1646,7 +1638,7 @@
             this.evIntegerTextBox17.FieldName = "f_formato_orden2";
             this.evIntegerTextBox17.IsLimpiar = true;
             this.evIntegerTextBox17.IsSalvar = true;
-            this.evIntegerTextBox17.IsValidar = true;
+            this.evIntegerTextBox17.IsValidar = false;
             this.evIntegerTextBox17.Location = new System.Drawing.Point(235, 160);
             this.evIntegerTextBox17.Margin = new System.Windows.Forms.Padding(8);
             this.evIntegerTextBox17.Name = "evIntegerTextBox17";
@@ -1665,7 +1657,7 @@
             this.evIntegerTextBox18.FieldName = "f_formato_orden";
             this.evIntegerTextBox18.IsLimpiar = true;
             this.evIntegerTextBox18.IsSalvar = true;
-            this.evIntegerTextBox18.IsValidar = true;
+            this.evIntegerTextBox18.IsValidar = false;
             this.evIntegerTextBox18.Location = new System.Drawing.Point(235, 121);
             this.evIntegerTextBox18.Margin = new System.Windows.Forms.Padding(8);
             this.evIntegerTextBox18.Name = "evIntegerTextBox18";
@@ -1684,7 +1676,7 @@
             this.evIntegerTextBox19.FieldName = "f_formato_cotizacion3";
             this.evIntegerTextBox19.IsLimpiar = true;
             this.evIntegerTextBox19.IsSalvar = true;
-            this.evIntegerTextBox19.IsValidar = true;
+            this.evIntegerTextBox19.IsValidar = false;
             this.evIntegerTextBox19.Location = new System.Drawing.Point(235, 82);
             this.evIntegerTextBox19.Margin = new System.Windows.Forms.Padding(8);
             this.evIntegerTextBox19.Name = "evIntegerTextBox19";
@@ -1703,7 +1695,7 @@
             this.evIntegerTextBox20.FieldName = "f_formato_cotizacion2";
             this.evIntegerTextBox20.IsLimpiar = true;
             this.evIntegerTextBox20.IsSalvar = true;
-            this.evIntegerTextBox20.IsValidar = true;
+            this.evIntegerTextBox20.IsValidar = false;
             this.evIntegerTextBox20.Location = new System.Drawing.Point(235, 43);
             this.evIntegerTextBox20.Margin = new System.Windows.Forms.Padding(6);
             this.evIntegerTextBox20.Name = "evIntegerTextBox20";
@@ -1802,7 +1794,7 @@
             this.evIntegerTextBox21.FieldName = "f_formato_requisicion";
             this.evIntegerTextBox21.IsLimpiar = true;
             this.evIntegerTextBox21.IsSalvar = true;
-            this.evIntegerTextBox21.IsValidar = true;
+            this.evIntegerTextBox21.IsValidar = false;
             this.evIntegerTextBox21.Location = new System.Drawing.Point(235, 4);
             this.evIntegerTextBox21.Margin = new System.Windows.Forms.Padding(5);
             this.evIntegerTextBox21.Name = "evIntegerTextBox21";
@@ -1851,7 +1843,7 @@
             this.evIntegerTextBox25.FieldName = "f_formato_bnt";
             this.evIntegerTextBox25.IsLimpiar = true;
             this.evIntegerTextBox25.IsSalvar = true;
-            this.evIntegerTextBox25.IsValidar = true;
+            this.evIntegerTextBox25.IsValidar = false;
             this.evIntegerTextBox25.Location = new System.Drawing.Point(229, 173);
             this.evIntegerTextBox25.Margin = new System.Windows.Forms.Padding(10);
             this.evIntegerTextBox25.Name = "evIntegerTextBox25";
@@ -1870,7 +1862,7 @@
             this.evIntegerTextBox26.FieldName = "f_formato_transacciones";
             this.evIntegerTextBox26.IsLimpiar = true;
             this.evIntegerTextBox26.IsSalvar = true;
-            this.evIntegerTextBox26.IsValidar = true;
+            this.evIntegerTextBox26.IsValidar = false;
             this.evIntegerTextBox26.Location = new System.Drawing.Point(229, 134);
             this.evIntegerTextBox26.Margin = new System.Windows.Forms.Padding(10);
             this.evIntegerTextBox26.Name = "evIntegerTextBox26";
@@ -1889,7 +1881,7 @@
             this.evIntegerTextBox27.FieldName = "f_formato_deposito";
             this.evIntegerTextBox27.IsLimpiar = true;
             this.evIntegerTextBox27.IsSalvar = true;
-            this.evIntegerTextBox27.IsValidar = true;
+            this.evIntegerTextBox27.IsValidar = false;
             this.evIntegerTextBox27.Location = new System.Drawing.Point(229, 95);
             this.evIntegerTextBox27.Margin = new System.Windows.Forms.Padding(10);
             this.evIntegerTextBox27.Name = "evIntegerTextBox27";
@@ -1908,7 +1900,7 @@
             this.evIntegerTextBox28.FieldName = "f_formato_bnc";
             this.evIntegerTextBox28.IsLimpiar = true;
             this.evIntegerTextBox28.IsSalvar = true;
-            this.evIntegerTextBox28.IsValidar = true;
+            this.evIntegerTextBox28.IsValidar = false;
             this.evIntegerTextBox28.Location = new System.Drawing.Point(229, 56);
             this.evIntegerTextBox28.Margin = new System.Windows.Forms.Padding(8);
             this.evIntegerTextBox28.Name = "evIntegerTextBox28";
@@ -1967,7 +1959,7 @@
             this.evIntegerTextBox29.FieldName = "f_formato_bnd";
             this.evIntegerTextBox29.IsLimpiar = true;
             this.evIntegerTextBox29.IsSalvar = true;
-            this.evIntegerTextBox29.IsValidar = true;
+            this.evIntegerTextBox29.IsValidar = false;
             this.evIntegerTextBox29.Location = new System.Drawing.Point(229, 17);
             this.evIntegerTextBox29.Margin = new System.Windows.Forms.Padding(6);
             this.evIntegerTextBox29.Name = "evIntegerTextBox29";
@@ -2003,29 +1995,32 @@
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(670, 15);
+            this.button1.Location = new System.Drawing.Point(858, 15);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(145, 36);
             this.button1.TabIndex = 1;
             this.button1.Text = "Agregar Foto";
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // pictureBox1
             // 
+            this.pictureBox1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.pictureBox1.Location = new System.Drawing.Point(8, 15);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(656, 475);
+            this.pictureBox1.Size = new System.Drawing.Size(824, 475);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
             // 
             // tabPage7
             // 
+            this.tabPage7.Controls.Add(this.evTextBox28);
             this.tabPage7.Controls.Add(this.evCheckBox13);
             this.tabPage7.Controls.Add(this.evDateTimePicker5);
             this.tabPage7.Controls.Add(this.cmb_interfacefacturacion);
             this.tabPage7.Controls.Add(this.evTextBox20);
             this.tabPage7.Controls.Add(this.evTextBox19);
-            this.tabPage7.Controls.Add(this.evIntegerTextBox32);
             this.tabPage7.Controls.Add(this.evNumericTextBox9);
             this.tabPage7.Controls.Add(this.evTextBox18);
             this.tabPage7.Controls.Add(this.evDateTimePicker4);
@@ -2081,6 +2076,19 @@
             this.tabPage7.Text = "Configuracion";
             this.tabPage7.UseVisualStyleBackColor = true;
             // 
+            // evTextBox28
+            // 
+            this.evTextBox28.EnterTab = true;
+            this.evTextBox28.FieldName = "f_provedor_caja_chicha";
+            this.evTextBox28.IsLimpiar = true;
+            this.evTextBox28.IsSalvar = true;
+            this.evTextBox28.IsValidar = false;
+            this.evTextBox28.Location = new System.Drawing.Point(700, 259);
+            this.evTextBox28.Name = "evTextBox28";
+            this.evTextBox28.Size = new System.Drawing.Size(255, 22);
+            this.evTextBox28.TabIndex = 53;
+            this.evTextBox28.Valor = "";
+            // 
             // evCheckBox13
             // 
             this.evCheckBox13.AutoSize = true;
@@ -2123,7 +2131,7 @@
             this.cmb_interfacefacturacion.FieldName = "f_interface_facturacion";
             this.cmb_interfacefacturacion.IsLimpiar = true;
             this.cmb_interfacefacturacion.IsSalvar = true;
-            this.cmb_interfacefacturacion.IsValidar = true;
+            this.cmb_interfacefacturacion.IsValidar = false;
             this.cmb_interfacefacturacion.Location = new System.Drawing.Point(700, 364);
             this.cmb_interfacefacturacion.Name = "cmb_interfacefacturacion";
             this.cmb_interfacefacturacion.NombreProcedimiento = "p_interfaces_facturacion";
@@ -2141,7 +2149,7 @@
             this.evTextBox20.FieldName = "f_separador_miles";
             this.evTextBox20.IsLimpiar = true;
             this.evTextBox20.IsSalvar = true;
-            this.evTextBox20.IsValidar = true;
+            this.evTextBox20.IsValidar = false;
             this.evTextBox20.Location = new System.Drawing.Point(700, 329);
             this.evTextBox20.Name = "evTextBox20";
             this.evTextBox20.Size = new System.Drawing.Size(255, 22);
@@ -2154,30 +2162,12 @@
             this.evTextBox19.FieldName = "f_separador_decimal";
             this.evTextBox19.IsLimpiar = true;
             this.evTextBox19.IsSalvar = true;
-            this.evTextBox19.IsValidar = true;
+            this.evTextBox19.IsValidar = false;
             this.evTextBox19.Location = new System.Drawing.Point(700, 294);
             this.evTextBox19.Name = "evTextBox19";
             this.evTextBox19.Size = new System.Drawing.Size(255, 22);
             this.evTextBox19.TabIndex = 48;
             this.evTextBox19.Valor = "";
-            // 
-            // evIntegerTextBox32
-            // 
-            this.evIntegerTextBox32.EditValue = 0;
-            this.evIntegerTextBox32.EnterTab = true;
-            this.evIntegerTextBox32.FieldName = "f_provedor_caja_chicha";
-            this.evIntegerTextBox32.IsLimpiar = true;
-            this.evIntegerTextBox32.IsSalvar = true;
-            this.evIntegerTextBox32.IsValidar = true;
-            this.evIntegerTextBox32.Location = new System.Drawing.Point(700, 259);
-            this.evIntegerTextBox32.Name = "evIntegerTextBox32";
-            this.evIntegerTextBox32.Properties.Appearance.Options.UseTextOptions = true;
-            this.evIntegerTextBox32.Properties.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Far;
-            this.evIntegerTextBox32.Properties.Mask.EditMask = "f0";
-            this.evIntegerTextBox32.Properties.Mask.MaskType = DevExpress.XtraEditors.Mask.MaskType.Numeric;
-            this.evIntegerTextBox32.Properties.Mask.UseMaskAsDisplayFormat = true;
-            this.evIntegerTextBox32.Size = new System.Drawing.Size(255, 22);
-            this.evIntegerTextBox32.TabIndex = 47;
             // 
             // evNumericTextBox9
             // 
@@ -2186,7 +2176,7 @@
             this.evNumericTextBox9.FieldName = "f_porcentaje_gavamen";
             this.evNumericTextBox9.IsLimpiar = true;
             this.evNumericTextBox9.IsSalvar = true;
-            this.evNumericTextBox9.IsValidar = true;
+            this.evNumericTextBox9.IsValidar = false;
             this.evNumericTextBox9.Location = new System.Drawing.Point(700, 224);
             this.evNumericTextBox9.Name = "evNumericTextBox9";
             this.evNumericTextBox9.Properties.Appearance.Options.UseTextOptions = true;
@@ -2203,7 +2193,7 @@
             this.evTextBox18.FieldName = "f_moneda";
             this.evTextBox18.IsLimpiar = true;
             this.evTextBox18.IsSalvar = true;
-            this.evTextBox18.IsValidar = true;
+            this.evTextBox18.IsValidar = false;
             this.evTextBox18.Location = new System.Drawing.Point(700, 189);
             this.evTextBox18.Name = "evTextBox18";
             this.evTextBox18.Size = new System.Drawing.Size(255, 22);
@@ -2314,7 +2304,7 @@
             this.evIntegerTextBox31.FieldName = "f_tipo_formato_factura";
             this.evIntegerTextBox31.IsLimpiar = true;
             this.evIntegerTextBox31.IsSalvar = true;
-            this.evIntegerTextBox31.IsValidar = true;
+            this.evIntegerTextBox31.IsValidar = false;
             this.evIntegerTextBox31.Location = new System.Drawing.Point(700, 119);
             this.evIntegerTextBox31.Name = "evIntegerTextBox31";
             this.evIntegerTextBox31.Properties.Appearance.Options.UseTextOptions = true;
@@ -2450,7 +2440,7 @@
             this.evIntegerTextBox30.FieldName = "f_dia_devolucion";
             this.evIntegerTextBox30.IsLimpiar = true;
             this.evIntegerTextBox30.IsSalvar = true;
-            this.evIntegerTextBox30.IsValidar = true;
+            this.evIntegerTextBox30.IsValidar = false;
             this.evIntegerTextBox30.Location = new System.Drawing.Point(211, 469);
             this.evIntegerTextBox30.Name = "evIntegerTextBox30";
             this.evIntegerTextBox30.Properties.Appearance.Options.UseTextOptions = true;
@@ -2468,7 +2458,7 @@
             this.evNumericTextBox8.FieldName = "f_maximo_descuento2";
             this.evNumericTextBox8.IsLimpiar = true;
             this.evNumericTextBox8.IsSalvar = true;
-            this.evNumericTextBox8.IsValidar = true;
+            this.evNumericTextBox8.IsValidar = false;
             this.evNumericTextBox8.Location = new System.Drawing.Point(211, 434);
             this.evNumericTextBox8.Name = "evNumericTextBox8";
             this.evNumericTextBox8.Properties.Appearance.Options.UseTextOptions = true;
@@ -2486,7 +2476,7 @@
             this.evNumericTextBox7.FieldName = "f_maximo_descuento1";
             this.evNumericTextBox7.IsLimpiar = true;
             this.evNumericTextBox7.IsSalvar = true;
-            this.evNumericTextBox7.IsValidar = true;
+            this.evNumericTextBox7.IsValidar = false;
             this.evNumericTextBox7.Location = new System.Drawing.Point(211, 399);
             this.evNumericTextBox7.Name = "evNumericTextBox7";
             this.evNumericTextBox7.Properties.Appearance.Options.UseTextOptions = true;
@@ -2503,7 +2493,7 @@
             this.evTextBox17.FieldName = "f_formato_moneda";
             this.evTextBox17.IsLimpiar = true;
             this.evTextBox17.IsSalvar = true;
-            this.evTextBox17.IsValidar = true;
+            this.evTextBox17.IsValidar = false;
             this.evTextBox17.Location = new System.Drawing.Point(211, 364);
             this.evTextBox17.Name = "evTextBox17";
             this.evTextBox17.Size = new System.Drawing.Size(255, 22);
@@ -2517,7 +2507,7 @@
             this.evNumericTextBox6.FieldName = "f_porcentaje_precios";
             this.evNumericTextBox6.IsLimpiar = true;
             this.evNumericTextBox6.IsSalvar = true;
-            this.evNumericTextBox6.IsValidar = true;
+            this.evNumericTextBox6.IsValidar = false;
             this.evNumericTextBox6.Location = new System.Drawing.Point(211, 329);
             this.evNumericTextBox6.Name = "evNumericTextBox6";
             this.evNumericTextBox6.Properties.Appearance.Options.UseTextOptions = true;
@@ -2535,7 +2525,7 @@
             this.cmb_tipoformato.FieldName = "f_tipo_formato_factura";
             this.cmb_tipoformato.IsLimpiar = true;
             this.cmb_tipoformato.IsSalvar = true;
-            this.cmb_tipoformato.IsValidar = true;
+            this.cmb_tipoformato.IsValidar = false;
             this.cmb_tipoformato.Location = new System.Drawing.Point(211, 294);
             this.cmb_tipoformato.Name = "cmb_tipoformato";
             this.cmb_tipoformato.NombreProcedimiento = "p_formato_impresion_general";
@@ -2553,7 +2543,7 @@
             this.evTextBox16.FieldName = "f_mascara_rif";
             this.evTextBox16.IsLimpiar = true;
             this.evTextBox16.IsSalvar = true;
-            this.evTextBox16.IsValidar = true;
+            this.evTextBox16.IsValidar = false;
             this.evTextBox16.Location = new System.Drawing.Point(211, 259);
             this.evTextBox16.Name = "evTextBox16";
             this.evTextBox16.Size = new System.Drawing.Size(255, 22);
@@ -2566,7 +2556,7 @@
             this.evTextBox15.FieldName = "f_mascara_tel_fax";
             this.evTextBox15.IsLimpiar = true;
             this.evTextBox15.IsSalvar = true;
-            this.evTextBox15.IsValidar = true;
+            this.evTextBox15.IsValidar = false;
             this.evTextBox15.Location = new System.Drawing.Point(211, 224);
             this.evTextBox15.Name = "evTextBox15";
             this.evTextBox15.Size = new System.Drawing.Size(255, 22);
@@ -2579,7 +2569,7 @@
             this.evTextBox14.FieldName = "f_clave_inventario";
             this.evTextBox14.IsLimpiar = true;
             this.evTextBox14.IsSalvar = true;
-            this.evTextBox14.IsValidar = true;
+            this.evTextBox14.IsValidar = false;
             this.evTextBox14.Location = new System.Drawing.Point(211, 189);
             this.evTextBox14.Name = "evTextBox14";
             this.evTextBox14.Size = new System.Drawing.Size(255, 22);
@@ -2592,7 +2582,7 @@
             this.evTextBox13.FieldName = "f_cuenta_beneficio";
             this.evTextBox13.IsLimpiar = true;
             this.evTextBox13.IsSalvar = true;
-            this.evTextBox13.IsValidar = true;
+            this.evTextBox13.IsValidar = false;
             this.evTextBox13.Location = new System.Drawing.Point(211, 154);
             this.evTextBox13.Name = "evTextBox13";
             this.evTextBox13.Size = new System.Drawing.Size(255, 22);
@@ -2785,7 +2775,7 @@
             this.evTextBox12.FieldName = "f_codigo_caja";
             this.evTextBox12.IsLimpiar = true;
             this.evTextBox12.IsSalvar = true;
-            this.evTextBox12.IsValidar = true;
+            this.evTextBox12.IsValidar = false;
             this.evTextBox12.Location = new System.Drawing.Point(211, 14);
             this.evTextBox12.Name = "evTextBox12";
             this.evTextBox12.Size = new System.Drawing.Size(255, 22);
@@ -2997,7 +2987,7 @@
             this.evNumericTextBox13.FieldName = "f_monto_ajuste";
             this.evNumericTextBox13.IsLimpiar = true;
             this.evNumericTextBox13.IsSalvar = true;
-            this.evNumericTextBox13.IsValidar = true;
+            this.evNumericTextBox13.IsValidar = false;
             this.evNumericTextBox13.Location = new System.Drawing.Point(161, 66);
             this.evNumericTextBox13.Name = "evNumericTextBox13";
             this.evNumericTextBox13.Properties.Appearance.Options.UseTextOptions = true;
@@ -3070,7 +3060,7 @@
             this.evNumericTextBox12.FieldName = "f_factor_ajuste_inflacion";
             this.evNumericTextBox12.IsLimpiar = true;
             this.evNumericTextBox12.IsSalvar = true;
-            this.evNumericTextBox12.IsValidar = true;
+            this.evNumericTextBox12.IsValidar = false;
             this.evNumericTextBox12.Location = new System.Drawing.Point(548, 26);
             this.evNumericTextBox12.Name = "evNumericTextBox12";
             this.evNumericTextBox12.Properties.Appearance.Options.UseTextOptions = true;
@@ -3088,7 +3078,7 @@
             this.evNumericTextBox11.FieldName = "f_factor_ajuste_inflacion";
             this.evNumericTextBox11.IsLimpiar = true;
             this.evNumericTextBox11.IsSalvar = true;
-            this.evNumericTextBox11.IsValidar = true;
+            this.evNumericTextBox11.IsValidar = false;
             this.evNumericTextBox11.Location = new System.Drawing.Point(548, 61);
             this.evNumericTextBox11.Name = "evNumericTextBox11";
             this.evNumericTextBox11.Properties.Appearance.Options.UseTextOptions = true;
@@ -3126,7 +3116,7 @@
             this.evNumericTextBox10.FieldName = "f_monto_ajuste_inicial";
             this.evNumericTextBox10.IsLimpiar = true;
             this.evNumericTextBox10.IsSalvar = true;
-            this.evNumericTextBox10.IsValidar = true;
+            this.evNumericTextBox10.IsValidar = false;
             this.evNumericTextBox10.Location = new System.Drawing.Point(161, 61);
             this.evNumericTextBox10.Name = "evNumericTextBox10";
             this.evNumericTextBox10.Properties.Appearance.Options.UseTextOptions = true;
@@ -3177,7 +3167,7 @@
             this.cuentaContablePicker5.IdAreaSize = new System.Drawing.Size(110, 25);
             this.cuentaContablePicker5.IsLimpiar = true;
             this.cuentaContablePicker5.IsSalvar = true;
-            this.cuentaContablePicker5.IsValidar = true;
+            this.cuentaContablePicker5.IsValidar = false;
             this.cuentaContablePicker5.LaberAreaSize = new System.Drawing.Size(200, 25);
             this.cuentaContablePicker5.Location = new System.Drawing.Point(9, 95);
             this.cuentaContablePicker5.Name = "cuentaContablePicker5";
@@ -3230,7 +3220,7 @@
             this.cuentaContablePicker4.IdAreaSize = new System.Drawing.Size(110, 25);
             this.cuentaContablePicker4.IsLimpiar = true;
             this.cuentaContablePicker4.IsSalvar = true;
-            this.cuentaContablePicker4.IsValidar = true;
+            this.cuentaContablePicker4.IsValidar = false;
             this.cuentaContablePicker4.LaberAreaSize = new System.Drawing.Size(200, 25);
             this.cuentaContablePicker4.Location = new System.Drawing.Point(4, 132);
             this.cuentaContablePicker4.Name = "cuentaContablePicker4";
@@ -3250,7 +3240,7 @@
             this.cuentaContablePicker3.IdAreaSize = new System.Drawing.Size(110, 25);
             this.cuentaContablePicker3.IsLimpiar = true;
             this.cuentaContablePicker3.IsSalvar = true;
-            this.cuentaContablePicker3.IsValidar = true;
+            this.cuentaContablePicker3.IsValidar = false;
             this.cuentaContablePicker3.LaberAreaSize = new System.Drawing.Size(200, 25);
             this.cuentaContablePicker3.Location = new System.Drawing.Point(4, 95);
             this.cuentaContablePicker3.Name = "cuentaContablePicker3";
@@ -3270,7 +3260,7 @@
             this.cuentaContablePicker2.IdAreaSize = new System.Drawing.Size(110, 25);
             this.cuentaContablePicker2.IsLimpiar = true;
             this.cuentaContablePicker2.IsSalvar = true;
-            this.cuentaContablePicker2.IsValidar = true;
+            this.cuentaContablePicker2.IsValidar = false;
             this.cuentaContablePicker2.LaberAreaSize = new System.Drawing.Size(200, 25);
             this.cuentaContablePicker2.Location = new System.Drawing.Point(4, 58);
             this.cuentaContablePicker2.Name = "cuentaContablePicker2";
@@ -3290,7 +3280,7 @@
             this.cuentaContablePicker1.IdAreaSize = new System.Drawing.Size(110, 25);
             this.cuentaContablePicker1.IsLimpiar = true;
             this.cuentaContablePicker1.IsSalvar = true;
-            this.cuentaContablePicker1.IsValidar = true;
+            this.cuentaContablePicker1.IsValidar = false;
             this.cuentaContablePicker1.LaberAreaSize = new System.Drawing.Size(200, 25);
             this.cuentaContablePicker1.Location = new System.Drawing.Point(6, 21);
             this.cuentaContablePicker1.Name = "cuentaContablePicker1";
@@ -3413,7 +3403,7 @@
             this.evTextBox27.FieldName = "f_deudor";
             this.evTextBox27.IsLimpiar = true;
             this.evTextBox27.IsSalvar = true;
-            this.evTextBox27.IsValidar = true;
+            this.evTextBox27.IsValidar = false;
             this.evTextBox27.Location = new System.Drawing.Point(168, 276);
             this.evTextBox27.Name = "evTextBox27";
             this.evTextBox27.Size = new System.Drawing.Size(317, 22);
@@ -3426,7 +3416,7 @@
             this.evTextBox26.FieldName = "f_balance";
             this.evTextBox26.IsLimpiar = true;
             this.evTextBox26.IsSalvar = true;
-            this.evTextBox26.IsValidar = true;
+            this.evTextBox26.IsValidar = false;
             this.evTextBox26.Location = new System.Drawing.Point(168, 190);
             this.evTextBox26.Name = "evTextBox26";
             this.evTextBox26.Size = new System.Drawing.Size(317, 22);
@@ -3439,7 +3429,7 @@
             this.evTextBox25.FieldName = "f_impuesto_renta_nombre";
             this.evTextBox25.IsLimpiar = true;
             this.evTextBox25.IsSalvar = true;
-            this.evTextBox25.IsValidar = true;
+            this.evTextBox25.IsValidar = false;
             this.evTextBox25.Location = new System.Drawing.Point(168, 147);
             this.evTextBox25.Name = "evTextBox25";
             this.evTextBox25.Size = new System.Drawing.Size(317, 22);
@@ -3452,7 +3442,7 @@
             this.evTextBox24.FieldName = "f_seguro_social_nombre";
             this.evTextBox24.IsLimpiar = true;
             this.evTextBox24.IsSalvar = true;
-            this.evTextBox24.IsValidar = true;
+            this.evTextBox24.IsValidar = false;
             this.evTextBox24.Location = new System.Drawing.Point(168, 104);
             this.evTextBox24.Name = "evTextBox24";
             this.evTextBox24.Size = new System.Drawing.Size(317, 22);
@@ -3465,7 +3455,7 @@
             this.evTextBox23.FieldName = "f_proveedor_nombre";
             this.evTextBox23.IsLimpiar = true;
             this.evTextBox23.IsSalvar = true;
-            this.evTextBox23.IsValidar = true;
+            this.evTextBox23.IsValidar = false;
             this.evTextBox23.Location = new System.Drawing.Point(168, 61);
             this.evTextBox23.Name = "evTextBox23";
             this.evTextBox23.Size = new System.Drawing.Size(317, 22);
@@ -3478,7 +3468,7 @@
             this.evTextBox22.FieldName = "f_nombre_id";
             this.evTextBox22.IsLimpiar = true;
             this.evTextBox22.IsSalvar = true;
-            this.evTextBox22.IsValidar = true;
+            this.evTextBox22.IsValidar = false;
             this.evTextBox22.Location = new System.Drawing.Point(168, 18);
             this.evTextBox22.Name = "evTextBox22";
             this.evTextBox22.Size = new System.Drawing.Size(317, 22);
@@ -3491,7 +3481,7 @@
             this.evTextBox21.FieldName = "f_nombre_impuesto2";
             this.evTextBox21.IsLimpiar = true;
             this.evTextBox21.IsSalvar = true;
-            this.evTextBox21.IsValidar = true;
+            this.evTextBox21.IsValidar = false;
             this.evTextBox21.Location = new System.Drawing.Point(168, 233);
             this.evTextBox21.Name = "evTextBox21";
             this.evTextBox21.Size = new System.Drawing.Size(317, 22);
@@ -3601,7 +3591,7 @@
             this.cuentaContablePicker14.IdAreaSize = new System.Drawing.Size(110, 25);
             this.cuentaContablePicker14.IsLimpiar = true;
             this.cuentaContablePicker14.IsSalvar = true;
-            this.cuentaContablePicker14.IsValidar = true;
+            this.cuentaContablePicker14.IsValidar = false;
             this.cuentaContablePicker14.LaberAreaSize = new System.Drawing.Size(250, 25);
             this.cuentaContablePicker14.Location = new System.Drawing.Point(6, 316);
             this.cuentaContablePicker14.Name = "cuentaContablePicker14";
@@ -3621,7 +3611,7 @@
             this.cuentaContablePicker15.IdAreaSize = new System.Drawing.Size(110, 25);
             this.cuentaContablePicker15.IsLimpiar = true;
             this.cuentaContablePicker15.IsSalvar = true;
-            this.cuentaContablePicker15.IsValidar = true;
+            this.cuentaContablePicker15.IsValidar = false;
             this.cuentaContablePicker15.LaberAreaSize = new System.Drawing.Size(250, 25);
             this.cuentaContablePicker15.Location = new System.Drawing.Point(6, 285);
             this.cuentaContablePicker15.Name = "cuentaContablePicker15";
@@ -3641,7 +3631,7 @@
             this.cuentaContablePicker16.IdAreaSize = new System.Drawing.Size(110, 25);
             this.cuentaContablePicker16.IsLimpiar = true;
             this.cuentaContablePicker16.IsSalvar = true;
-            this.cuentaContablePicker16.IsValidar = true;
+            this.cuentaContablePicker16.IsValidar = false;
             this.cuentaContablePicker16.LaberAreaSize = new System.Drawing.Size(250, 25);
             this.cuentaContablePicker16.Location = new System.Drawing.Point(6, 254);
             this.cuentaContablePicker16.Name = "cuentaContablePicker16";
@@ -3661,7 +3651,7 @@
             this.cuentaContablePicker17.IdAreaSize = new System.Drawing.Size(110, 25);
             this.cuentaContablePicker17.IsLimpiar = true;
             this.cuentaContablePicker17.IsSalvar = true;
-            this.cuentaContablePicker17.IsValidar = true;
+            this.cuentaContablePicker17.IsValidar = false;
             this.cuentaContablePicker17.LaberAreaSize = new System.Drawing.Size(250, 25);
             this.cuentaContablePicker17.Location = new System.Drawing.Point(6, 471);
             this.cuentaContablePicker17.Name = "cuentaContablePicker17";
@@ -3681,7 +3671,7 @@
             this.cuentaContablePicker18.IdAreaSize = new System.Drawing.Size(110, 25);
             this.cuentaContablePicker18.IsLimpiar = true;
             this.cuentaContablePicker18.IsSalvar = true;
-            this.cuentaContablePicker18.IsValidar = true;
+            this.cuentaContablePicker18.IsValidar = false;
             this.cuentaContablePicker18.LaberAreaSize = new System.Drawing.Size(250, 25);
             this.cuentaContablePicker18.Location = new System.Drawing.Point(6, 440);
             this.cuentaContablePicker18.Name = "cuentaContablePicker18";
@@ -3701,7 +3691,7 @@
             this.cuentaContablePicker19.IdAreaSize = new System.Drawing.Size(110, 25);
             this.cuentaContablePicker19.IsLimpiar = true;
             this.cuentaContablePicker19.IsSalvar = true;
-            this.cuentaContablePicker19.IsValidar = true;
+            this.cuentaContablePicker19.IsValidar = false;
             this.cuentaContablePicker19.LaberAreaSize = new System.Drawing.Size(250, 25);
             this.cuentaContablePicker19.Location = new System.Drawing.Point(6, 409);
             this.cuentaContablePicker19.Name = "cuentaContablePicker19";
@@ -3721,7 +3711,7 @@
             this.cuentaContablePicker20.IdAreaSize = new System.Drawing.Size(110, 25);
             this.cuentaContablePicker20.IsLimpiar = true;
             this.cuentaContablePicker20.IsSalvar = true;
-            this.cuentaContablePicker20.IsValidar = true;
+            this.cuentaContablePicker20.IsValidar = false;
             this.cuentaContablePicker20.LaberAreaSize = new System.Drawing.Size(250, 25);
             this.cuentaContablePicker20.Location = new System.Drawing.Point(6, 378);
             this.cuentaContablePicker20.Name = "cuentaContablePicker20";
@@ -3741,7 +3731,7 @@
             this.cuentaContablePicker21.IdAreaSize = new System.Drawing.Size(110, 25);
             this.cuentaContablePicker21.IsLimpiar = true;
             this.cuentaContablePicker21.IsSalvar = true;
-            this.cuentaContablePicker21.IsValidar = true;
+            this.cuentaContablePicker21.IsValidar = false;
             this.cuentaContablePicker21.LaberAreaSize = new System.Drawing.Size(250, 25);
             this.cuentaContablePicker21.Location = new System.Drawing.Point(6, 347);
             this.cuentaContablePicker21.Name = "cuentaContablePicker21";
@@ -3761,7 +3751,7 @@
             this.cuentaContablePicker8.IdAreaSize = new System.Drawing.Size(110, 25);
             this.cuentaContablePicker8.IsLimpiar = true;
             this.cuentaContablePicker8.IsSalvar = true;
-            this.cuentaContablePicker8.IsValidar = true;
+            this.cuentaContablePicker8.IsValidar = false;
             this.cuentaContablePicker8.LaberAreaSize = new System.Drawing.Size(250, 25);
             this.cuentaContablePicker8.Location = new System.Drawing.Point(6, 68);
             this.cuentaContablePicker8.Name = "cuentaContablePicker8";
@@ -3781,7 +3771,7 @@
             this.cuentaContablePicker7.IdAreaSize = new System.Drawing.Size(110, 25);
             this.cuentaContablePicker7.IsLimpiar = true;
             this.cuentaContablePicker7.IsSalvar = true;
-            this.cuentaContablePicker7.IsValidar = true;
+            this.cuentaContablePicker7.IsValidar = false;
             this.cuentaContablePicker7.LaberAreaSize = new System.Drawing.Size(250, 25);
             this.cuentaContablePicker7.Location = new System.Drawing.Point(6, 37);
             this.cuentaContablePicker7.Name = "cuentaContablePicker7";
@@ -3801,7 +3791,7 @@
             this.cuentaContablePicker6.IdAreaSize = new System.Drawing.Size(110, 25);
             this.cuentaContablePicker6.IsLimpiar = true;
             this.cuentaContablePicker6.IsSalvar = true;
-            this.cuentaContablePicker6.IsValidar = true;
+            this.cuentaContablePicker6.IsValidar = false;
             this.cuentaContablePicker6.LaberAreaSize = new System.Drawing.Size(250, 25);
             this.cuentaContablePicker6.Location = new System.Drawing.Point(6, 6);
             this.cuentaContablePicker6.Name = "cuentaContablePicker6";
@@ -3821,7 +3811,7 @@
             this.cuentaContablePicker13.IdAreaSize = new System.Drawing.Size(110, 25);
             this.cuentaContablePicker13.IsLimpiar = true;
             this.cuentaContablePicker13.IsSalvar = true;
-            this.cuentaContablePicker13.IsValidar = true;
+            this.cuentaContablePicker13.IsValidar = false;
             this.cuentaContablePicker13.LaberAreaSize = new System.Drawing.Size(250, 25);
             this.cuentaContablePicker13.Location = new System.Drawing.Point(6, 223);
             this.cuentaContablePicker13.Name = "cuentaContablePicker13";
@@ -3841,7 +3831,7 @@
             this.cuentaContablePicker12.IdAreaSize = new System.Drawing.Size(110, 25);
             this.cuentaContablePicker12.IsLimpiar = true;
             this.cuentaContablePicker12.IsSalvar = true;
-            this.cuentaContablePicker12.IsValidar = true;
+            this.cuentaContablePicker12.IsValidar = false;
             this.cuentaContablePicker12.LaberAreaSize = new System.Drawing.Size(250, 25);
             this.cuentaContablePicker12.Location = new System.Drawing.Point(6, 192);
             this.cuentaContablePicker12.Name = "cuentaContablePicker12";
@@ -3861,7 +3851,7 @@
             this.cuentaContablePicker11.IdAreaSize = new System.Drawing.Size(110, 25);
             this.cuentaContablePicker11.IsLimpiar = true;
             this.cuentaContablePicker11.IsSalvar = true;
-            this.cuentaContablePicker11.IsValidar = true;
+            this.cuentaContablePicker11.IsValidar = false;
             this.cuentaContablePicker11.LaberAreaSize = new System.Drawing.Size(250, 25);
             this.cuentaContablePicker11.Location = new System.Drawing.Point(6, 161);
             this.cuentaContablePicker11.Name = "cuentaContablePicker11";
@@ -3881,7 +3871,7 @@
             this.cuentaContablePicker10.IdAreaSize = new System.Drawing.Size(110, 25);
             this.cuentaContablePicker10.IsLimpiar = true;
             this.cuentaContablePicker10.IsSalvar = true;
-            this.cuentaContablePicker10.IsValidar = true;
+            this.cuentaContablePicker10.IsValidar = false;
             this.cuentaContablePicker10.LaberAreaSize = new System.Drawing.Size(250, 25);
             this.cuentaContablePicker10.Location = new System.Drawing.Point(6, 130);
             this.cuentaContablePicker10.Name = "cuentaContablePicker10";
@@ -3901,7 +3891,7 @@
             this.cuentaContablePicker9.IdAreaSize = new System.Drawing.Size(110, 25);
             this.cuentaContablePicker9.IsLimpiar = true;
             this.cuentaContablePicker9.IsSalvar = true;
-            this.cuentaContablePicker9.IsValidar = true;
+            this.cuentaContablePicker9.IsValidar = false;
             this.cuentaContablePicker9.LaberAreaSize = new System.Drawing.Size(250, 25);
             this.cuentaContablePicker9.Location = new System.Drawing.Point(6, 99);
             this.cuentaContablePicker9.Name = "cuentaContablePicker9";
@@ -3940,7 +3930,7 @@
             this.cuentaContablePicker23.IdAreaSize = new System.Drawing.Size(110, 25);
             this.cuentaContablePicker23.IsLimpiar = true;
             this.cuentaContablePicker23.IsSalvar = true;
-            this.cuentaContablePicker23.IsValidar = true;
+            this.cuentaContablePicker23.IsValidar = false;
             this.cuentaContablePicker23.LaberAreaSize = new System.Drawing.Size(220, 25);
             this.cuentaContablePicker23.Location = new System.Drawing.Point(9, 90);
             this.cuentaContablePicker23.Name = "cuentaContablePicker23";
@@ -3960,7 +3950,7 @@
             this.cuentaContablePicker22.IdAreaSize = new System.Drawing.Size(110, 25);
             this.cuentaContablePicker22.IsLimpiar = true;
             this.cuentaContablePicker22.IsSalvar = true;
-            this.cuentaContablePicker22.IsValidar = true;
+            this.cuentaContablePicker22.IsValidar = false;
             this.cuentaContablePicker22.LaberAreaSize = new System.Drawing.Size(220, 25);
             this.cuentaContablePicker22.Location = new System.Drawing.Point(9, 8);
             this.cuentaContablePicker22.Name = "cuentaContablePicker22";
@@ -3980,7 +3970,7 @@
             this.cuentaContablePicker24.IdAreaSize = new System.Drawing.Size(110, 25);
             this.cuentaContablePicker24.IsLimpiar = true;
             this.cuentaContablePicker24.IsSalvar = true;
-            this.cuentaContablePicker24.IsValidar = true;
+            this.cuentaContablePicker24.IsValidar = false;
             this.cuentaContablePicker24.LaberAreaSize = new System.Drawing.Size(220, 25);
             this.cuentaContablePicker24.Location = new System.Drawing.Point(9, 131);
             this.cuentaContablePicker24.Name = "cuentaContablePicker24";
@@ -4000,7 +3990,7 @@
             this.cuentaContablePicker30.IdAreaSize = new System.Drawing.Size(110, 25);
             this.cuentaContablePicker30.IsLimpiar = true;
             this.cuentaContablePicker30.IsSalvar = true;
-            this.cuentaContablePicker30.IsValidar = true;
+            this.cuentaContablePicker30.IsValidar = false;
             this.cuentaContablePicker30.LaberAreaSize = new System.Drawing.Size(220, 25);
             this.cuentaContablePicker30.Location = new System.Drawing.Point(9, 49);
             this.cuentaContablePicker30.Name = "cuentaContablePicker30";
@@ -4020,7 +4010,7 @@
             this.cuentaContablePicker29.IdAreaSize = new System.Drawing.Size(110, 25);
             this.cuentaContablePicker29.IsLimpiar = true;
             this.cuentaContablePicker29.IsSalvar = true;
-            this.cuentaContablePicker29.IsValidar = true;
+            this.cuentaContablePicker29.IsValidar = false;
             this.cuentaContablePicker29.LaberAreaSize = new System.Drawing.Size(220, 25);
             this.cuentaContablePicker29.Location = new System.Drawing.Point(9, 336);
             this.cuentaContablePicker29.Name = "cuentaContablePicker29";
@@ -4040,7 +4030,7 @@
             this.cuentaContablePicker28.IdAreaSize = new System.Drawing.Size(110, 25);
             this.cuentaContablePicker28.IsLimpiar = true;
             this.cuentaContablePicker28.IsSalvar = true;
-            this.cuentaContablePicker28.IsValidar = true;
+            this.cuentaContablePicker28.IsValidar = false;
             this.cuentaContablePicker28.LaberAreaSize = new System.Drawing.Size(220, 25);
             this.cuentaContablePicker28.Location = new System.Drawing.Point(9, 295);
             this.cuentaContablePicker28.Name = "cuentaContablePicker28";
@@ -4060,7 +4050,7 @@
             this.cuentaContablePicker27.IdAreaSize = new System.Drawing.Size(110, 25);
             this.cuentaContablePicker27.IsLimpiar = true;
             this.cuentaContablePicker27.IsSalvar = true;
-            this.cuentaContablePicker27.IsValidar = true;
+            this.cuentaContablePicker27.IsValidar = false;
             this.cuentaContablePicker27.LaberAreaSize = new System.Drawing.Size(220, 25);
             this.cuentaContablePicker27.Location = new System.Drawing.Point(9, 254);
             this.cuentaContablePicker27.Name = "cuentaContablePicker27";
@@ -4080,7 +4070,7 @@
             this.cuentaContablePicker26.IdAreaSize = new System.Drawing.Size(110, 25);
             this.cuentaContablePicker26.IsLimpiar = true;
             this.cuentaContablePicker26.IsSalvar = true;
-            this.cuentaContablePicker26.IsValidar = true;
+            this.cuentaContablePicker26.IsValidar = false;
             this.cuentaContablePicker26.LaberAreaSize = new System.Drawing.Size(220, 25);
             this.cuentaContablePicker26.Location = new System.Drawing.Point(9, 213);
             this.cuentaContablePicker26.Name = "cuentaContablePicker26";
@@ -4100,7 +4090,7 @@
             this.cuentaContablePicker25.IdAreaSize = new System.Drawing.Size(110, 25);
             this.cuentaContablePicker25.IsLimpiar = true;
             this.cuentaContablePicker25.IsSalvar = true;
-            this.cuentaContablePicker25.IsValidar = true;
+            this.cuentaContablePicker25.IsValidar = false;
             this.cuentaContablePicker25.LaberAreaSize = new System.Drawing.Size(220, 25);
             this.cuentaContablePicker25.Location = new System.Drawing.Point(9, 172);
             this.cuentaContablePicker25.Name = "cuentaContablePicker25";
@@ -4136,12 +4126,12 @@
             // 
             // tabPage15
             // 
-            this.tabPage15.Controls.Add(this.gridControl3);
+            this.tabPage15.Controls.Add(this.gridcotimonto);
             this.tabPage15.Controls.Add(this.button5);
             this.tabPage15.Controls.Add(this.button4);
-            this.tabPage15.Controls.Add(this.evIntegerTextBox33);
-            this.tabPage15.Controls.Add(this.evNumericTextBox15);
-            this.tabPage15.Controls.Add(this.evNumericTextBox14);
+            this.tabPage15.Controls.Add(this.t_cantidadcoti);
+            this.tabPage15.Controls.Add(this.t_montofinal);
+            this.tabPage15.Controls.Add(this.t_montoinicial);
             this.tabPage15.Controls.Add(this.cmb_moneda);
             this.tabPage15.Controls.Add(this.evLabel88);
             this.tabPage15.Controls.Add(this.evLabel87);
@@ -4155,14 +4145,14 @@
             this.tabPage15.Text = "Cotizaciones por Monto";
             this.tabPage15.UseVisualStyleBackColor = true;
             // 
-            // gridControl3
+            // gridcotimonto
             // 
-            this.gridControl3.Location = new System.Drawing.Point(11, 62);
-            this.gridControl3.MainView = this.gridView3;
-            this.gridControl3.Name = "gridControl3";
-            this.gridControl3.Size = new System.Drawing.Size(832, 394);
-            this.gridControl3.TabIndex = 21;
-            this.gridControl3.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
+            this.gridcotimonto.Location = new System.Drawing.Point(11, 62);
+            this.gridcotimonto.MainView = this.gridView3;
+            this.gridcotimonto.Name = "gridcotimonto";
+            this.gridcotimonto.Size = new System.Drawing.Size(832, 394);
+            this.gridcotimonto.TabIndex = 21;
+            this.gridcotimonto.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.gridView3});
             // 
             // gridView3
@@ -4172,7 +4162,7 @@
             this.gridColumn9,
             this.gridColumn10,
             this.gridColumn11});
-            this.gridView3.GridControl = this.gridControl3;
+            this.gridView3.GridControl = this.gridcotimonto;
             this.gridView3.GroupCount = 1;
             this.gridView3.Name = "gridView3";
             this.gridView3.SortInfo.AddRange(new DevExpress.XtraGrid.Columns.GridColumnSortInfo[] {
@@ -4181,8 +4171,10 @@
             // gridColumn8
             // 
             this.gridColumn8.Caption = "Moneda";
+            this.gridColumn8.FieldName = "f_moneda";
             this.gridColumn8.MinWidth = 25;
             this.gridColumn8.Name = "gridColumn8";
+            this.gridColumn8.OptionsColumn.AllowEdit = false;
             this.gridColumn8.Visible = true;
             this.gridColumn8.VisibleIndex = 0;
             this.gridColumn8.Width = 94;
@@ -4190,8 +4182,10 @@
             // gridColumn9
             // 
             this.gridColumn9.Caption = "Monto Inicial";
+            this.gridColumn9.FieldName = "f_monto_inicial";
             this.gridColumn9.MinWidth = 25;
             this.gridColumn9.Name = "gridColumn9";
+            this.gridColumn9.OptionsColumn.AllowEdit = false;
             this.gridColumn9.Visible = true;
             this.gridColumn9.VisibleIndex = 0;
             this.gridColumn9.Width = 94;
@@ -4199,8 +4193,10 @@
             // gridColumn10
             // 
             this.gridColumn10.Caption = "Monto Final";
+            this.gridColumn10.FieldName = "f_monto_final";
             this.gridColumn10.MinWidth = 25;
             this.gridColumn10.Name = "gridColumn10";
+            this.gridColumn10.OptionsColumn.AllowEdit = false;
             this.gridColumn10.Visible = true;
             this.gridColumn10.VisibleIndex = 1;
             this.gridColumn10.Width = 94;
@@ -4208,8 +4204,10 @@
             // gridColumn11
             // 
             this.gridColumn11.Caption = "Cotizaciones Requeridas";
+            this.gridColumn11.FieldName = "f_cantidad_cotizaciones";
             this.gridColumn11.MinWidth = 25;
             this.gridColumn11.Name = "gridColumn11";
+            this.gridColumn11.OptionsColumn.AllowEdit = false;
             this.gridColumn11.Visible = true;
             this.gridColumn11.VisibleIndex = 2;
             this.gridColumn11.Width = 94;
@@ -4223,6 +4221,7 @@
             this.button5.TabIndex = 20;
             this.button5.Text = "-";
             this.button5.UseVisualStyleBackColor = true;
+            this.button5.Click += new System.EventHandler(this.button5_Click);
             // 
             // button4
             // 
@@ -4233,60 +4232,61 @@
             this.button4.TabIndex = 19;
             this.button4.Text = "+";
             this.button4.UseVisualStyleBackColor = true;
+            this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
-            // evIntegerTextBox33
+            // t_cantidadcoti
             // 
-            this.evIntegerTextBox33.EditValue = 0;
-            this.evIntegerTextBox33.EnterTab = true;
-            this.evIntegerTextBox33.FieldName = "";
-            this.evIntegerTextBox33.IsLimpiar = true;
-            this.evIntegerTextBox33.IsSalvar = true;
-            this.evIntegerTextBox33.IsValidar = true;
-            this.evIntegerTextBox33.Location = new System.Drawing.Point(524, 34);
-            this.evIntegerTextBox33.Name = "evIntegerTextBox33";
-            this.evIntegerTextBox33.Properties.Appearance.Options.UseTextOptions = true;
-            this.evIntegerTextBox33.Properties.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Far;
-            this.evIntegerTextBox33.Properties.Mask.EditMask = "f0";
-            this.evIntegerTextBox33.Properties.Mask.MaskType = DevExpress.XtraEditors.Mask.MaskType.Numeric;
-            this.evIntegerTextBox33.Properties.Mask.UseMaskAsDisplayFormat = true;
-            this.evIntegerTextBox33.Size = new System.Drawing.Size(169, 22);
-            this.evIntegerTextBox33.TabIndex = 18;
+            this.t_cantidadcoti.EditValue = 0;
+            this.t_cantidadcoti.EnterTab = true;
+            this.t_cantidadcoti.FieldName = "";
+            this.t_cantidadcoti.IsLimpiar = true;
+            this.t_cantidadcoti.IsSalvar = true;
+            this.t_cantidadcoti.IsValidar = true;
+            this.t_cantidadcoti.Location = new System.Drawing.Point(524, 34);
+            this.t_cantidadcoti.Name = "t_cantidadcoti";
+            this.t_cantidadcoti.Properties.Appearance.Options.UseTextOptions = true;
+            this.t_cantidadcoti.Properties.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Far;
+            this.t_cantidadcoti.Properties.Mask.EditMask = "f0";
+            this.t_cantidadcoti.Properties.Mask.MaskType = DevExpress.XtraEditors.Mask.MaskType.Numeric;
+            this.t_cantidadcoti.Properties.Mask.UseMaskAsDisplayFormat = true;
+            this.t_cantidadcoti.Size = new System.Drawing.Size(169, 22);
+            this.t_cantidadcoti.TabIndex = 18;
             // 
-            // evNumericTextBox15
+            // t_montofinal
             // 
-            this.evNumericTextBox15.EditValue = 0D;
-            this.evNumericTextBox15.EnterTab = true;
-            this.evNumericTextBox15.FieldName = "";
-            this.evNumericTextBox15.IsLimpiar = true;
-            this.evNumericTextBox15.IsSalvar = true;
-            this.evNumericTextBox15.IsValidar = true;
-            this.evNumericTextBox15.Location = new System.Drawing.Point(363, 34);
-            this.evNumericTextBox15.Name = "evNumericTextBox15";
-            this.evNumericTextBox15.Properties.Appearance.Options.UseTextOptions = true;
-            this.evNumericTextBox15.Properties.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Far;
-            this.evNumericTextBox15.Properties.Mask.EditMask = "n";
-            this.evNumericTextBox15.Properties.Mask.MaskType = DevExpress.XtraEditors.Mask.MaskType.Numeric;
-            this.evNumericTextBox15.Properties.Mask.UseMaskAsDisplayFormat = true;
-            this.evNumericTextBox15.Size = new System.Drawing.Size(138, 22);
-            this.evNumericTextBox15.TabIndex = 17;
+            this.t_montofinal.EditValue = 0D;
+            this.t_montofinal.EnterTab = true;
+            this.t_montofinal.FieldName = "";
+            this.t_montofinal.IsLimpiar = true;
+            this.t_montofinal.IsSalvar = true;
+            this.t_montofinal.IsValidar = true;
+            this.t_montofinal.Location = new System.Drawing.Point(363, 34);
+            this.t_montofinal.Name = "t_montofinal";
+            this.t_montofinal.Properties.Appearance.Options.UseTextOptions = true;
+            this.t_montofinal.Properties.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Far;
+            this.t_montofinal.Properties.Mask.EditMask = "n";
+            this.t_montofinal.Properties.Mask.MaskType = DevExpress.XtraEditors.Mask.MaskType.Numeric;
+            this.t_montofinal.Properties.Mask.UseMaskAsDisplayFormat = true;
+            this.t_montofinal.Size = new System.Drawing.Size(138, 22);
+            this.t_montofinal.TabIndex = 17;
             // 
-            // evNumericTextBox14
+            // t_montoinicial
             // 
-            this.evNumericTextBox14.EditValue = 0D;
-            this.evNumericTextBox14.EnterTab = true;
-            this.evNumericTextBox14.FieldName = "";
-            this.evNumericTextBox14.IsLimpiar = true;
-            this.evNumericTextBox14.IsSalvar = true;
-            this.evNumericTextBox14.IsValidar = true;
-            this.evNumericTextBox14.Location = new System.Drawing.Point(202, 34);
-            this.evNumericTextBox14.Name = "evNumericTextBox14";
-            this.evNumericTextBox14.Properties.Appearance.Options.UseTextOptions = true;
-            this.evNumericTextBox14.Properties.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Far;
-            this.evNumericTextBox14.Properties.Mask.EditMask = "n";
-            this.evNumericTextBox14.Properties.Mask.MaskType = DevExpress.XtraEditors.Mask.MaskType.Numeric;
-            this.evNumericTextBox14.Properties.Mask.UseMaskAsDisplayFormat = true;
-            this.evNumericTextBox14.Size = new System.Drawing.Size(138, 22);
-            this.evNumericTextBox14.TabIndex = 16;
+            this.t_montoinicial.EditValue = 0D;
+            this.t_montoinicial.EnterTab = true;
+            this.t_montoinicial.FieldName = "";
+            this.t_montoinicial.IsLimpiar = true;
+            this.t_montoinicial.IsSalvar = true;
+            this.t_montoinicial.IsValidar = true;
+            this.t_montoinicial.Location = new System.Drawing.Point(202, 34);
+            this.t_montoinicial.Name = "t_montoinicial";
+            this.t_montoinicial.Properties.Appearance.Options.UseTextOptions = true;
+            this.t_montoinicial.Properties.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Far;
+            this.t_montoinicial.Properties.Mask.EditMask = "n";
+            this.t_montoinicial.Properties.Mask.MaskType = DevExpress.XtraEditors.Mask.MaskType.Numeric;
+            this.t_montoinicial.Properties.Mask.UseMaskAsDisplayFormat = true;
+            this.t_montoinicial.Size = new System.Drawing.Size(138, 22);
+            this.t_montoinicial.TabIndex = 16;
             // 
             // cmb_moneda
             // 
@@ -4349,12 +4349,12 @@
             // 
             // tabPage16
             // 
-            this.tabPage16.Controls.Add(this.evComboBox5);
+            this.tabPage16.Controls.Add(this.cmb_moneda2);
             this.tabPage16.Controls.Add(this.evLabel89);
             this.tabPage16.Controls.Add(this.gridControl4);
             this.tabPage16.Controls.Add(this.button6);
             this.tabPage16.Controls.Add(this.button7);
-            this.tabPage16.Controls.Add(this.evNumericTextBox17);
+            this.tabPage16.Controls.Add(this.t_montominimo);
             this.tabPage16.Controls.Add(this.cmb_departamento);
             this.tabPage16.Controls.Add(this.evLabel91);
             this.tabPage16.Controls.Add(this.evLabel92);
@@ -4366,24 +4366,24 @@
             this.tabPage16.Text = "Monto Por Departamento";
             this.tabPage16.UseVisualStyleBackColor = true;
             // 
-            // evComboBox5
+            // cmb_moneda2
             // 
-            this.evComboBox5.DisplayMemberName = null;
-            this.evComboBox5.EnterTab = true;
-            this.evComboBox5.FieldName = "";
-            this.evComboBox5.IsLimpiar = true;
-            this.evComboBox5.IsSalvar = true;
-            this.evComboBox5.IsValidar = true;
-            this.evComboBox5.Location = new System.Drawing.Point(514, 34);
-            this.evComboBox5.Name = "evComboBox5";
-            this.evComboBox5.NombreProcedimiento = null;
-            this.evComboBox5.Param = "";
-            this.evComboBox5.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            this.cmb_moneda2.DisplayMemberName = "f_descripcion";
+            this.cmb_moneda2.EnterTab = true;
+            this.cmb_moneda2.FieldName = "";
+            this.cmb_moneda2.IsLimpiar = true;
+            this.cmb_moneda2.IsSalvar = true;
+            this.cmb_moneda2.IsValidar = true;
+            this.cmb_moneda2.Location = new System.Drawing.Point(514, 34);
+            this.cmb_moneda2.Name = "cmb_moneda2";
+            this.cmb_moneda2.NombreProcedimiento = "p_moneda";
+            this.cmb_moneda2.Param = "";
+            this.cmb_moneda2.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
-            this.evComboBox5.Size = new System.Drawing.Size(168, 22);
-            this.evComboBox5.TabIndex = 34;
-            this.evComboBox5.Valor = null;
-            this.evComboBox5.ValueMemberName = null;
+            this.cmb_moneda2.Size = new System.Drawing.Size(168, 22);
+            this.cmb_moneda2.TabIndex = 34;
+            this.cmb_moneda2.Valor = null;
+            this.cmb_moneda2.ValueMemberName = "f_id";
             // 
             // evLabel89
             // 
@@ -4420,8 +4420,10 @@
             // gridColumn12
             // 
             this.gridColumn12.Caption = "Moneda";
+            this.gridColumn12.FieldName = "f_moneda";
             this.gridColumn12.MinWidth = 25;
             this.gridColumn12.Name = "gridColumn12";
+            this.gridColumn12.OptionsColumn.AllowEdit = false;
             this.gridColumn12.Visible = true;
             this.gridColumn12.VisibleIndex = 0;
             this.gridColumn12.Width = 94;
@@ -4429,8 +4431,10 @@
             // gridColumn13
             // 
             this.gridColumn13.Caption = "Departamento";
+            this.gridColumn13.FieldName = "f_descripcion";
             this.gridColumn13.MinWidth = 25;
             this.gridColumn13.Name = "gridColumn13";
+            this.gridColumn13.OptionsColumn.AllowEdit = false;
             this.gridColumn13.Visible = true;
             this.gridColumn13.VisibleIndex = 0;
             this.gridColumn13.Width = 526;
@@ -4438,8 +4442,10 @@
             // gridColumn14
             // 
             this.gridColumn14.Caption = "Monto Minimo";
+            this.gridColumn14.FieldName = "f_monto_minimo";
             this.gridColumn14.MinWidth = 25;
             this.gridColumn14.Name = "gridColumn14";
+            this.gridColumn14.OptionsColumn.AllowEdit = false;
             this.gridColumn14.Visible = true;
             this.gridColumn14.VisibleIndex = 1;
             this.gridColumn14.Width = 276;
@@ -4453,6 +4459,7 @@
             this.button6.TabIndex = 31;
             this.button6.Text = "-";
             this.button6.UseVisualStyleBackColor = true;
+            this.button6.Click += new System.EventHandler(this.button6_Click);
             // 
             // button7
             // 
@@ -4463,24 +4470,25 @@
             this.button7.TabIndex = 30;
             this.button7.Text = "+";
             this.button7.UseVisualStyleBackColor = true;
+            this.button7.Click += new System.EventHandler(this.button7_Click);
             // 
-            // evNumericTextBox17
+            // t_montominimo
             // 
-            this.evNumericTextBox17.EditValue = 0D;
-            this.evNumericTextBox17.EnterTab = true;
-            this.evNumericTextBox17.FieldName = "";
-            this.evNumericTextBox17.IsLimpiar = true;
-            this.evNumericTextBox17.IsSalvar = true;
-            this.evNumericTextBox17.IsValidar = true;
-            this.evNumericTextBox17.Location = new System.Drawing.Point(357, 34);
-            this.evNumericTextBox17.Name = "evNumericTextBox17";
-            this.evNumericTextBox17.Properties.Appearance.Options.UseTextOptions = true;
-            this.evNumericTextBox17.Properties.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Far;
-            this.evNumericTextBox17.Properties.Mask.EditMask = "n";
-            this.evNumericTextBox17.Properties.Mask.MaskType = DevExpress.XtraEditors.Mask.MaskType.Numeric;
-            this.evNumericTextBox17.Properties.Mask.UseMaskAsDisplayFormat = true;
-            this.evNumericTextBox17.Size = new System.Drawing.Size(138, 22);
-            this.evNumericTextBox17.TabIndex = 27;
+            this.t_montominimo.EditValue = 0D;
+            this.t_montominimo.EnterTab = true;
+            this.t_montominimo.FieldName = "";
+            this.t_montominimo.IsLimpiar = true;
+            this.t_montominimo.IsSalvar = true;
+            this.t_montominimo.IsValidar = true;
+            this.t_montominimo.Location = new System.Drawing.Point(357, 34);
+            this.t_montominimo.Name = "t_montominimo";
+            this.t_montominimo.Properties.Appearance.Options.UseTextOptions = true;
+            this.t_montominimo.Properties.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Far;
+            this.t_montominimo.Properties.Mask.EditMask = "n";
+            this.t_montominimo.Properties.Mask.MaskType = DevExpress.XtraEditors.Mask.MaskType.Numeric;
+            this.t_montominimo.Properties.Mask.UseMaskAsDisplayFormat = true;
+            this.t_montominimo.Size = new System.Drawing.Size(138, 22);
+            this.t_montominimo.TabIndex = 27;
             // 
             // cmb_departamento
             // 
@@ -4555,6 +4563,7 @@
             this.btn_guardar.Size = new System.Drawing.Size(60, 60);
             this.btn_guardar.TabIndex = 1;
             this.btn_guardar.UseVisualStyleBackColor = true;
+            this.btn_guardar.Click += new System.EventHandler(this.btn_guardar_Click);
             // 
             // label1
             // 
@@ -4562,9 +4571,9 @@
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(10, 17);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(255, 29);
+            this.label1.Size = new System.Drawing.Size(161, 29);
             this.label1.TabIndex = 0;
-            this.label1.Text = "Registro de usuarios";
+            this.label1.Text = "Preferencias";
             // 
             // Preferencias
             // 
@@ -4613,7 +4622,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.evIntegerTextBox22.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.evIntegerTextBox23.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.evIntegerTextBox13.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.evIntegerTextBox14.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.evIntegerTextBox15.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.evIntegerTextBox16.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.evIntegerTextBox17.Properties)).EndInit();
@@ -4633,7 +4641,6 @@
             this.tabPage7.ResumeLayout(false);
             this.tabPage7.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.cmb_interfacefacturacion.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.evIntegerTextBox32.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.evNumericTextBox9.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.evIntegerTextBox31.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.evIntegerTextBox30.Properties)).EndInit();
@@ -4669,18 +4676,18 @@
             this.tabControl3.ResumeLayout(false);
             this.tabPage15.ResumeLayout(false);
             this.tabPage15.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.gridControl3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridcotimonto)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.evIntegerTextBox33.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.evNumericTextBox15.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.evNumericTextBox14.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.t_cantidadcoti.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.t_montofinal.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.t_montoinicial.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.cmb_moneda.Properties)).EndInit();
             this.tabPage16.ResumeLayout(false);
             this.tabPage16.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.evComboBox5.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.cmb_moneda2.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridControl4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView4)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.evNumericTextBox17.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.t_montominimo.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.cmb_departamento.Properties)).EndInit();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
@@ -4768,7 +4775,6 @@
         private customcontrols.EvLabel evLabel39;
         private customcontrols.EvLabel evLabel40;
         private customcontrols.EvIntegerTextBox evIntegerTextBox13;
-        private customcontrols.EvIntegerTextBox evIntegerTextBox14;
         private customcontrols.EvIntegerTextBox evIntegerTextBox15;
         private customcontrols.EvIntegerTextBox evIntegerTextBox16;
         private customcontrols.EvIntegerTextBox evIntegerTextBox17;
@@ -4805,7 +4811,6 @@
         private customcontrols.EvComboBox cmb_interfacefacturacion;
         private customcontrols.EvTextBox evTextBox20;
         private customcontrols.EvTextBox evTextBox19;
-        private customcontrols.EvIntegerTextBox evIntegerTextBox32;
         private customcontrols.EvNumericTextBox evNumericTextBox9;
         private customcontrols.EvTextBox evTextBox18;
         private customcontrols.EvDateTimePicker evDateTimePicker4;
@@ -4943,7 +4948,7 @@
         private System.Windows.Forms.TabControl tabControl3;
         private System.Windows.Forms.TabPage tabPage15;
         private System.Windows.Forms.TabPage tabPage16;
-        private DevExpress.XtraGrid.GridControl gridControl3;
+        private DevExpress.XtraGrid.GridControl gridcotimonto;
         private DevExpress.XtraGrid.Views.Grid.GridView gridView3;
         private DevExpress.XtraGrid.Columns.GridColumn gridColumn8;
         private DevExpress.XtraGrid.Columns.GridColumn gridColumn9;
@@ -4951,15 +4956,15 @@
         private DevExpress.XtraGrid.Columns.GridColumn gridColumn11;
         private System.Windows.Forms.Button button5;
         private System.Windows.Forms.Button button4;
-        private customcontrols.EvIntegerTextBox evIntegerTextBox33;
-        private customcontrols.EvNumericTextBox evNumericTextBox15;
-        private customcontrols.EvNumericTextBox evNumericTextBox14;
+        private customcontrols.EvIntegerTextBox t_cantidadcoti;
+        private customcontrols.EvNumericTextBox t_montofinal;
+        private customcontrols.EvNumericTextBox t_montoinicial;
         private customcontrols.EvComboBox cmb_moneda;
         private customcontrols.EvLabel evLabel88;
         private customcontrols.EvLabel evLabel87;
         private customcontrols.EvLabel evLabel86;
         private customcontrols.EvLabel evLabel85;
-        private customcontrols.EvComboBox evComboBox5;
+        private customcontrols.EvComboBox cmb_moneda2;
         private customcontrols.EvLabel evLabel89;
         private DevExpress.XtraGrid.GridControl gridControl4;
         private DevExpress.XtraGrid.Views.Grid.GridView gridView4;
@@ -4968,7 +4973,7 @@
         private DevExpress.XtraGrid.Columns.GridColumn gridColumn14;
         private System.Windows.Forms.Button button6;
         private System.Windows.Forms.Button button7;
-        private customcontrols.EvNumericTextBox evNumericTextBox17;
+        private customcontrols.EvNumericTextBox t_montominimo;
         private customcontrols.EvComboBox cmb_departamento;
         private customcontrols.EvLabel evLabel91;
         private customcontrols.EvLabel evLabel92;
@@ -4977,5 +4982,7 @@
         private System.Windows.Forms.Button btn_guardar;
         private System.Windows.Forms.Label label1;
         private customcontrols.EvComboBox cmb_concepto;
+        private customcontrols.EvTextBox evTextBox11;
+        private customcontrols.EvTextBox evTextBox28;
     }
 }

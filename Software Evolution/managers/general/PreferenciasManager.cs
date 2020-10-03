@@ -12,6 +12,9 @@ namespace Software_Evolution.managers.general
     {
         PeriodosContablesRepository periodosContables = new PeriodosContablesRepository();
         SecuenciaRepository secuenciaRepository = new SecuenciaRepository();
+        PreferenciasRepository preferencias = new PreferenciasRepository();
+        CotizacionMontoRepository CotizacionMontoRepository = new CotizacionMontoRepository();
+        MontoMinDepRepository montoMinDepRepository = new MontoMinDepRepository();
 
 
         public DataTable GetPeriodosContables()
@@ -29,14 +32,52 @@ namespace Software_Evolution.managers.general
             return periodosContables.DesBloquearPeriodo(periodoid);
         }
 
-        public DataSet GetSecuencias()
+        public DataTable GetSecuencias()
         {
-            return secuenciaRepository.GetSecuenciasLive();
+            return secuenciaRepository.GetSecuencias();
         }
 
-        public int UpdateSecuencias(DataSet data)
+        public int UpdateSecuencias(DataRow row)
         {
-            return secuenciaRepository.SaveSecuencias(data);
+            return secuenciaRepository.CreateOrUpdateSecuencia(row);
+        }
+
+        public DataTable GetCotizacionesMonto()
+        {
+            return preferencias.GetCotizacionesMonto();
+        }
+
+        public DataTable GetCotizacionesDepartamento()
+        {
+            return preferencias.GetCotizacionesDepartamento();
+        }
+
+        public DataRow GetPreferencias()
+        {
+            return preferencias.GetPreferencias();
+        }
+
+        public void SavePreferencias(Dictionary<string,object> data)
+        {
+            preferencias.SavePreferencias(data);
+        }
+
+        public void SaveCotizacionMonto(DataTable cotizaciones)
+        {
+            CotizacionMontoRepository.DeleteAll();
+            foreach(DataRow row in cotizaciones.Rows)
+            {
+                CotizacionMontoRepository.Create(row);
+            }
+        }
+
+        public void SaveMontoMinDep(DataTable data)
+        {
+            montoMinDepRepository.DeleteAll();
+            foreach (DataRow row in data.Rows)
+            {
+                montoMinDepRepository.Create(row);
+            }
         }
     }
 }

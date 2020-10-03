@@ -47,6 +47,12 @@ namespace Software_Evolution.customcontrols
         [Category("Extended Properties")]
         [Description("El nombre del campo de la tabla al que debe guardar este texto")]
         public string FieldName { get; set; } = "";
+
+        [Browsable(true)]
+        [Category("Extended Properties")]
+        [Description("Indica si el componente de puede habilitar y deshabilitar")]
+        public bool IsActivar { get; set; } = true;
+
         public int Valor { get =>this.txtId.Valor; set {
                 this.txtId.Valor = value;
                 buscar();
