@@ -1,5 +1,6 @@
 ﻿using DevExpress.XtraGrid.Views.Grid;
 using Software_Evolution.customcontrols;
+using Software_Evolution.data;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -42,6 +43,8 @@ namespace Software_Evolution.utils.clases
         protected bool Creando { get; set; } = false;
 
         protected ErrorProvider errorProvider = new ErrorProvider();
+
+        protected ToolTip Fromtooltip = new ToolTip();
 
         public BaseForm()
         {
@@ -1654,6 +1657,32 @@ namespace Software_Evolution.utils.clases
                     Activar(group, activo);
                 }
             }
+        }
+
+        public DateTime CurrentDate => QueryManager.Instance.CurrentDate();
+        public string CurrentTime => QueryManager.Instance.CurrentTime();
+
+        /// <summary>
+        /// Esta funcion devuelve una fecha como string en el formato 'yyyy/MM/dd'.
+        /// </summary>
+        public string Dtos(DateTime fecha)
+        {
+            return fecha.ToString("yyyy/MM/dd");
+        }
+
+        protected double Frac(double value)
+        {
+            var decimalpart = value - Math.Truncate(value);
+            return Convert.ToDouble(decimalpart.ToString("#.00"));
+        }
+
+        protected string Ntos(double number)
+        {
+            return string.Format("{0:#,0.00}", number);
+        }
+        protected string Ntos(decimal number)
+        {
+            return string.Format("{0:#,0.00}", number);
         }
     }
 

@@ -66,9 +66,15 @@
     <Reference Include="DevExpress.XtraRichEdit.v19.2, Version=19.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
     <Reference Include="DevExpress.XtraTreeList.v19.2, Version=19.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
     <Reference Include="DevExpress.XtraTreeMap.v19.2, Version=19.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="FastReport, Version=2020.4.4.0, Culture=neutral, PublicKeyToken=db7e5ce63278458c" />
+    <Reference Include="FastReport.Bars, Version=2020.4.4.0, Culture=neutral, PublicKeyToken=db7e5ce63278458c" />
+    <Reference Include="FastReport.Compat, Version=2020.3.2.0, Culture=neutral, PublicKeyToken=406e1f4c3c8ef97e" />
+    <Reference Include="FastReport.DataVisualization, Version=2020.3.1.0, Culture=neutral, PublicKeyToken=5ceb240df42bf6e8" />
+    <Reference Include="FastReport.Editor, Version=2020.4.4.0, Culture=neutral, PublicKeyToken=db7e5ce63278458c" />
     <Reference Include="Microsoft.Bcl.AsyncInterfaces, Version=1.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
       <HintPath>..\packages\Microsoft.Bcl.AsyncInterfaces.1.1.0\lib\net461\Microsoft.Bcl.AsyncInterfaces.dll</HintPath>
     </Reference>
+    <Reference Include="Microsoft.VisualBasic" />
     <Reference Include="Npgsql, Version=4.1.4.0, Culture=neutral, PublicKeyToken=5d8b90d52f46fda7, processorArchitecture=MSIL">
       <HintPath>..\packages\Npgsql.4.1.4\lib\net461\Npgsql.dll</HintPath>
     </Reference>
@@ -87,6 +93,7 @@
     <Reference Include="System.Runtime.CompilerServices.Unsafe, Version=4.0.5.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
       <HintPath>..\packages\System.Runtime.CompilerServices.Unsafe.4.6.0\lib\netstandard2.0\System.Runtime.CompilerServices.Unsafe.dll</HintPath>
     </Reference>
+    <Reference Include="System.Security" />
     <Reference Include="System.Text.Encodings.Web, Version=4.0.4.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
       <HintPath>..\packages\System.Text.Encodings.Web.4.6.0\lib\netstandard2.0\System.Text.Encodings.Web.dll</HintPath>
     </Reference>
@@ -138,6 +145,9 @@
     <Compile Include="customcontrols\EvPassWordTextBox.cs">
       <SubType>Component</SubType>
     </Compile>
+    <Compile Include="customcontrols\EvProyectoCmb.cs">
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="customcontrols\EvTextBox.cs">
       <SubType>Component</SubType>
     </Compile>
@@ -154,16 +164,34 @@
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
     <Compile Include="managers\contabilidad\CuentasContablesManager.cs" />
+    <Compile Include="managers\cuentaxpagar\SuplidoresManager.cs" />
     <Compile Include="managers\general\ClientesManager.cs" />
     <Compile Include="managers\general\PreferenciasManager.cs" />
     <Compile Include="managers\general\ProductosManager.cs" />
     <Compile Include="managers\general\UsuariosManager.cs" />
     <Compile Include="managers\general\VendedoresManager.cs" />
+    <Compile Include="managers\reportes\FormatoImpresionGeneralManager.cs" />
+    <Compile Include="managers\reportes\FormatoImpresionReportesManager.cs" />
+    <Compile Include="managers\ventas y facturacion\CotizacionManager.cs" />
+    <Compile Include="managers\ventas y facturacion\FacturasManager.cs" />
+    <Compile Include="managers\ventas y facturacion\PedidosManager.cs" />
     <Compile Include="modalviews\CuentasContablesGet.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="modalviews\CuentasContablesGet.Designer.cs">
       <DependentUpon>CuentasContablesGet.cs</DependentUpon>
+    </Compile>
+    <Compile Include="modalviews\cuentaxpagar\Qry_out_concepto_retencion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="modalviews\cuentaxpagar\Qry_out_concepto_retencion.Designer.cs">
+      <DependentUpon>Qry_out_concepto_retencion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="modalviews\cuentaxpagar\Qry_out_concepto_retencion_imp.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="modalviews\cuentaxpagar\Qry_out_concepto_retencion_imp.Designer.cs">
+      <DependentUpon>Qry_out_concepto_retencion_imp.cs</DependentUpon>
     </Compile>
     <Compile Include="modalviews\PermisosUsuario.cs">
       <SubType>Form</SubType>
@@ -183,14 +211,45 @@
     <Compile Include="modalviews\Qry_provincia_municipio.Designer.cs">
       <DependentUpon>Qry_provincia_municipio.cs</DependentUpon>
     </Compile>
+    <Compile Include="modalviews\seguridad\Seguridad.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="modalviews\seguridad\Seguridad.Designer.cs">
+      <DependentUpon>Seguridad.cs</DependentUpon>
+    </Compile>
     <Compile Include="modalviews\VendedorPickerForm.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="modalviews\VendedorPickerForm.Designer.cs">
       <DependentUpon>VendedorPickerForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="modalviews\ventasfacturacion\CambiarPrecioForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="modalviews\ventasfacturacion\CambiarPrecioForm.Designer.cs">
+      <DependentUpon>CambiarPrecioForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="modalviews\ventasfacturacion\GetCotizacionAbierta.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="modalviews\ventasfacturacion\GetCotizacionAbierta.Designer.cs">
+      <DependentUpon>GetCotizacionAbierta.cs</DependentUpon>
+    </Compile>
+    <Compile Include="modalviews\ventasfacturacion\NumericInputDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="modalviews\ventasfacturacion\NumericInputDialog.Designer.cs">
+      <DependentUpon>NumericInputDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="modalviews\ventasfacturacion\Qry_Get_Clientes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="modalviews\ventasfacturacion\Qry_Get_Clientes.Designer.cs">
+      <DependentUpon>Qry_Get_Clientes.cs</DependentUpon>
+    </Compile>
     <Compile Include="models\ForeinField.cs" />
     <Compile Include="models\MasterDetailModel.cs" />
+    <Compile Include="models\Preferencias.cs" />
     <Compile Include="models\Usuario.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -211,6 +270,18 @@
     </Compile>
     <Compile Include="utils\clases\InnerForm.Designer.cs">
       <DependentUpon>InnerForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="views\cuentaxpagar\InSuplidores.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="views\cuentaxpagar\InSuplidores.Designer.cs">
+      <DependentUpon>InSuplidores.cs</DependentUpon>
+    </Compile>
+    <Compile Include="views\cuentaxpagar\OutSuplidores.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="views\cuentaxpagar\OutSuplidores.Designer.cs">
+      <DependentUpon>OutSuplidores.cs</DependentUpon>
     </Compile>
     <Compile Include="views\general\InCambiarClave.cs">
       <SubType>Form</SubType>
@@ -260,14 +331,101 @@
     <Compile Include="views\general\Principal.Designer.cs">
       <DependentUpon>Principal.cs</DependentUpon>
     </Compile>
+    <Compile Include="views\mantenimientos\InEnviarCorreo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="views\mantenimientos\InEnviarCorreo.Designer.cs">
+      <DependentUpon>InEnviarCorreo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="views\mantenimientos\InExportarDatos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="views\mantenimientos\InExportarDatos.Designer.cs">
+      <DependentUpon>InExportarDatos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="views\mantenimientos\InFormatoImpresionGeneral.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="views\mantenimientos\InFormatoImpresionGeneral.Designer.cs">
+      <DependentUpon>InFormatoImpresionGeneral.cs</DependentUpon>
+    </Compile>
+    <Compile Include="views\mantenimientos\InFormatoImpresionReportes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="views\mantenimientos\InFormatoImpresionReportes.Designer.cs">
+      <DependentUpon>InFormatoImpresionReportes.cs</DependentUpon>
+    </Compile>
     <Compile Include="views\mantenimientos\MasterDetailForm.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="views\mantenimientos\MasterDetailForm.Designer.cs">
       <DependentUpon>MasterDetailForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="views\mantenimientos\OutFormatoImpresionGeneral.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="views\mantenimientos\OutFormatoImpresionGeneral.Designer.cs">
+      <DependentUpon>OutFormatoImpresionGeneral.cs</DependentUpon>
+    </Compile>
+    <Compile Include="views\mantenimientos\OutFormatoImpresionReportes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="views\mantenimientos\OutFormatoImpresionReportes.Designer.cs">
+      <DependentUpon>OutFormatoImpresionReportes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="views\compras\CambiarEstadoCotizacion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="views\compras\CambiarEstadoCotizacion.Designer.cs">
+      <DependentUpon>CambiarEstadoCotizacion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="views\Venta Y Facturacion\cotizaciones\InCotizaciones.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="views\Venta Y Facturacion\cotizaciones\InCotizaciones.Designer.cs">
+      <DependentUpon>InCotizaciones.cs</DependentUpon>
+    </Compile>
+    <Compile Include="views\Venta Y Facturacion\cotizaciones\OutCotizaciones.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="views\Venta Y Facturacion\cotizaciones\OutCotizaciones.Designer.cs">
+      <DependentUpon>OutCotizaciones.cs</DependentUpon>
+    </Compile>
+    <Compile Include="views\Venta Y Facturacion\facturacion\InFacturacion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="views\Venta Y Facturacion\facturacion\InFacturacion.Designer.cs">
+      <DependentUpon>InFacturacion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="views\Venta Y Facturacion\pedido\CambiarEstadoPedido.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="views\Venta Y Facturacion\pedido\CambiarEstadoPedido.Designer.cs">
+      <DependentUpon>CambiarEstadoPedido.cs</DependentUpon>
+    </Compile>
+    <Compile Include="views\Venta Y Facturacion\pedido\DepurarPedido.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="views\Venta Y Facturacion\pedido\DepurarPedido.Designer.cs">
+      <DependentUpon>DepurarPedido.cs</DependentUpon>
+    </Compile>
+    <Compile Include="views\Venta Y Facturacion\pedido\InPedidos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="views\Venta Y Facturacion\pedido\InPedidos.Designer.cs">
+      <DependentUpon>InPedidos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="views\Venta Y Facturacion\pedido\OutPedidos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="views\Venta Y Facturacion\pedido\OutPedidos.Designer.cs">
+      <DependentUpon>OutPedidos.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="customcontrols\CuentaContablePicker.resx">
       <DependentUpon>CuentaContablePicker.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="customcontrols\EvComboBox.resx">
+      <DependentUpon>EvComboBox.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="customcontrols\VendedorPickerPanel.resx">
       <DependentUpon>VendedorPickerPanel.cs</DependentUpon>
@@ -278,6 +436,12 @@
     <EmbeddedResource Include="modalviews\CuentasContablesGet.resx">
       <DependentUpon>CuentasContablesGet.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="modalviews\cuentaxpagar\Qry_out_concepto_retencion.resx">
+      <DependentUpon>Qry_out_concepto_retencion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="modalviews\cuentaxpagar\Qry_out_concepto_retencion_imp.resx">
+      <DependentUpon>Qry_out_concepto_retencion_imp.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="modalviews\PermisosUsuario.resx">
       <DependentUpon>PermisosUsuario.cs</DependentUpon>
     </EmbeddedResource>
@@ -287,8 +451,23 @@
     <EmbeddedResource Include="modalviews\Qry_provincia_municipio.resx">
       <DependentUpon>Qry_provincia_municipio.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="modalviews\seguridad\Seguridad.resx">
+      <DependentUpon>Seguridad.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="modalviews\VendedorPickerForm.resx">
       <DependentUpon>VendedorPickerForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="modalviews\ventasfacturacion\CambiarPrecioForm.resx">
+      <DependentUpon>CambiarPrecioForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="modalviews\ventasfacturacion\GetCotizacionAbierta.resx">
+      <DependentUpon>GetCotizacionAbierta.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="modalviews\ventasfacturacion\NumericInputDialog.resx">
+      <DependentUpon>NumericInputDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="modalviews\ventasfacturacion\Qry_Get_Clientes.resx">
+      <DependentUpon>Qry_Get_Clientes.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\licenses.licx" />
     <EmbeddedResource Include="Properties\Resources.resx">
@@ -301,8 +480,17 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="utils\clases\BaseForm.resx">
+      <DependentUpon>BaseForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="utils\clases\InnerForm.resx">
       <DependentUpon>InnerForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="views\cuentaxpagar\InSuplidores.resx">
+      <DependentUpon>InSuplidores.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="views\cuentaxpagar\OutSuplidores.resx">
+      <DependentUpon>OutSuplidores.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="views\general\InCambiarClave.resx">
       <DependentUpon>InCambiarClave.cs</DependentUpon>
@@ -328,9 +516,54 @@
     <EmbeddedResource Include="views\general\Principal.resx">
       <DependentUpon>Principal.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="views\mantenimientos\InEnviarCorreo.resx">
+      <DependentUpon>InEnviarCorreo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="views\mantenimientos\InExportarDatos.resx">
+      <DependentUpon>InExportarDatos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="views\mantenimientos\InFormatoImpresionGeneral.resx">
+      <DependentUpon>InFormatoImpresionGeneral.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="views\mantenimientos\InFormatoImpresionReportes.resx">
+      <DependentUpon>InFormatoImpresionReportes.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="views\mantenimientos\MasterDetailForm.resx">
       <DependentUpon>MasterDetailForm.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="views\mantenimientos\OutFormatoImpresionGeneral.resx">
+      <DependentUpon>OutFormatoImpresionGeneral.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="views\mantenimientos\OutFormatoImpresionReportes.resx">
+      <DependentUpon>OutFormatoImpresionReportes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="views\compras\CambiarEstadoCotizacion.resx">
+      <DependentUpon>CambiarEstadoCotizacion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="views\Venta Y Facturacion\cotizaciones\InCotizaciones.resx">
+      <DependentUpon>InCotizaciones.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="views\Venta Y Facturacion\cotizaciones\OutCotizaciones.resx">
+      <DependentUpon>OutCotizaciones.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="views\Venta Y Facturacion\facturacion\InFacturacion.resx">
+      <DependentUpon>InFacturacion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="views\Venta Y Facturacion\pedido\CambiarEstadoPedido.resx">
+      <DependentUpon>CambiarEstadoPedido.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="views\Venta Y Facturacion\pedido\DepurarPedido.resx">
+      <DependentUpon>DepurarPedido.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="views\Venta Y Facturacion\pedido\InPedidos.resx">
+      <DependentUpon>InPedidos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="views\Venta Y Facturacion\pedido\OutPedidos.resx">
+      <DependentUpon>OutPedidos.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="..\.editorconfig">
+      <Link>.editorconfig</Link>
+    </None>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

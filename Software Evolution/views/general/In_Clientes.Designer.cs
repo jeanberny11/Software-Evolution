@@ -47,10 +47,8 @@
             this.evLabel24 = new Software_Evolution.customcontrols.EvLabel();
             this.cmb_zona = new Software_Evolution.customcontrols.EvComboBox();
             this.evLabel23 = new Software_Evolution.customcontrols.EvLabel();
-            this.evTextBox15 = new Software_Evolution.customcontrols.EvTextBox();
-            this.evLabel22 = new Software_Evolution.customcontrols.EvLabel();
-            this.evTextBox14 = new Software_Evolution.customcontrols.EvTextBox();
-            this.evLabel21 = new Software_Evolution.customcontrols.EvLabel();
+            this.txtcuenta = new Software_Evolution.customcontrols.EvTextBox();
+            this.txtcuentaprima = new Software_Evolution.customcontrols.EvTextBox();
             this.evLabel20 = new Software_Evolution.customcontrols.EvLabel();
             this.evLabel19 = new Software_Evolution.customcontrols.EvLabel();
             this.evLabel18 = new Software_Evolution.customcontrols.EvLabel();
@@ -100,6 +98,7 @@
             this.txtcodigo = new Software_Evolution.customcontrols.EvIntegerTextBox();
             this.evLabel1 = new Software_Evolution.customcontrols.EvLabel();
             this.tabPage2 = new System.Windows.Forms.TabPage();
+            this.evNumericTextBox4 = new Software_Evolution.customcontrols.EvNumericTextBox();
             this.cmb_precioventa = new System.Windows.Forms.ComboBox();
             this.evCheckBox9 = new Software_Evolution.customcontrols.EvCheckBox();
             this.evCheckBox8 = new Software_Evolution.customcontrols.EvCheckBox();
@@ -214,7 +213,8 @@
             this.evLabel68 = new Software_Evolution.customcontrols.EvLabel();
             this.txtrefrencia = new Software_Evolution.customcontrols.EvTextBox();
             this.linkLabel3 = new System.Windows.Forms.LinkLabel();
-            this.evNumericTextBox4 = new Software_Evolution.customcontrols.EvNumericTextBox();
+            this.linkLabel4 = new System.Windows.Forms.LinkLabel();
+            this.linkLabel5 = new System.Windows.Forms.LinkLabel();
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider)).BeginInit();
             this.panel1.SuspendLayout();
             this.tabControl1.SuspendLayout();
@@ -235,6 +235,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.cmb_pais.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtcodigo.Properties)).BeginInit();
             this.tabPage2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.evNumericTextBox4.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.cmb_tipocontribuyente.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.cmb_termino.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.cmb_tipocomprobante.Properties)).BeginInit();
@@ -264,7 +265,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.gridControl2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtprecio.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.evNumericTextBox4.Properties)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -329,6 +329,8 @@
             // 
             // tabPage1
             // 
+            this.tabPage1.Controls.Add(this.linkLabel5);
+            this.tabPage1.Controls.Add(this.linkLabel4);
             this.tabPage1.Controls.Add(this.evCheckBox2);
             this.tabPage1.Controls.Add(this.evCheckBox1);
             this.tabPage1.Controls.Add(this.cmb_clasificacion);
@@ -341,10 +343,8 @@
             this.tabPage1.Controls.Add(this.evLabel24);
             this.tabPage1.Controls.Add(this.cmb_zona);
             this.tabPage1.Controls.Add(this.evLabel23);
-            this.tabPage1.Controls.Add(this.evTextBox15);
-            this.tabPage1.Controls.Add(this.evLabel22);
-            this.tabPage1.Controls.Add(this.evTextBox14);
-            this.tabPage1.Controls.Add(this.evLabel21);
+            this.tabPage1.Controls.Add(this.txtcuenta);
+            this.tabPage1.Controls.Add(this.txtcuentaprima);
             this.tabPage1.Controls.Add(this.evLabel20);
             this.tabPage1.Controls.Add(this.evLabel19);
             this.tabPage1.Controls.Add(this.evLabel18);
@@ -583,53 +583,33 @@
             this.evLabel23.TabIndex = 57;
             this.evLabel23.Text = "Zona";
             // 
-            // evTextBox15
+            // txtcuenta
             // 
-            this.evTextBox15.EnterTab = true;
-            this.evTextBox15.FieldName = "f_cuenta_contable";
-            this.evTextBox15.IsActivar = true;
-            this.evTextBox15.IsLimpiar = true;
-            this.evTextBox15.IsSalvar = true;
-            this.evTextBox15.IsValidar = true;
-            this.evTextBox15.Location = new System.Drawing.Point(530, 378);
-            this.evTextBox15.Name = "evTextBox15";
-            this.evTextBox15.Size = new System.Drawing.Size(243, 22);
-            this.evTextBox15.TabIndex = 56;
-            this.evTextBox15.Valor = "";
+            this.txtcuenta.EnterTab = true;
+            this.txtcuenta.FieldName = "f_cuenta_contable";
+            this.txtcuenta.IsActivar = true;
+            this.txtcuenta.IsLimpiar = true;
+            this.txtcuenta.IsSalvar = true;
+            this.txtcuenta.IsValidar = true;
+            this.txtcuenta.Location = new System.Drawing.Point(530, 378);
+            this.txtcuenta.Name = "txtcuenta";
+            this.txtcuenta.Size = new System.Drawing.Size(243, 22);
+            this.txtcuenta.TabIndex = 56;
+            this.txtcuenta.Valor = "";
             // 
-            // evLabel22
+            // txtcuentaprima
             // 
-            this.evLabel22.AutoSize = true;
-            this.evLabel22.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.evLabel22.Location = new System.Drawing.Point(395, 381);
-            this.evLabel22.Name = "evLabel22";
-            this.evLabel22.Size = new System.Drawing.Size(128, 17);
-            this.evLabel22.TabIndex = 55;
-            this.evLabel22.Text = "Cuenta Contable";
-            // 
-            // evTextBox14
-            // 
-            this.evTextBox14.EnterTab = true;
-            this.evTextBox14.FieldName = "f_cuenta_prima";
-            this.evTextBox14.IsActivar = true;
-            this.evTextBox14.IsLimpiar = true;
-            this.evTextBox14.IsSalvar = true;
-            this.evTextBox14.IsValidar = true;
-            this.evTextBox14.Location = new System.Drawing.Point(530, 351);
-            this.evTextBox14.Name = "evTextBox14";
-            this.evTextBox14.Size = new System.Drawing.Size(243, 22);
-            this.evTextBox14.TabIndex = 54;
-            this.evTextBox14.Valor = "";
-            // 
-            // evLabel21
-            // 
-            this.evLabel21.AutoSize = true;
-            this.evLabel21.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.evLabel21.Location = new System.Drawing.Point(395, 354);
-            this.evLabel21.Name = "evLabel21";
-            this.evLabel21.Size = new System.Drawing.Size(105, 17);
-            this.evLabel21.TabIndex = 53;
-            this.evLabel21.Text = "Cuenta Prima";
+            this.txtcuentaprima.EnterTab = true;
+            this.txtcuentaprima.FieldName = "f_cuenta_prima";
+            this.txtcuentaprima.IsActivar = true;
+            this.txtcuentaprima.IsLimpiar = true;
+            this.txtcuentaprima.IsSalvar = true;
+            this.txtcuentaprima.IsValidar = true;
+            this.txtcuentaprima.Location = new System.Drawing.Point(530, 351);
+            this.txtcuentaprima.Name = "txtcuentaprima";
+            this.txtcuentaprima.Size = new System.Drawing.Size(243, 22);
+            this.txtcuentaprima.TabIndex = 54;
+            this.txtcuentaprima.Valor = "";
             // 
             // evLabel20
             // 
@@ -1369,6 +1349,25 @@
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "Datos Creditos";
             this.tabPage2.UseVisualStyleBackColor = true;
+            // 
+            // evNumericTextBox4
+            // 
+            this.evNumericTextBox4.EditValue = 0D;
+            this.evNumericTextBox4.EnterTab = true;
+            this.evNumericTextBox4.FieldName = "f_dias_credito";
+            this.evNumericTextBox4.IsActivar = true;
+            this.evNumericTextBox4.IsLimpiar = true;
+            this.evNumericTextBox4.IsSalvar = true;
+            this.evNumericTextBox4.IsValidar = false;
+            this.evNumericTextBox4.Location = new System.Drawing.Point(570, 138);
+            this.evNumericTextBox4.Name = "evNumericTextBox4";
+            this.evNumericTextBox4.Properties.Appearance.Options.UseTextOptions = true;
+            this.evNumericTextBox4.Properties.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Far;
+            this.evNumericTextBox4.Properties.Mask.EditMask = "n";
+            this.evNumericTextBox4.Properties.Mask.MaskType = DevExpress.XtraEditors.Mask.MaskType.Numeric;
+            this.evNumericTextBox4.Properties.Mask.UseMaskAsDisplayFormat = true;
+            this.evNumericTextBox4.Size = new System.Drawing.Size(203, 22);
+            this.evNumericTextBox4.TabIndex = 57;
             // 
             // cmb_precioventa
             // 
@@ -2954,23 +2953,29 @@
             this.linkLabel3.Text = "Codigo";
             this.linkLabel3.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel3_LinkClicked);
             // 
-            // evNumericTextBox4
+            // linkLabel4
             // 
-            this.evNumericTextBox4.EnterTab = true;
-            this.evNumericTextBox4.FieldName = "f_dias_credito";
-            this.evNumericTextBox4.IsActivar = true;
-            this.evNumericTextBox4.IsLimpiar = true;
-            this.evNumericTextBox4.IsSalvar = true;
-            this.evNumericTextBox4.IsValidar = false;
-            this.evNumericTextBox4.Location = new System.Drawing.Point(570, 138);
-            this.evNumericTextBox4.Name = "evNumericTextBox4";
-            this.evNumericTextBox4.Properties.Appearance.Options.UseTextOptions = true;
-            this.evNumericTextBox4.Properties.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Far;
-            this.evNumericTextBox4.Properties.Mask.EditMask = "n";
-            this.evNumericTextBox4.Properties.Mask.MaskType = DevExpress.XtraEditors.Mask.MaskType.Numeric;
-            this.evNumericTextBox4.Properties.Mask.UseMaskAsDisplayFormat = true;
-            this.evNumericTextBox4.Size = new System.Drawing.Size(203, 22);
-            this.evNumericTextBox4.TabIndex = 57;
+            this.linkLabel4.AutoSize = true;
+            this.linkLabel4.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.linkLabel4.Location = new System.Drawing.Point(395, 354);
+            this.linkLabel4.Name = "linkLabel4";
+            this.linkLabel4.Size = new System.Drawing.Size(105, 17);
+            this.linkLabel4.TabIndex = 69;
+            this.linkLabel4.TabStop = true;
+            this.linkLabel4.Text = "Cuenta Prima";
+            this.linkLabel4.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel4_LinkClicked);
+            // 
+            // linkLabel5
+            // 
+            this.linkLabel5.AutoSize = true;
+            this.linkLabel5.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.linkLabel5.Location = new System.Drawing.Point(395, 381);
+            this.linkLabel5.Name = "linkLabel5";
+            this.linkLabel5.Size = new System.Drawing.Size(128, 17);
+            this.linkLabel5.TabIndex = 70;
+            this.linkLabel5.TabStop = true;
+            this.linkLabel5.Text = "Cuenta Contable";
+            this.linkLabel5.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel5_LinkClicked);
             // 
             // In_Clientes
             // 
@@ -3006,6 +3011,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.txtcodigo.Properties)).EndInit();
             this.tabPage2.ResumeLayout(false);
             this.tabPage2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.evNumericTextBox4.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.cmb_tipocontribuyente.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.cmb_termino.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.cmb_tipocomprobante.Properties)).EndInit();
@@ -3039,7 +3045,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.gridControl2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtprecio.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.evNumericTextBox4.Properties)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -3062,10 +3067,8 @@
         private customcontrols.EvLabel evLabel24;
         private customcontrols.EvComboBox cmb_zona;
         private customcontrols.EvLabel evLabel23;
-        private customcontrols.EvTextBox evTextBox15;
-        private customcontrols.EvLabel evLabel22;
-        private customcontrols.EvTextBox evTextBox14;
-        private customcontrols.EvLabel evLabel21;
+        private customcontrols.EvTextBox txtcuenta;
+        private customcontrols.EvTextBox txtcuentaprima;
         private customcontrols.EvLabel evLabel20;
         private customcontrols.EvLabel evLabel19;
         private customcontrols.EvLabel evLabel18;
@@ -3232,5 +3235,7 @@
         private customcontrols.EvTextBox txtrefrencia;
         private System.Windows.Forms.LinkLabel linkLabel3;
         private customcontrols.EvNumericTextBox evNumericTextBox4;
+        private System.Windows.Forms.LinkLabel linkLabel5;
+        private System.Windows.Forms.LinkLabel linkLabel4;
     }
 }

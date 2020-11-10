@@ -9,6 +9,8 @@ using Software_Evolution.models;
 using Npgsql;
 using System.Data;
 using System.Windows.Forms;
+using Software_Evolution.utils.clases;
+using Software_Evolution.modalviews.seguridad;
 
 namespace Software_Evolution.managers.general
 {
@@ -37,7 +39,7 @@ namespace Software_Evolution.managers.general
                 var res = tabla.Rows[0];                
                 var usuario =new Usuario(res.Field<int>("f_codigo_usuario"), res.Field<String>("f_id_usuario"), clave,
                     res.Field<String>("f_apellido"), res.Field<String>("f_nombre"), res.Field<String>("f_direccion"), res.Field<int>("f_id_grupo"), res.Field<Boolean>("f_permisos_libre"),
-                    res.Field<String>("f_telefono"), res.Field<String>("f_email"));
+                    res.Field<String>("f_telefono"), res.Field<String>("f_email"),res.Field<string>("f_password_email"), res.Field<bool>("f_cambiar_precio"), res.Field<bool>("f_d_producto"));
                 return usuario;
             }
             catch(Exception ex)
@@ -51,6 +53,31 @@ namespace Software_Evolution.managers.general
                     throw new Exception(ex.Message);
                 }
             }
+        }
+
+        public DataRow ValidarCampo(string campo,string usuario,string password)
+        {
+            var clave = (usuario == "postgres") ? password : ToMD5(password);
+            var sql = $"select f_id_usuario from t_usuario where f_id_usuario='{usuario}' and f_password='{clave}' and {campo}";
+            var res = queryManager.Query(sql);
+            if (res.Rows.Count > 0)
+            {
+                return res.Rows[0];
+            }
+            return null;
+        }
+
+        public int ValidarPermiso(BaseForm parent,string campo,string mensaje)
+        {
+            int result = 0;
+            Seguridad dialog = new Seguridad(campo,mensaje);
+            var dialolresult = dialog.ShowDialog(parent);
+            if (dialolresult == System.Windows.Forms.DialogResult.OK)
+            {
+                result = dialog.Result ? 1 : 2;
+            }
+            dialog.Dispose();
+            return result;
         }
 
         public String ToMD5(String text)

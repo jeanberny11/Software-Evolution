@@ -1,4 +1,5 @@
-﻿using Software_Evolution.managers.general;
+﻿using Software_Evolution.managers.contabilidad;
+using Software_Evolution.managers.general;
 using Software_Evolution.utils.clases;
 using System;
 using System.Collections.Generic;
@@ -20,6 +21,7 @@ namespace Software_Evolution.views.general
         public In_Clientes()
         {
             InitializeComponent();
+            InitData();
         }
 
         public In_Clientes(int clienteid) : this()
@@ -42,6 +44,11 @@ namespace Software_Evolution.views.general
         }
 
         private void In_Clientes_Load(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void InitData()
         {
             cmb_clasificacion.LoadData();
             cmb_pais.LoadData();
@@ -274,6 +281,18 @@ namespace Software_Evolution.views.general
             evTextBox16.Limpiar();
             tdescuento.Clear();
             tlistaprecio.Clear();
+        }
+
+        private void linkLabel4_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            var cuentamanager = new CuentasContablesManager();
+            txtcuentaprima.Text = cuentamanager.SelectCuentaFromDialog(this);
+        }
+
+        private void linkLabel5_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            var cuentamanager = new CuentasContablesManager();
+            txtcuenta.Text = cuentamanager.SelectCuentaFromDialog(this);
         }
     }
 }
