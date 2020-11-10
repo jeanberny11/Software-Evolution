@@ -1,14 +1,8 @@
 ﻿using Software_Evolution.managers.general;
 using Software_Evolution.utils.clases;
+using Software_Evolution.views.mantenimientos;
 using System;
-using System.Collections.Generic;
-using System.ComponentModel;
 using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows.Forms;
 
 namespace Software_Evolution.views.general
 {
@@ -58,6 +52,37 @@ namespace Software_Evolution.views.general
                 var clienteid = Convert.ToInt32(gridView1.GetRowCellValue(e.RowHandle, "f_id"));
                 var cliente = new In_Clientes(clienteid);
                 (this.ParentForm as Principal).ShowOrFocusForm(cliente);
+            }
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            if (ValidarGrid(gridView1))
+            {
+                try
+                {
+                    var cliente = Convert.ToInt32(gridView1.GetRowCellValue(gridView1.GetSelectedRows()[0], "f_id"));
+                    manager.PrintEstadoCuentaCliente(this,cliente, CurrentDate);
+                }catch(Exception ex)
+                {
+                    Mensaje(ex.Message);
+                }
+            }
+        }
+
+        private void btn_correo_Click(object sender, EventArgs e)
+        {
+            if (ValidarGrid(gridView1))
+            {
+                try
+                {
+                    var cliente = Convert.ToInt32(gridView1.GetRowCellValue(gridView1.GetSelectedRows()[0], "f_id"));
+                    manager.EnviarEstadoCorreo(this, cliente, CurrentDate);
+                }
+                catch (Exception ex)
+                {
+                    Mensaje(ex.Message);
+                }
             }
         }
     }

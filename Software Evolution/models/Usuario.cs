@@ -8,40 +8,35 @@ namespace Software_Evolution.models
 {
     public class Usuario
     {
-        private int codigousuario;
-        private String username;
-        private String password;
-        private String apellido;
-        private String nombre;
-        private String direccion;
-        private int idgrupo;
-        private bool permisoslibre;
-        private String telefono;
-        private String email;
-
-        public Usuario(int codigousuario, String username, string password, string apellido, string nombre, string direccion, int idgrupo, bool permisoslibre, string telefono, string email)
+        public Usuario(int codigousuario, String username, string password, string apellido, string nombre, string direccion, int idgrupo, bool permisoslibre, string telefono, string email,string emailPassword,bool cambiarprecio,bool aplicardescuentoitem)
         {
-            this.codigousuario = codigousuario;
-            this.username = username;
-            this.password = password;
-            this.apellido = apellido;
-            this.nombre = nombre;
-            this.direccion = direccion;
-            this.idgrupo = idgrupo;
-            this.permisoslibre = permisoslibre;
-            this.telefono = telefono;
-            this.email = email;
+            this.Codigousuario = codigousuario;
+            this.Username = username;
+            this.Password = password;
+            this.Apellido = apellido;
+            this.Nombre = nombre;
+            this.Direccion = direccion;
+            this.Idgrupo = idgrupo;
+            this.Permisoslibre = permisoslibre;
+            this.Telefono = telefono;
+            this.Email = email;
+            this.EmailPassword = emailPassword;
+            this.CambiarPrecio = cambiarprecio;
+            this.AplicarDescuentoItems = aplicardescuentoitem;
         }
 
-        public int Codigousuario { get => codigousuario; set => codigousuario = value; }
-        public String Username { get => username; set => username = value; }
-        public string Password { get => password; set => password = value; }
-        public string Apellido { get => apellido; set => apellido = value; }
-        public string Nombre { get => nombre; set => nombre = value; }
-        public string Direccion { get => direccion; set => direccion = value; }
-        public int Idgrupo { get => idgrupo; set => idgrupo = value; }
-        public bool Permisoslibre { get => permisoslibre; set => permisoslibre = value; }
-        public string Telefono { get => telefono; set => telefono = value; }
-        public string Email { get => email; set => email = value; }
+        public int Codigousuario { get; set; }
+        public String Username { get; set; }
+        public string Password { get; set; }
+        public string Apellido { get; set; }
+        public string Nombre { get; set; }
+        public string Direccion { get; set; }
+        public int Idgrupo { get; set; }
+        public bool Permisoslibre { get; set; }
+        public string Telefono { get; set; }
+        public string Email { get; set; }
+        public string EmailPassword { get; set; }
+        public bool CambiarPrecio { get; set; }
+        public bool AplicarDescuentoItems { get; set; }
     }
 }

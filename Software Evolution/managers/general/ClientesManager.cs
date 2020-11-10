@@ -8,6 +8,8 @@ using Software_Evolution.data;
 using Software_Evolution.repositorios;
 using Software_Evolution.utils.clases;
 using Software_Evolution.modalviews;
+using Software_Evolution.views.mantenimientos;
+using Software_Evolution.modalviews.ventasfacturacion;
 
 namespace Software_Evolution.managers.general
 {
@@ -122,6 +124,70 @@ namespace Software_Evolution.managers.general
                 manager.RollBack();
                 throw ex;
             }
+        }
+
+        public void PrintEstadoCuentaCliente(BaseForm parent,int clienteid,DateTime date)
+        {
+            var reportesmanager = new reportes.FormatoImpresionReportesManager();
+            var formato = reportesmanager.GetFormato(2045);
+            if(formato is null)
+            {
+                throw new Exception("No se encontro el formato solicitado");
+            }
+            var parametros = $"{clienteid},'{date:yyyy/MM/dd}'";
+            var data = manager.QueryProcedure(formato.Field<string>("f_procedimiento"), parametros);
+            var reporte = reportesmanager.GetReporte(formato);
+            reporte.RegisterData(data, "general");
+            reporte.SetParameterValue("fecha1",date);
+            reporte.Show(modal: true,owner: parent);
+        }
+
+        public void EnviarEstadoCorreo(BaseForm parrent, int clienteid,DateTime date)
+        {
+            var reportesmanager = new reportes.FormatoImpresionReportesManager();
+            var formato = reportesmanager.GetFormato(2045);
+            if (formato is null)
+            {
+                throw new Exception("No se encontro el formato solicitado");
+            }
+            var parametros = $"{clienteid},'{date:yyyy/MM/dd}'";
+            var data = manager.QueryProcedure(formato.Field<string>("f_procedimiento"), parametros);
+            var reporte = reportesmanager.GetReporte(formato);
+            reporte.RegisterData(data, "general");
+            reporte.SetParameterValue("fecha1", date);
+            reporte.Prepare();
+            InEnviarCorreo inEnviarCorreo = new InEnviarCorreo("ing.berny11@gmail.com", "", "prueba", reporte);
+            inEnviarCorreo.ShowDialog(parrent);
+
+        }
+
+        public int SelectClienteFromGialog(BaseForm parent,string textfilter)
+        {
+            int result = 0;
+            Qry_Get_Clientes dialog = new Qry_Get_Clientes(textfilter);
+            var dialolresult = dialog.ShowDialog(parent);
+            if (dialolresult == System.Windows.Forms.DialogResult.OK)
+            {
+                result = dialog.Result;
+            }
+            dialog.Dispose();
+            return result;
+        }
+
+        public DataRow GetAutorizacionCLiente(int clienteid)
+        {
+            var sql = $"select * from t_autorizaciones_venta where f_estado=true and f_rechazada=false and f_aplicada=false and f_cliente={clienteid}";
+            var result = manager.Query(sql);
+            if (result.Rows.Count > 0)
+            {
+                return result.Rows[0];
+            }
+            return null;
+        }
+
+        public DataTable GetListaPrecioProdCliente(int clienteid,string referencia)
+        {
+            return manager.Query($"select * from t_lista_precios where f_cliente={clienteid}  and f_referencia='{referencia}'");
         }
     }
 }

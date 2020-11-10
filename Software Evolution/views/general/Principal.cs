@@ -1,5 +1,9 @@
 ﻿using Software_Evolution.managers.general;
 using Software_Evolution.utils.clases;
+using Software_Evolution.views.cuentaxpagar;
+using Software_Evolution.views.mantenimientos;
+using Software_Evolution.views.Venta_Y_Facturacion;
+using Software_Evolution.views.Venta_Y_Facturacion.pedido;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -73,8 +77,8 @@ namespace Software_Evolution.views.general
         private void Principal_Load(object sender, EventArgs e)
         {
             var manager = new UsuariosManager();
-            manager.IniciarMenu(menuStrip1, false);
-            manager.PermisosUsuarios(menuStrip1, AppData.Instance.Currentuser.Codigousuario);
+            manager.IniciarMenu(menuStrip1, true);
+           // manager.PermisosUsuarios(menuStrip1, AppData.Instance.Currentuser.Codigousuario);
         }
 
         private void cambiarContraseñaToolStripMenuItem_Click(object sender, EventArgs e)
@@ -107,14 +111,69 @@ namespace Software_Evolution.views.general
 
         }
 
-        private void menuStrip1_ItemClicked(object sender, ToolStripItemClickedEventArgs e)
+        private void bancosToolStripMenuItem_Click(object sender, EventArgs e)
         {
 
         }
 
-        private void bancosToolStripMenuItem_Click(object sender, EventArgs e)
+        private void clientesToolStripMenuItem_Click(object sender, EventArgs e)
         {
+            var clienteform = new OutClientes();
+            ShowOrFocusForm(clienteform);
+        }
 
+        private void almacenToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            var mantenimiento = new MasterDetailForm("t_almacen");
+            ShowOrFocusForm(mantenimiento);
+        }
+
+        private void configuracionesToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            var form = new OutFormatoImpresionReportes();
+            ShowOrFocusForm(form);
+        }
+
+        private void proveedoresToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            var form = new OutSuplidores();
+            ShowOrFocusForm(form);
+        }
+
+        private void toolStripMenuItem5_Click(object sender, EventArgs e)
+        {
+            var form = new OutCotizaciones();
+            ShowOrFocusForm(form);
+        }
+
+        private void configuracionReportesGeneralesToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            var form = new OutFormatoImpresionGeneral();
+            ShowOrFocusForm(form);
+        }
+
+        private void toolStripMenuItem6_Click(object sender, EventArgs e)
+        {
+            var form = new CambiarEstadoCotizacion();
+            ShowOrFocusForm(form);
+        }
+
+        private void toolStripMenuItem14_Click(object sender, EventArgs e)
+        {
+            var form = new OutPedidos();
+            ShowOrFocusForm(form);
+        }
+
+        private void toolStripMenuItem15_Click(object sender, EventArgs e)
+        {
+            var form = new CambiarEstadoPedido();
+            ShowOrFocusForm(form);
+        }
+
+        private void toolStripMenuItem17_Click(object sender, EventArgs e)
+        {
+            var form = new DepurarPedido();
+            ShowOrFocusForm(form);
         }
     }
 }

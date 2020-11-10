@@ -194,6 +194,18 @@ namespace Software_Evolution.views.mantenimientos
                         control.IsActivar = (fieldname!=masterDetailModel.id);
                         return control;
                     }
+                case "date":
+                    {
+                        var control = new EvDateTimePicker();
+                        control.FieldName = fieldname;
+                        control.EnterTab = true;
+                        control.IsLimpiar = true;
+                        control.IsValidar = false;
+                        control.IsSalvar = true;
+                        control.Enabled = false;
+                        control.IsActivar = true;
+                        return control;
+                    }
                 default:
                     {
                         throw new NotSupportedException();

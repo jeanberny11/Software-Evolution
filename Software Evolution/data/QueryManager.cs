@@ -240,6 +240,13 @@ namespace Software_Evolution.data
             }
         }
 
+        public string ToWholeNum(string tipodoc,int secuencia)
+        {
+            var pad = 12 - tipodoc.Length;
+            var sec = secuencia.ToString().PadLeft(pad, '0');
+            return tipodoc + sec;
+        }
+
         public int CreateRecord(String tabla,Dictionary<String,object> record)
         {
             String columns = "";
@@ -315,52 +322,7 @@ namespace Software_Evolution.data
             catch (Exception ex)
             {
                 throw ex;
-            }
-            /* String values = "";
-             foreach (KeyValuePair<string, object> entry in record)
-             {
-                 values += $",{entry.Key}=";
-                 if (entry.Value is string)
-                 {
-                     values += $"'{entry.Value}'";
-                 }
-                 else if (entry.Value is int)
-                 {
-                     values += $"{Convert.ToInt32(entry.Value)}";
-                 }
-                 else if (entry.Value is double)
-                 {
-                     values += $"{Convert.ToDouble(entry.Value)}";
-                 }
-                 else if (entry.Value is bool)
-                 {
-                     values += $"{entry.Value}";
-                 }
-                 else if (entry.Value is DateTime val)
-                 {
-                     values += $"'{val.ToString("yyyyMMdd")}'";
-                 }
-                 else
-                 {
-                     values += $"'{entry.Value}'";
-                 }
-             }
-
-             try
-             {
-                 var sql = $"update {tabla} set {values.Substring(1)} {whereclause}";
-                 Console.WriteLine(sql);
-                 Open();
-                 var cmd = new NpgsqlCommand(sql, connection);
-                 var result = cmd.ExecuteNonQuery();
-                 cmd.Dispose();
-                 Close();
-                 return result;
-             }
-             catch (Exception ex)
-             {
-                 throw ex;
-             }*/
+            }            
         }
 
         public void SaveRecord(String tabla, Dictionary<String, object> record)
@@ -417,6 +379,11 @@ namespace Software_Evolution.data
         {
             var res = Query("select current_date as date");
             return res.Rows[0].Field<DateTime>("date");
+        }
+        public string CurrentTime()
+        {
+            var res = Query("select to_char(current_timestamp, 'HH24:MI:SS') as time");
+            return res.Rows[0].Field<string>("time");
         }
     }
 }

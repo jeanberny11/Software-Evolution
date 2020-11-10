@@ -10,8 +10,10 @@ using Software_Evolution.data;
 
 namespace Software_Evolution.customcontrols
 {
-    class EvComboBox : LookUpEdit, IEvBaseComponent<object>
+    public class EvComboBox : LookUpEdit, IEvBaseComponent<object>
     {
+        private new DevExpress.XtraEditors.Repository.RepositoryItemLookUpEdit fProperties;
+
         [Browsable(true)]
         [Category("Extended Properties")]
         [Description("Hace que la tecla enter funcione como 'TAB'")]
@@ -58,7 +60,9 @@ namespace Software_Evolution.customcontrols
         public String Param { get; set; } = "";
 
         public EvComboBox()
-        {            
+        {
+            InitializeComponent();
+            this.Properties.NullText = "";
         }
 
         public bool IsEmpty()
@@ -91,6 +95,33 @@ namespace Software_Evolution.customcontrols
         public bool IsValid()
         {
             return !(this.EditValue is null);
+        }
+
+        private void InitializeComponent()
+        {
+            this.fProperties = new DevExpress.XtraEditors.Repository.RepositoryItemLookUpEdit();
+            ((System.ComponentModel.ISupportInitialize)(this.fProperties)).BeginInit();
+            this.SuspendLayout();
+            // 
+            // fProperties
+            // 
+            this.fProperties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
+            this.fProperties.Name = "fProperties";
+            // 
+            // EvComboBox
+            // 
+            this.MouseClick += new System.Windows.Forms.MouseEventHandler(this.EvComboBox_MouseClick);
+            ((System.ComponentModel.ISupportInitialize)(this.fProperties)).EndInit();
+            this.ResumeLayout(false);
+
+        }
+
+        private void EvComboBox_MouseClick(object sender, MouseEventArgs e)
+        {
+            if (e.Button == MouseButtons.Right && e.Clicks==1) {
+                this.Limpiar();
+            }
         }
     }
 }
