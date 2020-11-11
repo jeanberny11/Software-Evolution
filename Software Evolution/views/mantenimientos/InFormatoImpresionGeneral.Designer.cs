@@ -152,14 +152,15 @@
             this.cmb_tipoformato.IsLimpiar = true;
             this.cmb_tipoformato.IsSalvar = true;
             this.cmb_tipoformato.IsValidar = true;
-            this.cmb_tipoformato.Location = new System.Drawing.Point(465, 114);
+            this.cmb_tipoformato.Location = new System.Drawing.Point(471, 114);
+            this.cmb_tipoformato.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.cmb_tipoformato.Name = "cmb_tipoformato";
             this.cmb_tipoformato.NombreProcedimiento = "p_tipo_impresion_general";
             this.cmb_tipoformato.Param = "";
             this.cmb_tipoformato.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
             this.cmb_tipoformato.Properties.NullText = "";
-            this.cmb_tipoformato.Size = new System.Drawing.Size(231, 22);
+            this.cmb_tipoformato.Size = new System.Drawing.Size(225, 22);
             this.cmb_tipoformato.TabIndex = 21;
             this.cmb_tipoformato.Valor = null;
             this.cmb_tipoformato.ValueMemberName = "f_id";
@@ -175,13 +176,14 @@
             this.txtcodigo.IsSalvar = true;
             this.txtcodigo.IsValidar = true;
             this.txtcodigo.Location = new System.Drawing.Point(171, 114);
+            this.txtcodigo.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtcodigo.Name = "txtcodigo";
             this.txtcodigo.Properties.Appearance.Options.UseTextOptions = true;
             this.txtcodigo.Properties.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Far;
             this.txtcodigo.Properties.Mask.EditMask = "f0";
             this.txtcodigo.Properties.Mask.MaskType = DevExpress.XtraEditors.Mask.MaskType.Numeric;
             this.txtcodigo.Properties.Mask.UseMaskAsDisplayFormat = true;
-            this.txtcodigo.Size = new System.Drawing.Size(154, 22);
+            this.txtcodigo.Size = new System.Drawing.Size(166, 22);
             this.txtcodigo.TabIndex = 20;
             // 
             // panel1
@@ -313,14 +315,15 @@
             this.evComboBox1.IsLimpiar = true;
             this.evComboBox1.IsSalvar = true;
             this.evComboBox1.IsValidar = true;
-            this.evComboBox1.Location = new System.Drawing.Point(172, 302);
+            this.evComboBox1.Location = new System.Drawing.Point(171, 302);
+            this.evComboBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.evComboBox1.Name = "evComboBox1";
             this.evComboBox1.NombreProcedimiento = null;
             this.evComboBox1.Param = "";
             this.evComboBox1.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
             this.evComboBox1.Properties.NullText = "";
-            this.evComboBox1.Size = new System.Drawing.Size(524, 22);
+            this.evComboBox1.Size = new System.Drawing.Size(525, 22);
             this.evComboBox1.TabIndex = 35;
             this.evComboBox1.Valor = "";
             this.evComboBox1.ValueMemberName = null;
@@ -329,7 +332,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(720, 348);
+            this.ClientSize = new System.Drawing.Size(720, 430);
             this.Controls.Add(this.evComboBox1);
             this.Controls.Add(this.evLabel7);
             this.Controls.Add(this.evLabel6);

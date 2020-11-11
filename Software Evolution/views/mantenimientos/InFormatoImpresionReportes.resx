@@ -120,6 +120,9 @@
   <metadata name="errorProvider.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>17, 17</value>
   </metadata>
+  <metadata name="Fromtooltip.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>163, 17</value>
+  </metadata>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="btn_editar.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -171,11 +174,11 @@
 </value>
   </data>
   <metadata name="report1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>163, 17</value>
+    <value>300, 17</value>
   </metadata>
   <data name="report1.ReportResourceString" xml:space="preserve">
     <value>﻿&lt;?xml version="1.0" encoding="utf-8"?&gt;
-&lt;Report ScriptLanguage="CSharp" ReportInfo.Created="10/06/2020 09:10:10" ReportInfo.Modified="10/07/2020 10:05:00" ReportInfo.CreatorVersion="2020.4.4.0"&gt;
+&lt;Report ScriptLanguage="CSharp" ReportInfo.Created="10/06/2020 09:10:10" ReportInfo.Modified="11/11/2020 10:22:58" ReportInfo.CreatorVersion="2020.4.4.0"&gt;
   &lt;Dictionary/&gt;
 &lt;/Report&gt;
 </value>
