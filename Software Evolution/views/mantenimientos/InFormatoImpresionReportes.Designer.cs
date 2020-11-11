@@ -135,13 +135,14 @@
             this.txtcodigo.IsSalvar = true;
             this.txtcodigo.IsValidar = true;
             this.txtcodigo.Location = new System.Drawing.Point(157, 121);
+            this.txtcodigo.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtcodigo.Name = "txtcodigo";
             this.txtcodigo.Properties.Appearance.Options.UseTextOptions = true;
             this.txtcodigo.Properties.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Far;
             this.txtcodigo.Properties.Mask.EditMask = "f0";
             this.txtcodigo.Properties.Mask.MaskType = DevExpress.XtraEditors.Mask.MaskType.Numeric;
             this.txtcodigo.Properties.Mask.UseMaskAsDisplayFormat = true;
-            this.txtcodigo.Size = new System.Drawing.Size(154, 22);
+            this.txtcodigo.Size = new System.Drawing.Size(169, 22);
             this.txtcodigo.TabIndex = 5;
             // 
             // cmb_tipoformato
@@ -153,13 +154,15 @@
             this.cmb_tipoformato.IsLimpiar = true;
             this.cmb_tipoformato.IsSalvar = true;
             this.cmb_tipoformato.IsValidar = true;
-            this.cmb_tipoformato.Location = new System.Drawing.Point(451, 121);
+            this.cmb_tipoformato.Location = new System.Drawing.Point(452, 121);
+            this.cmb_tipoformato.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.cmb_tipoformato.Name = "cmb_tipoformato";
             this.cmb_tipoformato.NombreProcedimiento = "p_tipo_impresion_reportes";
             this.cmb_tipoformato.Param = "";
             this.cmb_tipoformato.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
-            this.cmb_tipoformato.Size = new System.Drawing.Size(231, 22);
+            this.cmb_tipoformato.Properties.NullText = "";
+            this.cmb_tipoformato.Size = new System.Drawing.Size(230, 22);
             this.cmb_tipoformato.TabIndex = 6;
             this.cmb_tipoformato.Valor = null;
             this.cmb_tipoformato.ValueMemberName = "f_id";

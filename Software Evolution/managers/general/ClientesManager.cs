@@ -129,33 +129,22 @@ namespace Software_Evolution.managers.general
         public void PrintEstadoCuentaCliente(BaseForm parent,int clienteid,DateTime date)
         {
             var reportesmanager = new reportes.FormatoImpresionReportesManager();
-            var formato = reportesmanager.GetFormato(2045);
-            if(formato is null)
-            {
-                throw new Exception("No se encontro el formato solicitado");
-            }
             var parametros = $"{clienteid},'{date:yyyy/MM/dd}'";
-            var data = manager.QueryProcedure(formato.Field<string>("f_procedimiento"), parametros);
-            var reporte = reportesmanager.GetReporte(formato);
-            reporte.RegisterData(data, "general");
-            reporte.SetParameterValue("fecha1",date);
-            reporte.Show(modal: true,owner: parent);
+            var data = manager.QueryProcedure("p_estado_cuenta_cliente", parametros);
+            reportesmanager.PrintReport(parent, 2045, data, new Dictionary<string, string>() {
+                ["fecha1"] =date.ToString("dd-MM-yyyy")
+            });            
         }
 
         public void EnviarEstadoCorreo(BaseForm parrent, int clienteid,DateTime date)
         {
-            var reportesmanager = new reportes.FormatoImpresionReportesManager();
-            var formato = reportesmanager.GetFormato(2045);
-            if (formato is null)
-            {
-                throw new Exception("No se encontro el formato solicitado");
-            }
+            var reportesmanager = new reportes.FormatoImpresionReportesManager();            
             var parametros = $"{clienteid},'{date:yyyy/MM/dd}'";
-            var data = manager.QueryProcedure(formato.Field<string>("f_procedimiento"), parametros);
-            var reporte = reportesmanager.GetReporte(formato);
-            reporte.RegisterData(data, "general");
-            reporte.SetParameterValue("fecha1", date);
-            reporte.Prepare();
+            var data = manager.QueryProcedure("p_estado_cuenta_cliente", parametros);
+            var reporte = reportesmanager.GetReporte(2045,data, new Dictionary<string, string>()
+            {
+                ["fecha1"] = $"{date:yyyy/MM/dd}"
+            });            
             InEnviarCorreo inEnviarCorreo = new InEnviarCorreo("ing.berny11@gmail.com", "", "prueba", reporte);
             inEnviarCorreo.ShowDialog(parrent);
 

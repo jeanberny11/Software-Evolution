@@ -39,51 +39,14 @@ namespace Software_Evolution.views.mantenimientos
 
         private void btn_editar_Click(object sender, EventArgs e)
         {
-            if (this.txtnombre.Text == string.Empty)
+            try
             {
-                Mensaje("Debe poner el nombre del reporte");
-                txtnombre.Focus();
-                return;
+                reportebase64 = manager.EditarFormato(txtnombre.Text, reportebase64, txtprocedimiento.Text, txtparametros.Text);
             }
-            if (txtnombre.Text.Substring(txtnombre.Text.Length - 4).ToLower() != ".frx")
+            catch (Exception ex)
             {
-                Mensaje("Nombre de reporte invalido");
-                txtnombre.Focus();
-                return;
+                Mensaje(ex.Message);
             }
-            using (Report report = new Report())
-            {
-                report.RegisterData(manager.GetReporteHeader(), "header");
-                if (txtprocedimiento.Text != string.Empty)
-                {
-                    try
-                    {
-                        var general = manager.Query(txtprocedimiento.Text,txtparametros.Text);
-                        report.RegisterData(general, "general");
-                    }
-                    catch (Exception ex)
-                    {
-                        Mensaje(ex.Message);
-                    }
-                }
-
-                if (Creando)
-                {
-                    report.FileName = txtnombre.Text;
-                    report.SetName(txtnombre.Text);
-                    report.Design();
-                    reportebase64 = report.SaveToStringBase64();
-                }
-                else
-                {
-                    report.LoadFromString(reportebase64);
-                    report.FileName = txtnombre.Text;
-                    report.SetName(txtnombre.Text);
-                    report.Design();
-                    reportebase64 = report.SaveToStringBase64();
-                }
-                
-            }           
         }
 
         private void btn_cerrar_Click(object sender, EventArgs e)
