@@ -82,5 +82,42 @@ namespace Software_Evolution.views.general
         {
 
         }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            if (txtusuario.IsEmpty())
+            {
+                Mensaje("El usuario no debe estar en blanco");
+                txtusuario.Focus();
+                return;
+            }
+
+            if (txtpass.IsEmpty())
+            {
+                Mensaje("La contraseña no debe estar en blanco");
+                txtpass.Focus();
+                return;
+            }
+            try
+            {
+                var usuario = manager.AuthUser(txtusuario.Text, txtpass.Text);
+                AppData.Instance.Currentuser = usuario;
+
+                Principal principal = new Principal();
+                principal.Show();
+                this.Hide();
+
+            }
+            catch (Exception ex)
+            {
+                Mensaje(ex.Message);
+                return;
+            }
+        }
     }
 }

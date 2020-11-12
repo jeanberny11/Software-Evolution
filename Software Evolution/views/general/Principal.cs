@@ -18,7 +18,7 @@ namespace Software_Evolution.views.general
 {
     public partial class Principal : BaseForm
     {
-        public MenuStrip MenuPrincipal { get=>this.menuStrip1; set=>this.menuStrip1=value; }
+        public MenuStrip MenuPrincipal { get => this.menuStrip1; set => this.menuStrip1 = value; }
 
         public Principal()
         {
@@ -31,7 +31,7 @@ namespace Software_Evolution.views.general
         }
 
         private void usuariosToolStripMenuItem_Click(object sender, EventArgs e)
-        {            
+        {
             ShowOrFocusForm(new OutUsuarios());
         }
 
@@ -78,7 +78,7 @@ namespace Software_Evolution.views.general
         {
             var manager = new UsuariosManager();
             manager.IniciarMenu(menuStrip1, true);
-           // manager.PermisosUsuarios(menuStrip1, AppData.Instance.Currentuser.Codigousuario);
+            // manager.PermisosUsuarios(menuStrip1, AppData.Instance.Currentuser.Codigousuario);
         }
 
         private void cambiarContraseñaToolStripMenuItem_Click(object sender, EventArgs e)
@@ -103,7 +103,8 @@ namespace Software_Evolution.views.general
 
         private void button2_Click(object sender, EventArgs e)
         {
-
+            var clienteform = new OutClientes();
+            ShowOrFocusForm(clienteform);
         }
 
         private void button13_Click(object sender, EventArgs e)
@@ -174,6 +175,36 @@ namespace Software_Evolution.views.general
         {
             var form = new DepurarPedido();
             ShowOrFocusForm(form);
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            var form = new OutSuplidores();
+            ShowOrFocusForm(form);
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            var form = new OutCotizaciones();
+            ShowOrFocusForm(form);
+        }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+
+
+
+      
+    }
+
+        private void maestrosDeDatosToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

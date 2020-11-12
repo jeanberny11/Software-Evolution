@@ -744,6 +744,11 @@ namespace Software_Evolution.views.Venta_Y_Facturacion.pedido
 
         }
 
+        private void InPedidos_Load(object sender, EventArgs e)
+        {
+            CenterToScreen();
+        }
+
         private void InPedidos_KeyPress(object sender, KeyPressEventArgs e)
         {
             switch (e.KeyChar)

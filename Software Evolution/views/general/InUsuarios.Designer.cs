@@ -35,7 +35,9 @@
             this.btn_guardar = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
+            this.button3 = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.evLabel13 = new Software_Evolution.customcontrols.EvLabel();
             this.cmbgrupo = new Software_Evolution.customcontrols.EvComboBox();
             this.lblgrupo = new Software_Evolution.customcontrols.EvLabel();
             this.tabControl1 = new System.Windows.Forms.TabControl();
@@ -137,8 +139,6 @@
             this.evLabel2 = new Software_Evolution.customcontrols.EvLabel();
             this.txtidusuario = new Software_Evolution.customcontrols.EvIntegerTextBox();
             this.evLabel1 = new Software_Evolution.customcontrols.EvLabel();
-            this.evLabel13 = new Software_Evolution.customcontrols.EvLabel();
-            this.button3 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider)).BeginInit();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
@@ -172,18 +172,20 @@
             this.panel1.Controls.Add(this.label1);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
+            this.panel1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(997, 72);
+            this.panel1.Size = new System.Drawing.Size(748, 55);
             this.panel1.TabIndex = 1;
             // 
             // btn_cerrar
             // 
             this.btn_cerrar.FlatAppearance.BorderSize = 0;
             this.btn_cerrar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_cerrar.Image = ((System.Drawing.Image)(resources.GetObject("btn_cerrar.Image")));
-            this.btn_cerrar.Location = new System.Drawing.Point(854, 3);
+            this.btn_cerrar.Image = global::Software_Evolution.Properties.Resources.vcsconflicting_93497;
+            this.btn_cerrar.Location = new System.Drawing.Point(672, 2);
+            this.btn_cerrar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btn_cerrar.Name = "btn_cerrar";
-            this.btn_cerrar.Size = new System.Drawing.Size(60, 60);
+            this.btn_cerrar.Size = new System.Drawing.Size(33, 36);
             this.btn_cerrar.TabIndex = 2;
             this.toolTip1.SetToolTip(this.btn_cerrar, "Cerrar");
             this.btn_cerrar.UseVisualStyleBackColor = true;
@@ -193,10 +195,11 @@
             // 
             this.btn_guardar.FlatAppearance.BorderSize = 0;
             this.btn_guardar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_guardar.Image = ((System.Drawing.Image)(resources.GetObject("btn_guardar.Image")));
-            this.btn_guardar.Location = new System.Drawing.Point(929, 3);
+            this.btn_guardar.Image = global::Software_Evolution.Properties.Resources.save_14949;
+            this.btn_guardar.Location = new System.Drawing.Point(709, 2);
+            this.btn_guardar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btn_guardar.Name = "btn_guardar";
-            this.btn_guardar.Size = new System.Drawing.Size(60, 60);
+            this.btn_guardar.Size = new System.Drawing.Size(33, 36);
             this.btn_guardar.TabIndex = 1;
             this.toolTip1.SetToolTip(this.btn_guardar, "Salvar");
             this.btn_guardar.UseVisualStyleBackColor = true;
@@ -206,11 +209,26 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(10, 17);
+            this.label1.Location = new System.Drawing.Point(8, 14);
+            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(255, 29);
+            this.label1.Size = new System.Drawing.Size(202, 24);
             this.label1.TabIndex = 0;
             this.label1.Text = "Registro de usuarios";
+            // 
+            // button3
+            // 
+            this.button3.FlatAppearance.BorderSize = 0;
+            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button3.Image = ((System.Drawing.Image)(resources.GetObject("button3.Image")));
+            this.button3.Location = new System.Drawing.Point(154, 347);
+            this.button3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(45, 36);
+            this.button3.TabIndex = 31;
+            this.toolTip1.SetToolTip(this.button3, "Cerrar");
+            this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // panel2
             // 
@@ -243,27 +261,41 @@
             this.panel2.Controls.Add(this.evLabel2);
             this.panel2.Controls.Add(this.txtidusuario);
             this.panel2.Controls.Add(this.evLabel1);
-            this.panel2.Location = new System.Drawing.Point(6, 80);
-            this.panel2.Margin = new System.Windows.Forms.Padding(10);
+            this.panel2.Location = new System.Drawing.Point(4, 65);
+            this.panel2.Margin = new System.Windows.Forms.Padding(8, 8, 8, 8);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(985, 480);
+            this.panel2.Size = new System.Drawing.Size(740, 391);
             this.panel2.TabIndex = 2;
+            // 
+            // evLabel13
+            // 
+            this.evLabel13.AutoSize = true;
+            this.evLabel13.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.evLabel13.Location = new System.Drawing.Point(14, 358);
+            this.evLabel13.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.evLabel13.Name = "evLabel13";
+            this.evLabel13.Size = new System.Drawing.Size(135, 13);
+            this.evLabel13.TabIndex = 30;
+            this.evLabel13.Text = "Asignar Permisos ===>";
             // 
             // cmbgrupo
             // 
             this.cmbgrupo.DisplayMemberName = "f_nombre";
             this.cmbgrupo.EnterTab = true;
             this.cmbgrupo.FieldName = "f_id_grupo";
+            this.cmbgrupo.IsActivar = true;
             this.cmbgrupo.IsLimpiar = true;
             this.cmbgrupo.IsSalvar = false;
             this.cmbgrupo.IsValidar = false;
-            this.cmbgrupo.Location = new System.Drawing.Point(585, 142);
+            this.cmbgrupo.Location = new System.Drawing.Point(439, 115);
+            this.cmbgrupo.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.cmbgrupo.Name = "cmbgrupo";
             this.cmbgrupo.NombreProcedimiento = "p_grupos";
             this.cmbgrupo.Param = null;
             this.cmbgrupo.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
-            this.cmbgrupo.Size = new System.Drawing.Size(257, 22);
+            this.cmbgrupo.Properties.NullText = "";
+            this.cmbgrupo.Size = new System.Drawing.Size(193, 20);
             this.cmbgrupo.TabIndex = 29;
             this.cmbgrupo.Valor = null;
             this.cmbgrupo.ValueMemberName = "f_codigo_grupo";
@@ -273,9 +305,10 @@
             // 
             this.lblgrupo.AutoSize = true;
             this.lblgrupo.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblgrupo.Location = new System.Drawing.Point(411, 145);
+            this.lblgrupo.Location = new System.Drawing.Point(308, 118);
+            this.lblgrupo.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblgrupo.Name = "lblgrupo";
-            this.lblgrupo.Size = new System.Drawing.Size(53, 17);
+            this.lblgrupo.Size = new System.Drawing.Size(41, 13);
             this.lblgrupo.TabIndex = 28;
             this.lblgrupo.Text = "Grupo";
             this.lblgrupo.Visible = false;
@@ -287,10 +320,11 @@
             this.tabControl1.Controls.Add(this.tabPage3);
             this.tabControl1.Controls.Add(this.tabPage4);
             this.tabControl1.Controls.Add(this.tabPage5);
-            this.tabControl1.Location = new System.Drawing.Point(411, 199);
+            this.tabControl1.Location = new System.Drawing.Point(308, 162);
+            this.tabControl1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
-            this.tabControl1.Size = new System.Drawing.Size(563, 271);
+            this.tabControl1.Size = new System.Drawing.Size(422, 220);
             this.tabControl1.TabIndex = 14;
             // 
             // tabPage1
@@ -314,10 +348,11 @@
             this.tabPage1.Controls.Add(this.checkBox3);
             this.tabPage1.Controls.Add(this.checkBox2);
             this.tabPage1.Controls.Add(this.checkBox1);
-            this.tabPage1.Location = new System.Drawing.Point(4, 25);
+            this.tabPage1.Location = new System.Drawing.Point(4, 22);
+            this.tabPage1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.tabPage1.Name = "tabPage1";
-            this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage1.Size = new System.Drawing.Size(555, 242);
+            this.tabPage1.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tabPage1.Size = new System.Drawing.Size(414, 194);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "Permisos";
             this.tabPage1.UseVisualStyleBackColor = true;
@@ -328,12 +363,14 @@
             this.checkBox19.DefaultValue = false;
             this.checkBox19.EnterTab = false;
             this.checkBox19.FieldName = "f_agenda_automatica";
+            this.checkBox19.IsActivar = true;
             this.checkBox19.IsLimpiar = true;
             this.checkBox19.IsSalvar = true;
             this.checkBox19.IsValidar = false;
-            this.checkBox19.Location = new System.Drawing.Point(396, 67);
+            this.checkBox19.Location = new System.Drawing.Point(297, 54);
+            this.checkBox19.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.checkBox19.Name = "checkBox19";
-            this.checkBox19.Size = new System.Drawing.Size(153, 21);
+            this.checkBox19.Size = new System.Drawing.Size(119, 17);
             this.checkBox19.TabIndex = 18;
             this.checkBox19.Text = "Agenda Automatica";
             this.checkBox19.UseVisualStyleBackColor = true;
@@ -345,12 +382,14 @@
             this.checkBox18.DefaultValue = false;
             this.checkBox18.EnterTab = false;
             this.checkBox18.FieldName = "f_salida_empleado";
+            this.checkBox18.IsActivar = true;
             this.checkBox18.IsLimpiar = true;
             this.checkBox18.IsSalvar = true;
             this.checkBox18.IsValidar = false;
-            this.checkBox18.Location = new System.Drawing.Point(396, 38);
+            this.checkBox18.Location = new System.Drawing.Point(297, 31);
+            this.checkBox18.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.checkBox18.Name = "checkBox18";
-            this.checkBox18.Size = new System.Drawing.Size(143, 21);
+            this.checkBox18.Size = new System.Drawing.Size(110, 17);
             this.checkBox18.TabIndex = 17;
             this.checkBox18.Text = "Salida Empleados";
             this.checkBox18.UseVisualStyleBackColor = true;
@@ -362,12 +401,14 @@
             this.checkBox10.DefaultValue = false;
             this.checkBox10.EnterTab = false;
             this.checkBox10.FieldName = "f_ver_sueldo";
+            this.checkBox10.IsActivar = true;
             this.checkBox10.IsLimpiar = true;
             this.checkBox10.IsSalvar = true;
             this.checkBox10.IsValidar = false;
-            this.checkBox10.Location = new System.Drawing.Point(203, 212);
+            this.checkBox10.Location = new System.Drawing.Point(152, 172);
+            this.checkBox10.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.checkBox10.Name = "checkBox10";
-            this.checkBox10.Size = new System.Drawing.Size(100, 21);
+            this.checkBox10.Size = new System.Drawing.Size(78, 17);
             this.checkBox10.TabIndex = 15;
             this.checkBox10.Text = "Ver Sueldo";
             this.checkBox10.UseVisualStyleBackColor = true;
@@ -379,12 +420,14 @@
             this.checkBox11.DefaultValue = false;
             this.checkBox11.EnterTab = false;
             this.checkBox11.FieldName = "f_modifica_empleado";
+            this.checkBox11.IsActivar = true;
             this.checkBox11.IsLimpiar = true;
             this.checkBox11.IsSalvar = true;
             this.checkBox11.IsValidar = false;
-            this.checkBox11.Location = new System.Drawing.Point(203, 183);
+            this.checkBox11.Location = new System.Drawing.Point(152, 149);
+            this.checkBox11.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.checkBox11.Name = "checkBox11";
-            this.checkBox11.Size = new System.Drawing.Size(154, 21);
+            this.checkBox11.Size = new System.Drawing.Size(119, 17);
             this.checkBox11.TabIndex = 14;
             this.checkBox11.Text = "Modificar Empleado";
             this.checkBox11.UseVisualStyleBackColor = true;
@@ -396,12 +439,14 @@
             this.checkBox12.DefaultValue = false;
             this.checkBox12.EnterTab = false;
             this.checkBox12.FieldName = "f_d_producto";
+            this.checkBox12.IsActivar = true;
             this.checkBox12.IsLimpiar = true;
             this.checkBox12.IsSalvar = true;
             this.checkBox12.IsValidar = false;
-            this.checkBox12.Location = new System.Drawing.Point(203, 154);
+            this.checkBox12.Location = new System.Drawing.Point(152, 125);
+            this.checkBox12.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.checkBox12.Name = "checkBox12";
-            this.checkBox12.Size = new System.Drawing.Size(134, 21);
+            this.checkBox12.Size = new System.Drawing.Size(105, 17);
             this.checkBox12.TabIndex = 13;
             this.checkBox12.Text = "Desc. Productos";
             this.checkBox12.UseVisualStyleBackColor = true;
@@ -413,12 +458,14 @@
             this.checkBox13.DefaultValue = false;
             this.checkBox13.EnterTab = false;
             this.checkBox13.FieldName = "f_factura_contado";
+            this.checkBox13.IsActivar = true;
             this.checkBox13.IsLimpiar = true;
             this.checkBox13.IsSalvar = true;
             this.checkBox13.IsValidar = false;
-            this.checkBox13.Location = new System.Drawing.Point(203, 125);
+            this.checkBox13.Location = new System.Drawing.Point(152, 102);
+            this.checkBox13.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.checkBox13.Name = "checkBox13";
-            this.checkBox13.Size = new System.Drawing.Size(140, 21);
+            this.checkBox13.Size = new System.Drawing.Size(108, 17);
             this.checkBox13.TabIndex = 12;
             this.checkBox13.Text = "Facturar Contado";
             this.checkBox13.UseVisualStyleBackColor = true;
@@ -430,12 +477,14 @@
             this.checkBox14.DefaultValue = false;
             this.checkBox14.EnterTab = false;
             this.checkBox14.FieldName = "f_d_factura2";
+            this.checkBox14.IsActivar = true;
             this.checkBox14.IsLimpiar = true;
             this.checkBox14.IsSalvar = true;
             this.checkBox14.IsValidar = false;
-            this.checkBox14.Location = new System.Drawing.Point(203, 96);
+            this.checkBox14.Location = new System.Drawing.Point(152, 78);
+            this.checkBox14.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.checkBox14.Name = "checkBox14";
-            this.checkBox14.Size = new System.Drawing.Size(137, 21);
+            this.checkBox14.Size = new System.Drawing.Size(107, 17);
             this.checkBox14.TabIndex = 11;
             this.checkBox14.Text = "Desc. Facturas 2";
             this.checkBox14.UseVisualStyleBackColor = true;
@@ -447,12 +496,14 @@
             this.checkBox15.DefaultValue = false;
             this.checkBox15.EnterTab = false;
             this.checkBox15.FieldName = "f_d_factura1";
+            this.checkBox15.IsActivar = true;
             this.checkBox15.IsLimpiar = true;
             this.checkBox15.IsSalvar = true;
             this.checkBox15.IsValidar = false;
-            this.checkBox15.Location = new System.Drawing.Point(203, 67);
+            this.checkBox15.Location = new System.Drawing.Point(152, 54);
+            this.checkBox15.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.checkBox15.Name = "checkBox15";
-            this.checkBox15.Size = new System.Drawing.Size(137, 21);
+            this.checkBox15.Size = new System.Drawing.Size(107, 17);
             this.checkBox15.TabIndex = 10;
             this.checkBox15.Text = "Desc. Facturas 1";
             this.checkBox15.UseVisualStyleBackColor = true;
@@ -464,12 +515,14 @@
             this.checkBox16.DefaultValue = false;
             this.checkBox16.EnterTab = false;
             this.checkBox16.FieldName = "f_solicitud_ponche";
+            this.checkBox16.IsActivar = true;
             this.checkBox16.IsLimpiar = true;
             this.checkBox16.IsSalvar = true;
             this.checkBox16.IsValidar = false;
-            this.checkBox16.Location = new System.Drawing.Point(203, 38);
+            this.checkBox16.Location = new System.Drawing.Point(152, 31);
+            this.checkBox16.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.checkBox16.Name = "checkBox16";
-            this.checkBox16.Size = new System.Drawing.Size(135, 21);
+            this.checkBox16.Size = new System.Drawing.Size(106, 17);
             this.checkBox16.TabIndex = 9;
             this.checkBox16.Text = "Solicitud Ponche";
             this.checkBox16.UseVisualStyleBackColor = true;
@@ -481,12 +534,14 @@
             this.checkBox17.DefaultValue = false;
             this.checkBox17.EnterTab = false;
             this.checkBox17.FieldName = "f_devolucion";
+            this.checkBox17.IsActivar = true;
             this.checkBox17.IsLimpiar = true;
             this.checkBox17.IsSalvar = true;
             this.checkBox17.IsValidar = false;
-            this.checkBox17.Location = new System.Drawing.Point(204, 9);
+            this.checkBox17.Location = new System.Drawing.Point(153, 7);
+            this.checkBox17.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.checkBox17.Name = "checkBox17";
-            this.checkBox17.Size = new System.Drawing.Size(115, 21);
+            this.checkBox17.Size = new System.Drawing.Size(91, 17);
             this.checkBox17.TabIndex = 8;
             this.checkBox17.Text = "Devoluciones";
             this.checkBox17.UseVisualStyleBackColor = true;
@@ -498,12 +553,14 @@
             this.checkBox9.DefaultValue = false;
             this.checkBox9.EnterTab = false;
             this.checkBox9.FieldName = "f_ver_ponche";
+            this.checkBox9.IsActivar = true;
             this.checkBox9.IsLimpiar = true;
             this.checkBox9.IsSalvar = true;
             this.checkBox9.IsValidar = false;
-            this.checkBox9.Location = new System.Drawing.Point(396, 8);
+            this.checkBox9.Location = new System.Drawing.Point(297, 6);
+            this.checkBox9.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.checkBox9.Name = "checkBox9";
-            this.checkBox9.Size = new System.Drawing.Size(143, 21);
+            this.checkBox9.Size = new System.Drawing.Size(111, 17);
             this.checkBox9.TabIndex = 16;
             this.checkBox9.Text = "Solo Ver Ponches";
             this.checkBox9.UseVisualStyleBackColor = true;
@@ -515,12 +572,14 @@
             this.checkBox8.DefaultValue = false;
             this.checkBox8.EnterTab = false;
             this.checkBox8.FieldName = "f_bonificacion";
+            this.checkBox8.IsActivar = true;
             this.checkBox8.IsLimpiar = true;
             this.checkBox8.IsSalvar = true;
             this.checkBox8.IsValidar = false;
-            this.checkBox8.Location = new System.Drawing.Point(7, 209);
+            this.checkBox8.Location = new System.Drawing.Point(5, 170);
+            this.checkBox8.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.checkBox8.Name = "checkBox8";
-            this.checkBox8.Size = new System.Drawing.Size(156, 21);
+            this.checkBox8.Size = new System.Drawing.Size(118, 17);
             this.checkBox8.TabIndex = 7;
             this.checkBox8.Text = "Reimprimir Facturas";
             this.checkBox8.UseVisualStyleBackColor = true;
@@ -532,12 +591,14 @@
             this.checkBox7.DefaultValue = false;
             this.checkBox7.EnterTab = false;
             this.checkBox7.FieldName = "f_trasferencia";
+            this.checkBox7.IsActivar = true;
             this.checkBox7.IsLimpiar = true;
             this.checkBox7.IsSalvar = true;
             this.checkBox7.IsValidar = false;
-            this.checkBox7.Location = new System.Drawing.Point(7, 180);
+            this.checkBox7.Location = new System.Drawing.Point(5, 146);
+            this.checkBox7.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.checkBox7.Name = "checkBox7";
-            this.checkBox7.Size = new System.Drawing.Size(152, 21);
+            this.checkBox7.Size = new System.Drawing.Size(118, 17);
             this.checkBox7.TabIndex = 6;
             this.checkBox7.Text = "Ajuste de Centavos";
             this.checkBox7.UseVisualStyleBackColor = true;
@@ -549,12 +610,14 @@
             this.checkBox6.DefaultValue = false;
             this.checkBox6.EnterTab = false;
             this.checkBox6.FieldName = "f_recibo";
+            this.checkBox6.IsActivar = true;
             this.checkBox6.IsLimpiar = true;
             this.checkBox6.IsSalvar = true;
             this.checkBox6.IsValidar = false;
-            this.checkBox6.Location = new System.Drawing.Point(7, 151);
+            this.checkBox6.Location = new System.Drawing.Point(5, 123);
+            this.checkBox6.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.checkBox6.Name = "checkBox6";
-            this.checkBox6.Size = new System.Drawing.Size(74, 21);
+            this.checkBox6.Size = new System.Drawing.Size(60, 17);
             this.checkBox6.TabIndex = 5;
             this.checkBox6.Text = "Recibo";
             this.checkBox6.UseVisualStyleBackColor = true;
@@ -566,12 +629,14 @@
             this.checkBox5.DefaultValue = false;
             this.checkBox5.EnterTab = false;
             this.checkBox5.FieldName = "f_cuadre";
+            this.checkBox5.IsActivar = true;
             this.checkBox5.IsLimpiar = true;
             this.checkBox5.IsSalvar = true;
             this.checkBox5.IsValidar = false;
-            this.checkBox5.Location = new System.Drawing.Point(7, 122);
+            this.checkBox5.Location = new System.Drawing.Point(5, 99);
+            this.checkBox5.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.checkBox5.Name = "checkBox5";
-            this.checkBox5.Size = new System.Drawing.Size(118, 21);
+            this.checkBox5.Size = new System.Drawing.Size(92, 17);
             this.checkBox5.TabIndex = 4;
             this.checkBox5.Text = "Hacer Cuadre";
             this.checkBox5.UseVisualStyleBackColor = true;
@@ -583,12 +648,14 @@
             this.checkBox4.DefaultValue = false;
             this.checkBox4.EnterTab = false;
             this.checkBox4.FieldName = "f_fact_credito";
+            this.checkBox4.IsActivar = true;
             this.checkBox4.IsLimpiar = true;
             this.checkBox4.IsSalvar = true;
             this.checkBox4.IsValidar = false;
-            this.checkBox4.Location = new System.Drawing.Point(7, 93);
+            this.checkBox4.Location = new System.Drawing.Point(5, 76);
+            this.checkBox4.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.checkBox4.Name = "checkBox4";
-            this.checkBox4.Size = new System.Drawing.Size(127, 21);
+            this.checkBox4.Size = new System.Drawing.Size(98, 17);
             this.checkBox4.TabIndex = 3;
             this.checkBox4.Text = "Factura Credito";
             this.checkBox4.UseVisualStyleBackColor = true;
@@ -600,12 +667,14 @@
             this.checkBox3.DefaultValue = false;
             this.checkBox3.EnterTab = false;
             this.checkBox3.FieldName = "f_descuento";
+            this.checkBox3.IsActivar = true;
             this.checkBox3.IsLimpiar = true;
             this.checkBox3.IsSalvar = true;
             this.checkBox3.IsValidar = false;
-            this.checkBox3.Location = new System.Drawing.Point(7, 64);
+            this.checkBox3.Location = new System.Drawing.Point(5, 52);
+            this.checkBox3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.checkBox3.Name = "checkBox3";
-            this.checkBox3.Size = new System.Drawing.Size(98, 21);
+            this.checkBox3.Size = new System.Drawing.Size(78, 17);
             this.checkBox3.TabIndex = 2;
             this.checkBox3.Text = "Descuento";
             this.checkBox3.UseVisualStyleBackColor = true;
@@ -617,12 +686,14 @@
             this.checkBox2.DefaultValue = false;
             this.checkBox2.EnterTab = false;
             this.checkBox2.FieldName = "f_abrir_caja";
+            this.checkBox2.IsActivar = true;
             this.checkBox2.IsLimpiar = true;
             this.checkBox2.IsSalvar = true;
             this.checkBox2.IsValidar = false;
-            this.checkBox2.Location = new System.Drawing.Point(7, 35);
+            this.checkBox2.Location = new System.Drawing.Point(5, 28);
+            this.checkBox2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.checkBox2.Name = "checkBox2";
-            this.checkBox2.Size = new System.Drawing.Size(92, 21);
+            this.checkBox2.Size = new System.Drawing.Size(71, 17);
             this.checkBox2.TabIndex = 1;
             this.checkBox2.Text = "Abrir Caja";
             this.checkBox2.UseVisualStyleBackColor = true;
@@ -634,12 +705,14 @@
             this.checkBox1.DefaultValue = false;
             this.checkBox1.EnterTab = false;
             this.checkBox1.FieldName = "f_cambiar_precio";
+            this.checkBox1.IsActivar = true;
             this.checkBox1.IsLimpiar = true;
             this.checkBox1.IsSalvar = true;
             this.checkBox1.IsValidar = false;
-            this.checkBox1.Location = new System.Drawing.Point(7, 6);
+            this.checkBox1.Location = new System.Drawing.Point(5, 5);
+            this.checkBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.checkBox1.Name = "checkBox1";
-            this.checkBox1.Size = new System.Drawing.Size(126, 21);
+            this.checkBox1.Size = new System.Drawing.Size(97, 17);
             this.checkBox1.TabIndex = 0;
             this.checkBox1.Text = "Cambiar Precio";
             this.checkBox1.UseVisualStyleBackColor = true;
@@ -665,10 +738,11 @@
             this.tabPage2.Controls.Add(this.evNumericTextBox1);
             this.tabPage2.Controls.Add(this.evLabel15);
             this.tabPage2.Controls.Add(this.evLabel14);
-            this.tabPage2.Location = new System.Drawing.Point(4, 25);
+            this.tabPage2.Location = new System.Drawing.Point(4, 22);
+            this.tabPage2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.tabPage2.Name = "tabPage2";
-            this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage2.Size = new System.Drawing.Size(555, 242);
+            this.tabPage2.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tabPage2.Size = new System.Drawing.Size(414, 194);
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "Controles";
             this.tabPage2.UseVisualStyleBackColor = true;
@@ -677,9 +751,10 @@
             // 
             this.evLabel22.AutoSize = true;
             this.evLabel22.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.evLabel22.Location = new System.Drawing.Point(18, 214);
+            this.evLabel22.Location = new System.Drawing.Point(14, 174);
+            this.evLabel22.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.evLabel22.Name = "evLabel22";
-            this.evLabel22.Size = new System.Drawing.Size(110, 17);
+            this.evLabel22.Size = new System.Drawing.Size(86, 13);
             this.evLabel22.TabIndex = 22;
             this.evLabel22.Text = "Centro Costos";
             // 
@@ -687,9 +762,10 @@
             // 
             this.evLabel21.AutoSize = true;
             this.evLabel21.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.evLabel21.Location = new System.Drawing.Point(18, 188);
+            this.evLabel21.Location = new System.Drawing.Point(14, 153);
+            this.evLabel21.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.evLabel21.Name = "evLabel21";
-            this.evLabel21.Size = new System.Drawing.Size(111, 17);
+            this.evLabel21.Size = new System.Drawing.Size(86, 13);
             this.evLabel21.TabIndex = 21;
             this.evLabel21.Text = "Ver Val Orden";
             // 
@@ -697,9 +773,10 @@
             // 
             this.evLabel20.AutoSize = true;
             this.evLabel20.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.evLabel20.Location = new System.Drawing.Point(18, 162);
+            this.evLabel20.Location = new System.Drawing.Point(14, 132);
+            this.evLabel20.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.evLabel20.Name = "evLabel20";
-            this.evLabel20.Size = new System.Drawing.Size(137, 17);
+            this.evLabel20.Size = new System.Drawing.Size(109, 13);
             this.evLabel20.TabIndex = 20;
             this.evLabel20.Text = "SubDep. Ponches";
             // 
@@ -708,16 +785,19 @@
             this.cmbcentrocosto.DisplayMemberName = "f_descripcion";
             this.cmbcentrocosto.EnterTab = true;
             this.cmbcentrocosto.FieldName = "f_id_centro_costos";
+            this.cmbcentrocosto.IsActivar = true;
             this.cmbcentrocosto.IsLimpiar = true;
             this.cmbcentrocosto.IsSalvar = true;
             this.cmbcentrocosto.IsValidar = false;
-            this.cmbcentrocosto.Location = new System.Drawing.Point(245, 211);
+            this.cmbcentrocosto.Location = new System.Drawing.Point(184, 171);
+            this.cmbcentrocosto.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.cmbcentrocosto.Name = "cmbcentrocosto";
             this.cmbcentrocosto.NombreProcedimiento = "P_CENTROSCOSTOS";
             this.cmbcentrocosto.Param = null;
             this.cmbcentrocosto.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
-            this.cmbcentrocosto.Size = new System.Drawing.Size(274, 22);
+            this.cmbcentrocosto.Properties.NullText = "";
+            this.cmbcentrocosto.Size = new System.Drawing.Size(206, 20);
             this.cmbcentrocosto.TabIndex = 8;
             this.cmbcentrocosto.Valor = null;
             this.cmbcentrocosto.ValueMemberName = "f_id_centro_costo";
@@ -726,12 +806,14 @@
             // 
             this.evTextBox9.EnterTab = true;
             this.evTextBox9.FieldName = "f_ver_ordenes_validadas";
+            this.evTextBox9.IsActivar = true;
             this.evTextBox9.IsLimpiar = true;
             this.evTextBox9.IsSalvar = true;
             this.evTextBox9.IsValidar = false;
-            this.evTextBox9.Location = new System.Drawing.Point(245, 185);
+            this.evTextBox9.Location = new System.Drawing.Point(184, 150);
+            this.evTextBox9.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.evTextBox9.Name = "evTextBox9";
-            this.evTextBox9.Size = new System.Drawing.Size(274, 22);
+            this.evTextBox9.Size = new System.Drawing.Size(206, 20);
             this.evTextBox9.TabIndex = 7;
             this.evTextBox9.Valor = "";
             // 
@@ -739,12 +821,14 @@
             // 
             this.evTextBox8.EnterTab = true;
             this.evTextBox8.FieldName = "f_ver_nomina";
+            this.evTextBox8.IsActivar = true;
             this.evTextBox8.IsLimpiar = true;
             this.evTextBox8.IsSalvar = true;
             this.evTextBox8.IsValidar = false;
-            this.evTextBox8.Location = new System.Drawing.Point(245, 107);
+            this.evTextBox8.Location = new System.Drawing.Point(184, 87);
+            this.evTextBox8.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.evTextBox8.Name = "evTextBox8";
-            this.evTextBox8.Size = new System.Drawing.Size(274, 22);
+            this.evTextBox8.Size = new System.Drawing.Size(206, 20);
             this.evTextBox8.TabIndex = 4;
             this.evTextBox8.Valor = "";
             // 
@@ -753,16 +837,19 @@
             this.cmbsubdep.DisplayMemberName = "f_descripcion";
             this.cmbsubdep.EnterTab = true;
             this.cmbsubdep.FieldName = "f_sub_departamento";
+            this.cmbsubdep.IsActivar = true;
             this.cmbsubdep.IsLimpiar = true;
             this.cmbsubdep.IsSalvar = true;
             this.cmbsubdep.IsValidar = false;
-            this.cmbsubdep.Location = new System.Drawing.Point(245, 159);
+            this.cmbsubdep.Location = new System.Drawing.Point(184, 129);
+            this.cmbsubdep.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.cmbsubdep.Name = "cmbsubdep";
             this.cmbsubdep.NombreProcedimiento = "P_SUBDEPPONCHES";
             this.cmbsubdep.Param = null;
             this.cmbsubdep.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
-            this.cmbsubdep.Size = new System.Drawing.Size(274, 22);
+            this.cmbsubdep.Properties.NullText = "";
+            this.cmbsubdep.Size = new System.Drawing.Size(206, 20);
             this.cmbsubdep.TabIndex = 6;
             this.cmbsubdep.Valor = null;
             this.cmbsubdep.ValueMemberName = "f_id";
@@ -772,16 +859,19 @@
             this.cmbdepponches.DisplayMemberName = "f_descripcion";
             this.cmbdepponches.EnterTab = true;
             this.cmbdepponches.FieldName = "f_departamento_ponche";
+            this.cmbdepponches.IsActivar = true;
             this.cmbdepponches.IsLimpiar = true;
             this.cmbdepponches.IsSalvar = true;
             this.cmbdepponches.IsValidar = false;
-            this.cmbdepponches.Location = new System.Drawing.Point(245, 133);
+            this.cmbdepponches.Location = new System.Drawing.Point(184, 108);
+            this.cmbdepponches.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.cmbdepponches.Name = "cmbdepponches";
             this.cmbdepponches.NombreProcedimiento = "P_NOMINADEPARTAMENTOS";
             this.cmbdepponches.Param = null;
             this.cmbdepponches.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
-            this.cmbdepponches.Size = new System.Drawing.Size(274, 22);
+            this.cmbdepponches.Properties.NullText = "";
+            this.cmbdepponches.Size = new System.Drawing.Size(206, 20);
             this.cmbdepponches.TabIndex = 5;
             this.cmbdepponches.Valor = null;
             this.cmbdepponches.ValueMemberName = "f_iddepto";
@@ -792,16 +882,19 @@
             this.cmbidiomas.DisplayMemberName = "f_descripcion";
             this.cmbidiomas.EnterTab = true;
             this.cmbidiomas.FieldName = "f_idioma";
+            this.cmbidiomas.IsActivar = true;
             this.cmbidiomas.IsLimpiar = true;
             this.cmbidiomas.IsSalvar = true;
             this.cmbidiomas.IsValidar = false;
-            this.cmbidiomas.Location = new System.Drawing.Point(245, 82);
+            this.cmbidiomas.Location = new System.Drawing.Point(184, 67);
+            this.cmbidiomas.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.cmbidiomas.Name = "cmbidiomas";
             this.cmbidiomas.NombreProcedimiento = "P_IDIOMAS";
             this.cmbidiomas.Param = null;
             this.cmbidiomas.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
-            this.cmbidiomas.Size = new System.Drawing.Size(274, 22);
+            this.cmbidiomas.Properties.NullText = "";
+            this.cmbidiomas.Size = new System.Drawing.Size(206, 20);
             this.cmbidiomas.TabIndex = 3;
             this.cmbidiomas.Valor = null;
             this.cmbidiomas.ValueMemberName = "f_id";
@@ -811,16 +904,19 @@
             this.cmbdep.DisplayMemberName = "f_descripcion";
             this.cmbdep.EnterTab = true;
             this.cmbdep.FieldName = "f_tipo_usuario";
+            this.cmbdep.IsActivar = true;
             this.cmbdep.IsLimpiar = true;
             this.cmbdep.IsSalvar = true;
             this.cmbdep.IsValidar = false;
-            this.cmbdep.Location = new System.Drawing.Point(245, 57);
+            this.cmbdep.Location = new System.Drawing.Point(184, 46);
+            this.cmbdep.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.cmbdep.Name = "cmbdep";
             this.cmbdep.NombreProcedimiento = "P_SOLICITANTECHEQUES";
             this.cmbdep.Param = null;
             this.cmbdep.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
-            this.cmbdep.Size = new System.Drawing.Size(274, 22);
+            this.cmbdep.Properties.NullText = "";
+            this.cmbdep.Size = new System.Drawing.Size(206, 20);
             this.cmbdep.TabIndex = 2;
             this.cmbdep.Valor = null;
             this.cmbdep.ValueMemberName = "f_id";
@@ -829,9 +925,10 @@
             // 
             this.evLabel19.AutoSize = true;
             this.evLabel19.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.evLabel19.Location = new System.Drawing.Point(18, 136);
+            this.evLabel19.Location = new System.Drawing.Point(14, 110);
+            this.evLabel19.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.evLabel19.Name = "evLabel19";
-            this.evLabel19.Size = new System.Drawing.Size(109, 17);
+            this.evLabel19.Size = new System.Drawing.Size(87, 13);
             this.evLabel19.TabIndex = 12;
             this.evLabel19.Text = "Dep. Ponches";
             // 
@@ -839,9 +936,10 @@
             // 
             this.evLabel18.AutoSize = true;
             this.evLabel18.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.evLabel18.Location = new System.Drawing.Point(18, 110);
+            this.evLabel18.Location = new System.Drawing.Point(14, 89);
+            this.evLabel18.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.evLabel18.Name = "evLabel18";
-            this.evLabel18.Size = new System.Drawing.Size(92, 17);
+            this.evLabel18.Size = new System.Drawing.Size(72, 13);
             this.evLabel18.TabIndex = 11;
             this.evLabel18.Text = "Ver Nomina";
             // 
@@ -849,9 +947,10 @@
             // 
             this.evLabel17.AutoSize = true;
             this.evLabel17.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.evLabel17.Location = new System.Drawing.Point(18, 85);
+            this.evLabel17.Location = new System.Drawing.Point(14, 69);
+            this.evLabel17.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.evLabel17.Name = "evLabel17";
-            this.evLabel17.Size = new System.Drawing.Size(55, 17);
+            this.evLabel17.Size = new System.Drawing.Size(44, 13);
             this.evLabel17.TabIndex = 10;
             this.evLabel17.Text = "Idioma";
             // 
@@ -859,9 +958,10 @@
             // 
             this.evLabel16.AutoSize = true;
             this.evLabel16.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.evLabel16.Location = new System.Drawing.Point(18, 60);
+            this.evLabel16.Location = new System.Drawing.Point(14, 49);
+            this.evLabel16.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.evLabel16.Name = "evLabel16";
-            this.evLabel16.Size = new System.Drawing.Size(110, 17);
+            this.evLabel16.Size = new System.Drawing.Size(86, 13);
             this.evLabel16.TabIndex = 9;
             this.evLabel16.Text = "Departamento";
             // 
@@ -870,17 +970,19 @@
             this.evNumericTextBox2.EditValue = 0D;
             this.evNumericTextBox2.EnterTab = true;
             this.evNumericTextBox2.FieldName = "f_limite_autorizacion_compra";
+            this.evNumericTextBox2.IsActivar = true;
             this.evNumericTextBox2.IsLimpiar = true;
             this.evNumericTextBox2.IsSalvar = true;
             this.evNumericTextBox2.IsValidar = false;
-            this.evNumericTextBox2.Location = new System.Drawing.Point(245, 31);
+            this.evNumericTextBox2.Location = new System.Drawing.Point(184, 25);
+            this.evNumericTextBox2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.evNumericTextBox2.Name = "evNumericTextBox2";
             this.evNumericTextBox2.Properties.Appearance.Options.UseTextOptions = true;
             this.evNumericTextBox2.Properties.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Far;
             this.evNumericTextBox2.Properties.Mask.EditMask = "n";
             this.evNumericTextBox2.Properties.Mask.MaskType = DevExpress.XtraEditors.Mask.MaskType.Numeric;
             this.evNumericTextBox2.Properties.Mask.UseMaskAsDisplayFormat = true;
-            this.evNumericTextBox2.Size = new System.Drawing.Size(274, 22);
+            this.evNumericTextBox2.Size = new System.Drawing.Size(206, 20);
             this.evNumericTextBox2.TabIndex = 1;
             // 
             // evNumericTextBox1
@@ -888,26 +990,29 @@
             this.evNumericTextBox1.EditValue = 0D;
             this.evNumericTextBox1.EnterTab = true;
             this.evNumericTextBox1.FieldName = "f_limite_autorizacion_venta";
+            this.evNumericTextBox1.IsActivar = true;
             this.evNumericTextBox1.IsLimpiar = true;
             this.evNumericTextBox1.IsSalvar = true;
             this.evNumericTextBox1.IsValidar = false;
-            this.evNumericTextBox1.Location = new System.Drawing.Point(245, 5);
+            this.evNumericTextBox1.Location = new System.Drawing.Point(184, 4);
+            this.evNumericTextBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.evNumericTextBox1.Name = "evNumericTextBox1";
             this.evNumericTextBox1.Properties.Appearance.Options.UseTextOptions = true;
             this.evNumericTextBox1.Properties.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Far;
             this.evNumericTextBox1.Properties.Mask.EditMask = "n";
             this.evNumericTextBox1.Properties.Mask.MaskType = DevExpress.XtraEditors.Mask.MaskType.Numeric;
             this.evNumericTextBox1.Properties.Mask.UseMaskAsDisplayFormat = true;
-            this.evNumericTextBox1.Size = new System.Drawing.Size(274, 22);
+            this.evNumericTextBox1.Size = new System.Drawing.Size(206, 20);
             this.evNumericTextBox1.TabIndex = 0;
             // 
             // evLabel15
             // 
             this.evLabel15.AutoSize = true;
             this.evLabel15.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.evLabel15.Location = new System.Drawing.Point(18, 34);
+            this.evLabel15.Location = new System.Drawing.Point(14, 28);
+            this.evLabel15.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.evLabel15.Name = "evLabel15";
-            this.evLabel15.Size = new System.Drawing.Size(206, 17);
+            this.evLabel15.Size = new System.Drawing.Size(160, 13);
             this.evLabel15.TabIndex = 6;
             this.evLabel15.Text = "Limite Autorizacion Compra";
             // 
@@ -915,9 +1020,10 @@
             // 
             this.evLabel14.AutoSize = true;
             this.evLabel14.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.evLabel14.Location = new System.Drawing.Point(18, 8);
+            this.evLabel14.Location = new System.Drawing.Point(14, 6);
+            this.evLabel14.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.evLabel14.Name = "evLabel14";
-            this.evLabel14.Size = new System.Drawing.Size(193, 17);
+            this.evLabel14.Size = new System.Drawing.Size(151, 13);
             this.evLabel14.TabIndex = 5;
             this.evLabel14.Text = "Limite Autorizacion Venta";
             // 
@@ -928,10 +1034,11 @@
             this.tabPage3.Controls.Add(this.evLabel24);
             this.tabPage3.Controls.Add(this.cmbmesa);
             this.tabPage3.Controls.Add(this.evLabel23);
-            this.tabPage3.Location = new System.Drawing.Point(4, 25);
+            this.tabPage3.Location = new System.Drawing.Point(4, 22);
+            this.tabPage3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.tabPage3.Name = "tabPage3";
-            this.tabPage3.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage3.Size = new System.Drawing.Size(555, 242);
+            this.tabPage3.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tabPage3.Size = new System.Drawing.Size(414, 194);
             this.tabPage3.TabIndex = 2;
             this.tabPage3.Text = "Despacho";
             this.tabPage3.UseVisualStyleBackColor = true;
@@ -943,12 +1050,14 @@
             this.evCheckBox4.EnterTab = false;
             this.evCheckBox4.FieldName = "f_todos_almacenes";
             this.evCheckBox4.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.evCheckBox4.IsActivar = true;
             this.evCheckBox4.IsLimpiar = true;
             this.evCheckBox4.IsSalvar = true;
             this.evCheckBox4.IsValidar = false;
-            this.evCheckBox4.Location = new System.Drawing.Point(121, 76);
+            this.evCheckBox4.Location = new System.Drawing.Point(91, 62);
+            this.evCheckBox4.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.evCheckBox4.Name = "evCheckBox4";
-            this.evCheckBox4.Size = new System.Drawing.Size(266, 21);
+            this.evCheckBox4.Size = new System.Drawing.Size(211, 17);
             this.evCheckBox4.TabIndex = 2;
             this.evCheckBox4.Text = "Todos Los Almacenes Despacho";
             this.evCheckBox4.UseVisualStyleBackColor = true;
@@ -958,12 +1067,14 @@
             // 
             this.evTextBox10.EnterTab = true;
             this.evTextBox10.FieldName = "f_almacen";
+            this.evTextBox10.IsActivar = true;
             this.evTextBox10.IsLimpiar = true;
             this.evTextBox10.IsSalvar = true;
             this.evTextBox10.IsValidar = false;
-            this.evTextBox10.Location = new System.Drawing.Point(121, 47);
+            this.evTextBox10.Location = new System.Drawing.Point(91, 38);
+            this.evTextBox10.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.evTextBox10.Name = "evTextBox10";
-            this.evTextBox10.Size = new System.Drawing.Size(303, 22);
+            this.evTextBox10.Size = new System.Drawing.Size(228, 20);
             this.evTextBox10.TabIndex = 1;
             this.evTextBox10.Valor = "";
             // 
@@ -971,9 +1082,10 @@
             // 
             this.evLabel24.AutoSize = true;
             this.evLabel24.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.evLabel24.Location = new System.Drawing.Point(19, 50);
+            this.evLabel24.Location = new System.Drawing.Point(14, 41);
+            this.evLabel24.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.evLabel24.Name = "evLabel24";
-            this.evLabel24.Size = new System.Drawing.Size(69, 17);
+            this.evLabel24.Size = new System.Drawing.Size(55, 13);
             this.evLabel24.TabIndex = 3;
             this.evLabel24.Text = "Almacen";
             // 
@@ -982,16 +1094,19 @@
             this.cmbmesa.DisplayMemberName = "f_descripcion";
             this.cmbmesa.EnterTab = true;
             this.cmbmesa.FieldName = "f_mesa";
+            this.cmbmesa.IsActivar = true;
             this.cmbmesa.IsLimpiar = true;
             this.cmbmesa.IsSalvar = true;
             this.cmbmesa.IsValidar = false;
-            this.cmbmesa.Location = new System.Drawing.Point(121, 19);
+            this.cmbmesa.Location = new System.Drawing.Point(91, 15);
+            this.cmbmesa.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.cmbmesa.Name = "cmbmesa";
             this.cmbmesa.NombreProcedimiento = "P_MESAS";
             this.cmbmesa.Param = null;
             this.cmbmesa.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
-            this.cmbmesa.Size = new System.Drawing.Size(303, 22);
+            this.cmbmesa.Properties.NullText = "";
+            this.cmbmesa.Size = new System.Drawing.Size(227, 20);
             this.cmbmesa.TabIndex = 0;
             this.cmbmesa.Valor = null;
             this.cmbmesa.ValueMemberName = "f_id";
@@ -1000,9 +1115,10 @@
             // 
             this.evLabel23.AutoSize = true;
             this.evLabel23.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.evLabel23.Location = new System.Drawing.Point(19, 22);
+            this.evLabel23.Location = new System.Drawing.Point(14, 18);
+            this.evLabel23.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.evLabel23.Name = "evLabel23";
-            this.evLabel23.Size = new System.Drawing.Size(46, 17);
+            this.evLabel23.Size = new System.Drawing.Size(37, 13);
             this.evLabel23.TabIndex = 1;
             this.evLabel23.Text = "Mesa";
             // 
@@ -1023,10 +1139,11 @@
             this.tabPage4.Controls.Add(this.checkBox22);
             this.tabPage4.Controls.Add(this.checkBox21);
             this.tabPage4.Controls.Add(this.checkBox20);
-            this.tabPage4.Location = new System.Drawing.Point(4, 25);
+            this.tabPage4.Location = new System.Drawing.Point(4, 22);
+            this.tabPage4.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.tabPage4.Name = "tabPage4";
-            this.tabPage4.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage4.Size = new System.Drawing.Size(555, 242);
+            this.tabPage4.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tabPage4.Size = new System.Drawing.Size(414, 194);
             this.tabPage4.TabIndex = 3;
             this.tabPage4.Text = "Menu Principal";
             this.tabPage4.UseVisualStyleBackColor = true;
@@ -1037,12 +1154,14 @@
             this.checkBox28.DefaultValue = false;
             this.checkBox28.EnterTab = false;
             this.checkBox28.FieldName = "f_b_compra";
+            this.checkBox28.IsActivar = true;
             this.checkBox28.IsLimpiar = true;
             this.checkBox28.IsSalvar = true;
             this.checkBox28.IsValidar = false;
-            this.checkBox28.Location = new System.Drawing.Point(296, 9);
+            this.checkBox28.Location = new System.Drawing.Point(222, 7);
+            this.checkBox28.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.checkBox28.Name = "checkBox28";
-            this.checkBox28.Size = new System.Drawing.Size(86, 21);
+            this.checkBox28.Size = new System.Drawing.Size(67, 17);
             this.checkBox28.TabIndex = 15;
             this.checkBox28.Text = "Compras";
             this.checkBox28.UseVisualStyleBackColor = true;
@@ -1054,12 +1173,14 @@
             this.checkBox29.DefaultValue = false;
             this.checkBox29.EnterTab = false;
             this.checkBox29.FieldName = "f_b_indicadores";
+            this.checkBox29.IsActivar = true;
             this.checkBox29.IsLimpiar = true;
             this.checkBox29.IsSalvar = true;
             this.checkBox29.IsValidar = false;
-            this.checkBox29.Location = new System.Drawing.Point(296, 183);
+            this.checkBox29.Location = new System.Drawing.Point(222, 149);
+            this.checkBox29.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.checkBox29.Name = "checkBox29";
-            this.checkBox29.Size = new System.Drawing.Size(103, 21);
+            this.checkBox29.Size = new System.Drawing.Size(81, 17);
             this.checkBox29.TabIndex = 14;
             this.checkBox29.Text = "Indicadores";
             this.checkBox29.UseVisualStyleBackColor = true;
@@ -1071,12 +1192,14 @@
             this.checkBox30.DefaultValue = false;
             this.checkBox30.EnterTab = false;
             this.checkBox30.FieldName = "f_b_estados_financieros";
+            this.checkBox30.IsActivar = true;
             this.checkBox30.IsLimpiar = true;
             this.checkBox30.IsSalvar = true;
             this.checkBox30.IsValidar = false;
-            this.checkBox30.Location = new System.Drawing.Point(296, 154);
+            this.checkBox30.Location = new System.Drawing.Point(222, 125);
+            this.checkBox30.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.checkBox30.Name = "checkBox30";
-            this.checkBox30.Size = new System.Drawing.Size(158, 21);
+            this.checkBox30.Size = new System.Drawing.Size(121, 17);
             this.checkBox30.TabIndex = 13;
             this.checkBox30.Text = "Estados Financieros";
             this.checkBox30.UseVisualStyleBackColor = true;
@@ -1088,12 +1211,14 @@
             this.checkBox31.DefaultValue = false;
             this.checkBox31.EnterTab = false;
             this.checkBox31.FieldName = "f_b_contabilidad";
+            this.checkBox31.IsActivar = true;
             this.checkBox31.IsLimpiar = true;
             this.checkBox31.IsSalvar = true;
             this.checkBox31.IsValidar = false;
-            this.checkBox31.Location = new System.Drawing.Point(296, 125);
+            this.checkBox31.Location = new System.Drawing.Point(222, 102);
+            this.checkBox31.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.checkBox31.Name = "checkBox31";
-            this.checkBox31.Size = new System.Drawing.Size(108, 21);
+            this.checkBox31.Size = new System.Drawing.Size(84, 17);
             this.checkBox31.TabIndex = 12;
             this.checkBox31.Text = "Contabilidad";
             this.checkBox31.UseVisualStyleBackColor = true;
@@ -1105,12 +1230,14 @@
             this.checkBox32.DefaultValue = false;
             this.checkBox32.EnterTab = false;
             this.checkBox32.FieldName = "f_b_estadisticas";
+            this.checkBox32.IsActivar = true;
             this.checkBox32.IsLimpiar = true;
             this.checkBox32.IsSalvar = true;
             this.checkBox32.IsValidar = false;
-            this.checkBox32.Location = new System.Drawing.Point(296, 96);
+            this.checkBox32.Location = new System.Drawing.Point(222, 78);
+            this.checkBox32.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.checkBox32.Name = "checkBox32";
-            this.checkBox32.Size = new System.Drawing.Size(105, 21);
+            this.checkBox32.Size = new System.Drawing.Size(82, 17);
             this.checkBox32.TabIndex = 11;
             this.checkBox32.Text = "Estadisticas";
             this.checkBox32.UseVisualStyleBackColor = true;
@@ -1122,12 +1249,14 @@
             this.checkBox33.DefaultValue = false;
             this.checkBox33.EnterTab = false;
             this.checkBox33.FieldName = "f_b_alertas";
+            this.checkBox33.IsActivar = true;
             this.checkBox33.IsLimpiar = true;
             this.checkBox33.IsSalvar = true;
             this.checkBox33.IsValidar = false;
-            this.checkBox33.Location = new System.Drawing.Point(296, 67);
+            this.checkBox33.Location = new System.Drawing.Point(222, 54);
+            this.checkBox33.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.checkBox33.Name = "checkBox33";
-            this.checkBox33.Size = new System.Drawing.Size(74, 21);
+            this.checkBox33.Size = new System.Drawing.Size(58, 17);
             this.checkBox33.TabIndex = 10;
             this.checkBox33.Text = "Alertas";
             this.checkBox33.UseVisualStyleBackColor = true;
@@ -1139,12 +1268,14 @@
             this.checkBox34.DefaultValue = false;
             this.checkBox34.EnterTab = false;
             this.checkBox34.FieldName = "f_b_despacho";
+            this.checkBox34.IsActivar = true;
             this.checkBox34.IsLimpiar = true;
             this.checkBox34.IsSalvar = true;
             this.checkBox34.IsValidar = false;
-            this.checkBox34.Location = new System.Drawing.Point(296, 38);
+            this.checkBox34.Location = new System.Drawing.Point(222, 31);
+            this.checkBox34.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.checkBox34.Name = "checkBox34";
-            this.checkBox34.Size = new System.Drawing.Size(94, 21);
+            this.checkBox34.Size = new System.Drawing.Size(75, 17);
             this.checkBox34.TabIndex = 9;
             this.checkBox34.Text = "Despacho";
             this.checkBox34.UseVisualStyleBackColor = true;
@@ -1156,12 +1287,14 @@
             this.checkBox27.DefaultValue = false;
             this.checkBox27.EnterTab = false;
             this.checkBox27.FieldName = "f_b_cobranza";
+            this.checkBox27.IsActivar = true;
             this.checkBox27.IsLimpiar = true;
             this.checkBox27.IsSalvar = true;
             this.checkBox27.IsValidar = false;
-            this.checkBox27.Location = new System.Drawing.Point(6, 212);
+            this.checkBox27.Location = new System.Drawing.Point(4, 172);
+            this.checkBox27.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.checkBox27.Name = "checkBox27";
-            this.checkBox27.Size = new System.Drawing.Size(91, 21);
+            this.checkBox27.Size = new System.Drawing.Size(71, 17);
             this.checkBox27.TabIndex = 8;
             this.checkBox27.Text = "Cobranza";
             this.checkBox27.UseVisualStyleBackColor = true;
@@ -1173,12 +1306,14 @@
             this.checkBox26.DefaultValue = false;
             this.checkBox26.EnterTab = false;
             this.checkBox26.FieldName = "f_b_caja_chica";
+            this.checkBox26.IsActivar = true;
             this.checkBox26.IsLimpiar = true;
             this.checkBox26.IsSalvar = true;
             this.checkBox26.IsValidar = false;
-            this.checkBox26.Location = new System.Drawing.Point(6, 183);
+            this.checkBox26.Location = new System.Drawing.Point(4, 149);
+            this.checkBox26.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.checkBox26.Name = "checkBox26";
-            this.checkBox26.Size = new System.Drawing.Size(97, 21);
+            this.checkBox26.Size = new System.Drawing.Size(77, 17);
             this.checkBox26.TabIndex = 7;
             this.checkBox26.Text = "Caja Chica";
             this.checkBox26.UseVisualStyleBackColor = true;
@@ -1190,12 +1325,14 @@
             this.checkBox25.DefaultValue = false;
             this.checkBox25.EnterTab = false;
             this.checkBox25.FieldName = "f_b_caja_general";
+            this.checkBox25.IsActivar = true;
             this.checkBox25.IsLimpiar = true;
             this.checkBox25.IsSalvar = true;
             this.checkBox25.IsValidar = false;
-            this.checkBox25.Location = new System.Drawing.Point(6, 154);
+            this.checkBox25.Location = new System.Drawing.Point(4, 125);
+            this.checkBox25.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.checkBox25.Name = "checkBox25";
-            this.checkBox25.Size = new System.Drawing.Size(113, 21);
+            this.checkBox25.Size = new System.Drawing.Size(87, 17);
             this.checkBox25.TabIndex = 6;
             this.checkBox25.Text = "Caja General";
             this.checkBox25.UseVisualStyleBackColor = true;
@@ -1207,12 +1344,14 @@
             this.checkBox24.DefaultValue = false;
             this.checkBox24.EnterTab = false;
             this.checkBox24.FieldName = "f_b_facturacion";
+            this.checkBox24.IsActivar = true;
             this.checkBox24.IsLimpiar = true;
             this.checkBox24.IsSalvar = true;
             this.checkBox24.IsValidar = false;
-            this.checkBox24.Location = new System.Drawing.Point(6, 125);
+            this.checkBox24.Location = new System.Drawing.Point(4, 102);
+            this.checkBox24.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.checkBox24.Name = "checkBox24";
-            this.checkBox24.Size = new System.Drawing.Size(104, 21);
+            this.checkBox24.Size = new System.Drawing.Size(82, 17);
             this.checkBox24.TabIndex = 5;
             this.checkBox24.Text = "Facturacion";
             this.checkBox24.UseVisualStyleBackColor = true;
@@ -1224,12 +1363,14 @@
             this.checkBox23.DefaultValue = false;
             this.checkBox23.EnterTab = false;
             this.checkBox23.FieldName = "f_b_cotizacion";
+            this.checkBox23.IsActivar = true;
             this.checkBox23.IsLimpiar = true;
             this.checkBox23.IsSalvar = true;
             this.checkBox23.IsValidar = false;
-            this.checkBox23.Location = new System.Drawing.Point(6, 96);
+            this.checkBox23.Location = new System.Drawing.Point(4, 78);
+            this.checkBox23.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.checkBox23.Name = "checkBox23";
-            this.checkBox23.Size = new System.Drawing.Size(95, 21);
+            this.checkBox23.Size = new System.Drawing.Size(75, 17);
             this.checkBox23.TabIndex = 4;
             this.checkBox23.Text = "Cptizacion";
             this.checkBox23.UseVisualStyleBackColor = true;
@@ -1241,12 +1382,14 @@
             this.checkBox22.DefaultValue = false;
             this.checkBox22.EnterTab = false;
             this.checkBox22.FieldName = "f_b_producto";
+            this.checkBox22.IsActivar = true;
             this.checkBox22.IsLimpiar = true;
             this.checkBox22.IsSalvar = true;
             this.checkBox22.IsValidar = false;
-            this.checkBox22.Location = new System.Drawing.Point(6, 67);
+            this.checkBox22.Location = new System.Drawing.Point(4, 54);
+            this.checkBox22.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.checkBox22.Name = "checkBox22";
-            this.checkBox22.Size = new System.Drawing.Size(94, 21);
+            this.checkBox22.Size = new System.Drawing.Size(74, 17);
             this.checkBox22.TabIndex = 3;
             this.checkBox22.Text = "Productos";
             this.checkBox22.UseVisualStyleBackColor = true;
@@ -1258,12 +1401,14 @@
             this.checkBox21.DefaultValue = false;
             this.checkBox21.EnterTab = false;
             this.checkBox21.FieldName = "f_b_proveedor";
+            this.checkBox21.IsActivar = true;
             this.checkBox21.IsLimpiar = true;
             this.checkBox21.IsSalvar = true;
             this.checkBox21.IsValidar = false;
-            this.checkBox21.Location = new System.Drawing.Point(6, 38);
+            this.checkBox21.Location = new System.Drawing.Point(4, 31);
+            this.checkBox21.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.checkBox21.Name = "checkBox21";
-            this.checkBox21.Size = new System.Drawing.Size(96, 21);
+            this.checkBox21.Size = new System.Drawing.Size(75, 17);
             this.checkBox21.TabIndex = 2;
             this.checkBox21.Text = "Proveedor";
             this.checkBox21.UseVisualStyleBackColor = true;
@@ -1275,12 +1420,14 @@
             this.checkBox20.DefaultValue = false;
             this.checkBox20.EnterTab = false;
             this.checkBox20.FieldName = "f_b_cliente";
+            this.checkBox20.IsActivar = true;
             this.checkBox20.IsLimpiar = true;
             this.checkBox20.IsSalvar = true;
             this.checkBox20.IsValidar = false;
-            this.checkBox20.Location = new System.Drawing.Point(6, 9);
+            this.checkBox20.Location = new System.Drawing.Point(4, 7);
+            this.checkBox20.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.checkBox20.Name = "checkBox20";
-            this.checkBox20.Size = new System.Drawing.Size(73, 21);
+            this.checkBox20.Size = new System.Drawing.Size(58, 17);
             this.checkBox20.TabIndex = 1;
             this.checkBox20.Text = "Cliente";
             this.checkBox20.UseVisualStyleBackColor = true;
@@ -1293,20 +1440,23 @@
             this.tabPage5.Controls.Add(this.button1);
             this.tabPage5.Controls.Add(this.cmbtipoarticulo);
             this.tabPage5.Controls.Add(this.evLabel25);
-            this.tabPage5.Location = new System.Drawing.Point(4, 25);
+            this.tabPage5.Location = new System.Drawing.Point(4, 22);
+            this.tabPage5.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.tabPage5.Name = "tabPage5";
-            this.tabPage5.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage5.Size = new System.Drawing.Size(555, 242);
+            this.tabPage5.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tabPage5.Size = new System.Drawing.Size(414, 194);
             this.tabPage5.TabIndex = 4;
             this.tabPage5.Text = "Articulos";
             this.tabPage5.UseVisualStyleBackColor = true;
             // 
             // gridarticulos
             // 
-            this.gridarticulos.Location = new System.Drawing.Point(9, 59);
+            this.gridarticulos.EmbeddedNavigator.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.gridarticulos.Location = new System.Drawing.Point(7, 48);
             this.gridarticulos.MainView = this.gridView1;
+            this.gridarticulos.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.gridarticulos.Name = "gridarticulos";
-            this.gridarticulos.Size = new System.Drawing.Size(528, 173);
+            this.gridarticulos.Size = new System.Drawing.Size(396, 141);
             this.gridarticulos.TabIndex = 13;
             this.gridarticulos.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.gridView1});
@@ -1315,6 +1465,7 @@
             // 
             this.gridView1.Columns.AddRange(new DevExpress.XtraGrid.Columns.GridColumn[] {
             this.gridColumn1});
+            this.gridView1.DetailHeight = 284;
             this.gridView1.GridControl = this.gridarticulos;
             this.gridView1.Name = "gridView1";
             this.gridView1.OptionsView.ColumnAutoWidth = false;
@@ -1325,19 +1476,20 @@
             this.gridColumn1.AppearanceHeader.Font = new System.Drawing.Font("Tahoma", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.gridColumn1.AppearanceHeader.Options.UseFont = true;
             this.gridColumn1.Caption = "Tipo Articulo";
-            this.gridColumn1.MinWidth = 25;
+            this.gridColumn1.MinWidth = 19;
             this.gridColumn1.Name = "gridColumn1";
             this.gridColumn1.OptionsColumn.AllowEdit = false;
             this.gridColumn1.Visible = true;
             this.gridColumn1.VisibleIndex = 0;
-            this.gridColumn1.Width = 493;
+            this.gridColumn1.Width = 370;
             // 
             // button2
             // 
             this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.Location = new System.Drawing.Point(490, 20);
+            this.button2.Location = new System.Drawing.Point(368, 16);
+            this.button2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(47, 37);
+            this.button2.Size = new System.Drawing.Size(35, 30);
             this.button2.TabIndex = 12;
             this.button2.Text = "-";
             this.button2.UseVisualStyleBackColor = true;
@@ -1346,9 +1498,10 @@
             // button1
             // 
             this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(437, 20);
+            this.button1.Location = new System.Drawing.Point(328, 16);
+            this.button1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(47, 37);
+            this.button1.Size = new System.Drawing.Size(35, 30);
             this.button1.TabIndex = 11;
             this.button1.Text = "+";
             this.button1.UseVisualStyleBackColor = true;
@@ -1359,16 +1512,19 @@
             this.cmbtipoarticulo.DisplayMemberName = "f_descripcion";
             this.cmbtipoarticulo.EnterTab = false;
             this.cmbtipoarticulo.FieldName = null;
+            this.cmbtipoarticulo.IsActivar = true;
             this.cmbtipoarticulo.IsLimpiar = true;
             this.cmbtipoarticulo.IsSalvar = false;
             this.cmbtipoarticulo.IsValidar = false;
-            this.cmbtipoarticulo.Location = new System.Drawing.Point(9, 31);
+            this.cmbtipoarticulo.Location = new System.Drawing.Point(7, 25);
+            this.cmbtipoarticulo.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.cmbtipoarticulo.Name = "cmbtipoarticulo";
             this.cmbtipoarticulo.NombreProcedimiento = "P_TIPOARTICULOS";
             this.cmbtipoarticulo.Param = null;
             this.cmbtipoarticulo.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
-            this.cmbtipoarticulo.Size = new System.Drawing.Size(393, 22);
+            this.cmbtipoarticulo.Properties.NullText = "";
+            this.cmbtipoarticulo.Size = new System.Drawing.Size(295, 20);
             this.cmbtipoarticulo.TabIndex = 10;
             this.cmbtipoarticulo.Valor = null;
             this.cmbtipoarticulo.ValueMemberName = "f_id";
@@ -1377,9 +1533,10 @@
             // 
             this.evLabel25.AutoSize = true;
             this.evLabel25.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.evLabel25.Location = new System.Drawing.Point(6, 11);
+            this.evLabel25.Location = new System.Drawing.Point(4, 9);
+            this.evLabel25.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.evLabel25.Name = "evLabel25";
-            this.evLabel25.Size = new System.Drawing.Size(144, 17);
+            this.evLabel25.Size = new System.Drawing.Size(113, 13);
             this.evLabel25.TabIndex = 9;
             this.evLabel25.Text = "Tipos de Articulos:";
             // 
@@ -1392,12 +1549,14 @@
             this.ckactivo.EnterTab = false;
             this.ckactivo.FieldName = "f_activo";
             this.ckactivo.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ckactivo.IsActivar = true;
             this.ckactivo.IsLimpiar = true;
             this.ckactivo.IsSalvar = true;
             this.ckactivo.IsValidar = false;
-            this.ckactivo.Location = new System.Drawing.Point(714, 16);
+            this.ckactivo.Location = new System.Drawing.Point(536, 13);
+            this.ckactivo.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.ckactivo.Name = "ckactivo";
-            this.ckactivo.Size = new System.Drawing.Size(135, 21);
+            this.ckactivo.Size = new System.Drawing.Size(109, 17);
             this.ckactivo.TabIndex = 27;
             this.ckactivo.Text = "Usuario Activo";
             this.ckactivo.UseVisualStyleBackColor = true;
@@ -1410,12 +1569,14 @@
             this.ckgrupo.EnterTab = false;
             this.ckgrupo.FieldName = "";
             this.ckgrupo.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ckgrupo.IsActivar = true;
             this.ckgrupo.IsLimpiar = true;
             this.ckgrupo.IsSalvar = false;
             this.ckgrupo.IsValidar = false;
-            this.ckgrupo.Location = new System.Drawing.Point(539, 16);
+            this.ckgrupo.Location = new System.Drawing.Point(404, 13);
+            this.ckgrupo.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.ckgrupo.Name = "ckgrupo";
-            this.ckgrupo.Size = new System.Drawing.Size(169, 21);
+            this.ckgrupo.Size = new System.Drawing.Size(132, 17);
             this.ckgrupo.TabIndex = 26;
             this.ckgrupo.Text = "Permisos de Grupo";
             this.ckgrupo.UseVisualStyleBackColor = true;
@@ -1429,12 +1590,14 @@
             this.ckcreausuario.EnterTab = false;
             this.ckcreausuario.FieldName = "f_crea_usuario";
             this.ckcreausuario.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ckcreausuario.IsActivar = true;
             this.ckcreausuario.IsLimpiar = true;
             this.ckcreausuario.IsSalvar = true;
             this.ckcreausuario.IsValidar = false;
-            this.ckcreausuario.Location = new System.Drawing.Point(343, 16);
+            this.ckcreausuario.Location = new System.Drawing.Point(257, 13);
+            this.ckcreausuario.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.ckcreausuario.Name = "ckcreausuario";
-            this.ckcreausuario.Size = new System.Drawing.Size(190, 21);
+            this.ckcreausuario.Size = new System.Drawing.Size(149, 17);
             this.ckcreausuario.TabIndex = 25;
             this.ckcreausuario.Text = "Puede Crear Usuarios";
             this.ckcreausuario.UseVisualStyleBackColor = true;
@@ -1444,19 +1607,21 @@
             // 
             this.vendedorPickerPanel1.EnterTab = true;
             this.vendedorPickerPanel1.FieldName = "f_vendedor";
+            this.vendedorPickerPanel1.IsActivar = true;
             this.vendedorPickerPanel1.IsLimpiar = true;
             this.vendedorPickerPanel1.IsSalvar = true;
             this.vendedorPickerPanel1.IsValidar = false;
-            this.vendedorPickerPanel1.LblVendedorMargin = new System.Windows.Forms.Padding(3, 3, 95, 0);
-            this.vendedorPickerPanel1.Location = new System.Drawing.Point(407, 108);
+            this.vendedorPickerPanel1.LblVendedorMargin = new System.Windows.Forms.Padding(2, 2, 71, 0);
+            this.vendedorPickerPanel1.Location = new System.Drawing.Point(305, 88);
+            this.vendedorPickerPanel1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.vendedorPickerPanel1.Name = "vendedorPickerPanel1";
             this.vendedorPickerPanel1.parent = this;
-            this.vendedorPickerPanel1.Size = new System.Drawing.Size(467, 28);
+            this.vendedorPickerPanel1.Size = new System.Drawing.Size(350, 23);
             this.vendedorPickerPanel1.TabIndex = 9;
-            this.vendedorPickerPanel1.TxtIdMargin = new System.Windows.Forms.Padding(3);
-            this.vendedorPickerPanel1.TxtIdSize = new System.Drawing.Size(70, 22);
-            this.vendedorPickerPanel1.TxtNombreMargin = new System.Windows.Forms.Padding(3);
-            this.vendedorPickerPanel1.TxtNombreSize = new System.Drawing.Size(180, 22);
+            this.vendedorPickerPanel1.TxtIdMargin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.vendedorPickerPanel1.TxtIdSize = new System.Drawing.Size(52, 20);
+            this.vendedorPickerPanel1.TxtNombreMargin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.vendedorPickerPanel1.TxtNombreSize = new System.Drawing.Size(136, 20);
             this.vendedorPickerPanel1.Valor = 0;
             // 
             // evDateTimePicker1
@@ -1465,12 +1630,14 @@
             this.evDateTimePicker1.EnterTab = true;
             this.evDateTimePicker1.FieldName = "f_fecha_caducidad";
             this.evDateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.evDateTimePicker1.IsActivar = true;
             this.evDateTimePicker1.IsLimpiar = true;
             this.evDateTimePicker1.IsSalvar = true;
             this.evDateTimePicker1.IsValidar = false;
-            this.evDateTimePicker1.Location = new System.Drawing.Point(585, 46);
+            this.evDateTimePicker1.Location = new System.Drawing.Point(439, 37);
+            this.evDateTimePicker1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.evDateTimePicker1.Name = "evDateTimePicker1";
-            this.evDateTimePicker1.Size = new System.Drawing.Size(257, 22);
+            this.evDateTimePicker1.Size = new System.Drawing.Size(194, 20);
             this.evDateTimePicker1.TabIndex = 7;
             this.evDateTimePicker1.Valor = new System.DateTime(2020, 8, 18, 0, 0, 0, 0);
             this.evDateTimePicker1.Value = new System.DateTime(2020, 8, 18, 20, 8, 49, 6);
@@ -1480,12 +1647,14 @@
             this.evTextBox7.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
             this.evTextBox7.EnterTab = true;
             this.evTextBox7.FieldName = "f_firma";
+            this.evTextBox7.IsActivar = true;
             this.evTextBox7.IsLimpiar = true;
             this.evTextBox7.IsSalvar = true;
             this.evTextBox7.IsValidar = false;
-            this.evTextBox7.Location = new System.Drawing.Point(585, 77);
+            this.evTextBox7.Location = new System.Drawing.Point(439, 63);
+            this.evTextBox7.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.evTextBox7.Name = "evTextBox7";
-            this.evTextBox7.Size = new System.Drawing.Size(257, 22);
+            this.evTextBox7.Size = new System.Drawing.Size(194, 20);
             this.evTextBox7.TabIndex = 8;
             this.evTextBox7.Valor = "";
             // 
@@ -1493,9 +1662,10 @@
             // 
             this.evLabel12.AutoSize = true;
             this.evLabel12.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.evLabel12.Location = new System.Drawing.Point(411, 80);
+            this.evLabel12.Location = new System.Drawing.Point(308, 65);
+            this.evLabel12.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.evLabel12.Name = "evLabel12";
-            this.evLabel12.Size = new System.Drawing.Size(48, 17);
+            this.evLabel12.Size = new System.Drawing.Size(37, 13);
             this.evLabel12.TabIndex = 18;
             this.evLabel12.Text = "Firma";
             // 
@@ -1503,9 +1673,10 @@
             // 
             this.evLabel11.AutoSize = true;
             this.evLabel11.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.evLabel11.Location = new System.Drawing.Point(411, 49);
+            this.evLabel11.Location = new System.Drawing.Point(308, 40);
+            this.evLabel11.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.evLabel11.Name = "evLabel11";
-            this.evLabel11.Size = new System.Drawing.Size(154, 17);
+            this.evLabel11.Size = new System.Drawing.Size(123, 13);
             this.evLabel11.TabIndex = 17;
             this.evLabel11.Text = "Fecha de caducidad";
             // 
@@ -1513,13 +1684,15 @@
             // 
             this.txttelefono.EnterTab = true;
             this.txttelefono.FieldName = "f_telefono";
+            this.txttelefono.IsActivar = true;
             this.txttelefono.IsLimpiar = true;
             this.txttelefono.IsSalvar = true;
             this.txttelefono.IsValidar = false;
-            this.txttelefono.Location = new System.Drawing.Point(128, 171);
+            this.txttelefono.Location = new System.Drawing.Point(96, 139);
+            this.txttelefono.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txttelefono.Mask = "(###)-###-####";
             this.txttelefono.Name = "txttelefono";
-            this.txttelefono.Size = new System.Drawing.Size(257, 22);
+            this.txttelefono.Size = new System.Drawing.Size(194, 20);
             this.txttelefono.TabIndex = 4;
             this.txttelefono.TextMaskFormat = System.Windows.Forms.MaskFormat.IncludePromptAndLiterals;
             this.txttelefono.Valor = "";
@@ -1532,9 +1705,11 @@
             this.groupBox1.Controls.Add(this.evLabel9);
             this.groupBox1.Controls.Add(this.txtusuario);
             this.groupBox1.Controls.Add(this.evLabel8);
-            this.groupBox1.Location = new System.Drawing.Point(9, 267);
+            this.groupBox1.Location = new System.Drawing.Point(7, 217);
+            this.groupBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(396, 156);
+            this.groupBox1.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.groupBox1.Size = new System.Drawing.Size(297, 127);
             this.groupBox1.TabIndex = 10;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Control de acceso";
@@ -1543,13 +1718,15 @@
             // 
             this.txtconfirmpass.EnterTab = true;
             this.txtconfirmpass.FieldName = null;
+            this.txtconfirmpass.IsActivar = true;
             this.txtconfirmpass.IsLimpiar = true;
             this.txtconfirmpass.IsSalvar = true;
             this.txtconfirmpass.IsValidar = false;
-            this.txtconfirmpass.Location = new System.Drawing.Point(165, 106);
+            this.txtconfirmpass.Location = new System.Drawing.Point(124, 86);
+            this.txtconfirmpass.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtconfirmpass.Name = "txtconfirmpass";
             this.txtconfirmpass.PasswordChar = '*';
-            this.txtconfirmpass.Size = new System.Drawing.Size(203, 22);
+            this.txtconfirmpass.Size = new System.Drawing.Size(153, 20);
             this.txtconfirmpass.TabIndex = 2;
             this.txtconfirmpass.Valor = "";
             // 
@@ -1557,13 +1734,15 @@
             // 
             this.txtpass.EnterTab = true;
             this.txtpass.FieldName = null;
+            this.txtpass.IsActivar = true;
             this.txtpass.IsLimpiar = true;
             this.txtpass.IsSalvar = true;
             this.txtpass.IsValidar = false;
-            this.txtpass.Location = new System.Drawing.Point(165, 70);
+            this.txtpass.Location = new System.Drawing.Point(124, 57);
+            this.txtpass.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtpass.Name = "txtpass";
             this.txtpass.PasswordChar = '*';
-            this.txtpass.Size = new System.Drawing.Size(203, 22);
+            this.txtpass.Size = new System.Drawing.Size(153, 20);
             this.txtpass.TabIndex = 1;
             this.txtpass.Valor = "";
             // 
@@ -1571,9 +1750,10 @@
             // 
             this.evLabel10.AutoSize = true;
             this.evLabel10.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.evLabel10.Location = new System.Drawing.Point(9, 108);
+            this.evLabel10.Location = new System.Drawing.Point(7, 88);
+            this.evLabel10.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.evLabel10.Name = "evLabel10";
-            this.evLabel10.Size = new System.Drawing.Size(147, 17);
+            this.evLabel10.Size = new System.Drawing.Size(114, 13);
             this.evLabel10.TabIndex = 11;
             this.evLabel10.Text = "Validar Contraseña";
             // 
@@ -1581,9 +1761,10 @@
             // 
             this.evLabel9.AutoSize = true;
             this.evLabel9.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.evLabel9.Location = new System.Drawing.Point(9, 72);
+            this.evLabel9.Location = new System.Drawing.Point(7, 58);
+            this.evLabel9.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.evLabel9.Name = "evLabel9";
-            this.evLabel9.Size = new System.Drawing.Size(91, 17);
+            this.evLabel9.Size = new System.Drawing.Size(71, 13);
             this.evLabel9.TabIndex = 10;
             this.evLabel9.Text = "Contraseña";
             // 
@@ -1591,12 +1772,14 @@
             // 
             this.txtusuario.EnterTab = true;
             this.txtusuario.FieldName = "f_id_usuario";
+            this.txtusuario.IsActivar = true;
             this.txtusuario.IsLimpiar = true;
             this.txtusuario.IsSalvar = true;
             this.txtusuario.IsValidar = false;
-            this.txtusuario.Location = new System.Drawing.Point(165, 34);
+            this.txtusuario.Location = new System.Drawing.Point(124, 28);
+            this.txtusuario.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtusuario.Name = "txtusuario";
-            this.txtusuario.Size = new System.Drawing.Size(203, 22);
+            this.txtusuario.Size = new System.Drawing.Size(153, 20);
             this.txtusuario.TabIndex = 0;
             this.txtusuario.Valor = "";
             // 
@@ -1604,9 +1787,10 @@
             // 
             this.evLabel8.AutoSize = true;
             this.evLabel8.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.evLabel8.Location = new System.Drawing.Point(9, 36);
+            this.evLabel8.Location = new System.Drawing.Point(7, 29);
+            this.evLabel8.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.evLabel8.Name = "evLabel8";
-            this.evLabel8.Size = new System.Drawing.Size(125, 17);
+            this.evLabel8.Size = new System.Drawing.Size(97, 13);
             this.evLabel8.TabIndex = 8;
             this.evLabel8.Text = "Nombre Usuario";
             // 
@@ -1614,12 +1798,14 @@
             // 
             this.evTextBox5.EnterTab = true;
             this.evTextBox5.FieldName = "f_password_email";
+            this.evTextBox5.IsActivar = true;
             this.evTextBox5.IsLimpiar = true;
             this.evTextBox5.IsSalvar = true;
             this.evTextBox5.IsValidar = false;
-            this.evTextBox5.Location = new System.Drawing.Point(128, 233);
+            this.evTextBox5.Location = new System.Drawing.Point(96, 189);
+            this.evTextBox5.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.evTextBox5.Name = "evTextBox5";
-            this.evTextBox5.Size = new System.Drawing.Size(257, 22);
+            this.evTextBox5.Size = new System.Drawing.Size(194, 20);
             this.evTextBox5.TabIndex = 6;
             this.evTextBox5.Valor = "";
             // 
@@ -1627,9 +1813,10 @@
             // 
             this.evLabel7.AutoSize = true;
             this.evLabel7.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.evLabel7.Location = new System.Drawing.Point(15, 236);
+            this.evLabel7.Location = new System.Drawing.Point(11, 192);
+            this.evLabel7.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.evLabel7.Name = "evLabel7";
-            this.evLabel7.Size = new System.Drawing.Size(92, 17);
+            this.evLabel7.Size = new System.Drawing.Size(72, 13);
             this.evLabel7.TabIndex = 12;
             this.evLabel7.Text = "Email Pass.";
             // 
@@ -1638,12 +1825,14 @@
             this.txtemail.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
             this.txtemail.EnterTab = true;
             this.txtemail.FieldName = "f_email";
+            this.txtemail.IsActivar = true;
             this.txtemail.IsLimpiar = true;
             this.txtemail.IsSalvar = true;
             this.txtemail.IsValidar = false;
-            this.txtemail.Location = new System.Drawing.Point(128, 202);
+            this.txtemail.Location = new System.Drawing.Point(96, 164);
+            this.txtemail.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtemail.Name = "txtemail";
-            this.txtemail.Size = new System.Drawing.Size(257, 22);
+            this.txtemail.Size = new System.Drawing.Size(194, 20);
             this.txtemail.TabIndex = 5;
             this.txtemail.Valor = "";
             // 
@@ -1652,13 +1841,15 @@
             this.txtdireccion.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
             this.txtdireccion.EnterTab = true;
             this.txtdireccion.FieldName = "f_direccion";
+            this.txtdireccion.IsActivar = true;
             this.txtdireccion.IsLimpiar = true;
             this.txtdireccion.IsSalvar = true;
             this.txtdireccion.IsValidar = true;
-            this.txtdireccion.Location = new System.Drawing.Point(128, 108);
+            this.txtdireccion.Location = new System.Drawing.Point(96, 88);
+            this.txtdireccion.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtdireccion.Multiline = true;
             this.txtdireccion.Name = "txtdireccion";
-            this.txtdireccion.Size = new System.Drawing.Size(257, 54);
+            this.txtdireccion.Size = new System.Drawing.Size(194, 45);
             this.txtdireccion.TabIndex = 3;
             this.txtdireccion.Valor = "";
             // 
@@ -1667,12 +1858,14 @@
             this.txtapellido.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
             this.txtapellido.EnterTab = true;
             this.txtapellido.FieldName = "f_apellido";
+            this.txtapellido.IsActivar = true;
             this.txtapellido.IsLimpiar = true;
             this.txtapellido.IsSalvar = true;
             this.txtapellido.IsValidar = true;
-            this.txtapellido.Location = new System.Drawing.Point(128, 77);
+            this.txtapellido.Location = new System.Drawing.Point(96, 63);
+            this.txtapellido.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtapellido.Name = "txtapellido";
-            this.txtapellido.Size = new System.Drawing.Size(257, 22);
+            this.txtapellido.Size = new System.Drawing.Size(194, 20);
             this.txtapellido.TabIndex = 2;
             this.txtapellido.Valor = "";
             // 
@@ -1681,12 +1874,14 @@
             this.txtnombre.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
             this.txtnombre.EnterTab = true;
             this.txtnombre.FieldName = "f_nombre";
+            this.txtnombre.IsActivar = true;
             this.txtnombre.IsLimpiar = true;
             this.txtnombre.IsSalvar = true;
             this.txtnombre.IsValidar = true;
-            this.txtnombre.Location = new System.Drawing.Point(128, 45);
+            this.txtnombre.Location = new System.Drawing.Point(96, 37);
+            this.txtnombre.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtnombre.Name = "txtnombre";
-            this.txtnombre.Size = new System.Drawing.Size(257, 22);
+            this.txtnombre.Size = new System.Drawing.Size(194, 20);
             this.txtnombre.TabIndex = 1;
             this.txtnombre.Valor = "";
             // 
@@ -1694,9 +1889,10 @@
             // 
             this.evLabel6.AutoSize = true;
             this.evLabel6.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.evLabel6.Location = new System.Drawing.Point(15, 205);
+            this.evLabel6.Location = new System.Drawing.Point(11, 167);
+            this.evLabel6.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.evLabel6.Name = "evLabel6";
-            this.evLabel6.Size = new System.Drawing.Size(47, 17);
+            this.evLabel6.Size = new System.Drawing.Size(37, 13);
             this.evLabel6.TabIndex = 6;
             this.evLabel6.Text = "Email";
             // 
@@ -1704,9 +1900,10 @@
             // 
             this.evLabel5.AutoSize = true;
             this.evLabel5.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.evLabel5.Location = new System.Drawing.Point(15, 174);
+            this.evLabel5.Location = new System.Drawing.Point(11, 141);
+            this.evLabel5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.evLabel5.Name = "evLabel5";
-            this.evLabel5.Size = new System.Drawing.Size(72, 17);
+            this.evLabel5.Size = new System.Drawing.Size(57, 13);
             this.evLabel5.TabIndex = 5;
             this.evLabel5.Text = "Telefono";
             // 
@@ -1714,9 +1911,10 @@
             // 
             this.evLabel4.AutoSize = true;
             this.evLabel4.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.evLabel4.Location = new System.Drawing.Point(15, 108);
+            this.evLabel4.Location = new System.Drawing.Point(11, 88);
+            this.evLabel4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.evLabel4.Name = "evLabel4";
-            this.evLabel4.Size = new System.Drawing.Size(76, 17);
+            this.evLabel4.Size = new System.Drawing.Size(61, 13);
             this.evLabel4.TabIndex = 4;
             this.evLabel4.Text = "Direccion";
             // 
@@ -1724,9 +1922,10 @@
             // 
             this.evLabel3.AutoSize = true;
             this.evLabel3.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.evLabel3.Location = new System.Drawing.Point(15, 79);
+            this.evLabel3.Location = new System.Drawing.Point(11, 64);
+            this.evLabel3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.evLabel3.Name = "evLabel3";
-            this.evLabel3.Size = new System.Drawing.Size(66, 17);
+            this.evLabel3.Size = new System.Drawing.Size(52, 13);
             this.evLabel3.TabIndex = 3;
             this.evLabel3.Text = "Apellido";
             // 
@@ -1734,9 +1933,10 @@
             // 
             this.evLabel2.AutoSize = true;
             this.evLabel2.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.evLabel2.Location = new System.Drawing.Point(15, 48);
+            this.evLabel2.Location = new System.Drawing.Point(11, 39);
+            this.evLabel2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.evLabel2.Name = "evLabel2";
-            this.evLabel2.Size = new System.Drawing.Size(64, 17);
+            this.evLabel2.Size = new System.Drawing.Size(50, 13);
             this.evLabel2.TabIndex = 2;
             this.evLabel2.Text = "Nombre";
             // 
@@ -1746,58 +1946,36 @@
             this.txtidusuario.Enabled = false;
             this.txtidusuario.EnterTab = true;
             this.txtidusuario.FieldName = "f_codigo_usuario";
+            this.txtidusuario.IsActivar = true;
             this.txtidusuario.IsLimpiar = true;
             this.txtidusuario.IsSalvar = true;
             this.txtidusuario.IsValidar = false;
-            this.txtidusuario.Location = new System.Drawing.Point(128, 15);
-            this.txtidusuario.Margin = new System.Windows.Forms.Padding(4);
+            this.txtidusuario.Location = new System.Drawing.Point(96, 12);
             this.txtidusuario.Name = "txtidusuario";
             this.txtidusuario.Properties.Appearance.Options.UseTextOptions = true;
             this.txtidusuario.Properties.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Far;
             this.txtidusuario.Properties.Mask.EditMask = "f0";
             this.txtidusuario.Properties.Mask.MaskType = DevExpress.XtraEditors.Mask.MaskType.Numeric;
             this.txtidusuario.Properties.Mask.UseMaskAsDisplayFormat = true;
-            this.txtidusuario.Size = new System.Drawing.Size(125, 22);
+            this.txtidusuario.Size = new System.Drawing.Size(94, 20);
             this.txtidusuario.TabIndex = 0;
             // 
             // evLabel1
             // 
             this.evLabel1.AutoSize = true;
             this.evLabel1.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.evLabel1.Location = new System.Drawing.Point(15, 18);
+            this.evLabel1.Location = new System.Drawing.Point(11, 15);
+            this.evLabel1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.evLabel1.Name = "evLabel1";
-            this.evLabel1.Size = new System.Drawing.Size(58, 17);
+            this.evLabel1.Size = new System.Drawing.Size(46, 13);
             this.evLabel1.TabIndex = 0;
             this.evLabel1.Text = "Codigo";
             // 
-            // evLabel13
-            // 
-            this.evLabel13.AutoSize = true;
-            this.evLabel13.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.evLabel13.Location = new System.Drawing.Point(18, 440);
-            this.evLabel13.Name = "evLabel13";
-            this.evLabel13.Size = new System.Drawing.Size(175, 17);
-            this.evLabel13.TabIndex = 30;
-            this.evLabel13.Text = "Asignar Permisos ===>";
-            // 
-            // button3
-            // 
-            this.button3.FlatAppearance.BorderSize = 0;
-            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button3.Image = ((System.Drawing.Image)(resources.GetObject("button3.Image")));
-            this.button3.Location = new System.Drawing.Point(206, 427);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(60, 44);
-            this.button3.TabIndex = 31;
-            this.toolTip1.SetToolTip(this.button3, "Cerrar");
-            this.button3.UseVisualStyleBackColor = true;
-            this.button3.Click += new System.EventHandler(this.button3_Click);
-            // 
             // InUsuarios
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(997, 564);
+            this.ClientSize = new System.Drawing.Size(748, 458);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.Name = "InUsuarios";

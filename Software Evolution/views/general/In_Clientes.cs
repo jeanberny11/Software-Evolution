@@ -45,7 +45,7 @@ namespace Software_Evolution.views.general
 
         private void In_Clientes_Load(object sender, EventArgs e)
         {
-            
+            CenterToScreen();
         }
 
         private void InitData()

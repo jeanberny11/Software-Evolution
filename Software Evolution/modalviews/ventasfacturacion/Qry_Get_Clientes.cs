@@ -78,5 +78,10 @@ namespace Software_Evolution.modalviews.ventasfacturacion
             DialogResult = DialogResult.Cancel;
             Close();
         }
+
+        private void Qry_Get_Clientes_Load(object sender, EventArgs e)
+        {
+            CenterToScreen();
+        }
     }
 }

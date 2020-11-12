@@ -58,19 +58,22 @@
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 55.97826F));
             this.tableLayoutPanel1.Controls.Add(this.griddata, 0, 0);
             this.tableLayoutPanel1.Controls.Add(this.content, 1, 0);
-            this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 72);
+            this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 58);
+            this.tableLayoutPanel1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
             this.tableLayoutPanel1.RowCount = 1;
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(920, 454);
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(690, 369);
             this.tableLayoutPanel1.TabIndex = 0;
             // 
             // griddata
             // 
-            this.griddata.Location = new System.Drawing.Point(3, 3);
+            this.griddata.EmbeddedNavigator.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.griddata.Location = new System.Drawing.Point(2, 2);
             this.griddata.MainView = this.gridView1;
+            this.griddata.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.griddata.Name = "griddata";
-            this.griddata.Size = new System.Drawing.Size(394, 448);
+            this.griddata.Size = new System.Drawing.Size(296, 364);
             this.griddata.TabIndex = 0;
             this.griddata.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.gridView1});
@@ -80,6 +83,7 @@
             this.gridView1.Columns.AddRange(new DevExpress.XtraGrid.Columns.GridColumn[] {
             this.idcolumn,
             this.descripcioncolumn});
+            this.gridView1.DetailHeight = 284;
             this.gridView1.GridControl = this.griddata;
             this.gridView1.Name = "gridView1";
             this.gridView1.OptionsSelection.MultiSelect = true;
@@ -93,12 +97,12 @@
             this.idcolumn.AppearanceHeader.Options.UseFont = true;
             this.idcolumn.AppearanceHeader.Options.UseForeColor = true;
             this.idcolumn.Caption = "Codigo";
-            this.idcolumn.MinWidth = 25;
+            this.idcolumn.MinWidth = 19;
             this.idcolumn.Name = "idcolumn";
             this.idcolumn.OptionsColumn.AllowEdit = false;
             this.idcolumn.Visible = true;
             this.idcolumn.VisibleIndex = 0;
-            this.idcolumn.Width = 88;
+            this.idcolumn.Width = 66;
             // 
             // descripcioncolumn
             // 
@@ -107,12 +111,12 @@
             this.descripcioncolumn.AppearanceHeader.Options.UseFont = true;
             this.descripcioncolumn.AppearanceHeader.Options.UseForeColor = true;
             this.descripcioncolumn.Caption = "Descripcion";
-            this.descripcioncolumn.MinWidth = 25;
+            this.descripcioncolumn.MinWidth = 19;
             this.descripcioncolumn.Name = "descripcioncolumn";
             this.descripcioncolumn.OptionsColumn.AllowEdit = false;
             this.descripcioncolumn.Visible = true;
             this.descripcioncolumn.VisibleIndex = 1;
-            this.descripcioncolumn.Width = 304;
+            this.descripcioncolumn.Width = 228;
             // 
             // content
             // 
@@ -121,11 +125,12 @@
             this.content.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.59528F));
             this.content.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 66.40472F));
             this.content.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.content.Location = new System.Drawing.Point(408, 3);
+            this.content.Location = new System.Drawing.Point(305, 2);
+            this.content.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.content.Name = "content";
             this.content.RowCount = 1;
             this.content.RowStyles.Add(new System.Windows.Forms.RowStyle());
-            this.content.Size = new System.Drawing.Size(509, 448);
+            this.content.Size = new System.Drawing.Size(383, 365);
             this.content.TabIndex = 1;
             // 
             // panel1
@@ -139,18 +144,20 @@
             this.panel1.Controls.Add(this.lbltitulo);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
+            this.panel1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(923, 72);
+            this.panel1.Size = new System.Drawing.Size(692, 41);
             this.panel1.TabIndex = 2;
             // 
             // btn_editar
             // 
             this.btn_editar.FlatAppearance.BorderSize = 0;
             this.btn_editar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_editar.Image = ((System.Drawing.Image)(resources.GetObject("btn_editar.Image")));
-            this.btn_editar.Location = new System.Drawing.Point(714, 10);
+            this.btn_editar.Image = global::Software_Evolution.Properties.Resources.businessregistration_signpen_negocio_inscripcio_2358;
+            this.btn_editar.Location = new System.Drawing.Point(527, 2);
+            this.btn_editar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btn_editar.Name = "btn_editar";
-            this.btn_editar.Size = new System.Drawing.Size(55, 49);
+            this.btn_editar.Size = new System.Drawing.Size(36, 33);
             this.btn_editar.TabIndex = 29;
             this.toolTip1.SetToolTip(this.btn_editar, "Editar Fila");
             this.btn_editar.UseVisualStyleBackColor = true;
@@ -160,10 +167,11 @@
             // 
             this.btn_buscar.FlatAppearance.BorderSize = 0;
             this.btn_buscar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_buscar.Image = ((System.Drawing.Image)(resources.GetObject("btn_buscar.Image")));
-            this.btn_buscar.Location = new System.Drawing.Point(643, 10);
+            this.btn_buscar.Image = global::Software_Evolution.Properties.Resources.xmag_search_find_export_locate_5984;
+            this.btn_buscar.Location = new System.Drawing.Point(487, 2);
+            this.btn_buscar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btn_buscar.Name = "btn_buscar";
-            this.btn_buscar.Size = new System.Drawing.Size(55, 49);
+            this.btn_buscar.Size = new System.Drawing.Size(36, 33);
             this.btn_buscar.TabIndex = 28;
             this.toolTip1.SetToolTip(this.btn_buscar, "Refrescar Busqueda");
             this.btn_buscar.UseVisualStyleBackColor = true;
@@ -175,10 +183,9 @@
             this.btn_nuevo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_nuevo.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_nuevo.Image = ((System.Drawing.Image)(resources.GetObject("btn_nuevo.Image")));
-            this.btn_nuevo.Location = new System.Drawing.Point(856, 10);
-            this.btn_nuevo.Margin = new System.Windows.Forms.Padding(4);
+            this.btn_nuevo.Location = new System.Drawing.Point(608, 3);
             this.btn_nuevo.Name = "btn_nuevo";
-            this.btn_nuevo.Size = new System.Drawing.Size(55, 49);
+            this.btn_nuevo.Size = new System.Drawing.Size(36, 33);
             this.btn_nuevo.TabIndex = 27;
             this.btn_nuevo.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.toolTip1.SetToolTip(this.btn_nuevo, "Crear Nuevo");
@@ -189,10 +196,11 @@
             // 
             this.btn_cerrar.FlatAppearance.BorderSize = 0;
             this.btn_cerrar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_cerrar.Image = ((System.Drawing.Image)(resources.GetObject("btn_cerrar.Image")));
-            this.btn_cerrar.Location = new System.Drawing.Point(572, 10);
+            this.btn_cerrar.Image = global::Software_Evolution.Properties.Resources.vcsconflicting_93497;
+            this.btn_cerrar.Location = new System.Drawing.Point(649, 3);
+            this.btn_cerrar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btn_cerrar.Name = "btn_cerrar";
-            this.btn_cerrar.Size = new System.Drawing.Size(55, 49);
+            this.btn_cerrar.Size = new System.Drawing.Size(36, 33);
             this.btn_cerrar.TabIndex = 2;
             this.toolTip1.SetToolTip(this.btn_cerrar, "Cerrar Formulario");
             this.btn_cerrar.UseVisualStyleBackColor = true;
@@ -202,10 +210,11 @@
             // 
             this.btn_guardar.FlatAppearance.BorderSize = 0;
             this.btn_guardar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_guardar.Image = ((System.Drawing.Image)(resources.GetObject("btn_guardar.Image")));
-            this.btn_guardar.Location = new System.Drawing.Point(785, 10);
+            this.btn_guardar.Image = global::Software_Evolution.Properties.Resources.save_14949;
+            this.btn_guardar.Location = new System.Drawing.Point(567, 3);
+            this.btn_guardar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btn_guardar.Name = "btn_guardar";
-            this.btn_guardar.Size = new System.Drawing.Size(55, 49);
+            this.btn_guardar.Size = new System.Drawing.Size(36, 33);
             this.btn_guardar.TabIndex = 1;
             this.toolTip1.SetToolTip(this.btn_guardar, "Guardar Datos");
             this.btn_guardar.UseVisualStyleBackColor = true;
@@ -215,17 +224,18 @@
             // 
             this.lbltitulo.AutoSize = true;
             this.lbltitulo.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbltitulo.Location = new System.Drawing.Point(10, 17);
+            this.lbltitulo.Location = new System.Drawing.Point(8, 14);
+            this.lbltitulo.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lbltitulo.Name = "lbltitulo";
-            this.lbltitulo.Size = new System.Drawing.Size(80, 29);
+            this.lbltitulo.Size = new System.Drawing.Size(62, 24);
             this.lbltitulo.TabIndex = 0;
             this.lbltitulo.Text = "Titulo";
             // 
             // MasterDetailForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(923, 527);
+            this.ClientSize = new System.Drawing.Size(692, 428);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.tableLayoutPanel1);
             this.MultipleScreen = true;

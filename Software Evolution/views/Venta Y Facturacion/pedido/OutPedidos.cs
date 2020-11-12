@@ -98,5 +98,10 @@ namespace Software_Evolution.views.Venta_Y_Facturacion.pedido
                 (this.ParentForm as Principal).ShowOrFocusForm(form);
             }
         }
+
+        private void OutPedidos_Load(object sender, EventArgs e)
+        {
+            CenterToScreen();
+        }
     }
 }

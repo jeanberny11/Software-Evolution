@@ -192,5 +192,10 @@ namespace Software_Evolution.views.cuentaxpagar
             tdescxprontopago.Clear();
             tabControl1.SelectedTab = tabPage1;
         }
+
+        private void InSuplidores_Load(object sender, EventArgs e)
+        {
+            CenterToScreen();
+        }
     }
 }

@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Qry_out_concepto_retencion_imp));
             this.panel1 = new System.Windows.Forms.Panel();
             this.button1 = new System.Windows.Forms.Button();
             this.btn_cerrar = new System.Windows.Forms.Button();
@@ -38,6 +37,7 @@
             this.gridColumn1 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.gridColumn2 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.gridColumn3 = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.button2 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider)).BeginInit();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.gridControl1)).BeginInit();
@@ -47,23 +47,26 @@
             // panel1
             // 
             this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel1.Controls.Add(this.button2);
             this.panel1.Controls.Add(this.button1);
             this.panel1.Controls.Add(this.btn_cerrar);
             this.panel1.Controls.Add(this.evLabel1);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
+            this.panel1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(778, 71);
+            this.panel1.Size = new System.Drawing.Size(584, 43);
             this.panel1.TabIndex = 2;
             // 
             // button1
             // 
             this.button1.FlatAppearance.BorderSize = 0;
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Image = ((System.Drawing.Image)(resources.GetObject("button1.Image")));
-            this.button1.Location = new System.Drawing.Point(625, 4);
+            this.button1.Image = global::Software_Evolution.Properties.Resources.xmag_search_find_export_locate_5984;
+            this.button1.Location = new System.Drawing.Point(482, 3);
+            this.button1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(60, 60);
+            this.button1.Size = new System.Drawing.Size(46, 38);
             this.button1.TabIndex = 4;
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
@@ -72,10 +75,11 @@
             // 
             this.btn_cerrar.FlatAppearance.BorderSize = 0;
             this.btn_cerrar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_cerrar.Image = ((System.Drawing.Image)(resources.GetObject("btn_cerrar.Image")));
-            this.btn_cerrar.Location = new System.Drawing.Point(709, 4);
+            this.btn_cerrar.Image = global::Software_Evolution.Properties.Resources.vcsconflicting_93497;
+            this.btn_cerrar.Location = new System.Drawing.Point(532, 3);
+            this.btn_cerrar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btn_cerrar.Name = "btn_cerrar";
-            this.btn_cerrar.Size = new System.Drawing.Size(60, 60);
+            this.btn_cerrar.Size = new System.Drawing.Size(48, 38);
             this.btn_cerrar.TabIndex = 3;
             this.btn_cerrar.UseVisualStyleBackColor = true;
             this.btn_cerrar.Click += new System.EventHandler(this.btn_cerrar_Click);
@@ -84,18 +88,21 @@
             // 
             this.evLabel1.AutoSize = true;
             this.evLabel1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.evLabel1.Location = new System.Drawing.Point(11, 24);
+            this.evLabel1.Location = new System.Drawing.Point(2, 8);
+            this.evLabel1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.evLabel1.Name = "evLabel1";
-            this.evLabel1.Size = new System.Drawing.Size(324, 25);
+            this.evLabel1.Size = new System.Drawing.Size(272, 20);
             this.evLabel1.TabIndex = 0;
             this.evLabel1.Text = "Concepto Retenciones Impuesto";
             // 
             // gridControl1
             // 
-            this.gridControl1.Location = new System.Drawing.Point(5, 75);
+            this.gridControl1.EmbeddedNavigator.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.gridControl1.Location = new System.Drawing.Point(4, 61);
             this.gridControl1.MainView = this.gridView1;
+            this.gridControl1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.gridControl1.Name = "gridControl1";
-            this.gridControl1.Size = new System.Drawing.Size(770, 372);
+            this.gridControl1.Size = new System.Drawing.Size(578, 302);
             this.gridControl1.TabIndex = 3;
             this.gridControl1.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.gridView1});
@@ -106,6 +113,7 @@
             this.gridColumn1,
             this.gridColumn2,
             this.gridColumn3});
+            this.gridView1.DetailHeight = 284;
             this.gridView1.GridControl = this.gridControl1;
             this.gridView1.Name = "gridView1";
             this.gridView1.OptionsSelection.MultiSelect = true;
@@ -117,40 +125,52 @@
             // 
             this.gridColumn1.Caption = "Código";
             this.gridColumn1.FieldName = "f_id";
-            this.gridColumn1.MinWidth = 25;
+            this.gridColumn1.MinWidth = 19;
             this.gridColumn1.Name = "gridColumn1";
             this.gridColumn1.OptionsColumn.AllowEdit = false;
             this.gridColumn1.Visible = true;
             this.gridColumn1.VisibleIndex = 0;
-            this.gridColumn1.Width = 94;
+            this.gridColumn1.Width = 70;
             // 
             // gridColumn2
             // 
             this.gridColumn2.Caption = "Descripción";
             this.gridColumn2.FieldName = "f_descripcion";
-            this.gridColumn2.MinWidth = 25;
+            this.gridColumn2.MinWidth = 19;
             this.gridColumn2.Name = "gridColumn2";
             this.gridColumn2.OptionsColumn.AllowEdit = false;
             this.gridColumn2.Visible = true;
             this.gridColumn2.VisibleIndex = 1;
-            this.gridColumn2.Width = 94;
+            this.gridColumn2.Width = 70;
             // 
             // gridColumn3
             // 
             this.gridColumn3.Caption = "Porcentaje";
             this.gridColumn3.FieldName = "f_porcentaje";
-            this.gridColumn3.MinWidth = 25;
+            this.gridColumn3.MinWidth = 19;
             this.gridColumn3.Name = "gridColumn3";
             this.gridColumn3.OptionsColumn.AllowEdit = false;
             this.gridColumn3.Visible = true;
             this.gridColumn3.VisibleIndex = 2;
-            this.gridColumn3.Width = 94;
+            this.gridColumn3.Width = 70;
+            // 
+            // button2
+            // 
+            this.button2.FlatAppearance.BorderSize = 0;
+            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button2.Image = global::Software_Evolution.Properties.Resources.actions_document_print_15785;
+            this.button2.Location = new System.Drawing.Point(432, 3);
+            this.button2.Margin = new System.Windows.Forms.Padding(2);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(46, 36);
+            this.button2.TabIndex = 5;
+            this.button2.UseVisualStyleBackColor = true;
             // 
             // Qry_out_concepto_retencion_imp
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(778, 450);
+            this.ClientSize = new System.Drawing.Size(584, 366);
             this.Controls.Add(this.gridControl1);
             this.Controls.Add(this.panel1);
             this.Name = "Qry_out_concepto_retencion_imp";
@@ -175,5 +195,6 @@
         private DevExpress.XtraGrid.Columns.GridColumn gridColumn1;
         private DevExpress.XtraGrid.Columns.GridColumn gridColumn2;
         private DevExpress.XtraGrid.Columns.GridColumn gridColumn3;
+        private System.Windows.Forms.Button button2;
     }
 }

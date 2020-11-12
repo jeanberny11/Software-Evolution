@@ -125,5 +125,10 @@ namespace Software_Evolution.views.mantenimientos
             }
             Close();
         }
+
+        private void txtfolder_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

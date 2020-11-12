@@ -31,6 +31,7 @@ namespace Software_Evolution.views.general
 
         private void Preferencias_Load(object sender, EventArgs e)
         {
+            CenterToScreen();
             try
             {
                 cmb_concepto.LoadData();
