@@ -40,11 +40,13 @@
             // 
             // lblmensaje
             // 
+            this.lblmensaje.AutoSize = true;
             this.lblmensaje.Dock = System.Windows.Forms.DockStyle.Top;
             this.lblmensaje.Font = new System.Drawing.Font("Microsoft Sans Serif", 7F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblmensaje.Location = new System.Drawing.Point(0, 0);
+            this.lblmensaje.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblmensaje.Name = "lblmensaje";
-            this.lblmensaje.Size = new System.Drawing.Size(449, 70);
+            this.lblmensaje.Size = new System.Drawing.Size(53, 13);
             this.lblmensaje.TabIndex = 0;
             this.lblmensaje.Text = "EvLabel";
             this.lblmensaje.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -53,9 +55,10 @@
             // 
             this.evLabel2.AutoSize = true;
             this.evLabel2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.evLabel2.Location = new System.Drawing.Point(12, 107);
+            this.evLabel2.Location = new System.Drawing.Point(9, 87);
+            this.evLabel2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.evLabel2.Name = "evLabel2";
-            this.evLabel2.Size = new System.Drawing.Size(64, 17);
+            this.evLabel2.Size = new System.Drawing.Size(50, 13);
             this.evLabel2.TabIndex = 1;
             this.evLabel2.Text = "Usuario";
             // 
@@ -63,9 +66,10 @@
             // 
             this.evLabel3.AutoSize = true;
             this.evLabel3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.evLabel3.Location = new System.Drawing.Point(12, 152);
+            this.evLabel3.Location = new System.Drawing.Point(9, 124);
+            this.evLabel3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.evLabel3.Name = "evLabel3";
-            this.evLabel3.Size = new System.Drawing.Size(91, 17);
+            this.evLabel3.Size = new System.Drawing.Size(71, 13);
             this.evLabel3.TabIndex = 2;
             this.evLabel3.Text = "Contraseña";
             // 
@@ -77,11 +81,11 @@
             this.txtpass.IsLimpiar = true;
             this.txtpass.IsSalvar = true;
             this.txtpass.IsValidar = true;
-            this.txtpass.Location = new System.Drawing.Point(124, 150);
-            this.txtpass.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.txtpass.Location = new System.Drawing.Point(93, 122);
+            this.txtpass.Margin = new System.Windows.Forms.Padding(2);
             this.txtpass.Name = "txtpass";
             this.txtpass.PasswordChar = '*';
-            this.txtpass.Size = new System.Drawing.Size(265, 22);
+            this.txtpass.Size = new System.Drawing.Size(200, 20);
             this.txtpass.TabIndex = 4;
             this.txtpass.Valor = "";
             // 
@@ -93,19 +97,19 @@
             this.txtusuario.IsLimpiar = true;
             this.txtusuario.IsSalvar = true;
             this.txtusuario.IsValidar = true;
-            this.txtusuario.Location = new System.Drawing.Point(124, 104);
-            this.txtusuario.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.txtusuario.Location = new System.Drawing.Point(93, 84);
+            this.txtusuario.Margin = new System.Windows.Forms.Padding(2);
             this.txtusuario.Name = "txtusuario";
-            this.txtusuario.Size = new System.Drawing.Size(265, 22);
+            this.txtusuario.Size = new System.Drawing.Size(200, 20);
             this.txtusuario.TabIndex = 3;
             this.txtusuario.Valor = "";
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(124, 192);
-            this.button2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.button2.Location = new System.Drawing.Point(93, 156);
+            this.button2.Margin = new System.Windows.Forms.Padding(2);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(115, 32);
+            this.button2.Size = new System.Drawing.Size(86, 26);
             this.button2.TabIndex = 6;
             this.button2.Text = "&Cancelar";
             this.button2.UseVisualStyleBackColor = true;
@@ -113,10 +117,10 @@
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(274, 192);
-            this.button1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.button1.Location = new System.Drawing.Point(206, 156);
+            this.button1.Margin = new System.Windows.Forms.Padding(2);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(115, 32);
+            this.button1.Size = new System.Drawing.Size(86, 26);
             this.button1.TabIndex = 5;
             this.button1.Text = "&Aceptar";
             this.button1.UseVisualStyleBackColor = true;
@@ -124,9 +128,9 @@
             // 
             // Seguridad
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(449, 244);
+            this.ClientSize = new System.Drawing.Size(337, 198);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.txtpass);
@@ -136,6 +140,7 @@
             this.Controls.Add(this.lblmensaje);
             this.Name = "Seguridad";
             this.Text = "Seguridad";
+            this.Load += new System.EventHandler(this.Seguridad_Load);
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

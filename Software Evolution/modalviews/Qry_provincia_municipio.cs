@@ -97,5 +97,10 @@ namespace Software_Evolution.modalviews
                 }
             }
         }
+
+        private void Qry_provincia_municipio_Load(object sender, EventArgs e)
+        {
+            CenterToScreen();
+        }
     }
 }

@@ -27,6 +27,7 @@ namespace Software_Evolution.modalviews
 
         private void PermisosUsuario_Load(object sender, EventArgs e)
         {
+            CenterToScreen();
             data = manager.GetPermisosTemp();
             this.gridControl1.DataSource = data;
         }

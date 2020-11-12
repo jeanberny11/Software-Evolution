@@ -51,7 +51,7 @@ namespace Software_Evolution.views.Venta_Y_Facturacion
 
         private void btn_nuevo_Click(object sender, EventArgs e)
         {
-            var form =new InCotizaciones();
+            var form = new InCotizaciones();
             (this.ParentForm as Principal).ShowOrFocusForm(form);
         }
 
@@ -68,7 +68,8 @@ namespace Software_Evolution.views.Venta_Y_Facturacion
                 try
                 {
                     manager.EnviarCotizacionCorreo(this, data.Field<string>("f_documento"), data.Field<string>("f_email"));
-                }catch(Exception ex)
+                }
+                catch (Exception ex)
                 {
                     Mensaje(ex.Message);
                 }
@@ -107,8 +108,13 @@ namespace Software_Evolution.views.Venta_Y_Facturacion
 
         private void btn_exportar_Click(object sender, EventArgs e)
         {
-            InExportarDatos exportarDatos = new InExportarDatos(gridControl1,"Cotizaciones");
+            InExportarDatos exportarDatos = new InExportarDatos(gridControl1, "Cotizaciones");
             exportarDatos.ShowDialog(this);
+        }
+
+        private void OutCotizaciones_Load(object sender, EventArgs e)
+        {
+            CenterToScreen();
         }
     }
 }

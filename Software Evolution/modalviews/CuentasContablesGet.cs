@@ -67,5 +67,10 @@ namespace Software_Evolution.modalviews
             this.DialogResult = System.Windows.Forms.DialogResult.Cancel;
             Close();
         }
+
+        private void CuentasContablesGet_Load(object sender, EventArgs e)
+        {
+            CenterToScreen();
+        }
     }
 }

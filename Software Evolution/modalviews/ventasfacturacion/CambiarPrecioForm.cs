@@ -87,5 +87,10 @@ namespace Software_Evolution.modalviews.ventasfacturacion
                 SetResult(txtpreciootro.Valor);
             }
         }
+
+        private void CambiarPrecioForm_Load(object sender, EventArgs e)
+        {
+            CenterToScreen();
+        }
     }
 }

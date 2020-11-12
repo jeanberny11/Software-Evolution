@@ -335,6 +335,11 @@ namespace Software_Evolution.views.Venta_Y_Facturacion.facturacion
             Refresh();
         }
 
+        private void button1_Click(object sender, EventArgs e)
+        {
+
+        }
+
         private void linkLabel3_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
             GetProducto("");

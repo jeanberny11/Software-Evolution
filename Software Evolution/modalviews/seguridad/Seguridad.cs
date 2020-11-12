@@ -68,5 +68,10 @@ namespace Software_Evolution.modalviews.seguridad
             DialogResult = DialogResult.Cancel;
             Close();
         }
+
+        private void Seguridad_Load(object sender, EventArgs e)
+        {
+            CenterToScreen();
+        }
     }
 }

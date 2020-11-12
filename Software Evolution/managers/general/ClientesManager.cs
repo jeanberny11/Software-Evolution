@@ -137,7 +137,7 @@ namespace Software_Evolution.managers.general
             var parametros = $"{clienteid},'{date:yyyy/MM/dd}'";
             var data = manager.QueryProcedure(formato.Field<string>("f_procedimiento"), parametros);
             var reporte = reportesmanager.GetReporte(formato);
-            reporte.RegisterData(data, "general");
+            reporte.RegisterData(data, "fxgeneral");
             reporte.SetParameterValue("fecha1",date);
             reporte.Show(modal: true,owner: parent);
         }
@@ -153,10 +153,10 @@ namespace Software_Evolution.managers.general
             var parametros = $"{clienteid},'{date:yyyy/MM/dd}'";
             var data = manager.QueryProcedure(formato.Field<string>("f_procedimiento"), parametros);
             var reporte = reportesmanager.GetReporte(formato);
-            reporte.RegisterData(data, "general");
+            reporte.RegisterData(data, "fxgeneral");
             reporte.SetParameterValue("fecha1", date);
             reporte.Prepare();
-            InEnviarCorreo inEnviarCorreo = new InEnviarCorreo("ing.berny11@gmail.com", "", "prueba", reporte);
+            InEnviarCorreo inEnviarCorreo = new InEnviarCorreo("info@softwareevolutionarpa.com", "", "prueba", reporte);
             inEnviarCorreo.ShowDialog(parrent);
 
         }
