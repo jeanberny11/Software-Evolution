@@ -3,6 +3,15 @@ using Software_Evolution.utils.clases;
 using Software_Evolution.views.mantenimientos;
 using System;
 using System.Data;
+using Software_Evolution.data;
+using Software_Evolution.managers;
+using System.Drawing;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using System.Windows.Forms;
+using System.ComponentModel;
+using System.Collections.Generic;
 
 namespace Software_Evolution.views.general
 {
@@ -10,6 +19,9 @@ namespace Software_Evolution.views.general
     {
         private readonly ClientesManager manager = new ClientesManager();
         private DataTable clientes;
+        private DataTable datos;
+        private readonly QueryManager manager2 = QueryManager.Instance;
+
         public OutClientes()
         {
             InitializeComponent();           
@@ -88,6 +100,9 @@ namespace Software_Evolution.views.general
 
         private void btn_imprimir_Click(object sender, EventArgs e)
         {
+            datos = manager2.QueryProcedure("p_reporte_clientes", "");
+            var reportesmanager = new managers.reportes.FormatoImpresionReportesManager();
+            reportesmanager.PrintReport(this,3506,datos, new Dictionary<string, string>());
 
         }
 
@@ -105,5 +120,11 @@ namespace Software_Evolution.views.general
         {
             CenterToScreen();
         }
+
+        private void btn_exportar_Click(object sender, EventArgs e)
+        {
+        InExportarDatos export = new InExportarDatos(gridControl1, "Lista de suplidores");
+        export.ShowDialog(this);
+    }
     }
 }

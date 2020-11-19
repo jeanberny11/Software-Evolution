@@ -66,7 +66,7 @@
             this.txtremitente.IsSalvar = false;
             this.txtremitente.IsValidar = true;
             this.txtremitente.Location = new System.Drawing.Point(119, 75);
-            this.txtremitente.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtremitente.Margin = new System.Windows.Forms.Padding(2);
             this.txtremitente.Name = "txtremitente";
             this.txtremitente.Size = new System.Drawing.Size(396, 20);
             this.txtremitente.TabIndex = 1;
@@ -122,7 +122,7 @@
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button1.Image = global::Software_Evolution.Properties.Resources.Email_30017;
             this.button1.Location = new System.Drawing.Point(472, 11);
-            this.button1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.button1.Margin = new System.Windows.Forms.Padding(2);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(52, 33);
             this.button1.TabIndex = 6;
@@ -139,7 +139,7 @@
             this.txtdestinatario.IsSalvar = false;
             this.txtdestinatario.IsValidar = true;
             this.txtdestinatario.Location = new System.Drawing.Point(119, 104);
-            this.txtdestinatario.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtdestinatario.Margin = new System.Windows.Forms.Padding(2);
             this.txtdestinatario.Name = "txtdestinatario";
             this.txtdestinatario.Size = new System.Drawing.Size(396, 20);
             this.txtdestinatario.TabIndex = 7;
@@ -154,7 +154,7 @@
             this.txtasunto.IsSalvar = false;
             this.txtasunto.IsValidar = true;
             this.txtasunto.Location = new System.Drawing.Point(119, 133);
-            this.txtasunto.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtasunto.Margin = new System.Windows.Forms.Padding(2);
             this.txtasunto.Name = "txtasunto";
             this.txtasunto.Size = new System.Drawing.Size(396, 20);
             this.txtasunto.TabIndex = 8;
@@ -169,7 +169,7 @@
             this.txtadjunto.IsSalvar = false;
             this.txtadjunto.IsValidar = false;
             this.txtadjunto.Location = new System.Drawing.Point(119, 162);
-            this.txtadjunto.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtadjunto.Margin = new System.Windows.Forms.Padding(2);
             this.txtadjunto.Name = "txtadjunto";
             this.txtadjunto.Size = new System.Drawing.Size(344, 20);
             this.txtadjunto.TabIndex = 9;
@@ -184,7 +184,7 @@
             this.txtmensaje.IsSalvar = false;
             this.txtmensaje.IsValidar = true;
             this.txtmensaje.Location = new System.Drawing.Point(119, 192);
-            this.txtmensaje.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtmensaje.Margin = new System.Windows.Forms.Padding(2);
             this.txtmensaje.Multiline = true;
             this.txtmensaje.Name = "txtmensaje";
             this.txtmensaje.Size = new System.Drawing.Size(396, 163);
@@ -197,7 +197,7 @@
             this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button2.Image = ((System.Drawing.Image)(resources.GetObject("button2.Image")));
             this.button2.Location = new System.Drawing.Point(472, 154);
-            this.button2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.button2.Margin = new System.Windows.Forms.Padding(2);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(38, 34);
             this.button2.TabIndex = 11;
@@ -236,6 +236,7 @@
             this.Controls.Add(this.evLabel1);
             this.Name = "InEnviarCorreo";
             this.Text = "Enviar Correo";
+            this.Load += new System.EventHandler(this.InEnviarCorreo_Load);
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

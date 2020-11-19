@@ -29,7 +29,9 @@ namespace Software_Evolution.views.mantenimientos
         }
 
         private void InExportarDatos_Load(object sender, EventArgs e)
-        {            
+
+        {
+            CenterToScreen();
             txtfolder.Text = folderBrowserDialog1.SelectedPath;
         }
 

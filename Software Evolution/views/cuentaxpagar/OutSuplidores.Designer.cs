@@ -93,6 +93,7 @@
             this.btn_correo.Size = new System.Drawing.Size(34, 33);
             this.btn_correo.TabIndex = 31;
             this.btn_correo.UseVisualStyleBackColor = true;
+            this.btn_correo.Click += new System.EventHandler(this.btn_correo_Click);
             // 
             // btn_exportar
             // 
@@ -163,7 +164,7 @@
             // 
             this.lbltitulo.AutoSize = true;
             this.lbltitulo.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbltitulo.Location = new System.Drawing.Point(8, 14);
+            this.lbltitulo.Location = new System.Drawing.Point(-3, 14);
             this.lbltitulo.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lbltitulo.Name = "lbltitulo";
             this.lbltitulo.Size = new System.Drawing.Size(257, 24);
@@ -468,19 +469,19 @@
             // searchControl1
             // 
             this.searchControl1.Client = this.gridControl1;
-            this.searchControl1.Location = new System.Drawing.Point(628, 66);
+            this.searchControl1.Location = new System.Drawing.Point(578, 66);
             this.searchControl1.Margin = new System.Windows.Forms.Padding(2);
             this.searchControl1.Name = "searchControl1";
             this.searchControl1.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Repository.ClearButton(),
             new DevExpress.XtraEditors.Repository.SearchButton()});
             this.searchControl1.Properties.Client = this.gridControl1;
-            this.searchControl1.Size = new System.Drawing.Size(154, 20);
+            this.searchControl1.Size = new System.Drawing.Size(204, 20);
             this.searchControl1.TabIndex = 7;
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(11, 52);
+            this.button2.Location = new System.Drawing.Point(3, 52);
             this.button2.Margin = new System.Windows.Forms.Padding(2);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(63, 34);
@@ -490,10 +491,10 @@
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(78, 52);
+            this.button1.Location = new System.Drawing.Point(70, 52);
             this.button1.Margin = new System.Windows.Forms.Padding(2);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(53, 34);
+            this.button1.Size = new System.Drawing.Size(63, 34);
             this.button1.TabIndex = 9;
             this.button1.Text = "Historial Cliente";
             this.button1.UseVisualStyleBackColor = true;

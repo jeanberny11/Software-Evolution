@@ -9,12 +9,16 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Software_Evolution.managers;
+using Software_Evolution.data;
 
 namespace Software_Evolution.views.general
 {    
     public partial class OutUsuarios : BaseForm
     {
         private readonly UsuariosManager _manager = new UsuariosManager();
+        private DataTable datos;
+        private readonly QueryManager manager2 = QueryManager.Instance;
         public OutUsuarios()
         {
             InitializeComponent();
@@ -95,6 +99,19 @@ namespace Software_Evolution.views.general
         {            
             var inusuario = new InUsuarios();
             (this.ParentForm as Principal).ShowOrFocusForm(inusuario);
+        }
+
+        private void btn_buscar_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btn_imprimir_Click(object sender, EventArgs e)
+        {
+           
+         datos= manager2.QueryProcedure("p_reporte_usuarios", "");
+         var reportesmanager = new managers.reportes.FormatoImpresionReportesManager();
+         reportesmanager.PrintReport(this,3505, datos,new Dictionary<string, string>());
         }
     }
 }

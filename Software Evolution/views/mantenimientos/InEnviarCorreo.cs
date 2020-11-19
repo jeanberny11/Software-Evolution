@@ -71,5 +71,10 @@ namespace Software_Evolution.views.mantenimientos
                 txtadjunto.Text = open.FileName;
             }
         }
+
+        private void InEnviarCorreo_Load(object sender, EventArgs e)
+        {
+            CenterToScreen();
+        }
     }
 }

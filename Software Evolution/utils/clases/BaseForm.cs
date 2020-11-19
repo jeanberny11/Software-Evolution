@@ -1684,6 +1684,11 @@ namespace Software_Evolution.utils.clases
         {
             return string.Format("{0:#,0.00}", number);
         }
+
+        private void BaseForm_Load(object sender, EventArgs e)
+        {
+            CenterToScreen();
+        }
     }
 
 }

@@ -57,5 +57,10 @@ namespace Software_Evolution.views.general
             }
            
         }
+
+        private void InCambiarClave_Load(object sender, EventArgs e)
+        {
+            CenterToScreen();
+        }
     }
 }

@@ -172,7 +172,7 @@
             this.panel1.Controls.Add(this.label1);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
-            this.panel1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel1.Margin = new System.Windows.Forms.Padding(2);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(748, 55);
             this.panel1.TabIndex = 1;
@@ -183,7 +183,7 @@
             this.btn_cerrar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_cerrar.Image = global::Software_Evolution.Properties.Resources.vcsconflicting_93497;
             this.btn_cerrar.Location = new System.Drawing.Point(672, 2);
-            this.btn_cerrar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btn_cerrar.Margin = new System.Windows.Forms.Padding(2);
             this.btn_cerrar.Name = "btn_cerrar";
             this.btn_cerrar.Size = new System.Drawing.Size(33, 36);
             this.btn_cerrar.TabIndex = 2;
@@ -197,7 +197,7 @@
             this.btn_guardar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_guardar.Image = global::Software_Evolution.Properties.Resources.save_14949;
             this.btn_guardar.Location = new System.Drawing.Point(709, 2);
-            this.btn_guardar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btn_guardar.Margin = new System.Windows.Forms.Padding(2);
             this.btn_guardar.Name = "btn_guardar";
             this.btn_guardar.Size = new System.Drawing.Size(33, 36);
             this.btn_guardar.TabIndex = 1;
@@ -222,7 +222,7 @@
             this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button3.Image = ((System.Drawing.Image)(resources.GetObject("button3.Image")));
             this.button3.Location = new System.Drawing.Point(154, 347);
-            this.button3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.button3.Margin = new System.Windows.Forms.Padding(2);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(45, 36);
             this.button3.TabIndex = 31;
@@ -262,7 +262,7 @@
             this.panel2.Controls.Add(this.txtidusuario);
             this.panel2.Controls.Add(this.evLabel1);
             this.panel2.Location = new System.Drawing.Point(4, 65);
-            this.panel2.Margin = new System.Windows.Forms.Padding(8, 8, 8, 8);
+            this.panel2.Margin = new System.Windows.Forms.Padding(8);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(740, 391);
             this.panel2.TabIndex = 2;
@@ -288,7 +288,7 @@
             this.cmbgrupo.IsSalvar = false;
             this.cmbgrupo.IsValidar = false;
             this.cmbgrupo.Location = new System.Drawing.Point(439, 115);
-            this.cmbgrupo.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.cmbgrupo.Margin = new System.Windows.Forms.Padding(2);
             this.cmbgrupo.Name = "cmbgrupo";
             this.cmbgrupo.NombreProcedimiento = "p_grupos";
             this.cmbgrupo.Param = null;
@@ -321,7 +321,7 @@
             this.tabControl1.Controls.Add(this.tabPage4);
             this.tabControl1.Controls.Add(this.tabPage5);
             this.tabControl1.Location = new System.Drawing.Point(308, 162);
-            this.tabControl1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tabControl1.Margin = new System.Windows.Forms.Padding(2);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
             this.tabControl1.Size = new System.Drawing.Size(422, 220);
@@ -349,9 +349,9 @@
             this.tabPage1.Controls.Add(this.checkBox2);
             this.tabPage1.Controls.Add(this.checkBox1);
             this.tabPage1.Location = new System.Drawing.Point(4, 22);
-            this.tabPage1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tabPage1.Margin = new System.Windows.Forms.Padding(2);
             this.tabPage1.Name = "tabPage1";
-            this.tabPage1.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tabPage1.Padding = new System.Windows.Forms.Padding(2);
             this.tabPage1.Size = new System.Drawing.Size(414, 194);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "Permisos";
@@ -368,7 +368,7 @@
             this.checkBox19.IsSalvar = true;
             this.checkBox19.IsValidar = false;
             this.checkBox19.Location = new System.Drawing.Point(297, 54);
-            this.checkBox19.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.checkBox19.Margin = new System.Windows.Forms.Padding(2);
             this.checkBox19.Name = "checkBox19";
             this.checkBox19.Size = new System.Drawing.Size(119, 17);
             this.checkBox19.TabIndex = 18;
@@ -387,7 +387,7 @@
             this.checkBox18.IsSalvar = true;
             this.checkBox18.IsValidar = false;
             this.checkBox18.Location = new System.Drawing.Point(297, 31);
-            this.checkBox18.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.checkBox18.Margin = new System.Windows.Forms.Padding(2);
             this.checkBox18.Name = "checkBox18";
             this.checkBox18.Size = new System.Drawing.Size(110, 17);
             this.checkBox18.TabIndex = 17;
@@ -406,7 +406,7 @@
             this.checkBox10.IsSalvar = true;
             this.checkBox10.IsValidar = false;
             this.checkBox10.Location = new System.Drawing.Point(152, 172);
-            this.checkBox10.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.checkBox10.Margin = new System.Windows.Forms.Padding(2);
             this.checkBox10.Name = "checkBox10";
             this.checkBox10.Size = new System.Drawing.Size(78, 17);
             this.checkBox10.TabIndex = 15;
@@ -425,7 +425,7 @@
             this.checkBox11.IsSalvar = true;
             this.checkBox11.IsValidar = false;
             this.checkBox11.Location = new System.Drawing.Point(152, 149);
-            this.checkBox11.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.checkBox11.Margin = new System.Windows.Forms.Padding(2);
             this.checkBox11.Name = "checkBox11";
             this.checkBox11.Size = new System.Drawing.Size(119, 17);
             this.checkBox11.TabIndex = 14;
@@ -444,7 +444,7 @@
             this.checkBox12.IsSalvar = true;
             this.checkBox12.IsValidar = false;
             this.checkBox12.Location = new System.Drawing.Point(152, 125);
-            this.checkBox12.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.checkBox12.Margin = new System.Windows.Forms.Padding(2);
             this.checkBox12.Name = "checkBox12";
             this.checkBox12.Size = new System.Drawing.Size(105, 17);
             this.checkBox12.TabIndex = 13;
@@ -463,7 +463,7 @@
             this.checkBox13.IsSalvar = true;
             this.checkBox13.IsValidar = false;
             this.checkBox13.Location = new System.Drawing.Point(152, 102);
-            this.checkBox13.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.checkBox13.Margin = new System.Windows.Forms.Padding(2);
             this.checkBox13.Name = "checkBox13";
             this.checkBox13.Size = new System.Drawing.Size(108, 17);
             this.checkBox13.TabIndex = 12;
@@ -482,7 +482,7 @@
             this.checkBox14.IsSalvar = true;
             this.checkBox14.IsValidar = false;
             this.checkBox14.Location = new System.Drawing.Point(152, 78);
-            this.checkBox14.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.checkBox14.Margin = new System.Windows.Forms.Padding(2);
             this.checkBox14.Name = "checkBox14";
             this.checkBox14.Size = new System.Drawing.Size(107, 17);
             this.checkBox14.TabIndex = 11;
@@ -501,7 +501,7 @@
             this.checkBox15.IsSalvar = true;
             this.checkBox15.IsValidar = false;
             this.checkBox15.Location = new System.Drawing.Point(152, 54);
-            this.checkBox15.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.checkBox15.Margin = new System.Windows.Forms.Padding(2);
             this.checkBox15.Name = "checkBox15";
             this.checkBox15.Size = new System.Drawing.Size(107, 17);
             this.checkBox15.TabIndex = 10;
@@ -520,7 +520,7 @@
             this.checkBox16.IsSalvar = true;
             this.checkBox16.IsValidar = false;
             this.checkBox16.Location = new System.Drawing.Point(152, 31);
-            this.checkBox16.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.checkBox16.Margin = new System.Windows.Forms.Padding(2);
             this.checkBox16.Name = "checkBox16";
             this.checkBox16.Size = new System.Drawing.Size(106, 17);
             this.checkBox16.TabIndex = 9;
@@ -539,7 +539,7 @@
             this.checkBox17.IsSalvar = true;
             this.checkBox17.IsValidar = false;
             this.checkBox17.Location = new System.Drawing.Point(153, 7);
-            this.checkBox17.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.checkBox17.Margin = new System.Windows.Forms.Padding(2);
             this.checkBox17.Name = "checkBox17";
             this.checkBox17.Size = new System.Drawing.Size(91, 17);
             this.checkBox17.TabIndex = 8;
@@ -558,7 +558,7 @@
             this.checkBox9.IsSalvar = true;
             this.checkBox9.IsValidar = false;
             this.checkBox9.Location = new System.Drawing.Point(297, 6);
-            this.checkBox9.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.checkBox9.Margin = new System.Windows.Forms.Padding(2);
             this.checkBox9.Name = "checkBox9";
             this.checkBox9.Size = new System.Drawing.Size(111, 17);
             this.checkBox9.TabIndex = 16;
@@ -577,7 +577,7 @@
             this.checkBox8.IsSalvar = true;
             this.checkBox8.IsValidar = false;
             this.checkBox8.Location = new System.Drawing.Point(5, 170);
-            this.checkBox8.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.checkBox8.Margin = new System.Windows.Forms.Padding(2);
             this.checkBox8.Name = "checkBox8";
             this.checkBox8.Size = new System.Drawing.Size(118, 17);
             this.checkBox8.TabIndex = 7;
@@ -596,7 +596,7 @@
             this.checkBox7.IsSalvar = true;
             this.checkBox7.IsValidar = false;
             this.checkBox7.Location = new System.Drawing.Point(5, 146);
-            this.checkBox7.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.checkBox7.Margin = new System.Windows.Forms.Padding(2);
             this.checkBox7.Name = "checkBox7";
             this.checkBox7.Size = new System.Drawing.Size(118, 17);
             this.checkBox7.TabIndex = 6;
@@ -615,7 +615,7 @@
             this.checkBox6.IsSalvar = true;
             this.checkBox6.IsValidar = false;
             this.checkBox6.Location = new System.Drawing.Point(5, 123);
-            this.checkBox6.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.checkBox6.Margin = new System.Windows.Forms.Padding(2);
             this.checkBox6.Name = "checkBox6";
             this.checkBox6.Size = new System.Drawing.Size(60, 17);
             this.checkBox6.TabIndex = 5;
@@ -634,7 +634,7 @@
             this.checkBox5.IsSalvar = true;
             this.checkBox5.IsValidar = false;
             this.checkBox5.Location = new System.Drawing.Point(5, 99);
-            this.checkBox5.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.checkBox5.Margin = new System.Windows.Forms.Padding(2);
             this.checkBox5.Name = "checkBox5";
             this.checkBox5.Size = new System.Drawing.Size(92, 17);
             this.checkBox5.TabIndex = 4;
@@ -653,7 +653,7 @@
             this.checkBox4.IsSalvar = true;
             this.checkBox4.IsValidar = false;
             this.checkBox4.Location = new System.Drawing.Point(5, 76);
-            this.checkBox4.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.checkBox4.Margin = new System.Windows.Forms.Padding(2);
             this.checkBox4.Name = "checkBox4";
             this.checkBox4.Size = new System.Drawing.Size(98, 17);
             this.checkBox4.TabIndex = 3;
@@ -672,7 +672,7 @@
             this.checkBox3.IsSalvar = true;
             this.checkBox3.IsValidar = false;
             this.checkBox3.Location = new System.Drawing.Point(5, 52);
-            this.checkBox3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.checkBox3.Margin = new System.Windows.Forms.Padding(2);
             this.checkBox3.Name = "checkBox3";
             this.checkBox3.Size = new System.Drawing.Size(78, 17);
             this.checkBox3.TabIndex = 2;
@@ -691,7 +691,7 @@
             this.checkBox2.IsSalvar = true;
             this.checkBox2.IsValidar = false;
             this.checkBox2.Location = new System.Drawing.Point(5, 28);
-            this.checkBox2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.checkBox2.Margin = new System.Windows.Forms.Padding(2);
             this.checkBox2.Name = "checkBox2";
             this.checkBox2.Size = new System.Drawing.Size(71, 17);
             this.checkBox2.TabIndex = 1;
@@ -710,7 +710,7 @@
             this.checkBox1.IsSalvar = true;
             this.checkBox1.IsValidar = false;
             this.checkBox1.Location = new System.Drawing.Point(5, 5);
-            this.checkBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.checkBox1.Margin = new System.Windows.Forms.Padding(2);
             this.checkBox1.Name = "checkBox1";
             this.checkBox1.Size = new System.Drawing.Size(97, 17);
             this.checkBox1.TabIndex = 0;
@@ -739,9 +739,9 @@
             this.tabPage2.Controls.Add(this.evLabel15);
             this.tabPage2.Controls.Add(this.evLabel14);
             this.tabPage2.Location = new System.Drawing.Point(4, 22);
-            this.tabPage2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tabPage2.Margin = new System.Windows.Forms.Padding(2);
             this.tabPage2.Name = "tabPage2";
-            this.tabPage2.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tabPage2.Padding = new System.Windows.Forms.Padding(2);
             this.tabPage2.Size = new System.Drawing.Size(414, 194);
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "Controles";
@@ -790,7 +790,7 @@
             this.cmbcentrocosto.IsSalvar = true;
             this.cmbcentrocosto.IsValidar = false;
             this.cmbcentrocosto.Location = new System.Drawing.Point(184, 171);
-            this.cmbcentrocosto.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.cmbcentrocosto.Margin = new System.Windows.Forms.Padding(2);
             this.cmbcentrocosto.Name = "cmbcentrocosto";
             this.cmbcentrocosto.NombreProcedimiento = "P_CENTROSCOSTOS";
             this.cmbcentrocosto.Param = null;
@@ -811,7 +811,7 @@
             this.evTextBox9.IsSalvar = true;
             this.evTextBox9.IsValidar = false;
             this.evTextBox9.Location = new System.Drawing.Point(184, 150);
-            this.evTextBox9.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.evTextBox9.Margin = new System.Windows.Forms.Padding(2);
             this.evTextBox9.Name = "evTextBox9";
             this.evTextBox9.Size = new System.Drawing.Size(206, 20);
             this.evTextBox9.TabIndex = 7;
@@ -826,7 +826,7 @@
             this.evTextBox8.IsSalvar = true;
             this.evTextBox8.IsValidar = false;
             this.evTextBox8.Location = new System.Drawing.Point(184, 87);
-            this.evTextBox8.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.evTextBox8.Margin = new System.Windows.Forms.Padding(2);
             this.evTextBox8.Name = "evTextBox8";
             this.evTextBox8.Size = new System.Drawing.Size(206, 20);
             this.evTextBox8.TabIndex = 4;
@@ -842,7 +842,7 @@
             this.cmbsubdep.IsSalvar = true;
             this.cmbsubdep.IsValidar = false;
             this.cmbsubdep.Location = new System.Drawing.Point(184, 129);
-            this.cmbsubdep.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.cmbsubdep.Margin = new System.Windows.Forms.Padding(2);
             this.cmbsubdep.Name = "cmbsubdep";
             this.cmbsubdep.NombreProcedimiento = "P_SUBDEPPONCHES";
             this.cmbsubdep.Param = null;
@@ -864,7 +864,7 @@
             this.cmbdepponches.IsSalvar = true;
             this.cmbdepponches.IsValidar = false;
             this.cmbdepponches.Location = new System.Drawing.Point(184, 108);
-            this.cmbdepponches.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.cmbdepponches.Margin = new System.Windows.Forms.Padding(2);
             this.cmbdepponches.Name = "cmbdepponches";
             this.cmbdepponches.NombreProcedimiento = "P_NOMINADEPARTAMENTOS";
             this.cmbdepponches.Param = null;
@@ -887,7 +887,7 @@
             this.cmbidiomas.IsSalvar = true;
             this.cmbidiomas.IsValidar = false;
             this.cmbidiomas.Location = new System.Drawing.Point(184, 67);
-            this.cmbidiomas.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.cmbidiomas.Margin = new System.Windows.Forms.Padding(2);
             this.cmbidiomas.Name = "cmbidiomas";
             this.cmbidiomas.NombreProcedimiento = "P_IDIOMAS";
             this.cmbidiomas.Param = null;
@@ -909,7 +909,7 @@
             this.cmbdep.IsSalvar = true;
             this.cmbdep.IsValidar = false;
             this.cmbdep.Location = new System.Drawing.Point(184, 46);
-            this.cmbdep.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.cmbdep.Margin = new System.Windows.Forms.Padding(2);
             this.cmbdep.Name = "cmbdep";
             this.cmbdep.NombreProcedimiento = "P_SOLICITANTECHEQUES";
             this.cmbdep.Param = null;
@@ -975,7 +975,7 @@
             this.evNumericTextBox2.IsSalvar = true;
             this.evNumericTextBox2.IsValidar = false;
             this.evNumericTextBox2.Location = new System.Drawing.Point(184, 25);
-            this.evNumericTextBox2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.evNumericTextBox2.Margin = new System.Windows.Forms.Padding(2);
             this.evNumericTextBox2.Name = "evNumericTextBox2";
             this.evNumericTextBox2.Properties.Appearance.Options.UseTextOptions = true;
             this.evNumericTextBox2.Properties.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Far;
@@ -995,7 +995,7 @@
             this.evNumericTextBox1.IsSalvar = true;
             this.evNumericTextBox1.IsValidar = false;
             this.evNumericTextBox1.Location = new System.Drawing.Point(184, 4);
-            this.evNumericTextBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.evNumericTextBox1.Margin = new System.Windows.Forms.Padding(2);
             this.evNumericTextBox1.Name = "evNumericTextBox1";
             this.evNumericTextBox1.Properties.Appearance.Options.UseTextOptions = true;
             this.evNumericTextBox1.Properties.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Far;
@@ -1035,9 +1035,9 @@
             this.tabPage3.Controls.Add(this.cmbmesa);
             this.tabPage3.Controls.Add(this.evLabel23);
             this.tabPage3.Location = new System.Drawing.Point(4, 22);
-            this.tabPage3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tabPage3.Margin = new System.Windows.Forms.Padding(2);
             this.tabPage3.Name = "tabPage3";
-            this.tabPage3.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tabPage3.Padding = new System.Windows.Forms.Padding(2);
             this.tabPage3.Size = new System.Drawing.Size(414, 194);
             this.tabPage3.TabIndex = 2;
             this.tabPage3.Text = "Despacho";
@@ -1055,7 +1055,7 @@
             this.evCheckBox4.IsSalvar = true;
             this.evCheckBox4.IsValidar = false;
             this.evCheckBox4.Location = new System.Drawing.Point(91, 62);
-            this.evCheckBox4.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.evCheckBox4.Margin = new System.Windows.Forms.Padding(2);
             this.evCheckBox4.Name = "evCheckBox4";
             this.evCheckBox4.Size = new System.Drawing.Size(211, 17);
             this.evCheckBox4.TabIndex = 2;
@@ -1072,7 +1072,7 @@
             this.evTextBox10.IsSalvar = true;
             this.evTextBox10.IsValidar = false;
             this.evTextBox10.Location = new System.Drawing.Point(91, 38);
-            this.evTextBox10.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.evTextBox10.Margin = new System.Windows.Forms.Padding(2);
             this.evTextBox10.Name = "evTextBox10";
             this.evTextBox10.Size = new System.Drawing.Size(228, 20);
             this.evTextBox10.TabIndex = 1;
@@ -1099,7 +1099,7 @@
             this.cmbmesa.IsSalvar = true;
             this.cmbmesa.IsValidar = false;
             this.cmbmesa.Location = new System.Drawing.Point(91, 15);
-            this.cmbmesa.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.cmbmesa.Margin = new System.Windows.Forms.Padding(2);
             this.cmbmesa.Name = "cmbmesa";
             this.cmbmesa.NombreProcedimiento = "P_MESAS";
             this.cmbmesa.Param = null;
@@ -1140,9 +1140,9 @@
             this.tabPage4.Controls.Add(this.checkBox21);
             this.tabPage4.Controls.Add(this.checkBox20);
             this.tabPage4.Location = new System.Drawing.Point(4, 22);
-            this.tabPage4.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tabPage4.Margin = new System.Windows.Forms.Padding(2);
             this.tabPage4.Name = "tabPage4";
-            this.tabPage4.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tabPage4.Padding = new System.Windows.Forms.Padding(2);
             this.tabPage4.Size = new System.Drawing.Size(414, 194);
             this.tabPage4.TabIndex = 3;
             this.tabPage4.Text = "Menu Principal";
@@ -1159,7 +1159,7 @@
             this.checkBox28.IsSalvar = true;
             this.checkBox28.IsValidar = false;
             this.checkBox28.Location = new System.Drawing.Point(222, 7);
-            this.checkBox28.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.checkBox28.Margin = new System.Windows.Forms.Padding(2);
             this.checkBox28.Name = "checkBox28";
             this.checkBox28.Size = new System.Drawing.Size(67, 17);
             this.checkBox28.TabIndex = 15;
@@ -1178,7 +1178,7 @@
             this.checkBox29.IsSalvar = true;
             this.checkBox29.IsValidar = false;
             this.checkBox29.Location = new System.Drawing.Point(222, 149);
-            this.checkBox29.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.checkBox29.Margin = new System.Windows.Forms.Padding(2);
             this.checkBox29.Name = "checkBox29";
             this.checkBox29.Size = new System.Drawing.Size(81, 17);
             this.checkBox29.TabIndex = 14;
@@ -1197,7 +1197,7 @@
             this.checkBox30.IsSalvar = true;
             this.checkBox30.IsValidar = false;
             this.checkBox30.Location = new System.Drawing.Point(222, 125);
-            this.checkBox30.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.checkBox30.Margin = new System.Windows.Forms.Padding(2);
             this.checkBox30.Name = "checkBox30";
             this.checkBox30.Size = new System.Drawing.Size(121, 17);
             this.checkBox30.TabIndex = 13;
@@ -1216,7 +1216,7 @@
             this.checkBox31.IsSalvar = true;
             this.checkBox31.IsValidar = false;
             this.checkBox31.Location = new System.Drawing.Point(222, 102);
-            this.checkBox31.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.checkBox31.Margin = new System.Windows.Forms.Padding(2);
             this.checkBox31.Name = "checkBox31";
             this.checkBox31.Size = new System.Drawing.Size(84, 17);
             this.checkBox31.TabIndex = 12;
@@ -1235,7 +1235,7 @@
             this.checkBox32.IsSalvar = true;
             this.checkBox32.IsValidar = false;
             this.checkBox32.Location = new System.Drawing.Point(222, 78);
-            this.checkBox32.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.checkBox32.Margin = new System.Windows.Forms.Padding(2);
             this.checkBox32.Name = "checkBox32";
             this.checkBox32.Size = new System.Drawing.Size(82, 17);
             this.checkBox32.TabIndex = 11;
@@ -1254,7 +1254,7 @@
             this.checkBox33.IsSalvar = true;
             this.checkBox33.IsValidar = false;
             this.checkBox33.Location = new System.Drawing.Point(222, 54);
-            this.checkBox33.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.checkBox33.Margin = new System.Windows.Forms.Padding(2);
             this.checkBox33.Name = "checkBox33";
             this.checkBox33.Size = new System.Drawing.Size(58, 17);
             this.checkBox33.TabIndex = 10;
@@ -1273,7 +1273,7 @@
             this.checkBox34.IsSalvar = true;
             this.checkBox34.IsValidar = false;
             this.checkBox34.Location = new System.Drawing.Point(222, 31);
-            this.checkBox34.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.checkBox34.Margin = new System.Windows.Forms.Padding(2);
             this.checkBox34.Name = "checkBox34";
             this.checkBox34.Size = new System.Drawing.Size(75, 17);
             this.checkBox34.TabIndex = 9;
@@ -1292,7 +1292,7 @@
             this.checkBox27.IsSalvar = true;
             this.checkBox27.IsValidar = false;
             this.checkBox27.Location = new System.Drawing.Point(4, 172);
-            this.checkBox27.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.checkBox27.Margin = new System.Windows.Forms.Padding(2);
             this.checkBox27.Name = "checkBox27";
             this.checkBox27.Size = new System.Drawing.Size(71, 17);
             this.checkBox27.TabIndex = 8;
@@ -1311,7 +1311,7 @@
             this.checkBox26.IsSalvar = true;
             this.checkBox26.IsValidar = false;
             this.checkBox26.Location = new System.Drawing.Point(4, 149);
-            this.checkBox26.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.checkBox26.Margin = new System.Windows.Forms.Padding(2);
             this.checkBox26.Name = "checkBox26";
             this.checkBox26.Size = new System.Drawing.Size(77, 17);
             this.checkBox26.TabIndex = 7;
@@ -1330,7 +1330,7 @@
             this.checkBox25.IsSalvar = true;
             this.checkBox25.IsValidar = false;
             this.checkBox25.Location = new System.Drawing.Point(4, 125);
-            this.checkBox25.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.checkBox25.Margin = new System.Windows.Forms.Padding(2);
             this.checkBox25.Name = "checkBox25";
             this.checkBox25.Size = new System.Drawing.Size(87, 17);
             this.checkBox25.TabIndex = 6;
@@ -1349,7 +1349,7 @@
             this.checkBox24.IsSalvar = true;
             this.checkBox24.IsValidar = false;
             this.checkBox24.Location = new System.Drawing.Point(4, 102);
-            this.checkBox24.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.checkBox24.Margin = new System.Windows.Forms.Padding(2);
             this.checkBox24.Name = "checkBox24";
             this.checkBox24.Size = new System.Drawing.Size(82, 17);
             this.checkBox24.TabIndex = 5;
@@ -1368,7 +1368,7 @@
             this.checkBox23.IsSalvar = true;
             this.checkBox23.IsValidar = false;
             this.checkBox23.Location = new System.Drawing.Point(4, 78);
-            this.checkBox23.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.checkBox23.Margin = new System.Windows.Forms.Padding(2);
             this.checkBox23.Name = "checkBox23";
             this.checkBox23.Size = new System.Drawing.Size(75, 17);
             this.checkBox23.TabIndex = 4;
@@ -1387,7 +1387,7 @@
             this.checkBox22.IsSalvar = true;
             this.checkBox22.IsValidar = false;
             this.checkBox22.Location = new System.Drawing.Point(4, 54);
-            this.checkBox22.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.checkBox22.Margin = new System.Windows.Forms.Padding(2);
             this.checkBox22.Name = "checkBox22";
             this.checkBox22.Size = new System.Drawing.Size(74, 17);
             this.checkBox22.TabIndex = 3;
@@ -1406,7 +1406,7 @@
             this.checkBox21.IsSalvar = true;
             this.checkBox21.IsValidar = false;
             this.checkBox21.Location = new System.Drawing.Point(4, 31);
-            this.checkBox21.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.checkBox21.Margin = new System.Windows.Forms.Padding(2);
             this.checkBox21.Name = "checkBox21";
             this.checkBox21.Size = new System.Drawing.Size(75, 17);
             this.checkBox21.TabIndex = 2;
@@ -1425,7 +1425,7 @@
             this.checkBox20.IsSalvar = true;
             this.checkBox20.IsValidar = false;
             this.checkBox20.Location = new System.Drawing.Point(4, 7);
-            this.checkBox20.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.checkBox20.Margin = new System.Windows.Forms.Padding(2);
             this.checkBox20.Name = "checkBox20";
             this.checkBox20.Size = new System.Drawing.Size(58, 17);
             this.checkBox20.TabIndex = 1;
@@ -1441,9 +1441,9 @@
             this.tabPage5.Controls.Add(this.cmbtipoarticulo);
             this.tabPage5.Controls.Add(this.evLabel25);
             this.tabPage5.Location = new System.Drawing.Point(4, 22);
-            this.tabPage5.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tabPage5.Margin = new System.Windows.Forms.Padding(2);
             this.tabPage5.Name = "tabPage5";
-            this.tabPage5.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tabPage5.Padding = new System.Windows.Forms.Padding(2);
             this.tabPage5.Size = new System.Drawing.Size(414, 194);
             this.tabPage5.TabIndex = 4;
             this.tabPage5.Text = "Articulos";
@@ -1451,10 +1451,10 @@
             // 
             // gridarticulos
             // 
-            this.gridarticulos.EmbeddedNavigator.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.gridarticulos.EmbeddedNavigator.Margin = new System.Windows.Forms.Padding(2);
             this.gridarticulos.Location = new System.Drawing.Point(7, 48);
             this.gridarticulos.MainView = this.gridView1;
-            this.gridarticulos.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.gridarticulos.Margin = new System.Windows.Forms.Padding(2);
             this.gridarticulos.Name = "gridarticulos";
             this.gridarticulos.Size = new System.Drawing.Size(396, 141);
             this.gridarticulos.TabIndex = 13;
@@ -1487,7 +1487,7 @@
             // 
             this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button2.Location = new System.Drawing.Point(368, 16);
-            this.button2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.button2.Margin = new System.Windows.Forms.Padding(2);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(35, 30);
             this.button2.TabIndex = 12;
@@ -1499,7 +1499,7 @@
             // 
             this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.Location = new System.Drawing.Point(328, 16);
-            this.button1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.button1.Margin = new System.Windows.Forms.Padding(2);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(35, 30);
             this.button1.TabIndex = 11;
@@ -1517,7 +1517,7 @@
             this.cmbtipoarticulo.IsSalvar = false;
             this.cmbtipoarticulo.IsValidar = false;
             this.cmbtipoarticulo.Location = new System.Drawing.Point(7, 25);
-            this.cmbtipoarticulo.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.cmbtipoarticulo.Margin = new System.Windows.Forms.Padding(2);
             this.cmbtipoarticulo.Name = "cmbtipoarticulo";
             this.cmbtipoarticulo.NombreProcedimiento = "P_TIPOARTICULOS";
             this.cmbtipoarticulo.Param = null;
@@ -1554,7 +1554,7 @@
             this.ckactivo.IsSalvar = true;
             this.ckactivo.IsValidar = false;
             this.ckactivo.Location = new System.Drawing.Point(536, 13);
-            this.ckactivo.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.ckactivo.Margin = new System.Windows.Forms.Padding(2);
             this.ckactivo.Name = "ckactivo";
             this.ckactivo.Size = new System.Drawing.Size(109, 17);
             this.ckactivo.TabIndex = 27;
@@ -1574,7 +1574,7 @@
             this.ckgrupo.IsSalvar = false;
             this.ckgrupo.IsValidar = false;
             this.ckgrupo.Location = new System.Drawing.Point(404, 13);
-            this.ckgrupo.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.ckgrupo.Margin = new System.Windows.Forms.Padding(2);
             this.ckgrupo.Name = "ckgrupo";
             this.ckgrupo.Size = new System.Drawing.Size(132, 17);
             this.ckgrupo.TabIndex = 26;
@@ -1595,7 +1595,7 @@
             this.ckcreausuario.IsSalvar = true;
             this.ckcreausuario.IsValidar = false;
             this.ckcreausuario.Location = new System.Drawing.Point(257, 13);
-            this.ckcreausuario.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.ckcreausuario.Margin = new System.Windows.Forms.Padding(2);
             this.ckcreausuario.Name = "ckcreausuario";
             this.ckcreausuario.Size = new System.Drawing.Size(149, 17);
             this.ckcreausuario.TabIndex = 25;
@@ -1613,14 +1613,14 @@
             this.vendedorPickerPanel1.IsValidar = false;
             this.vendedorPickerPanel1.LblVendedorMargin = new System.Windows.Forms.Padding(2, 2, 71, 0);
             this.vendedorPickerPanel1.Location = new System.Drawing.Point(305, 88);
-            this.vendedorPickerPanel1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.vendedorPickerPanel1.Margin = new System.Windows.Forms.Padding(2);
             this.vendedorPickerPanel1.Name = "vendedorPickerPanel1";
             this.vendedorPickerPanel1.parent = this;
             this.vendedorPickerPanel1.Size = new System.Drawing.Size(350, 23);
             this.vendedorPickerPanel1.TabIndex = 9;
-            this.vendedorPickerPanel1.TxtIdMargin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.vendedorPickerPanel1.TxtIdMargin = new System.Windows.Forms.Padding(2);
             this.vendedorPickerPanel1.TxtIdSize = new System.Drawing.Size(52, 20);
-            this.vendedorPickerPanel1.TxtNombreMargin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.vendedorPickerPanel1.TxtNombreMargin = new System.Windows.Forms.Padding(2);
             this.vendedorPickerPanel1.TxtNombreSize = new System.Drawing.Size(136, 20);
             this.vendedorPickerPanel1.Valor = 0;
             // 
@@ -1635,7 +1635,7 @@
             this.evDateTimePicker1.IsSalvar = true;
             this.evDateTimePicker1.IsValidar = false;
             this.evDateTimePicker1.Location = new System.Drawing.Point(439, 37);
-            this.evDateTimePicker1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.evDateTimePicker1.Margin = new System.Windows.Forms.Padding(2);
             this.evDateTimePicker1.Name = "evDateTimePicker1";
             this.evDateTimePicker1.Size = new System.Drawing.Size(194, 20);
             this.evDateTimePicker1.TabIndex = 7;
@@ -1652,7 +1652,7 @@
             this.evTextBox7.IsSalvar = true;
             this.evTextBox7.IsValidar = false;
             this.evTextBox7.Location = new System.Drawing.Point(439, 63);
-            this.evTextBox7.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.evTextBox7.Margin = new System.Windows.Forms.Padding(2);
             this.evTextBox7.Name = "evTextBox7";
             this.evTextBox7.Size = new System.Drawing.Size(194, 20);
             this.evTextBox7.TabIndex = 8;
@@ -1689,7 +1689,7 @@
             this.txttelefono.IsSalvar = true;
             this.txttelefono.IsValidar = false;
             this.txttelefono.Location = new System.Drawing.Point(96, 139);
-            this.txttelefono.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txttelefono.Margin = new System.Windows.Forms.Padding(2);
             this.txttelefono.Mask = "(###)-###-####";
             this.txttelefono.Name = "txttelefono";
             this.txttelefono.Size = new System.Drawing.Size(194, 20);
@@ -1706,9 +1706,9 @@
             this.groupBox1.Controls.Add(this.txtusuario);
             this.groupBox1.Controls.Add(this.evLabel8);
             this.groupBox1.Location = new System.Drawing.Point(7, 217);
-            this.groupBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.groupBox1.Margin = new System.Windows.Forms.Padding(2);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.groupBox1.Padding = new System.Windows.Forms.Padding(2);
             this.groupBox1.Size = new System.Drawing.Size(297, 127);
             this.groupBox1.TabIndex = 10;
             this.groupBox1.TabStop = false;
@@ -1723,7 +1723,7 @@
             this.txtconfirmpass.IsSalvar = true;
             this.txtconfirmpass.IsValidar = false;
             this.txtconfirmpass.Location = new System.Drawing.Point(124, 86);
-            this.txtconfirmpass.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtconfirmpass.Margin = new System.Windows.Forms.Padding(2);
             this.txtconfirmpass.Name = "txtconfirmpass";
             this.txtconfirmpass.PasswordChar = '*';
             this.txtconfirmpass.Size = new System.Drawing.Size(153, 20);
@@ -1739,7 +1739,7 @@
             this.txtpass.IsSalvar = true;
             this.txtpass.IsValidar = false;
             this.txtpass.Location = new System.Drawing.Point(124, 57);
-            this.txtpass.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtpass.Margin = new System.Windows.Forms.Padding(2);
             this.txtpass.Name = "txtpass";
             this.txtpass.PasswordChar = '*';
             this.txtpass.Size = new System.Drawing.Size(153, 20);
@@ -1777,7 +1777,7 @@
             this.txtusuario.IsSalvar = true;
             this.txtusuario.IsValidar = false;
             this.txtusuario.Location = new System.Drawing.Point(124, 28);
-            this.txtusuario.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtusuario.Margin = new System.Windows.Forms.Padding(2);
             this.txtusuario.Name = "txtusuario";
             this.txtusuario.Size = new System.Drawing.Size(153, 20);
             this.txtusuario.TabIndex = 0;
@@ -1803,7 +1803,7 @@
             this.evTextBox5.IsSalvar = true;
             this.evTextBox5.IsValidar = false;
             this.evTextBox5.Location = new System.Drawing.Point(96, 189);
-            this.evTextBox5.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.evTextBox5.Margin = new System.Windows.Forms.Padding(2);
             this.evTextBox5.Name = "evTextBox5";
             this.evTextBox5.Size = new System.Drawing.Size(194, 20);
             this.evTextBox5.TabIndex = 6;
@@ -1830,7 +1830,7 @@
             this.txtemail.IsSalvar = true;
             this.txtemail.IsValidar = false;
             this.txtemail.Location = new System.Drawing.Point(96, 164);
-            this.txtemail.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtemail.Margin = new System.Windows.Forms.Padding(2);
             this.txtemail.Name = "txtemail";
             this.txtemail.Size = new System.Drawing.Size(194, 20);
             this.txtemail.TabIndex = 5;
@@ -1846,7 +1846,7 @@
             this.txtdireccion.IsSalvar = true;
             this.txtdireccion.IsValidar = true;
             this.txtdireccion.Location = new System.Drawing.Point(96, 88);
-            this.txtdireccion.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtdireccion.Margin = new System.Windows.Forms.Padding(2);
             this.txtdireccion.Multiline = true;
             this.txtdireccion.Name = "txtdireccion";
             this.txtdireccion.Size = new System.Drawing.Size(194, 45);
@@ -1863,7 +1863,7 @@
             this.txtapellido.IsSalvar = true;
             this.txtapellido.IsValidar = true;
             this.txtapellido.Location = new System.Drawing.Point(96, 63);
-            this.txtapellido.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtapellido.Margin = new System.Windows.Forms.Padding(2);
             this.txtapellido.Name = "txtapellido";
             this.txtapellido.Size = new System.Drawing.Size(194, 20);
             this.txtapellido.TabIndex = 2;
@@ -1879,7 +1879,7 @@
             this.txtnombre.IsSalvar = true;
             this.txtnombre.IsValidar = true;
             this.txtnombre.Location = new System.Drawing.Point(96, 37);
-            this.txtnombre.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtnombre.Margin = new System.Windows.Forms.Padding(2);
             this.txtnombre.Name = "txtnombre";
             this.txtnombre.Size = new System.Drawing.Size(194, 20);
             this.txtnombre.TabIndex = 1;
@@ -1982,6 +1982,7 @@
             this.RequireCloseConfirm = true;
             this.Text = "InUsuarios";
             this.Activated += new System.EventHandler(this.InUsuarios_Activated);
+            this.Load += new System.EventHandler(this.InUsuarios_Load);
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider)).EndInit();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
