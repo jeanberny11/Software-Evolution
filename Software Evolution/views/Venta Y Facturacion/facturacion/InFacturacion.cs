@@ -395,7 +395,7 @@ namespace Software_Evolution.views.Venta_Y_Facturacion.facturacion
             txttotalneto.Valor = baseimponible + montoexento + itbis;
             Refresh();
         }
-
+        
         private void Salvar()
         {
             double efectivo = 0, devuelta = 0, montocheque = 0,montotarjetadeb=0,montotarjetacre=0,montotrans=0,montovale=0;
@@ -637,36 +637,9 @@ namespace Software_Evolution.views.Venta_Y_Facturacion.facturacion
             Close();
         }
 
-        private void button13_Click(object sender, EventArgs e)
+        
+        private void button1_Click(object sender, EventArgs e)
         {
-            if (txtcantidad.Valor == 0)
-            {
-                Mensaje("Elija un Cliente Para esta Autorizacion...!!");
-                txtclienteid.Focus();
-                return;
-            }
-            if (dsdetalle.Tables[0].Rows.Count == 0)
-            {
-                Mensaje("No existen Productos para esta Factura...!!");
-                txtreferencia.Focus();
-                return;
-            }
-            var autorizacionpendiente = autorizacionManager.GetAutorizacionPendienteCliente(txtclienteid.Valor);
-            if (autorizacionpendiente != null)
-            {
-                if (!autorizacionpendiente.Field<bool>("f_estado"))
-                    Mensaje($"Este cliente ya tiene una Autorizacion emitida, pendiente por aprovar generada en fecha {autorizacionpendiente.Field<DateTime>("f_fecha")} por un valor de {Ntos(autorizacionpendiente.Field<decimal>("f_monto"))}");
-                else
-                    Mensaje($"Este cliente ya tiene una Autorizacion emitida y aprovada generada en fecha {autorizacionpendiente.Field<DateTime>("f_fecha")} por un valor de {Ntos(autorizacionpendiente.Field<decimal>("f_monto"))}");
-                return;
-            }
-            try
-            {
-                autorizacionManager.CreateAutorizacion(1, txttotalneto.Valor, CurrentDate, CurrentTime, vendedorPickerPanel1.Valor, txtclienteid.Valor);
-            }catch(Exception ex)
-            {
-                Mensaje(ex.Message);
-            }
         }
 
         private void linkLabel3_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)

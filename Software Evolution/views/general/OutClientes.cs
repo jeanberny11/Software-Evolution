@@ -85,5 +85,25 @@ namespace Software_Evolution.views.general
                 }
             }
         }
+
+        private void btn_imprimir_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void OutClientes_Resize(object sender, EventArgs e)
+        {
+
+        }
+
+        private void OutClientes_Shown(object sender, EventArgs e)
+        {
+            CenterToScreen();
+        }
+
+        private void OutClientes_Load(object sender, EventArgs e)
+        {
+            CenterToScreen();
+        }
     }
 }

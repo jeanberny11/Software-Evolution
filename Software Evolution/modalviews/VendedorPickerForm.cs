@@ -60,5 +60,10 @@ namespace Software_Evolution.modalviews
             this.DialogResult = System.Windows.Forms.DialogResult.Cancel;
             Close();
         }
+
+        private void VendedorPickerForm_Load(object sender, EventArgs e)
+        {
+            CenterToScreen();
+        }
     }
 }

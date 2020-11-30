@@ -44,6 +44,11 @@
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
+            this.btn_correo = new System.Windows.Forms.Button();
+            this.btn_exportar = new System.Windows.Forms.Button();
+            this.btn_imprimir = new System.Windows.Forms.Button();
+            this.btn_buscar = new System.Windows.Forms.Button();
+            this.btn_cerrar = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.grid1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView1)).BeginInit();
@@ -54,12 +59,12 @@
             // 
             // grid1
             // 
-            this.grid1.EmbeddedNavigator.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.grid1.Location = new System.Drawing.Point(0, 93);
+            this.grid1.EmbeddedNavigator.Margin = new System.Windows.Forms.Padding(2);
+            this.grid1.Location = new System.Drawing.Point(0, 76);
             this.grid1.MainView = this.gridView1;
-            this.grid1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.grid1.Margin = new System.Windows.Forms.Padding(2);
             this.grid1.Name = "grid1";
-            this.grid1.Size = new System.Drawing.Size(600, 271);
+            this.grid1.Size = new System.Drawing.Size(600, 288);
             this.grid1.TabIndex = 0;
             this.grid1.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.gridView1});
@@ -152,21 +157,26 @@
             // panelControl1
             // 
             this.panelControl1.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.Flat;
+            this.panelControl1.Controls.Add(this.btn_correo);
+            this.panelControl1.Controls.Add(this.btn_exportar);
+            this.panelControl1.Controls.Add(this.btn_imprimir);
+            this.panelControl1.Controls.Add(this.btn_buscar);
+            this.panelControl1.Controls.Add(this.btn_cerrar);
             this.panelControl1.Controls.Add(this.button9);
             this.panelControl1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panelControl1.Location = new System.Drawing.Point(0, 0);
             this.panelControl1.Margin = new System.Windows.Forms.Padding(2, 8, 2, 2);
             this.panelControl1.Name = "panelControl1";
-            this.panelControl1.Size = new System.Drawing.Size(600, 52);
+            this.panelControl1.Size = new System.Drawing.Size(600, 46);
             this.panelControl1.TabIndex = 1;
             // 
             // button9
             // 
             this.button9.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button9.Image = ((System.Drawing.Image)(resources.GetObject("button9.Image")));
-            this.button9.Location = new System.Drawing.Point(549, 5);
+            this.button9.Location = new System.Drawing.Point(518, 5);
             this.button9.Name = "button9";
-            this.button9.Size = new System.Drawing.Size(41, 40);
+            this.button9.Size = new System.Drawing.Size(40, 36);
             this.button9.TabIndex = 26;
             this.button9.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.button9.UseVisualStyleBackColor = true;
@@ -176,7 +186,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(124, 64);
+            this.label1.Location = new System.Drawing.Point(124, 54);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(58, 17);
             this.label1.TabIndex = 2;
@@ -186,7 +196,7 @@
             // searchControl1
             // 
             this.searchControl1.Client = this.grid1;
-            this.searchControl1.Location = new System.Drawing.Point(188, 63);
+            this.searchControl1.Location = new System.Drawing.Point(188, 51);
             this.searchControl1.Name = "searchControl1";
             this.searchControl1.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Repository.ClearButton(),
@@ -225,6 +235,70 @@
             this.button3.UseVisualStyleBackColor = true;
             this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
+            // btn_correo
+            // 
+            this.btn_correo.FlatAppearance.BorderSize = 0;
+            this.btn_correo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_correo.Image = global::Software_Evolution.Properties.Resources.Email_30017;
+            this.btn_correo.Location = new System.Drawing.Point(343, 6);
+            this.btn_correo.Margin = new System.Windows.Forms.Padding(2);
+            this.btn_correo.Name = "btn_correo";
+            this.btn_correo.Size = new System.Drawing.Size(41, 36);
+            this.btn_correo.TabIndex = 37;
+            this.btn_correo.UseVisualStyleBackColor = true;
+            // 
+            // btn_exportar
+            // 
+            this.btn_exportar.FlatAppearance.BorderSize = 0;
+            this.btn_exportar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_exportar.Image = global::Software_Evolution.Properties.Resources.Excel_Mac_23559;
+            this.btn_exportar.Location = new System.Drawing.Point(388, 5);
+            this.btn_exportar.Margin = new System.Windows.Forms.Padding(2);
+            this.btn_exportar.Name = "btn_exportar";
+            this.btn_exportar.Size = new System.Drawing.Size(41, 36);
+            this.btn_exportar.TabIndex = 36;
+            this.Fromtooltip.SetToolTip(this.btn_exportar, "Exportar a excell.");
+            this.btn_exportar.UseVisualStyleBackColor = true;
+            // 
+            // btn_imprimir
+            // 
+            this.btn_imprimir.FlatAppearance.BorderSize = 0;
+            this.btn_imprimir.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_imprimir.Image = global::Software_Evolution.Properties.Resources.actions_document_print_15785;
+            this.btn_imprimir.Location = new System.Drawing.Point(433, 4);
+            this.btn_imprimir.Margin = new System.Windows.Forms.Padding(2);
+            this.btn_imprimir.Name = "btn_imprimir";
+            this.btn_imprimir.Size = new System.Drawing.Size(41, 36);
+            this.btn_imprimir.TabIndex = 35;
+            this.Fromtooltip.SetToolTip(this.btn_imprimir, "Imprimir");
+            this.btn_imprimir.UseVisualStyleBackColor = true;
+            // 
+            // btn_buscar
+            // 
+            this.btn_buscar.FlatAppearance.BorderSize = 0;
+            this.btn_buscar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_buscar.Image = global::Software_Evolution.Properties.Resources.xmag_search_find_export_locate_5984;
+            this.btn_buscar.Location = new System.Drawing.Point(478, 6);
+            this.btn_buscar.Margin = new System.Windows.Forms.Padding(2);
+            this.btn_buscar.Name = "btn_buscar";
+            this.btn_buscar.Size = new System.Drawing.Size(35, 36);
+            this.btn_buscar.TabIndex = 34;
+            this.Fromtooltip.SetToolTip(this.btn_buscar, "Buscar todos los Clientes.");
+            this.btn_buscar.UseVisualStyleBackColor = true;
+            // 
+            // btn_cerrar
+            // 
+            this.btn_cerrar.FlatAppearance.BorderSize = 0;
+            this.btn_cerrar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_cerrar.Image = global::Software_Evolution.Properties.Resources.vcsconflicting_93497;
+            this.btn_cerrar.Location = new System.Drawing.Point(563, 5);
+            this.btn_cerrar.Margin = new System.Windows.Forms.Padding(2);
+            this.btn_cerrar.Name = "btn_cerrar";
+            this.btn_cerrar.Size = new System.Drawing.Size(33, 36);
+            this.btn_cerrar.TabIndex = 32;
+            this.Fromtooltip.SetToolTip(this.btn_cerrar, "Cerrar la ventana de Cliente.");
+            this.btn_cerrar.UseVisualStyleBackColor = true;
+            // 
             // OutUsuarios
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -237,7 +311,6 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.panelControl1);
             this.Controls.Add(this.grid1);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "OutUsuarios";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "OutUsuarios";
@@ -270,5 +343,10 @@
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Button btn_correo;
+        private System.Windows.Forms.Button btn_exportar;
+        private System.Windows.Forms.Button btn_imprimir;
+        private System.Windows.Forms.Button btn_buscar;
+        private System.Windows.Forms.Button btn_cerrar;
     }
 }

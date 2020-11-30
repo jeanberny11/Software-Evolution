@@ -62,5 +62,10 @@ namespace Software_Evolution.views.cuentaxpagar
                 (this.ParentForm as Principal).ShowOrFocusForm(form);
             }
         }
+
+        private void OutSuplidores_Load(object sender, EventArgs e)
+        {
+            CenterToScreen();
+        }
     }
 }

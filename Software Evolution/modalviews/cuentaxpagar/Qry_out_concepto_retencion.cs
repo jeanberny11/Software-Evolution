@@ -51,5 +51,10 @@ namespace Software_Evolution.modalviews.cuentaxpagar
                 Close();
             }
         }
+
+        private void Qry_out_concepto_retencion_Load(object sender, EventArgs e)
+        {
+            CenterToScreen();
+        }
     }
 }

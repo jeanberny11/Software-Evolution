@@ -725,6 +725,12 @@ namespace Software_Evolution.views.Venta_Y_Facturacion
             }
         }
 
+        private void InCotizaciones_Load(object sender, EventArgs e)
+        {
+            CenterToParent();
+            
+        }
+
         protected override void Limpiar()
         {
             base.Limpiar();

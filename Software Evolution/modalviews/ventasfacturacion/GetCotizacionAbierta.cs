@@ -46,5 +46,10 @@ namespace Software_Evolution.modalviews.ventasfacturacion
                 Close();
             }
         }
+
+        private void GetCotizacionAbierta_Load(object sender, EventArgs e)
+        {
+            CenterToScreen();
+        }
     }
 }

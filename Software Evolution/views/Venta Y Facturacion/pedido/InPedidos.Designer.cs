@@ -267,12 +267,12 @@
             // 
             this.gridControl2.DataMember = "detalles";
             this.gridControl2.DataSource = this.dsdetalle;
-            this.gridControl2.EmbeddedNavigator.Margin = new System.Windows.Forms.Padding(6);
-            this.gridControl2.Location = new System.Drawing.Point(9, 270);
+            this.gridControl2.EmbeddedNavigator.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.gridControl2.Location = new System.Drawing.Point(7, 219);
             this.gridControl2.MainView = this.gridView2;
-            this.gridControl2.Margin = new System.Windows.Forms.Padding(6);
+            this.gridControl2.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.gridControl2.Name = "gridControl2";
-            this.gridControl2.Size = new System.Drawing.Size(857, 380);
+            this.gridControl2.Size = new System.Drawing.Size(643, 309);
             this.gridControl2.TabIndex = 12;
             this.gridControl2.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.gridView2});
@@ -624,7 +624,7 @@
             this.gridColumn8,
             this.gridColumn9,
             this.gridColumn10});
-            this.gridView2.DetailHeight = 682;
+            this.gridView2.DetailHeight = 554;
             this.gridView2.GridControl = this.gridControl2;
             this.gridView2.Name = "gridView2";
             this.gridView2.OptionsSelection.MultiSelect = true;
@@ -643,13 +643,13 @@
             this.gridColumn3.AppearanceHeader.Options.UseForeColor = true;
             this.gridColumn3.Caption = "#.";
             this.gridColumn3.FieldName = "items";
-            this.gridColumn3.MaxWidth = 25;
-            this.gridColumn3.MinWidth = 31;
+            this.gridColumn3.MaxWidth = 19;
+            this.gridColumn3.MinWidth = 23;
             this.gridColumn3.Name = "gridColumn3";
             this.gridColumn3.OptionsColumn.AllowEdit = false;
             this.gridColumn3.Visible = true;
             this.gridColumn3.VisibleIndex = 0;
-            this.gridColumn3.Width = 31;
+            this.gridColumn3.Width = 23;
             // 
             // gridColumn4
             // 
@@ -659,12 +659,12 @@
             this.gridColumn4.AppearanceHeader.Options.UseForeColor = true;
             this.gridColumn4.Caption = "Código";
             this.gridColumn4.FieldName = "referencia";
-            this.gridColumn4.MinWidth = 31;
+            this.gridColumn4.MinWidth = 23;
             this.gridColumn4.Name = "gridColumn4";
             this.gridColumn4.OptionsColumn.AllowEdit = false;
             this.gridColumn4.Visible = true;
             this.gridColumn4.VisibleIndex = 1;
-            this.gridColumn4.Width = 96;
+            this.gridColumn4.Width = 72;
             // 
             // gridColumn5
             // 
@@ -674,12 +674,12 @@
             this.gridColumn5.AppearanceHeader.Options.UseForeColor = true;
             this.gridColumn5.Caption = "Referencia";
             this.gridColumn5.FieldName = "refped";
-            this.gridColumn5.MinWidth = 31;
+            this.gridColumn5.MinWidth = 23;
             this.gridColumn5.Name = "gridColumn5";
             this.gridColumn5.OptionsColumn.AllowEdit = false;
             this.gridColumn5.Visible = true;
             this.gridColumn5.VisibleIndex = 2;
-            this.gridColumn5.Width = 106;
+            this.gridColumn5.Width = 79;
             // 
             // gridColumn6
             // 
@@ -689,12 +689,12 @@
             this.gridColumn6.AppearanceHeader.Options.UseForeColor = true;
             this.gridColumn6.Caption = "Descripción";
             this.gridColumn6.FieldName = "descripcion";
-            this.gridColumn6.MinWidth = 31;
+            this.gridColumn6.MinWidth = 23;
             this.gridColumn6.Name = "gridColumn6";
             this.gridColumn6.OptionsColumn.AllowEdit = false;
             this.gridColumn6.Visible = true;
             this.gridColumn6.VisibleIndex = 3;
-            this.gridColumn6.Width = 252;
+            this.gridColumn6.Width = 189;
             // 
             // gridColumn7
             // 
@@ -704,12 +704,12 @@
             this.gridColumn7.AppearanceHeader.Options.UseForeColor = true;
             this.gridColumn7.Caption = "Cant.";
             this.gridColumn7.FieldName = "cantidad";
-            this.gridColumn7.MinWidth = 31;
+            this.gridColumn7.MinWidth = 23;
             this.gridColumn7.Name = "gridColumn7";
             this.gridColumn7.OptionsColumn.AllowEdit = false;
             this.gridColumn7.Visible = true;
             this.gridColumn7.VisibleIndex = 4;
-            this.gridColumn7.Width = 68;
+            this.gridColumn7.Width = 51;
             // 
             // gridColumn8
             // 
@@ -719,12 +719,12 @@
             this.gridColumn8.AppearanceHeader.Options.UseForeColor = true;
             this.gridColumn8.Caption = "Precio";
             this.gridColumn8.FieldName = "precio";
-            this.gridColumn8.MinWidth = 31;
+            this.gridColumn8.MinWidth = 23;
             this.gridColumn8.Name = "gridColumn8";
             this.gridColumn8.OptionsColumn.AllowEdit = false;
             this.gridColumn8.Visible = true;
             this.gridColumn8.VisibleIndex = 5;
-            this.gridColumn8.Width = 88;
+            this.gridColumn8.Width = 66;
             // 
             // gridColumn9
             // 
@@ -734,12 +734,12 @@
             this.gridColumn9.AppearanceHeader.Options.UseForeColor = true;
             this.gridColumn9.Caption = "Impuesto";
             this.gridColumn9.FieldName = "impuesto";
-            this.gridColumn9.MinWidth = 31;
+            this.gridColumn9.MinWidth = 23;
             this.gridColumn9.Name = "gridColumn9";
             this.gridColumn9.OptionsColumn.AllowEdit = false;
             this.gridColumn9.Visible = true;
             this.gridColumn9.VisibleIndex = 6;
-            this.gridColumn9.Width = 91;
+            this.gridColumn9.Width = 68;
             // 
             // gridColumn10
             // 
@@ -749,12 +749,12 @@
             this.gridColumn10.AppearanceHeader.Options.UseForeColor = true;
             this.gridColumn10.Caption = "Total";
             this.gridColumn10.FieldName = "total";
-            this.gridColumn10.MinWidth = 31;
+            this.gridColumn10.MinWidth = 23;
             this.gridColumn10.Name = "gridColumn10";
             this.gridColumn10.OptionsColumn.AllowEdit = false;
             this.gridColumn10.Visible = true;
             this.gridColumn10.VisibleIndex = 7;
-            this.gridColumn10.Width = 117;
+            this.gridColumn10.Width = 88;
             // 
             // txtprecio
             // 
@@ -765,15 +765,15 @@
             this.txtprecio.IsLimpiar = true;
             this.txtprecio.IsSalvar = true;
             this.txtprecio.IsValidar = true;
-            this.txtprecio.Location = new System.Drawing.Point(609, 241);
-            this.txtprecio.Margin = new System.Windows.Forms.Padding(8);
+            this.txtprecio.Location = new System.Drawing.Point(457, 196);
+            this.txtprecio.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.txtprecio.Name = "txtprecio";
             this.txtprecio.Properties.Appearance.Options.UseTextOptions = true;
             this.txtprecio.Properties.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Far;
             this.txtprecio.Properties.Mask.EditMask = "n";
             this.txtprecio.Properties.Mask.MaskType = DevExpress.XtraEditors.Mask.MaskType.Numeric;
             this.txtprecio.Properties.Mask.UseMaskAsDisplayFormat = true;
-            this.txtprecio.Size = new System.Drawing.Size(126, 22);
+            this.txtprecio.Size = new System.Drawing.Size(94, 20);
             this.txtprecio.TabIndex = 10;
             // 
             // txtcantidad
@@ -785,15 +785,15 @@
             this.txtcantidad.IsLimpiar = true;
             this.txtcantidad.IsSalvar = true;
             this.txtcantidad.IsValidar = true;
-            this.txtcantidad.Location = new System.Drawing.Point(741, 241);
-            this.txtcantidad.Margin = new System.Windows.Forms.Padding(6);
+            this.txtcantidad.Location = new System.Drawing.Point(556, 196);
+            this.txtcantidad.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.txtcantidad.Name = "txtcantidad";
             this.txtcantidad.Properties.Appearance.Options.UseTextOptions = true;
             this.txtcantidad.Properties.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Far;
             this.txtcantidad.Properties.Mask.EditMask = "n";
             this.txtcantidad.Properties.Mask.MaskType = DevExpress.XtraEditors.Mask.MaskType.Numeric;
             this.txtcantidad.Properties.Mask.UseMaskAsDisplayFormat = true;
-            this.txtcantidad.Size = new System.Drawing.Size(123, 22);
+            this.txtcantidad.Size = new System.Drawing.Size(92, 20);
             this.txtcantidad.TabIndex = 11;
             this.txtcantidad.Validated += new System.EventHandler(this.txtcantidad_Validated);
             // 
@@ -801,9 +801,10 @@
             // 
             this.evLabel28.AutoSize = true;
             this.evLabel28.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.evLabel28.Location = new System.Drawing.Point(681, 221);
+            this.evLabel28.Location = new System.Drawing.Point(511, 180);
+            this.evLabel28.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.evLabel28.Name = "evLabel28";
-            this.evLabel28.Size = new System.Drawing.Size(54, 17);
+            this.evLabel28.Size = new System.Drawing.Size(43, 13);
             this.evLabel28.TabIndex = 66;
             this.evLabel28.Text = "Precio";
             // 
@@ -811,9 +812,10 @@
             // 
             this.evLabel27.AutoSize = true;
             this.evLabel27.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.evLabel27.Location = new System.Drawing.Point(792, 221);
+            this.evLabel27.Location = new System.Drawing.Point(594, 180);
+            this.evLabel27.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.evLabel27.Name = "evLabel27";
-            this.evLabel27.Size = new System.Drawing.Size(72, 17);
+            this.evLabel27.Size = new System.Drawing.Size(57, 13);
             this.evLabel27.TabIndex = 65;
             this.evLabel27.Text = "Cantidad";
             // 
@@ -826,9 +828,10 @@
             this.txtdescripcion.IsLimpiar = true;
             this.txtdescripcion.IsSalvar = true;
             this.txtdescripcion.IsValidar = true;
-            this.txtdescripcion.Location = new System.Drawing.Point(273, 241);
+            this.txtdescripcion.Location = new System.Drawing.Point(205, 196);
+            this.txtdescripcion.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtdescripcion.Name = "txtdescripcion";
-            this.txtdescripcion.Size = new System.Drawing.Size(331, 22);
+            this.txtdescripcion.Size = new System.Drawing.Size(249, 20);
             this.txtdescripcion.TabIndex = 9;
             this.txtdescripcion.Valor = "";
             // 
@@ -836,9 +839,10 @@
             // 
             this.evLabel26.AutoSize = true;
             this.evLabel26.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.evLabel26.Location = new System.Drawing.Point(273, 221);
+            this.evLabel26.Location = new System.Drawing.Point(205, 180);
+            this.evLabel26.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.evLabel26.Name = "evLabel26";
-            this.evLabel26.Size = new System.Drawing.Size(93, 17);
+            this.evLabel26.Size = new System.Drawing.Size(74, 13);
             this.evLabel26.TabIndex = 63;
             this.evLabel26.Text = "Descripcion";
             // 
@@ -850,9 +854,10 @@
             this.txtrefsup.IsLimpiar = true;
             this.txtrefsup.IsSalvar = true;
             this.txtrefsup.IsValidar = true;
-            this.txtrefsup.Location = new System.Drawing.Point(140, 241);
+            this.txtrefsup.Location = new System.Drawing.Point(105, 196);
+            this.txtrefsup.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtrefsup.Name = "txtrefsup";
-            this.txtrefsup.Size = new System.Drawing.Size(125, 22);
+            this.txtrefsup.Size = new System.Drawing.Size(95, 20);
             this.txtrefsup.TabIndex = 8;
             this.txtrefsup.Valor = "";
             this.txtrefsup.Validated += new System.EventHandler(this.txtrefsup_Validated);
@@ -861,9 +866,10 @@
             // 
             this.evLabel25.AutoSize = true;
             this.evLabel25.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.evLabel25.Location = new System.Drawing.Point(140, 221);
+            this.evLabel25.Location = new System.Drawing.Point(105, 180);
+            this.evLabel25.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.evLabel25.Name = "evLabel25";
-            this.evLabel25.Size = new System.Drawing.Size(87, 17);
+            this.evLabel25.Size = new System.Drawing.Size(69, 13);
             this.evLabel25.TabIndex = 61;
             this.evLabel25.Text = "Referencia";
             // 
@@ -875,9 +881,10 @@
             this.txtreferencia.IsLimpiar = true;
             this.txtreferencia.IsSalvar = true;
             this.txtreferencia.IsValidar = true;
-            this.txtreferencia.Location = new System.Drawing.Point(13, 241);
+            this.txtreferencia.Location = new System.Drawing.Point(10, 196);
+            this.txtreferencia.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtreferencia.Name = "txtreferencia";
-            this.txtreferencia.Size = new System.Drawing.Size(124, 22);
+            this.txtreferencia.Size = new System.Drawing.Size(94, 20);
             this.txtreferencia.TabIndex = 7;
             this.txtreferencia.Valor = "";
             this.txtreferencia.Validated += new System.EventHandler(this.txtreferencia_Validated);
@@ -886,9 +893,10 @@
             // 
             this.linkLabel2.AutoSize = true;
             this.linkLabel2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.linkLabel2.Location = new System.Drawing.Point(10, 221);
+            this.linkLabel2.Location = new System.Drawing.Point(8, 180);
+            this.linkLabel2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.linkLabel2.Name = "linkLabel2";
-            this.linkLabel2.Size = new System.Drawing.Size(58, 17);
+            this.linkLabel2.Size = new System.Drawing.Size(46, 13);
             this.linkLabel2.TabIndex = 58;
             this.linkLabel2.TabStop = true;
             this.linkLabel2.Text = "Buscar";
@@ -900,10 +908,11 @@
             this.tabControl1.Controls.Add(this.tabPage1);
             this.tabControl1.Controls.Add(this.tabPage2);
             this.tabControl1.Controls.Add(this.tabPage3);
-            this.tabControl1.Location = new System.Drawing.Point(872, 358);
+            this.tabControl1.Location = new System.Drawing.Point(654, 291);
+            this.tabControl1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
-            this.tabControl1.Size = new System.Drawing.Size(374, 374);
+            this.tabControl1.Size = new System.Drawing.Size(280, 304);
             this.tabControl1.TabIndex = 56;
             // 
             // tabPage4
@@ -924,10 +933,11 @@
             this.tabPage4.Controls.Add(this.evLabel29);
             this.tabPage4.Controls.Add(this.txtdesc);
             this.tabPage4.Controls.Add(this.evLabel24);
-            this.tabPage4.Location = new System.Drawing.Point(4, 25);
+            this.tabPage4.Location = new System.Drawing.Point(4, 22);
+            this.tabPage4.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.tabPage4.Name = "tabPage4";
-            this.tabPage4.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage4.Size = new System.Drawing.Size(366, 345);
+            this.tabPage4.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tabPage4.Size = new System.Drawing.Size(272, 278);
             this.tabPage4.TabIndex = 3;
             this.tabPage4.Text = "Productos";
             this.tabPage4.UseVisualStyleBackColor = true;
@@ -942,23 +952,25 @@
             this.txtdescuento.IsLimpiar = true;
             this.txtdescuento.IsSalvar = true;
             this.txtdescuento.IsValidar = true;
-            this.txtdescuento.Location = new System.Drawing.Point(171, 145);
+            this.txtdescuento.Location = new System.Drawing.Point(128, 118);
+            this.txtdescuento.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtdescuento.Name = "txtdescuento";
             this.txtdescuento.Properties.Appearance.Options.UseTextOptions = true;
             this.txtdescuento.Properties.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Far;
             this.txtdescuento.Properties.Mask.EditMask = "n";
             this.txtdescuento.Properties.Mask.MaskType = DevExpress.XtraEditors.Mask.MaskType.Numeric;
             this.txtdescuento.Properties.Mask.UseMaskAsDisplayFormat = true;
-            this.txtdescuento.Size = new System.Drawing.Size(189, 22);
+            this.txtdescuento.Size = new System.Drawing.Size(142, 20);
             this.txtdescuento.TabIndex = 15;
             // 
             // evLabel43
             // 
             this.evLabel43.AutoSize = true;
             this.evLabel43.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.evLabel43.Location = new System.Drawing.Point(5, 148);
+            this.evLabel43.Location = new System.Drawing.Point(4, 120);
+            this.evLabel43.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.evLabel43.Name = "evLabel43";
-            this.evLabel43.Size = new System.Drawing.Size(90, 17);
+            this.evLabel43.Size = new System.Drawing.Size(72, 13);
             this.evLabel43.TabIndex = 14;
             this.evLabel43.Text = "Descuento:";
             // 
@@ -972,23 +984,25 @@
             this.txtpdesc.IsLimpiar = true;
             this.txtpdesc.IsSalvar = true;
             this.txtpdesc.IsValidar = true;
-            this.txtpdesc.Location = new System.Drawing.Point(171, 117);
+            this.txtpdesc.Location = new System.Drawing.Point(128, 95);
+            this.txtpdesc.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtpdesc.Name = "txtpdesc";
             this.txtpdesc.Properties.Appearance.Options.UseTextOptions = true;
             this.txtpdesc.Properties.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Far;
             this.txtpdesc.Properties.Mask.EditMask = "n";
             this.txtpdesc.Properties.Mask.MaskType = DevExpress.XtraEditors.Mask.MaskType.Numeric;
             this.txtpdesc.Properties.Mask.UseMaskAsDisplayFormat = true;
-            this.txtpdesc.Size = new System.Drawing.Size(189, 22);
+            this.txtpdesc.Size = new System.Drawing.Size(142, 20);
             this.txtpdesc.TabIndex = 13;
             // 
             // evLabel42
             // 
             this.evLabel42.AutoSize = true;
             this.evLabel42.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.evLabel42.Location = new System.Drawing.Point(5, 120);
+            this.evLabel42.Location = new System.Drawing.Point(4, 98);
+            this.evLabel42.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.evLabel42.Name = "evLabel42";
-            this.evLabel42.Size = new System.Drawing.Size(103, 17);
+            this.evLabel42.Size = new System.Drawing.Size(81, 13);
             this.evLabel42.TabIndex = 12;
             this.evLabel42.Text = "%Descuento:";
             // 
@@ -1002,14 +1016,15 @@
             this.txtpendiente.IsLimpiar = true;
             this.txtpendiente.IsSalvar = true;
             this.txtpendiente.IsValidar = true;
-            this.txtpendiente.Location = new System.Drawing.Point(171, 201);
+            this.txtpendiente.Location = new System.Drawing.Point(128, 163);
+            this.txtpendiente.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtpendiente.Name = "txtpendiente";
             this.txtpendiente.Properties.Appearance.Options.UseTextOptions = true;
             this.txtpendiente.Properties.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Far;
             this.txtpendiente.Properties.Mask.EditMask = "n";
             this.txtpendiente.Properties.Mask.MaskType = DevExpress.XtraEditors.Mask.MaskType.Numeric;
             this.txtpendiente.Properties.Mask.UseMaskAsDisplayFormat = true;
-            this.txtpendiente.Size = new System.Drawing.Size(189, 22);
+            this.txtpendiente.Size = new System.Drawing.Size(142, 20);
             this.txtpendiente.TabIndex = 11;
             // 
             // txtbackorder
@@ -1022,23 +1037,25 @@
             this.txtbackorder.IsLimpiar = true;
             this.txtbackorder.IsSalvar = true;
             this.txtbackorder.IsValidar = true;
-            this.txtbackorder.Location = new System.Drawing.Point(171, 173);
+            this.txtbackorder.Location = new System.Drawing.Point(128, 141);
+            this.txtbackorder.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtbackorder.Name = "txtbackorder";
             this.txtbackorder.Properties.Appearance.Options.UseTextOptions = true;
             this.txtbackorder.Properties.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Far;
             this.txtbackorder.Properties.Mask.EditMask = "n";
             this.txtbackorder.Properties.Mask.MaskType = DevExpress.XtraEditors.Mask.MaskType.Numeric;
             this.txtbackorder.Properties.Mask.UseMaskAsDisplayFormat = true;
-            this.txtbackorder.Size = new System.Drawing.Size(189, 22);
+            this.txtbackorder.Size = new System.Drawing.Size(142, 20);
             this.txtbackorder.TabIndex = 10;
             // 
             // evLabel34
             // 
             this.evLabel34.AutoSize = true;
             this.evLabel34.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.evLabel34.Location = new System.Drawing.Point(7, 204);
+            this.evLabel34.Location = new System.Drawing.Point(5, 166);
+            this.evLabel34.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.evLabel34.Name = "evLabel34";
-            this.evLabel34.Size = new System.Drawing.Size(158, 17);
+            this.evLabel34.Size = new System.Drawing.Size(124, 13);
             this.evLabel34.TabIndex = 9;
             this.evLabel34.Text = "Pendiente x Compra:";
             // 
@@ -1046,9 +1063,10 @@
             // 
             this.evLabel33.AutoSize = true;
             this.evLabel33.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.evLabel33.Location = new System.Drawing.Point(7, 176);
+            this.evLabel33.Location = new System.Drawing.Point(5, 143);
+            this.evLabel33.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.evLabel33.Name = "evLabel33";
-            this.evLabel33.Size = new System.Drawing.Size(146, 17);
+            this.evLabel33.Size = new System.Drawing.Size(115, 13);
             this.evLabel33.TabIndex = 8;
             this.evLabel33.Text = "Back-Orden Venta:";
             // 
@@ -1056,9 +1074,10 @@
             // 
             this.evLabel31.AutoSize = true;
             this.evLabel31.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.evLabel31.Location = new System.Drawing.Point(5, 92);
+            this.evLabel31.Location = new System.Drawing.Point(4, 75);
+            this.evLabel31.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.evLabel31.Name = "evLabel31";
-            this.evLabel31.Size = new System.Drawing.Size(149, 17);
+            this.evLabel31.Size = new System.Drawing.Size(117, 13);
             this.evLabel31.TabIndex = 7;
             this.evLabel31.Text = "Existencia General:";
             // 
@@ -1072,14 +1091,15 @@
             this.txtexistgeneral.IsLimpiar = true;
             this.txtexistgeneral.IsSalvar = true;
             this.txtexistgeneral.IsValidar = true;
-            this.txtexistgeneral.Location = new System.Drawing.Point(171, 89);
+            this.txtexistgeneral.Location = new System.Drawing.Point(128, 72);
+            this.txtexistgeneral.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtexistgeneral.Name = "txtexistgeneral";
             this.txtexistgeneral.Properties.Appearance.Options.UseTextOptions = true;
             this.txtexistgeneral.Properties.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Far;
             this.txtexistgeneral.Properties.Mask.EditMask = "n";
             this.txtexistgeneral.Properties.Mask.MaskType = DevExpress.XtraEditors.Mask.MaskType.Numeric;
             this.txtexistgeneral.Properties.Mask.UseMaskAsDisplayFormat = true;
-            this.txtexistgeneral.Size = new System.Drawing.Size(189, 22);
+            this.txtexistgeneral.Size = new System.Drawing.Size(142, 20);
             this.txtexistgeneral.TabIndex = 6;
             // 
             // txtprec
@@ -1092,23 +1112,25 @@
             this.txtprec.IsLimpiar = true;
             this.txtprec.IsSalvar = true;
             this.txtprec.IsValidar = true;
-            this.txtprec.Location = new System.Drawing.Point(171, 61);
+            this.txtprec.Location = new System.Drawing.Point(128, 50);
+            this.txtprec.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtprec.Name = "txtprec";
             this.txtprec.Properties.Appearance.Options.UseTextOptions = true;
             this.txtprec.Properties.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Far;
             this.txtprec.Properties.Mask.EditMask = "n";
             this.txtprec.Properties.Mask.MaskType = DevExpress.XtraEditors.Mask.MaskType.Numeric;
             this.txtprec.Properties.Mask.UseMaskAsDisplayFormat = true;
-            this.txtprec.Size = new System.Drawing.Size(189, 22);
+            this.txtprec.Size = new System.Drawing.Size(142, 20);
             this.txtprec.TabIndex = 5;
             // 
             // evLabel30
             // 
             this.evLabel30.AutoSize = true;
             this.evLabel30.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.evLabel30.Location = new System.Drawing.Point(5, 64);
+            this.evLabel30.Location = new System.Drawing.Point(4, 52);
+            this.evLabel30.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.evLabel30.Name = "evLabel30";
-            this.evLabel30.Size = new System.Drawing.Size(59, 17);
+            this.evLabel30.Size = new System.Drawing.Size(47, 13);
             this.evLabel30.TabIndex = 4;
             this.evLabel30.Text = "Precio:";
             // 
@@ -1121,9 +1143,10 @@
             this.txtcat.IsLimpiar = true;
             this.txtcat.IsSalvar = true;
             this.txtcat.IsValidar = true;
-            this.txtcat.Location = new System.Drawing.Point(171, 33);
+            this.txtcat.Location = new System.Drawing.Point(128, 27);
+            this.txtcat.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtcat.Name = "txtcat";
-            this.txtcat.Size = new System.Drawing.Size(189, 22);
+            this.txtcat.Size = new System.Drawing.Size(143, 20);
             this.txtcat.TabIndex = 3;
             this.txtcat.Valor = "";
             // 
@@ -1131,9 +1154,10 @@
             // 
             this.evLabel29.AutoSize = true;
             this.evLabel29.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.evLabel29.Location = new System.Drawing.Point(5, 36);
+            this.evLabel29.Location = new System.Drawing.Point(4, 29);
+            this.evLabel29.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.evLabel29.Name = "evLabel29";
-            this.evLabel29.Size = new System.Drawing.Size(83, 17);
+            this.evLabel29.Size = new System.Drawing.Size(65, 13);
             this.evLabel29.TabIndex = 2;
             this.evLabel29.Text = "Categoria:";
             // 
@@ -1146,9 +1170,10 @@
             this.txtdesc.IsLimpiar = true;
             this.txtdesc.IsSalvar = true;
             this.txtdesc.IsValidar = true;
-            this.txtdesc.Location = new System.Drawing.Point(171, 5);
+            this.txtdesc.Location = new System.Drawing.Point(128, 4);
+            this.txtdesc.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtdesc.Name = "txtdesc";
-            this.txtdesc.Size = new System.Drawing.Size(189, 22);
+            this.txtdesc.Size = new System.Drawing.Size(143, 20);
             this.txtdesc.TabIndex = 1;
             this.txtdesc.Valor = "";
             // 
@@ -1156,9 +1181,10 @@
             // 
             this.evLabel24.AutoSize = true;
             this.evLabel24.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.evLabel24.Location = new System.Drawing.Point(5, 8);
+            this.evLabel24.Location = new System.Drawing.Point(4, 6);
+            this.evLabel24.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.evLabel24.Name = "evLabel24";
-            this.evLabel24.Size = new System.Drawing.Size(98, 17);
+            this.evLabel24.Size = new System.Drawing.Size(78, 13);
             this.evLabel24.TabIndex = 0;
             this.evLabel24.Text = "Descripcion:";
             // 
@@ -1184,10 +1210,11 @@
             this.tabPage1.Controls.Add(this.evLabel13);
             this.tabPage1.Controls.Add(this.evTextBox1);
             this.tabPage1.Controls.Add(this.evLabel12);
-            this.tabPage1.Location = new System.Drawing.Point(4, 25);
+            this.tabPage1.Location = new System.Drawing.Point(4, 22);
+            this.tabPage1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.tabPage1.Name = "tabPage1";
-            this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage1.Size = new System.Drawing.Size(366, 345);
+            this.tabPage1.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tabPage1.Size = new System.Drawing.Size(272, 278);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "Precios";
             this.tabPage1.UseVisualStyleBackColor = true;
@@ -1202,24 +1229,25 @@
             this.txtpre6.IsLimpiar = true;
             this.txtpre6.IsSalvar = true;
             this.txtpre6.IsValidar = true;
-            this.txtpre6.Location = new System.Drawing.Point(113, 238);
-            this.txtpre6.Margin = new System.Windows.Forms.Padding(5);
+            this.txtpre6.Location = new System.Drawing.Point(85, 193);
+            this.txtpre6.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtpre6.Name = "txtpre6";
             this.txtpre6.Properties.Appearance.Options.UseTextOptions = true;
             this.txtpre6.Properties.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Far;
             this.txtpre6.Properties.Mask.EditMask = "n";
             this.txtpre6.Properties.Mask.MaskType = DevExpress.XtraEditors.Mask.MaskType.Numeric;
             this.txtpre6.Properties.Mask.UseMaskAsDisplayFormat = true;
-            this.txtpre6.Size = new System.Drawing.Size(147, 22);
+            this.txtpre6.Size = new System.Drawing.Size(110, 20);
             this.txtpre6.TabIndex = 19;
             // 
             // evLabel41
             // 
             this.evLabel41.AutoSize = true;
             this.evLabel41.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.evLabel41.Location = new System.Drawing.Point(7, 241);
+            this.evLabel41.Location = new System.Drawing.Point(5, 196);
+            this.evLabel41.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.evLabel41.Name = "evLabel41";
-            this.evLabel41.Size = new System.Drawing.Size(105, 17);
+            this.evLabel41.Size = new System.Drawing.Size(82, 13);
             this.evLabel41.TabIndex = 18;
             this.evLabel41.Text = "Precio Oferta";
             // 
@@ -1233,24 +1261,25 @@
             this.txtpre5.IsLimpiar = true;
             this.txtpre5.IsSalvar = true;
             this.txtpre5.IsValidar = true;
-            this.txtpre5.Location = new System.Drawing.Point(113, 209);
-            this.txtpre5.Margin = new System.Windows.Forms.Padding(5);
+            this.txtpre5.Location = new System.Drawing.Point(85, 170);
+            this.txtpre5.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtpre5.Name = "txtpre5";
             this.txtpre5.Properties.Appearance.Options.UseTextOptions = true;
             this.txtpre5.Properties.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Far;
             this.txtpre5.Properties.Mask.EditMask = "n";
             this.txtpre5.Properties.Mask.MaskType = DevExpress.XtraEditors.Mask.MaskType.Numeric;
             this.txtpre5.Properties.Mask.UseMaskAsDisplayFormat = true;
-            this.txtpre5.Size = new System.Drawing.Size(147, 22);
+            this.txtpre5.Size = new System.Drawing.Size(110, 20);
             this.txtpre5.TabIndex = 17;
             // 
             // evLabel40
             // 
             this.evLabel40.AutoSize = true;
             this.evLabel40.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.evLabel40.Location = new System.Drawing.Point(7, 212);
+            this.evLabel40.Location = new System.Drawing.Point(5, 172);
+            this.evLabel40.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.evLabel40.Name = "evLabel40";
-            this.evLabel40.Size = new System.Drawing.Size(68, 17);
+            this.evLabel40.Size = new System.Drawing.Size(54, 13);
             this.evLabel40.TabIndex = 16;
             this.evLabel40.Text = "Precio 5";
             // 
@@ -1264,24 +1293,25 @@
             this.txtpre4.IsLimpiar = true;
             this.txtpre4.IsSalvar = true;
             this.txtpre4.IsValidar = true;
-            this.txtpre4.Location = new System.Drawing.Point(113, 180);
-            this.txtpre4.Margin = new System.Windows.Forms.Padding(5);
+            this.txtpre4.Location = new System.Drawing.Point(85, 146);
+            this.txtpre4.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtpre4.Name = "txtpre4";
             this.txtpre4.Properties.Appearance.Options.UseTextOptions = true;
             this.txtpre4.Properties.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Far;
             this.txtpre4.Properties.Mask.EditMask = "n";
             this.txtpre4.Properties.Mask.MaskType = DevExpress.XtraEditors.Mask.MaskType.Numeric;
             this.txtpre4.Properties.Mask.UseMaskAsDisplayFormat = true;
-            this.txtpre4.Size = new System.Drawing.Size(147, 22);
+            this.txtpre4.Size = new System.Drawing.Size(110, 20);
             this.txtpre4.TabIndex = 15;
             // 
             // evLabel39
             // 
             this.evLabel39.AutoSize = true;
             this.evLabel39.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.evLabel39.Location = new System.Drawing.Point(7, 183);
+            this.evLabel39.Location = new System.Drawing.Point(5, 149);
+            this.evLabel39.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.evLabel39.Name = "evLabel39";
-            this.evLabel39.Size = new System.Drawing.Size(68, 17);
+            this.evLabel39.Size = new System.Drawing.Size(54, 13);
             this.evLabel39.TabIndex = 14;
             this.evLabel39.Text = "Precio 4";
             // 
@@ -1295,24 +1325,25 @@
             this.txtpre3.IsLimpiar = true;
             this.txtpre3.IsSalvar = true;
             this.txtpre3.IsValidar = true;
-            this.txtpre3.Location = new System.Drawing.Point(113, 151);
-            this.txtpre3.Margin = new System.Windows.Forms.Padding(5);
+            this.txtpre3.Location = new System.Drawing.Point(85, 123);
+            this.txtpre3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtpre3.Name = "txtpre3";
             this.txtpre3.Properties.Appearance.Options.UseTextOptions = true;
             this.txtpre3.Properties.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Far;
             this.txtpre3.Properties.Mask.EditMask = "n";
             this.txtpre3.Properties.Mask.MaskType = DevExpress.XtraEditors.Mask.MaskType.Numeric;
             this.txtpre3.Properties.Mask.UseMaskAsDisplayFormat = true;
-            this.txtpre3.Size = new System.Drawing.Size(147, 22);
+            this.txtpre3.Size = new System.Drawing.Size(110, 20);
             this.txtpre3.TabIndex = 13;
             // 
             // evLabel38
             // 
             this.evLabel38.AutoSize = true;
             this.evLabel38.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.evLabel38.Location = new System.Drawing.Point(7, 154);
+            this.evLabel38.Location = new System.Drawing.Point(5, 125);
+            this.evLabel38.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.evLabel38.Name = "evLabel38";
-            this.evLabel38.Size = new System.Drawing.Size(68, 17);
+            this.evLabel38.Size = new System.Drawing.Size(54, 13);
             this.evLabel38.TabIndex = 12;
             this.evLabel38.Text = "Precio 3";
             // 
@@ -1326,24 +1357,24 @@
             this.txtprev.IsLimpiar = true;
             this.txtprev.IsSalvar = true;
             this.txtprev.IsValidar = true;
-            this.txtprev.Location = new System.Drawing.Point(113, 64);
-            this.txtprev.Margin = new System.Windows.Forms.Padding(4);
+            this.txtprev.Location = new System.Drawing.Point(85, 52);
             this.txtprev.Name = "txtprev";
             this.txtprev.Properties.Appearance.Options.UseTextOptions = true;
             this.txtprev.Properties.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Far;
             this.txtprev.Properties.Mask.EditMask = "n";
             this.txtprev.Properties.Mask.MaskType = DevExpress.XtraEditors.Mask.MaskType.Numeric;
             this.txtprev.Properties.Mask.UseMaskAsDisplayFormat = true;
-            this.txtprev.Size = new System.Drawing.Size(147, 22);
+            this.txtprev.Size = new System.Drawing.Size(110, 20);
             this.txtprev.TabIndex = 11;
             // 
             // evLabel37
             // 
             this.evLabel37.AutoSize = true;
             this.evLabel37.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.evLabel37.Location = new System.Drawing.Point(7, 67);
+            this.evLabel37.Location = new System.Drawing.Point(5, 54);
+            this.evLabel37.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.evLabel37.Name = "evLabel37";
-            this.evLabel37.Size = new System.Drawing.Size(101, 17);
+            this.evLabel37.Size = new System.Drawing.Size(80, 13);
             this.evLabel37.TabIndex = 10;
             this.evLabel37.Text = "Precio Venta";
             // 
@@ -1357,15 +1388,15 @@
             this.txtexist.IsLimpiar = true;
             this.txtexist.IsSalvar = true;
             this.txtexist.IsValidar = true;
-            this.txtexist.Location = new System.Drawing.Point(113, 267);
-            this.txtexist.Margin = new System.Windows.Forms.Padding(5);
+            this.txtexist.Location = new System.Drawing.Point(85, 217);
+            this.txtexist.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtexist.Name = "txtexist";
             this.txtexist.Properties.Appearance.Options.UseTextOptions = true;
             this.txtexist.Properties.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Far;
             this.txtexist.Properties.Mask.EditMask = "n";
             this.txtexist.Properties.Mask.MaskType = DevExpress.XtraEditors.Mask.MaskType.Numeric;
             this.txtexist.Properties.Mask.UseMaskAsDisplayFormat = true;
-            this.txtexist.Size = new System.Drawing.Size(147, 22);
+            this.txtexist.Size = new System.Drawing.Size(110, 20);
             this.txtexist.TabIndex = 9;
             // 
             // txtpre2
@@ -1378,15 +1409,15 @@
             this.txtpre2.IsLimpiar = true;
             this.txtpre2.IsSalvar = true;
             this.txtpre2.IsValidar = true;
-            this.txtpre2.Location = new System.Drawing.Point(113, 122);
-            this.txtpre2.Margin = new System.Windows.Forms.Padding(5);
+            this.txtpre2.Location = new System.Drawing.Point(85, 99);
+            this.txtpre2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtpre2.Name = "txtpre2";
             this.txtpre2.Properties.Appearance.Options.UseTextOptions = true;
             this.txtpre2.Properties.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Far;
             this.txtpre2.Properties.Mask.EditMask = "n";
             this.txtpre2.Properties.Mask.MaskType = DevExpress.XtraEditors.Mask.MaskType.Numeric;
             this.txtpre2.Properties.Mask.UseMaskAsDisplayFormat = true;
-            this.txtpre2.Size = new System.Drawing.Size(147, 22);
+            this.txtpre2.Size = new System.Drawing.Size(110, 20);
             this.txtpre2.TabIndex = 8;
             // 
             // txtpre1
@@ -1399,15 +1430,14 @@
             this.txtpre1.IsLimpiar = true;
             this.txtpre1.IsSalvar = true;
             this.txtpre1.IsValidar = true;
-            this.txtpre1.Location = new System.Drawing.Point(113, 93);
-            this.txtpre1.Margin = new System.Windows.Forms.Padding(4);
+            this.txtpre1.Location = new System.Drawing.Point(85, 76);
             this.txtpre1.Name = "txtpre1";
             this.txtpre1.Properties.Appearance.Options.UseTextOptions = true;
             this.txtpre1.Properties.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Far;
             this.txtpre1.Properties.Mask.EditMask = "n";
             this.txtpre1.Properties.Mask.MaskType = DevExpress.XtraEditors.Mask.MaskType.Numeric;
             this.txtpre1.Properties.Mask.UseMaskAsDisplayFormat = true;
-            this.txtpre1.Size = new System.Drawing.Size(147, 22);
+            this.txtpre1.Size = new System.Drawing.Size(110, 20);
             this.txtpre1.TabIndex = 7;
             // 
             // evTextBox2
@@ -1419,9 +1449,10 @@
             this.evTextBox2.IsLimpiar = true;
             this.evTextBox2.IsSalvar = true;
             this.evTextBox2.IsValidar = true;
-            this.evTextBox2.Location = new System.Drawing.Point(113, 35);
+            this.evTextBox2.Location = new System.Drawing.Point(85, 28);
+            this.evTextBox2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.evTextBox2.Name = "evTextBox2";
-            this.evTextBox2.Size = new System.Drawing.Size(221, 22);
+            this.evTextBox2.Size = new System.Drawing.Size(167, 20);
             this.evTextBox2.TabIndex = 6;
             this.evTextBox2.Valor = "";
             // 
@@ -1429,9 +1460,10 @@
             // 
             this.evLabel16.AutoSize = true;
             this.evLabel16.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.evLabel16.Location = new System.Drawing.Point(7, 270);
+            this.evLabel16.Location = new System.Drawing.Point(5, 219);
+            this.evLabel16.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.evLabel16.Name = "evLabel16";
-            this.evLabel16.Size = new System.Drawing.Size(89, 17);
+            this.evLabel16.Size = new System.Drawing.Size(72, 13);
             this.evLabel16.TabIndex = 5;
             this.evLabel16.Text = "Excistencia";
             // 
@@ -1439,9 +1471,10 @@
             // 
             this.evLabel15.AutoSize = true;
             this.evLabel15.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.evLabel15.Location = new System.Drawing.Point(7, 125);
+            this.evLabel15.Location = new System.Drawing.Point(5, 102);
+            this.evLabel15.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.evLabel15.Name = "evLabel15";
-            this.evLabel15.Size = new System.Drawing.Size(68, 17);
+            this.evLabel15.Size = new System.Drawing.Size(54, 13);
             this.evLabel15.TabIndex = 4;
             this.evLabel15.Text = "Precio 2";
             // 
@@ -1449,9 +1482,10 @@
             // 
             this.evLabel14.AutoSize = true;
             this.evLabel14.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.evLabel14.Location = new System.Drawing.Point(7, 96);
+            this.evLabel14.Location = new System.Drawing.Point(5, 78);
+            this.evLabel14.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.evLabel14.Name = "evLabel14";
-            this.evLabel14.Size = new System.Drawing.Size(68, 17);
+            this.evLabel14.Size = new System.Drawing.Size(54, 13);
             this.evLabel14.TabIndex = 3;
             this.evLabel14.Text = "Precio 1";
             // 
@@ -1459,9 +1493,10 @@
             // 
             this.evLabel13.AutoSize = true;
             this.evLabel13.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.evLabel13.Location = new System.Drawing.Point(7, 38);
+            this.evLabel13.Location = new System.Drawing.Point(5, 31);
+            this.evLabel13.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.evLabel13.Name = "evLabel13";
-            this.evLabel13.Size = new System.Drawing.Size(93, 17);
+            this.evLabel13.Size = new System.Drawing.Size(74, 13);
             this.evLabel13.TabIndex = 2;
             this.evLabel13.Text = "Descripcion";
             // 
@@ -1474,9 +1509,10 @@
             this.evTextBox1.IsLimpiar = true;
             this.evTextBox1.IsSalvar = true;
             this.evTextBox1.IsValidar = true;
-            this.evTextBox1.Location = new System.Drawing.Point(113, 6);
+            this.evTextBox1.Location = new System.Drawing.Point(85, 5);
+            this.evTextBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.evTextBox1.Name = "evTextBox1";
-            this.evTextBox1.Size = new System.Drawing.Size(147, 22);
+            this.evTextBox1.Size = new System.Drawing.Size(111, 20);
             this.evTextBox1.TabIndex = 1;
             this.evTextBox1.Valor = "";
             // 
@@ -1484,31 +1520,31 @@
             // 
             this.evLabel12.AutoSize = true;
             this.evLabel12.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.evLabel12.Location = new System.Drawing.Point(7, 9);
+            this.evLabel12.Location = new System.Drawing.Point(5, 7);
+            this.evLabel12.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.evLabel12.Name = "evLabel12";
-            this.evLabel12.Size = new System.Drawing.Size(58, 17);
+            this.evLabel12.Size = new System.Drawing.Size(46, 13);
             this.evLabel12.TabIndex = 0;
             this.evLabel12.Text = "Codigo";
             // 
             // tabPage2
             // 
             this.tabPage2.Controls.Add(this.gridControl1);
-            this.tabPage2.Location = new System.Drawing.Point(4, 25);
+            this.tabPage2.Location = new System.Drawing.Point(4, 22);
+            this.tabPage2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.tabPage2.Name = "tabPage2";
-            this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage2.Size = new System.Drawing.Size(366, 345);
+            this.tabPage2.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tabPage2.Size = new System.Drawing.Size(272, 278);
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "Existencia Deposito";
             this.tabPage2.UseVisualStyleBackColor = true;
             // 
             // gridControl1
             // 
-            this.gridControl1.EmbeddedNavigator.Margin = new System.Windows.Forms.Padding(4);
-            this.gridControl1.Location = new System.Drawing.Point(7, 5);
+            this.gridControl1.Location = new System.Drawing.Point(5, 4);
             this.gridControl1.MainView = this.gridView1;
-            this.gridControl1.Margin = new System.Windows.Forms.Padding(4);
             this.gridControl1.Name = "gridControl1";
-            this.gridControl1.Size = new System.Drawing.Size(354, 321);
+            this.gridControl1.Size = new System.Drawing.Size(266, 261);
             this.gridControl1.TabIndex = 0;
             this.gridControl1.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.gridView1});
@@ -1518,7 +1554,7 @@
             this.gridView1.Columns.AddRange(new DevExpress.XtraGrid.Columns.GridColumn[] {
             this.gridColumn1,
             this.gridColumn2});
-            this.gridView1.DetailHeight = 437;
+            this.gridView1.DetailHeight = 355;
             this.gridView1.GridControl = this.gridControl1;
             this.gridView1.Name = "gridView1";
             this.gridView1.OptionsView.ColumnAutoWidth = false;
@@ -1529,23 +1565,23 @@
             // 
             this.gridColumn1.Caption = "Deposito";
             this.gridColumn1.FieldName = "almacen";
-            this.gridColumn1.MinWidth = 25;
+            this.gridColumn1.MinWidth = 19;
             this.gridColumn1.Name = "gridColumn1";
             this.gridColumn1.OptionsColumn.AllowEdit = false;
             this.gridColumn1.Visible = true;
             this.gridColumn1.VisibleIndex = 0;
-            this.gridColumn1.Width = 225;
+            this.gridColumn1.Width = 169;
             // 
             // gridColumn2
             // 
             this.gridColumn2.Caption = "Exist.";
             this.gridColumn2.FieldName = "f_existencia";
-            this.gridColumn2.MinWidth = 25;
+            this.gridColumn2.MinWidth = 19;
             this.gridColumn2.Name = "gridColumn2";
             this.gridColumn2.OptionsColumn.AllowEdit = false;
             this.gridColumn2.Visible = true;
             this.gridColumn2.VisibleIndex = 1;
-            this.gridColumn2.Width = 97;
+            this.gridColumn2.Width = 73;
             // 
             // tabPage3
             // 
@@ -1554,10 +1590,11 @@
             this.tabPage3.Controls.Add(this.gridControl3);
             this.tabPage3.Controls.Add(this.evLabel36);
             this.tabPage3.Controls.Add(this.evLabel35);
-            this.tabPage3.Location = new System.Drawing.Point(4, 25);
+            this.tabPage3.Location = new System.Drawing.Point(4, 22);
+            this.tabPage3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.tabPage3.Name = "tabPage3";
-            this.tabPage3.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage3.Size = new System.Drawing.Size(366, 345);
+            this.tabPage3.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tabPage3.Size = new System.Drawing.Size(272, 278);
             this.tabPage3.TabIndex = 2;
             this.tabPage3.Text = "Historial Cliente";
             this.tabPage3.UseVisualStyleBackColor = true;
@@ -1570,9 +1607,10 @@
             this.evTextBox6.IsLimpiar = true;
             this.evTextBox6.IsSalvar = true;
             this.evTextBox6.IsValidar = true;
-            this.evTextBox6.Location = new System.Drawing.Point(111, 30);
+            this.evTextBox6.Location = new System.Drawing.Point(83, 24);
+            this.evTextBox6.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.evTextBox6.Name = "evTextBox6";
-            this.evTextBox6.Size = new System.Drawing.Size(249, 22);
+            this.evTextBox6.Size = new System.Drawing.Size(188, 20);
             this.evTextBox6.TabIndex = 4;
             this.evTextBox6.Valor = "";
             // 
@@ -1584,24 +1622,28 @@
             this.evTextBox5.IsLimpiar = true;
             this.evTextBox5.IsSalvar = true;
             this.evTextBox5.IsValidar = true;
-            this.evTextBox5.Location = new System.Drawing.Point(111, 5);
+            this.evTextBox5.Location = new System.Drawing.Point(83, 4);
+            this.evTextBox5.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.evTextBox5.Name = "evTextBox5";
-            this.evTextBox5.Size = new System.Drawing.Size(249, 22);
+            this.evTextBox5.Size = new System.Drawing.Size(188, 20);
             this.evTextBox5.TabIndex = 3;
             this.evTextBox5.Valor = "";
             // 
             // gridControl3
             // 
-            this.gridControl3.Location = new System.Drawing.Point(6, 57);
+            this.gridControl3.EmbeddedNavigator.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.gridControl3.Location = new System.Drawing.Point(4, 46);
             this.gridControl3.MainView = this.gridView3;
+            this.gridControl3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.gridControl3.Name = "gridControl3";
-            this.gridControl3.Size = new System.Drawing.Size(354, 282);
+            this.gridControl3.Size = new System.Drawing.Size(266, 229);
             this.gridControl3.TabIndex = 2;
             this.gridControl3.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.gridView3});
             // 
             // gridView3
             // 
+            this.gridView3.DetailHeight = 284;
             this.gridView3.GridControl = this.gridControl3;
             this.gridView3.Name = "gridView3";
             this.gridView3.OptionsView.ColumnAutoWidth = false;
@@ -1612,9 +1654,10 @@
             // 
             this.evLabel36.AutoSize = true;
             this.evLabel36.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.evLabel36.Location = new System.Drawing.Point(6, 33);
+            this.evLabel36.Location = new System.Drawing.Point(4, 27);
+            this.evLabel36.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.evLabel36.Name = "evLabel36";
-            this.evLabel36.Size = new System.Drawing.Size(62, 17);
+            this.evLabel36.Size = new System.Drawing.Size(50, 13);
             this.evLabel36.TabIndex = 1;
             this.evLabel36.Text = "Fecha :";
             // 
@@ -1622,18 +1665,20 @@
             // 
             this.evLabel35.AutoSize = true;
             this.evLabel35.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.evLabel35.Location = new System.Drawing.Point(6, 8);
+            this.evLabel35.Location = new System.Drawing.Point(4, 6);
+            this.evLabel35.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.evLabel35.Name = "evLabel35";
-            this.evLabel35.Size = new System.Drawing.Size(98, 17);
+            this.evLabel35.Size = new System.Drawing.Size(78, 13);
             this.evLabel35.TabIndex = 0;
             this.evLabel35.Text = "Factura No.:";
             // 
             // button8
             // 
             this.button8.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button8.Location = new System.Drawing.Point(669, 696);
+            this.button8.Location = new System.Drawing.Point(502, 566);
+            this.button8.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.button8.Name = "button8";
-            this.button8.Size = new System.Drawing.Size(193, 32);
+            this.button8.Size = new System.Drawing.Size(145, 26);
             this.button8.TabIndex = 54;
             this.button8.Text = "Salir [ESC]";
             this.button8.UseVisualStyleBackColor = true;
@@ -1641,18 +1686,20 @@
             // 
             // button6
             // 
-            this.button6.Location = new System.Drawing.Point(174, 696);
+            this.button6.Location = new System.Drawing.Point(130, 566);
+            this.button6.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(158, 32);
+            this.button6.Size = new System.Drawing.Size(118, 26);
             this.button6.TabIndex = 51;
             this.button6.Text = "Ver Imagen";
             this.button6.UseVisualStyleBackColor = true;
             // 
             // button7
             // 
-            this.button7.Location = new System.Drawing.Point(339, 696);
+            this.button7.Location = new System.Drawing.Point(254, 566);
+            this.button7.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.button7.Name = "button7";
-            this.button7.Size = new System.Drawing.Size(158, 32);
+            this.button7.Size = new System.Drawing.Size(118, 26);
             this.button7.TabIndex = 49;
             this.button7.Text = "Borrar Linea [F6]";
             this.button7.UseVisualStyleBackColor = true;
@@ -1660,9 +1707,10 @@
             // 
             // button5
             // 
-            this.button5.Location = new System.Drawing.Point(9, 656);
+            this.button5.Location = new System.Drawing.Point(7, 533);
+            this.button5.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(158, 32);
+            this.button5.Size = new System.Drawing.Size(118, 26);
             this.button5.TabIndex = 47;
             this.button5.Text = "Buscar Producto [F2]";
             this.button5.UseVisualStyleBackColor = true;
@@ -1670,9 +1718,10 @@
             // 
             // button4
             // 
-            this.button4.Location = new System.Drawing.Point(9, 696);
+            this.button4.Location = new System.Drawing.Point(7, 566);
+            this.button4.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(158, 32);
+            this.button4.Size = new System.Drawing.Size(118, 26);
             this.button4.TabIndex = 46;
             this.button4.Text = "Cambiar Cantidad [F3]";
             this.button4.UseVisualStyleBackColor = true;
@@ -1680,9 +1729,10 @@
             // 
             // button3
             // 
-            this.button3.Location = new System.Drawing.Point(174, 656);
+            this.button3.Location = new System.Drawing.Point(130, 533);
+            this.button3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(158, 32);
+            this.button3.Size = new System.Drawing.Size(118, 26);
             this.button3.TabIndex = 45;
             this.button3.Text = "Descuento Items [F5]";
             this.button3.UseVisualStyleBackColor = true;
@@ -1690,9 +1740,10 @@
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(339, 656);
+            this.button2.Location = new System.Drawing.Point(254, 533);
+            this.button2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(158, 32);
+            this.button2.Size = new System.Drawing.Size(118, 26);
             this.button2.TabIndex = 43;
             this.button2.Text = "Cambiar Precio [F10]";
             this.button2.UseVisualStyleBackColor = true;
@@ -1701,9 +1752,10 @@
             // button1
             // 
             this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(669, 656);
+            this.button1.Location = new System.Drawing.Point(502, 533);
+            this.button1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(193, 32);
+            this.button1.Size = new System.Drawing.Size(145, 26);
             this.button1.TabIndex = 42;
             this.button1.Text = "Salvar Cotizacion [F11]";
             this.button1.UseVisualStyleBackColor = true;
@@ -1733,9 +1785,11 @@
             this.groupBox1.Controls.Add(this.evLabel5);
             this.groupBox1.Controls.Add(this.evLabel4);
             this.groupBox1.Controls.Add(this.evLabel3);
-            this.groupBox1.Location = new System.Drawing.Point(872, 86);
+            this.groupBox1.Location = new System.Drawing.Point(654, 70);
+            this.groupBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(375, 266);
+            this.groupBox1.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.groupBox1.Size = new System.Drawing.Size(281, 216);
             this.groupBox1.TabIndex = 40;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Totalizacion";
@@ -1750,15 +1804,15 @@
             this.txttotalneto.IsLimpiar = true;
             this.txttotalneto.IsSalvar = true;
             this.txttotalneto.IsValidar = true;
-            this.txttotalneto.Location = new System.Drawing.Point(135, 230);
-            this.txttotalneto.Margin = new System.Windows.Forms.Padding(6);
+            this.txttotalneto.Location = new System.Drawing.Point(101, 187);
+            this.txttotalneto.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.txttotalneto.Name = "txttotalneto";
             this.txttotalneto.Properties.Appearance.Options.UseTextOptions = true;
             this.txttotalneto.Properties.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Far;
             this.txttotalneto.Properties.Mask.EditMask = "n";
             this.txttotalneto.Properties.Mask.MaskType = DevExpress.XtraEditors.Mask.MaskType.Numeric;
             this.txttotalneto.Properties.Mask.UseMaskAsDisplayFormat = true;
-            this.txttotalneto.Size = new System.Drawing.Size(229, 22);
+            this.txttotalneto.Size = new System.Drawing.Size(172, 20);
             this.txttotalneto.TabIndex = 23;
             // 
             // txtitbis
@@ -1771,15 +1825,15 @@
             this.txtitbis.IsLimpiar = true;
             this.txtitbis.IsSalvar = true;
             this.txtitbis.IsValidar = true;
-            this.txtitbis.Location = new System.Drawing.Point(135, 204);
-            this.txtitbis.Margin = new System.Windows.Forms.Padding(6);
+            this.txtitbis.Location = new System.Drawing.Point(101, 166);
+            this.txtitbis.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.txtitbis.Name = "txtitbis";
             this.txtitbis.Properties.Appearance.Options.UseTextOptions = true;
             this.txtitbis.Properties.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Far;
             this.txtitbis.Properties.Mask.EditMask = "n";
             this.txtitbis.Properties.Mask.MaskType = DevExpress.XtraEditors.Mask.MaskType.Numeric;
             this.txtitbis.Properties.Mask.UseMaskAsDisplayFormat = true;
-            this.txtitbis.Size = new System.Drawing.Size(229, 22);
+            this.txtitbis.Size = new System.Drawing.Size(172, 20);
             this.txtitbis.TabIndex = 22;
             // 
             // txtflete
@@ -1792,15 +1846,15 @@
             this.txtflete.IsLimpiar = true;
             this.txtflete.IsSalvar = true;
             this.txtflete.IsValidar = true;
-            this.txtflete.Location = new System.Drawing.Point(210, 124);
-            this.txtflete.Margin = new System.Windows.Forms.Padding(8);
+            this.txtflete.Location = new System.Drawing.Point(158, 101);
+            this.txtflete.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.txtflete.Name = "txtflete";
             this.txtflete.Properties.Appearance.Options.UseTextOptions = true;
             this.txtflete.Properties.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Far;
             this.txtflete.Properties.Mask.EditMask = "n";
             this.txtflete.Properties.Mask.MaskType = DevExpress.XtraEditors.Mask.MaskType.Numeric;
             this.txtflete.Properties.Mask.UseMaskAsDisplayFormat = true;
-            this.txtflete.Size = new System.Drawing.Size(154, 22);
+            this.txtflete.Size = new System.Drawing.Size(116, 20);
             this.txtflete.TabIndex = 21;
             // 
             // txtpflete
@@ -1812,15 +1866,15 @@
             this.txtpflete.IsLimpiar = true;
             this.txtpflete.IsSalvar = true;
             this.txtpflete.IsValidar = true;
-            this.txtpflete.Location = new System.Drawing.Point(135, 124);
-            this.txtpflete.Margin = new System.Windows.Forms.Padding(6);
+            this.txtpflete.Location = new System.Drawing.Point(101, 101);
+            this.txtpflete.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.txtpflete.Name = "txtpflete";
             this.txtpflete.Properties.Appearance.Options.UseTextOptions = true;
             this.txtpflete.Properties.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Far;
             this.txtpflete.Properties.Mask.EditMask = "P";
             this.txtpflete.Properties.Mask.MaskType = DevExpress.XtraEditors.Mask.MaskType.Numeric;
             this.txtpflete.Properties.Mask.UseMaskAsDisplayFormat = true;
-            this.txtpflete.Size = new System.Drawing.Size(71, 22);
+            this.txtpflete.Size = new System.Drawing.Size(53, 20);
             this.txtpflete.TabIndex = 20;
             // 
             // txtbaseimponible
@@ -1833,15 +1887,15 @@
             this.txtbaseimponible.IsLimpiar = true;
             this.txtbaseimponible.IsSalvar = true;
             this.txtbaseimponible.IsValidar = true;
-            this.txtbaseimponible.Location = new System.Drawing.Point(135, 178);
-            this.txtbaseimponible.Margin = new System.Windows.Forms.Padding(5);
+            this.txtbaseimponible.Location = new System.Drawing.Point(101, 145);
+            this.txtbaseimponible.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtbaseimponible.Name = "txtbaseimponible";
             this.txtbaseimponible.Properties.Appearance.Options.UseTextOptions = true;
             this.txtbaseimponible.Properties.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Far;
             this.txtbaseimponible.Properties.Mask.EditMask = "n";
             this.txtbaseimponible.Properties.Mask.MaskType = DevExpress.XtraEditors.Mask.MaskType.Numeric;
             this.txtbaseimponible.Properties.Mask.UseMaskAsDisplayFormat = true;
-            this.txtbaseimponible.Size = new System.Drawing.Size(229, 22);
+            this.txtbaseimponible.Size = new System.Drawing.Size(172, 20);
             this.txtbaseimponible.TabIndex = 19;
             // 
             // txtmontoexento
@@ -1854,15 +1908,15 @@
             this.txtmontoexento.IsLimpiar = true;
             this.txtmontoexento.IsSalvar = true;
             this.txtmontoexento.IsValidar = true;
-            this.txtmontoexento.Location = new System.Drawing.Point(135, 151);
-            this.txtmontoexento.Margin = new System.Windows.Forms.Padding(5);
+            this.txtmontoexento.Location = new System.Drawing.Point(101, 123);
+            this.txtmontoexento.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtmontoexento.Name = "txtmontoexento";
             this.txtmontoexento.Properties.Appearance.Options.UseTextOptions = true;
             this.txtmontoexento.Properties.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Far;
             this.txtmontoexento.Properties.Mask.EditMask = "n";
             this.txtmontoexento.Properties.Mask.MaskType = DevExpress.XtraEditors.Mask.MaskType.Numeric;
             this.txtmontoexento.Properties.Mask.UseMaskAsDisplayFormat = true;
-            this.txtmontoexento.Size = new System.Drawing.Size(229, 22);
+            this.txtmontoexento.Size = new System.Drawing.Size(172, 20);
             this.txtmontoexento.TabIndex = 18;
             // 
             // txtdescuentoitem
@@ -1875,15 +1929,15 @@
             this.txtdescuentoitem.IsLimpiar = true;
             this.txtdescuentoitem.IsSalvar = true;
             this.txtdescuentoitem.IsValidar = true;
-            this.txtdescuentoitem.Location = new System.Drawing.Point(135, 97);
-            this.txtdescuentoitem.Margin = new System.Windows.Forms.Padding(5);
+            this.txtdescuentoitem.Location = new System.Drawing.Point(101, 79);
+            this.txtdescuentoitem.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtdescuentoitem.Name = "txtdescuentoitem";
             this.txtdescuentoitem.Properties.Appearance.Options.UseTextOptions = true;
             this.txtdescuentoitem.Properties.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Far;
             this.txtdescuentoitem.Properties.Mask.EditMask = "n";
             this.txtdescuentoitem.Properties.Mask.MaskType = DevExpress.XtraEditors.Mask.MaskType.Numeric;
             this.txtdescuentoitem.Properties.Mask.UseMaskAsDisplayFormat = true;
-            this.txtdescuentoitem.Size = new System.Drawing.Size(229, 22);
+            this.txtdescuentoitem.Size = new System.Drawing.Size(172, 20);
             this.txtdescuentoitem.TabIndex = 17;
             // 
             // txtdes2
@@ -1896,15 +1950,15 @@
             this.txtdes2.IsLimpiar = true;
             this.txtdes2.IsSalvar = true;
             this.txtdes2.IsValidar = true;
-            this.txtdes2.Location = new System.Drawing.Point(210, 70);
-            this.txtdes2.Margin = new System.Windows.Forms.Padding(8);
+            this.txtdes2.Location = new System.Drawing.Point(158, 57);
+            this.txtdes2.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.txtdes2.Name = "txtdes2";
             this.txtdes2.Properties.Appearance.Options.UseTextOptions = true;
             this.txtdes2.Properties.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Far;
             this.txtdes2.Properties.Mask.EditMask = "n";
             this.txtdes2.Properties.Mask.MaskType = DevExpress.XtraEditors.Mask.MaskType.Numeric;
             this.txtdes2.Properties.Mask.UseMaskAsDisplayFormat = true;
-            this.txtdes2.Size = new System.Drawing.Size(154, 22);
+            this.txtdes2.Size = new System.Drawing.Size(116, 20);
             this.txtdes2.TabIndex = 16;
             // 
             // txtpdesc2
@@ -1916,15 +1970,15 @@
             this.txtpdesc2.IsLimpiar = true;
             this.txtpdesc2.IsSalvar = true;
             this.txtpdesc2.IsValidar = true;
-            this.txtpdesc2.Location = new System.Drawing.Point(135, 70);
-            this.txtpdesc2.Margin = new System.Windows.Forms.Padding(6);
+            this.txtpdesc2.Location = new System.Drawing.Point(101, 57);
+            this.txtpdesc2.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.txtpdesc2.Name = "txtpdesc2";
             this.txtpdesc2.Properties.Appearance.Options.UseTextOptions = true;
             this.txtpdesc2.Properties.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Far;
             this.txtpdesc2.Properties.Mask.EditMask = "P";
             this.txtpdesc2.Properties.Mask.MaskType = DevExpress.XtraEditors.Mask.MaskType.Numeric;
             this.txtpdesc2.Properties.Mask.UseMaskAsDisplayFormat = true;
-            this.txtpdesc2.Size = new System.Drawing.Size(71, 22);
+            this.txtpdesc2.Size = new System.Drawing.Size(53, 20);
             this.txtpdesc2.TabIndex = 15;
             this.txtpdesc2.Validated += new System.EventHandler(this.txtpdesc2_Validated);
             // 
@@ -1938,15 +1992,15 @@
             this.txtdesc1.IsLimpiar = true;
             this.txtdesc1.IsSalvar = true;
             this.txtdesc1.IsValidar = true;
-            this.txtdesc1.Location = new System.Drawing.Point(210, 44);
-            this.txtdesc1.Margin = new System.Windows.Forms.Padding(6);
+            this.txtdesc1.Location = new System.Drawing.Point(158, 36);
+            this.txtdesc1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.txtdesc1.Name = "txtdesc1";
             this.txtdesc1.Properties.Appearance.Options.UseTextOptions = true;
             this.txtdesc1.Properties.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Far;
             this.txtdesc1.Properties.Mask.EditMask = "n";
             this.txtdesc1.Properties.Mask.MaskType = DevExpress.XtraEditors.Mask.MaskType.Numeric;
             this.txtdesc1.Properties.Mask.UseMaskAsDisplayFormat = true;
-            this.txtdesc1.Size = new System.Drawing.Size(154, 22);
+            this.txtdesc1.Size = new System.Drawing.Size(116, 20);
             this.txtdesc1.TabIndex = 14;
             // 
             // txtpdesc1
@@ -1958,15 +2012,15 @@
             this.txtpdesc1.IsLimpiar = true;
             this.txtpdesc1.IsSalvar = true;
             this.txtpdesc1.IsValidar = true;
-            this.txtpdesc1.Location = new System.Drawing.Point(135, 44);
-            this.txtpdesc1.Margin = new System.Windows.Forms.Padding(5);
+            this.txtpdesc1.Location = new System.Drawing.Point(101, 36);
+            this.txtpdesc1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtpdesc1.Name = "txtpdesc1";
             this.txtpdesc1.Properties.Appearance.Options.UseTextOptions = true;
             this.txtpdesc1.Properties.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Far;
             this.txtpdesc1.Properties.Mask.EditMask = "P";
             this.txtpdesc1.Properties.Mask.MaskType = DevExpress.XtraEditors.Mask.MaskType.Numeric;
             this.txtpdesc1.Properties.Mask.UseMaskAsDisplayFormat = true;
-            this.txtpdesc1.Size = new System.Drawing.Size(71, 22);
+            this.txtpdesc1.Size = new System.Drawing.Size(53, 20);
             this.txtpdesc1.TabIndex = 13;
             this.txtpdesc1.Validated += new System.EventHandler(this.txtpdesc1_Validated);
             // 
@@ -1980,24 +2034,24 @@
             this.txttotalbruto.IsLimpiar = true;
             this.txttotalbruto.IsSalvar = true;
             this.txttotalbruto.IsValidar = true;
-            this.txttotalbruto.Location = new System.Drawing.Point(135, 18);
-            this.txttotalbruto.Margin = new System.Windows.Forms.Padding(4);
+            this.txttotalbruto.Location = new System.Drawing.Point(101, 15);
             this.txttotalbruto.Name = "txttotalbruto";
             this.txttotalbruto.Properties.Appearance.Options.UseTextOptions = true;
             this.txttotalbruto.Properties.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Far;
             this.txttotalbruto.Properties.Mask.EditMask = "n";
             this.txttotalbruto.Properties.Mask.MaskType = DevExpress.XtraEditors.Mask.MaskType.Numeric;
             this.txttotalbruto.Properties.Mask.UseMaskAsDisplayFormat = true;
-            this.txttotalbruto.Size = new System.Drawing.Size(229, 22);
+            this.txttotalbruto.Size = new System.Drawing.Size(172, 20);
             this.txttotalbruto.TabIndex = 12;
             // 
             // evLabel11
             // 
             this.evLabel11.AutoSize = true;
             this.evLabel11.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.evLabel11.Location = new System.Drawing.Point(43, 233);
+            this.evLabel11.Location = new System.Drawing.Point(32, 189);
+            this.evLabel11.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.evLabel11.Name = "evLabel11";
-            this.evLabel11.Size = new System.Drawing.Size(89, 17);
+            this.evLabel11.Size = new System.Drawing.Size(71, 13);
             this.evLabel11.TabIndex = 11;
             this.evLabel11.Text = "Total Neto:";
             // 
@@ -2005,9 +2059,10 @@
             // 
             this.evLabel10.AutoSize = true;
             this.evLabel10.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.evLabel10.Location = new System.Drawing.Point(89, 207);
+            this.evLabel10.Location = new System.Drawing.Point(67, 168);
+            this.evLabel10.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.evLabel10.Name = "evLabel10";
-            this.evLabel10.Size = new System.Drawing.Size(43, 17);
+            this.evLabel10.Size = new System.Drawing.Size(35, 13);
             this.evLabel10.TabIndex = 10;
             this.evLabel10.Text = "Itbis:";
             // 
@@ -2015,9 +2070,10 @@
             // 
             this.evLabel9.AutoSize = true;
             this.evLabel9.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.evLabel9.Location = new System.Drawing.Point(9, 181);
+            this.evLabel9.Location = new System.Drawing.Point(7, 147);
+            this.evLabel9.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.evLabel9.Name = "evLabel9";
-            this.evLabel9.Size = new System.Drawing.Size(123, 17);
+            this.evLabel9.Size = new System.Drawing.Size(97, 13);
             this.evLabel9.TabIndex = 9;
             this.evLabel9.Text = "Base Imponible:";
             // 
@@ -2025,9 +2081,10 @@
             // 
             this.evLabel8.AutoSize = true;
             this.evLabel8.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.evLabel8.Location = new System.Drawing.Point(21, 154);
+            this.evLabel8.Location = new System.Drawing.Point(16, 125);
+            this.evLabel8.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.evLabel8.Name = "evLabel8";
-            this.evLabel8.Size = new System.Drawing.Size(111, 17);
+            this.evLabel8.Size = new System.Drawing.Size(89, 13);
             this.evLabel8.TabIndex = 8;
             this.evLabel8.Text = "Monto Exento:";
             // 
@@ -2035,9 +2092,10 @@
             // 
             this.evLabel7.AutoSize = true;
             this.evLabel7.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.evLabel7.Location = new System.Drawing.Point(83, 127);
+            this.evLabel7.Location = new System.Drawing.Point(62, 103);
+            this.evLabel7.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.evLabel7.Name = "evLabel7";
-            this.evLabel7.Size = new System.Drawing.Size(49, 17);
+            this.evLabel7.Size = new System.Drawing.Size(39, 13);
             this.evLabel7.TabIndex = 7;
             this.evLabel7.Text = "Flete:";
             // 
@@ -2045,9 +2103,10 @@
             // 
             this.evLabel6.AutoSize = true;
             this.evLabel6.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.evLabel6.Location = new System.Drawing.Point(35, 100);
+            this.evLabel6.Location = new System.Drawing.Point(26, 81);
+            this.evLabel6.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.evLabel6.Name = "evLabel6";
-            this.evLabel6.Size = new System.Drawing.Size(97, 17);
+            this.evLabel6.Size = new System.Drawing.Size(78, 13);
             this.evLabel6.TabIndex = 6;
             this.evLabel6.Text = "Desc. Items:";
             // 
@@ -2055,9 +2114,10 @@
             // 
             this.evLabel5.AutoSize = true;
             this.evLabel5.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.evLabel5.Location = new System.Drawing.Point(28, 73);
+            this.evLabel5.Location = new System.Drawing.Point(21, 59);
+            this.evLabel5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.evLabel5.Name = "evLabel5";
-            this.evLabel5.Size = new System.Drawing.Size(104, 17);
+            this.evLabel5.Size = new System.Drawing.Size(83, 13);
             this.evLabel5.TabIndex = 5;
             this.evLabel5.Text = "Descuento 2:";
             // 
@@ -2065,9 +2125,10 @@
             // 
             this.evLabel4.AutoSize = true;
             this.evLabel4.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.evLabel4.Location = new System.Drawing.Point(28, 47);
+            this.evLabel4.Location = new System.Drawing.Point(21, 38);
+            this.evLabel4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.evLabel4.Name = "evLabel4";
-            this.evLabel4.Size = new System.Drawing.Size(104, 17);
+            this.evLabel4.Size = new System.Drawing.Size(83, 13);
             this.evLabel4.TabIndex = 4;
             this.evLabel4.Text = "Descuento 1:";
             // 
@@ -2075,9 +2136,10 @@
             // 
             this.evLabel3.AutoSize = true;
             this.evLabel3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.evLabel3.Location = new System.Drawing.Point(38, 21);
+            this.evLabel3.Location = new System.Drawing.Point(28, 17);
+            this.evLabel3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.evLabel3.Name = "evLabel3";
-            this.evLabel3.Size = new System.Drawing.Size(94, 17);
+            this.evLabel3.Size = new System.Drawing.Size(74, 13);
             this.evLabel3.TabIndex = 3;
             this.evLabel3.Text = "Total Bruto:";
             // 
@@ -2085,19 +2147,20 @@
             // 
             this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.panel1.Controls.Add(this.lbltitulo);
-            this.panel1.Location = new System.Drawing.Point(4, 5);
-            this.panel1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.panel1.Location = new System.Drawing.Point(3, 4);
+            this.panel1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(865, 54);
+            this.panel1.Size = new System.Drawing.Size(650, 45);
             this.panel1.TabIndex = 36;
             // 
             // lbltitulo
             // 
             this.lbltitulo.AutoSize = true;
             this.lbltitulo.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbltitulo.Location = new System.Drawing.Point(10, 9);
+            this.lbltitulo.Location = new System.Drawing.Point(8, 7);
+            this.lbltitulo.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lbltitulo.Name = "lbltitulo";
-            this.lbltitulo.Size = new System.Drawing.Size(110, 29);
+            this.lbltitulo.Size = new System.Drawing.Size(86, 24);
             this.lbltitulo.TabIndex = 0;
             this.lbltitulo.Text = "Pedidos";
             // 
@@ -2110,14 +2173,15 @@
             this.cmb_moneda.IsLimpiar = true;
             this.cmb_moneda.IsSalvar = true;
             this.cmb_moneda.IsValidar = true;
-            this.cmb_moneda.Location = new System.Drawing.Point(662, 90);
+            this.cmb_moneda.Location = new System.Drawing.Point(496, 73);
+            this.cmb_moneda.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.cmb_moneda.Name = "cmb_moneda";
             this.cmb_moneda.NombreProcedimiento = "p_moneda";
             this.cmb_moneda.Param = "";
             this.cmb_moneda.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
             this.cmb_moneda.Properties.NullText = "";
-            this.cmb_moneda.Size = new System.Drawing.Size(200, 22);
+            this.cmb_moneda.Size = new System.Drawing.Size(150, 20);
             this.cmb_moneda.TabIndex = 5;
             this.cmb_moneda.Valor = null;
             this.cmb_moneda.ValueMemberName = "f_id";
@@ -2126,9 +2190,10 @@
             // 
             this.evLabel32.AutoSize = true;
             this.evLabel32.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.evLabel32.Location = new System.Drawing.Point(556, 93);
+            this.evLabel32.Location = new System.Drawing.Point(417, 76);
+            this.evLabel32.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.evLabel32.Name = "evLabel32";
-            this.evLabel32.Size = new System.Drawing.Size(65, 17);
+            this.evLabel32.Size = new System.Drawing.Size(52, 13);
             this.evLabel32.TabIndex = 10;
             this.evLabel32.Text = "Moneda";
             // 
@@ -2136,9 +2201,11 @@
             // 
             this.groupBox2.Controls.Add(this.btn_credito);
             this.groupBox2.Controls.Add(this.btn_contado);
-            this.groupBox2.Location = new System.Drawing.Point(350, 144);
+            this.groupBox2.Location = new System.Drawing.Point(262, 117);
+            this.groupBox2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(196, 45);
+            this.groupBox2.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.groupBox2.Size = new System.Drawing.Size(147, 37);
             this.groupBox2.TabIndex = 59;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Tipo Pedido";
@@ -2147,9 +2214,10 @@
             // 
             this.btn_credito.AutoSize = true;
             this.btn_credito.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_credito.Location = new System.Drawing.Point(105, 20);
+            this.btn_credito.Location = new System.Drawing.Point(79, 16);
+            this.btn_credito.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btn_credito.Name = "btn_credito";
-            this.btn_credito.Size = new System.Drawing.Size(81, 21);
+            this.btn_credito.Size = new System.Drawing.Size(65, 17);
             this.btn_credito.TabIndex = 1;
             this.btn_credito.TabStop = true;
             this.btn_credito.Text = "Credito";
@@ -2159,9 +2227,10 @@
             // 
             this.btn_contado.AutoSize = true;
             this.btn_contado.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_contado.Location = new System.Drawing.Point(13, 20);
+            this.btn_contado.Location = new System.Drawing.Point(10, 16);
+            this.btn_contado.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btn_contado.Name = "btn_contado";
-            this.btn_contado.Size = new System.Drawing.Size(89, 21);
+            this.btn_contado.Size = new System.Drawing.Size(72, 17);
             this.btn_contado.TabIndex = 0;
             this.btn_contado.TabStop = true;
             this.btn_contado.Text = "Contado";
@@ -2176,15 +2245,15 @@
             this.cmb_almacen.IsLimpiar = true;
             this.cmb_almacen.IsSalvar = true;
             this.cmb_almacen.IsValidar = true;
-            this.cmb_almacen.Location = new System.Drawing.Point(662, 63);
-            this.cmb_almacen.Margin = new System.Windows.Forms.Padding(5);
+            this.cmb_almacen.Location = new System.Drawing.Point(496, 51);
+            this.cmb_almacen.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.cmb_almacen.Name = "cmb_almacen";
             this.cmb_almacen.NombreProcedimiento = "p_almacen";
             this.cmb_almacen.Param = "";
             this.cmb_almacen.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
             this.cmb_almacen.Properties.NullText = "";
-            this.cmb_almacen.Size = new System.Drawing.Size(200, 22);
+            this.cmb_almacen.Size = new System.Drawing.Size(150, 20);
             this.cmb_almacen.TabIndex = 4;
             this.cmb_almacen.Valor = null;
             this.cmb_almacen.ValueMemberName = "f_iddepto";
@@ -2193,9 +2262,10 @@
             // 
             this.evLabel22.AutoSize = true;
             this.evLabel22.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.evLabel22.Location = new System.Drawing.Point(556, 66);
+            this.evLabel22.Location = new System.Drawing.Point(417, 54);
+            this.evLabel22.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.evLabel22.Name = "evLabel22";
-            this.evLabel22.Size = new System.Drawing.Size(69, 17);
+            this.evLabel22.Size = new System.Drawing.Size(55, 13);
             this.evLabel22.TabIndex = 48;
             this.evLabel22.Text = "Almacen";
             // 
@@ -2208,9 +2278,10 @@
             this.txtnombrecliente.IsLimpiar = true;
             this.txtnombrecliente.IsSalvar = true;
             this.txtnombrecliente.IsValidar = true;
-            this.txtnombrecliente.Location = new System.Drawing.Point(137, 91);
+            this.txtnombrecliente.Location = new System.Drawing.Point(103, 74);
+            this.txtnombrecliente.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtnombrecliente.Name = "txtnombrecliente";
-            this.txtnombrecliente.Size = new System.Drawing.Size(414, 22);
+            this.txtnombrecliente.Size = new System.Drawing.Size(312, 20);
             this.txtnombrecliente.TabIndex = 1;
             this.txtnombrecliente.Valor = "";
             // 
@@ -2218,9 +2289,10 @@
             // 
             this.evLabel17.AutoSize = true;
             this.evLabel17.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.evLabel17.Location = new System.Drawing.Point(10, 94);
+            this.evLabel17.Location = new System.Drawing.Point(8, 76);
+            this.evLabel17.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.evLabel17.Name = "evLabel17";
-            this.evLabel17.Size = new System.Drawing.Size(64, 17);
+            this.evLabel17.Size = new System.Drawing.Size(50, 13);
             this.evLabel17.TabIndex = 32;
             this.evLabel17.Text = "Nombre";
             // 
@@ -2233,15 +2305,14 @@
             this.txtclienteid.IsLimpiar = true;
             this.txtclienteid.IsSalvar = true;
             this.txtclienteid.IsValidar = true;
-            this.txtclienteid.Location = new System.Drawing.Point(137, 63);
-            this.txtclienteid.Margin = new System.Windows.Forms.Padding(4);
+            this.txtclienteid.Location = new System.Drawing.Point(103, 51);
             this.txtclienteid.Name = "txtclienteid";
             this.txtclienteid.Properties.Appearance.Options.UseTextOptions = true;
             this.txtclienteid.Properties.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Far;
             this.txtclienteid.Properties.Mask.EditMask = "f0";
             this.txtclienteid.Properties.Mask.MaskType = DevExpress.XtraEditors.Mask.MaskType.Numeric;
             this.txtclienteid.Properties.Mask.UseMaskAsDisplayFormat = true;
-            this.txtclienteid.Size = new System.Drawing.Size(137, 22);
+            this.txtclienteid.Size = new System.Drawing.Size(103, 20);
             this.txtclienteid.TabIndex = 0;
             this.txtclienteid.Validated += new System.EventHandler(this.txtclienteid_Validated);
             // 
@@ -2249,9 +2320,10 @@
             // 
             this.linkLabel1.AutoSize = true;
             this.linkLabel1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.linkLabel1.Location = new System.Drawing.Point(10, 66);
+            this.linkLabel1.Location = new System.Drawing.Point(8, 54);
+            this.linkLabel1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.linkLabel1.Name = "linkLabel1";
-            this.linkLabel1.Size = new System.Drawing.Size(58, 17);
+            this.linkLabel1.Size = new System.Drawing.Size(46, 13);
             this.linkLabel1.TabIndex = 30;
             this.linkLabel1.TabStop = true;
             this.linkLabel1.Text = "Cliente";
@@ -2265,26 +2337,29 @@
             this.panel2.Controls.Add(this.evLabel2);
             this.panel2.Controls.Add(this.evDateTimePicker1);
             this.panel2.Controls.Add(this.evLabel1);
-            this.panel2.Location = new System.Drawing.Point(872, 5);
+            this.panel2.Location = new System.Drawing.Point(654, 4);
+            this.panel2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(375, 78);
+            this.panel2.Size = new System.Drawing.Size(282, 64);
             this.panel2.TabIndex = 38;
             // 
             // lblusuario
             // 
             this.lblusuario.AutoSize = true;
-            this.lblusuario.Location = new System.Drawing.Point(92, 47);
+            this.lblusuario.Location = new System.Drawing.Point(69, 38);
+            this.lblusuario.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblusuario.Name = "lblusuario";
-            this.lblusuario.Size = new System.Drawing.Size(0, 17);
+            this.lblusuario.Size = new System.Drawing.Size(0, 13);
             this.lblusuario.TabIndex = 3;
             // 
             // evLabel2
             // 
             this.evLabel2.AutoSize = true;
             this.evLabel2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.evLabel2.Location = new System.Drawing.Point(14, 47);
+            this.evLabel2.Location = new System.Drawing.Point(10, 38);
+            this.evLabel2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.evLabel2.Name = "evLabel2";
-            this.evLabel2.Size = new System.Drawing.Size(69, 17);
+            this.evLabel2.Size = new System.Drawing.Size(54, 13);
             this.evLabel2.TabIndex = 2;
             this.evLabel2.Text = "Usuario:";
             // 
@@ -2299,9 +2374,10 @@
             this.evDateTimePicker1.IsLimpiar = true;
             this.evDateTimePicker1.IsSalvar = true;
             this.evDateTimePicker1.IsValidar = false;
-            this.evDateTimePicker1.Location = new System.Drawing.Point(92, 8);
+            this.evDateTimePicker1.Location = new System.Drawing.Point(69, 6);
+            this.evDateTimePicker1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.evDateTimePicker1.Name = "evDateTimePicker1";
-            this.evDateTimePicker1.Size = new System.Drawing.Size(201, 22);
+            this.evDateTimePicker1.Size = new System.Drawing.Size(152, 20);
             this.evDateTimePicker1.TabIndex = 1;
             this.evDateTimePicker1.Valor = new System.DateTime(2020, 10, 12, 0, 0, 0, 0);
             this.evDateTimePicker1.Value = new System.DateTime(2020, 10, 12, 0, 0, 0, 0);
@@ -2310,9 +2386,10 @@
             // 
             this.evLabel1.AutoSize = true;
             this.evLabel1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.evLabel1.Location = new System.Drawing.Point(14, 11);
+            this.evLabel1.Location = new System.Drawing.Point(10, 9);
+            this.evLabel1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.evLabel1.Name = "evLabel1";
-            this.evLabel1.Size = new System.Drawing.Size(57, 17);
+            this.evLabel1.Size = new System.Drawing.Size(46, 13);
             this.evLabel1.TabIndex = 0;
             this.evLabel1.Text = "Fecha:";
             // 
@@ -2324,25 +2401,27 @@
             this.vendedorPickerPanel1.IsLimpiar = true;
             this.vendedorPickerPanel1.IsSalvar = true;
             this.vendedorPickerPanel1.IsValidar = true;
-            this.vendedorPickerPanel1.LblVendedorMargin = new System.Windows.Forms.Padding(3, 5, 46, 0);
-            this.vendedorPickerPanel1.Location = new System.Drawing.Point(7, 188);
+            this.vendedorPickerPanel1.LblVendedorMargin = new System.Windows.Forms.Padding(2, 4, 34, 0);
+            this.vendedorPickerPanel1.Location = new System.Drawing.Point(5, 153);
+            this.vendedorPickerPanel1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.vendedorPickerPanel1.Name = "vendedorPickerPanel1";
             this.vendedorPickerPanel1.parent = null;
-            this.vendedorPickerPanel1.Size = new System.Drawing.Size(557, 29);
+            this.vendedorPickerPanel1.Size = new System.Drawing.Size(418, 24);
             this.vendedorPickerPanel1.TabIndex = 3;
-            this.vendedorPickerPanel1.TxtIdMargin = new System.Windows.Forms.Padding(3);
-            this.vendedorPickerPanel1.TxtIdSize = new System.Drawing.Size(125, 22);
-            this.vendedorPickerPanel1.TxtNombreMargin = new System.Windows.Forms.Padding(3);
-            this.vendedorPickerPanel1.TxtNombreSize = new System.Drawing.Size(285, 22);
+            this.vendedorPickerPanel1.TxtIdMargin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.vendedorPickerPanel1.TxtIdSize = new System.Drawing.Size(94, 20);
+            this.vendedorPickerPanel1.TxtNombreMargin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.vendedorPickerPanel1.TxtNombreSize = new System.Drawing.Size(215, 20);
             this.vendedorPickerPanel1.Valor = 0;
             // 
             // evLabel18
             // 
             this.evLabel18.AutoSize = true;
             this.evLabel18.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.evLabel18.Location = new System.Drawing.Point(10, 122);
+            this.evLabel18.Location = new System.Drawing.Point(8, 99);
+            this.evLabel18.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.evLabel18.Name = "evLabel18";
-            this.evLabel18.Size = new System.Drawing.Size(66, 17);
+            this.evLabel18.Size = new System.Drawing.Size(53, 13);
             this.evLabel18.TabIndex = 70;
             this.evLabel18.Text = "Balance";
             // 
@@ -2356,23 +2435,25 @@
             this.txtbalance.IsLimpiar = true;
             this.txtbalance.IsSalvar = true;
             this.txtbalance.IsValidar = true;
-            this.txtbalance.Location = new System.Drawing.Point(137, 119);
+            this.txtbalance.Location = new System.Drawing.Point(103, 97);
+            this.txtbalance.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtbalance.Name = "txtbalance";
             this.txtbalance.Properties.Appearance.Options.UseTextOptions = true;
             this.txtbalance.Properties.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Far;
             this.txtbalance.Properties.Mask.EditMask = "n";
             this.txtbalance.Properties.Mask.MaskType = DevExpress.XtraEditors.Mask.MaskType.Numeric;
             this.txtbalance.Properties.Mask.UseMaskAsDisplayFormat = true;
-            this.txtbalance.Size = new System.Drawing.Size(139, 22);
+            this.txtbalance.Size = new System.Drawing.Size(104, 20);
             this.txtbalance.TabIndex = 71;
             // 
             // evLabel19
             // 
             this.evLabel19.AutoSize = true;
             this.evLabel19.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.evLabel19.Location = new System.Drawing.Point(286, 122);
+            this.evLabel19.Location = new System.Drawing.Point(214, 99);
+            this.evLabel19.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.evLabel19.Name = "evLabel19";
-            this.evLabel19.Size = new System.Drawing.Size(120, 17);
+            this.evLabel19.Size = new System.Drawing.Size(94, 13);
             this.evLabel19.TabIndex = 72;
             this.evLabel19.Text = "Credito Dispon.";
             // 
@@ -2386,23 +2467,25 @@
             this.txtcredito.IsLimpiar = true;
             this.txtcredito.IsSalvar = true;
             this.txtcredito.IsValidar = true;
-            this.txtcredito.Location = new System.Drawing.Point(411, 119);
+            this.txtcredito.Location = new System.Drawing.Point(308, 97);
+            this.txtcredito.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtcredito.Name = "txtcredito";
             this.txtcredito.Properties.Appearance.Options.UseTextOptions = true;
             this.txtcredito.Properties.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Far;
             this.txtcredito.Properties.Mask.EditMask = "n";
             this.txtcredito.Properties.Mask.MaskType = DevExpress.XtraEditors.Mask.MaskType.Numeric;
             this.txtcredito.Properties.Mask.UseMaskAsDisplayFormat = true;
-            this.txtcredito.Size = new System.Drawing.Size(139, 22);
+            this.txtcredito.Size = new System.Drawing.Size(104, 20);
             this.txtcredito.TabIndex = 73;
             // 
             // evLabel20
             // 
             this.evLabel20.AutoSize = true;
             this.evLabel20.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.evLabel20.Location = new System.Drawing.Point(10, 163);
+            this.evLabel20.Location = new System.Drawing.Point(8, 132);
+            this.evLabel20.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.evLabel20.Name = "evLabel20";
-            this.evLabel20.Size = new System.Drawing.Size(114, 17);
+            this.evLabel20.Size = new System.Drawing.Size(90, 13);
             this.evLabel20.TabIndex = 74;
             this.evLabel20.Text = "Fecha Entrega";
             // 
@@ -2416,9 +2499,10 @@
             this.txtfechaentrega.IsLimpiar = true;
             this.txtfechaentrega.IsSalvar = true;
             this.txtfechaentrega.IsValidar = false;
-            this.txtfechaentrega.Location = new System.Drawing.Point(137, 160);
+            this.txtfechaentrega.Location = new System.Drawing.Point(103, 130);
+            this.txtfechaentrega.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtfechaentrega.Name = "txtfechaentrega";
-            this.txtfechaentrega.Size = new System.Drawing.Size(200, 22);
+            this.txtfechaentrega.Size = new System.Drawing.Size(151, 20);
             this.txtfechaentrega.TabIndex = 2;
             this.txtfechaentrega.Valor = new System.DateTime(2020, 10, 27, 0, 0, 0, 0);
             this.txtfechaentrega.Value = new System.DateTime(2020, 10, 27, 0, 0, 0, 0);
@@ -2432,14 +2516,15 @@
             this.evProyectoCmb1.IsLimpiar = true;
             this.evProyectoCmb1.IsSalvar = true;
             this.evProyectoCmb1.IsValidar = true;
-            this.evProyectoCmb1.Location = new System.Drawing.Point(662, 117);
+            this.evProyectoCmb1.Location = new System.Drawing.Point(496, 95);
+            this.evProyectoCmb1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.evProyectoCmb1.Name = "evProyectoCmb1";
             this.evProyectoCmb1.NombreProcedimiento = "p_proyecto";
             this.evProyectoCmb1.Param = "";
             this.evProyectoCmb1.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
             this.evProyectoCmb1.Properties.NullText = "";
-            this.evProyectoCmb1.Size = new System.Drawing.Size(200, 22);
+            this.evProyectoCmb1.Size = new System.Drawing.Size(150, 20);
             this.evProyectoCmb1.TabIndex = 6;
             this.evProyectoCmb1.Valor = null;
             this.evProyectoCmb1.ValueMemberName = "f_id";
@@ -2448,9 +2533,10 @@
             // 
             this.evLabel21.AutoSize = true;
             this.evLabel21.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.evLabel21.Location = new System.Drawing.Point(556, 120);
+            this.evLabel21.Location = new System.Drawing.Point(417, 98);
+            this.evLabel21.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.evLabel21.Name = "evLabel21";
-            this.evLabel21.Size = new System.Drawing.Size(72, 17);
+            this.evLabel21.Size = new System.Drawing.Size(57, 13);
             this.evLabel21.TabIndex = 77;
             this.evLabel21.Text = "Proyecto";
             // 
@@ -2458,9 +2544,10 @@
             // 
             this.evLabel23.AutoSize = true;
             this.evLabel23.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.evLabel23.Location = new System.Drawing.Point(556, 144);
+            this.evLabel23.Location = new System.Drawing.Point(417, 117);
+            this.evLabel23.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.evLabel23.Name = "evLabel23";
-            this.evLabel23.Size = new System.Drawing.Size(42, 17);
+            this.evLabel23.Size = new System.Drawing.Size(34, 13);
             this.evLabel23.TabIndex = 78;
             this.evLabel23.Text = "Nota";
             // 
@@ -2472,27 +2559,30 @@
             this.txtnota.IsLimpiar = true;
             this.txtnota.IsSalvar = true;
             this.txtnota.IsValidar = true;
-            this.txtnota.Location = new System.Drawing.Point(604, 144);
+            this.txtnota.Location = new System.Drawing.Point(453, 117);
+            this.txtnota.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtnota.Multiline = true;
             this.txtnota.Name = "txtnota";
-            this.txtnota.Size = new System.Drawing.Size(258, 73);
+            this.txtnota.Size = new System.Drawing.Size(194, 60);
             this.txtnota.TabIndex = 79;
             this.txtnota.Valor = "";
             // 
             // button9
             // 
-            this.button9.Location = new System.Drawing.Point(504, 696);
+            this.button9.Location = new System.Drawing.Point(378, 566);
+            this.button9.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.button9.Name = "button9";
-            this.button9.Size = new System.Drawing.Size(158, 32);
+            this.button9.Size = new System.Drawing.Size(118, 26);
             this.button9.TabIndex = 81;
             this.button9.Text = "Autorizacion";
             this.button9.UseVisualStyleBackColor = true;
             // 
             // button10
             // 
-            this.button10.Location = new System.Drawing.Point(504, 656);
+            this.button10.Location = new System.Drawing.Point(378, 533);
+            this.button10.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.button10.Name = "button10";
-            this.button10.Size = new System.Drawing.Size(158, 32);
+            this.button10.Size = new System.Drawing.Size(118, 26);
             this.button10.TabIndex = 80;
             this.button10.Text = "Cotizacion";
             this.button10.UseVisualStyleBackColor = true;
@@ -2500,9 +2590,9 @@
             // 
             // InPedidos
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1259, 735);
+            this.ClientSize = new System.Drawing.Size(944, 597);
             this.Controls.Add(this.button9);
             this.Controls.Add(this.button10);
             this.Controls.Add(this.txtnota);
@@ -2553,6 +2643,7 @@
             this.Name = "InPedidos";
             this.RequireCloseConfirm = true;
             this.Text = "InPedidos";
+            this.Load += new System.EventHandler(this.InPedidos_Load);
             this.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.InPedidos_KeyPress);
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridControl2)).EndInit();

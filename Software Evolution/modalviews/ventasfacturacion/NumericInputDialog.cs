@@ -34,5 +34,10 @@ namespace Software_Evolution.modalviews.ventasfacturacion
             DialogResult = DialogResult.OK;
             Close();
         }
+
+        private void NumericInputDialog_Load(object sender, EventArgs e)
+        {
+            CenterToScreen();
+        }
     }
 }

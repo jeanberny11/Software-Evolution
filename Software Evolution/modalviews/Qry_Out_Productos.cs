@@ -72,6 +72,7 @@ namespace Software_Evolution.modalviews
 
         private void Qry_Out_Productos_Load(object sender, EventArgs e)
         {
+            CenterToScreen();
             cmb_almacen.LoadData();
             cmb_categoria.LoadData();
         }
