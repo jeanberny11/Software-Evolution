@@ -39,6 +39,16 @@ namespace Software_Evolution.managers.contabilidad
             }
         }
 
+        public string GetDescripcionCuenta(string cuenta)
+        {
+            var result = queryManager.Query($"select f_descripcion from t_cuentas_contables where f_no_cuenta='{cuenta}'");
+            if (result.Rows.Count > 0)
+            {
+                return result.Rows[0].Field<string>("f_descripcion");
+            }
+            return "";
+        }
+
         public string SelectCuentaFromDialog(BaseForm parent)
         {
 
