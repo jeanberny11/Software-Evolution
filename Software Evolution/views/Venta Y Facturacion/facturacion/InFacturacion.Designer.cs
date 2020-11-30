@@ -37,6 +37,7 @@
             this.button2 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.linkLabel4 = new System.Windows.Forms.LinkLabel();
             this.txttotalneto = new Software_Evolution.customcontrols.EvNumericTextBox();
             this.txtitbis = new Software_Evolution.customcontrols.EvNumericTextBox();
             this.txtflete = new Software_Evolution.customcontrols.EvNumericTextBox();
@@ -53,7 +54,6 @@
             this.evLabel10 = new Software_Evolution.customcontrols.EvLabel();
             this.evLabel9 = new Software_Evolution.customcontrols.EvLabel();
             this.evLabel8 = new Software_Evolution.customcontrols.EvLabel();
-            this.evLabel7 = new Software_Evolution.customcontrols.EvLabel();
             this.evLabel6 = new Software_Evolution.customcontrols.EvLabel();
             this.evLabel5 = new Software_Evolution.customcontrols.EvLabel();
             this.evLabel4 = new Software_Evolution.customcontrols.EvLabel();
@@ -61,7 +61,7 @@
             this.panel2 = new System.Windows.Forms.Panel();
             this.lblusuario = new System.Windows.Forms.Label();
             this.evLabel2 = new Software_Evolution.customcontrols.EvLabel();
-            this.evDateTimePicker1 = new Software_Evolution.customcontrols.EvDateTimePicker();
+            this.txtfecha = new Software_Evolution.customcontrols.EvDateTimePicker();
             this.evLabel1 = new Software_Evolution.customcontrols.EvLabel();
             this.panel1 = new System.Windows.Forms.Panel();
             this.lbltitulo = new System.Windows.Forms.Label();
@@ -156,6 +156,12 @@
             this.dataColumn67 = new System.Data.DataColumn();
             this.dataColumn68 = new System.Data.DataColumn();
             this.dataColumn69 = new System.Data.DataColumn();
+            this.detallecontable = new System.Data.DataTable();
+            this.dataColumn70 = new System.Data.DataColumn();
+            this.dataColumn71 = new System.Data.DataColumn();
+            this.dataColumn72 = new System.Data.DataColumn();
+            this.dataColumn73 = new System.Data.DataColumn();
+            this.dataColumn74 = new System.Data.DataColumn();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.button10 = new System.Windows.Forms.Button();
             this.button9 = new System.Windows.Forms.Button();
@@ -185,6 +191,15 @@
             this.txtreferencia = new Software_Evolution.customcontrols.EvTextBox();
             this.linkLabel3 = new System.Windows.Forms.LinkLabel();
             this.tabPage2 = new System.Windows.Forms.TabPage();
+            this.gridControl3 = new DevExpress.XtraGrid.GridControl();
+            this.gridView3 = new DevExpress.XtraGrid.Views.Grid.GridView();
+            this.colcuenta = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colnombre = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.coldebito = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colcredito = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.button15 = new System.Windows.Forms.Button();
+            this.evLabel7 = new Software_Evolution.customcontrols.EvLabel();
+            this.cmb_tipofacturas = new Software_Evolution.customcontrols.EvComboBox();
             this.button13 = new System.Windows.Forms.Button();
             this.button14 = new System.Windows.Forms.Button();
             this.tabControl2 = new System.Windows.Forms.TabControl();
@@ -250,6 +265,7 @@
             this.groupBox2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dsdetalle)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tdetalles)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.detallecontable)).BeginInit();
             this.groupBox3.SuspendLayout();
             this.groupBox4.SuspendLayout();
             this.tabControl1.SuspendLayout();
@@ -258,6 +274,10 @@
             ((System.ComponentModel.ISupportInitialize)(this.gridView2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtprecio.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtcantidad.Properties)).BeginInit();
+            this.tabPage2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.gridControl3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridView3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.cmb_tipofacturas.Properties)).BeginInit();
             this.tabControl2.SuspendLayout();
             this.tabPage3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.txtoexistencia.Properties)).BeginInit();
@@ -278,6 +298,7 @@
             this.button8.TabIndex = 27;
             this.button8.Text = "Salir";
             this.button8.UseVisualStyleBackColor = true;
+            this.button8.Click += new System.EventHandler(this.button8_Click);
             // 
             // button6
             // 
@@ -298,6 +319,7 @@
             this.button7.TabIndex = 25;
             this.button7.Text = "Borrar Linea";
             this.button7.UseVisualStyleBackColor = true;
+            this.button7.Click += new System.EventHandler(this.button7_Click);
             // 
             // button5
             // 
@@ -308,6 +330,7 @@
             this.button5.TabIndex = 24;
             this.button5.Text = "Buscar Producto";
             this.button5.UseVisualStyleBackColor = true;
+            this.button5.Click += new System.EventHandler(this.button5_Click);
             // 
             // button4
             // 
@@ -318,6 +341,7 @@
             this.button4.TabIndex = 23;
             this.button4.Text = "Cambiar Cantidad";
             this.button4.UseVisualStyleBackColor = true;
+            this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
             // button3
             // 
@@ -328,6 +352,7 @@
             this.button3.TabIndex = 22;
             this.button3.Text = "Descuento Items";
             this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // button2
             // 
@@ -338,6 +363,7 @@
             this.button2.TabIndex = 21;
             this.button2.Text = "Cambiar Precio";
             this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // button1
             // 
@@ -347,13 +373,14 @@
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(281, 43);
             this.button1.TabIndex = 20;
-            this.button1.Text = "Salvar Cotizacion";
+            this.button1.Text = "Salvar Factura";
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // groupBox1
             // 
             this.groupBox1.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.groupBox1.Controls.Add(this.linkLabel4);
             this.groupBox1.Controls.Add(this.txttotalneto);
             this.groupBox1.Controls.Add(this.txtitbis);
             this.groupBox1.Controls.Add(this.txtflete);
@@ -370,7 +397,6 @@
             this.groupBox1.Controls.Add(this.evLabel10);
             this.groupBox1.Controls.Add(this.evLabel9);
             this.groupBox1.Controls.Add(this.evLabel8);
-            this.groupBox1.Controls.Add(this.evLabel7);
             this.groupBox1.Controls.Add(this.evLabel6);
             this.groupBox1.Controls.Add(this.evLabel5);
             this.groupBox1.Controls.Add(this.evLabel4);
@@ -383,6 +409,18 @@
             this.groupBox1.TabIndex = 19;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Totalizacion";
+            // 
+            // linkLabel4
+            // 
+            this.linkLabel4.AutoSize = true;
+            this.linkLabel4.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.linkLabel4.Location = new System.Drawing.Point(83, 127);
+            this.linkLabel4.Name = "linkLabel4";
+            this.linkLabel4.Size = new System.Drawing.Size(49, 17);
+            this.linkLabel4.TabIndex = 29;
+            this.linkLabel4.TabStop = true;
+            this.linkLabel4.Text = "Flete:";
+            this.linkLabel4.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel4_LinkClicked);
             // 
             // txttotalneto
             // 
@@ -737,7 +775,7 @@
             this.panel2.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.panel2.Controls.Add(this.lblusuario);
             this.panel2.Controls.Add(this.evLabel2);
-            this.panel2.Controls.Add(this.evDateTimePicker1);
+            this.panel2.Controls.Add(this.txtfecha);
             this.panel2.Controls.Add(this.evLabel1);
             this.panel2.Location = new System.Drawing.Point(707, 6);
             this.panel2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
@@ -765,24 +803,23 @@
             this.evLabel2.TabIndex = 2;
             this.evLabel2.Text = "Usuario:";
             // 
-            // evDateTimePicker1
+            // txtfecha
             // 
-            this.evDateTimePicker1.CustomFormat = "dd-MM-yyyy";
-            this.evDateTimePicker1.Enabled = false;
-            this.evDateTimePicker1.EnterTab = true;
-            this.evDateTimePicker1.FieldName = "";
-            this.evDateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.evDateTimePicker1.IsActivar = true;
-            this.evDateTimePicker1.IsLimpiar = true;
-            this.evDateTimePicker1.IsSalvar = true;
-            this.evDateTimePicker1.IsValidar = false;
-            this.evDateTimePicker1.Location = new System.Drawing.Point(69, 6);
-            this.evDateTimePicker1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.evDateTimePicker1.Name = "evDateTimePicker1";
-            this.evDateTimePicker1.Size = new System.Drawing.Size(152, 20);
-            this.evDateTimePicker1.TabIndex = 1;
-            this.evDateTimePicker1.Valor = new System.DateTime(2020, 10, 12, 0, 0, 0, 0);
-            this.evDateTimePicker1.Value = new System.DateTime(2020, 10, 12, 0, 0, 0, 0);
+            this.txtfecha.CustomFormat = "dd-MM-yyyy";
+            this.txtfecha.Enabled = false;
+            this.txtfecha.EnterTab = true;
+            this.txtfecha.FieldName = "";
+            this.txtfecha.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.txtfecha.IsActivar = true;
+            this.txtfecha.IsLimpiar = true;
+            this.txtfecha.IsSalvar = true;
+            this.txtfecha.IsValidar = false;
+            this.txtfecha.Location = new System.Drawing.Point(92, 8);
+            this.txtfecha.Name = "txtfecha";
+            this.txtfecha.Size = new System.Drawing.Size(201, 22);
+            this.txtfecha.TabIndex = 1;
+            this.txtfecha.Valor = new System.DateTime(2020, 10, 12, 0, 0, 0, 0);
+            this.txtfecha.Value = new System.DateTime(2020, 10, 12, 0, 0, 0, 0);
             // 
             // evLabel1
             // 
@@ -932,10 +969,11 @@
             this.vendedorPickerPanel1.parent = null;
             this.vendedorPickerPanel1.Size = new System.Drawing.Size(409, 24);
             this.vendedorPickerPanel1.TabIndex = 34;
-            this.vendedorPickerPanel1.TxtIdMargin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.vendedorPickerPanel1.TxtIdSize = new System.Drawing.Size(94, 20);
-            this.vendedorPickerPanel1.TxtNombreMargin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.vendedorPickerPanel1.TxtNombreSize = new System.Drawing.Size(198, 20);
+
+            this.vendedorPickerPanel1.TxtIdMargin = new System.Windows.Forms.Padding(3);
+            this.vendedorPickerPanel1.TxtIdSize = new System.Drawing.Size(118, 22);
+            this.vendedorPickerPanel1.TxtNombreMargin = new System.Windows.Forms.Padding(3);
+            this.vendedorPickerPanel1.TxtNombreSize = new System.Drawing.Size(262, 22);
             this.vendedorPickerPanel1.Valor = 0;
             // 
             // evLabel20
@@ -1124,7 +1162,7 @@
             this.cmb_tiponcf.Location = new System.Drawing.Point(492, 115);
             this.cmb_tiponcf.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.cmb_tiponcf.Name = "cmb_tiponcf";
-            this.cmb_tiponcf.NombreProcedimiento = "p_almacen";
+            this.cmb_tiponcf.NombreProcedimiento = "p_ncf";
             this.cmb_tiponcf.Param = "";
             this.cmb_tiponcf.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
@@ -1132,7 +1170,7 @@
             this.cmb_tiponcf.Size = new System.Drawing.Size(201, 20);
             this.cmb_tiponcf.TabIndex = 46;
             this.cmb_tiponcf.Valor = null;
-            this.cmb_tiponcf.ValueMemberName = "f_iddepto";
+            this.cmb_tiponcf.ValueMemberName = "f_codigo";
             // 
             // evLabel13
             // 
@@ -1157,7 +1195,7 @@
             this.cmb_tipoventa.Location = new System.Drawing.Point(492, 136);
             this.cmb_tipoventa.Margin = new System.Windows.Forms.Padding(8, 8, 8, 8);
             this.cmb_tipoventa.Name = "cmb_tipoventa";
-            this.cmb_tipoventa.NombreProcedimiento = "p_almacen";
+            this.cmb_tipoventa.NombreProcedimiento = "p_tipo_ingreso_venta";
             this.cmb_tipoventa.Param = "";
             this.cmb_tipoventa.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
@@ -1165,7 +1203,7 @@
             this.cmb_tipoventa.Size = new System.Drawing.Size(201, 20);
             this.cmb_tipoventa.TabIndex = 48;
             this.cmb_tipoventa.Valor = null;
-            this.cmb_tipoventa.ValueMemberName = "f_iddepto";
+            this.cmb_tipoventa.ValueMemberName = "f_id";
             // 
             // evLabel14
             // 
@@ -1355,7 +1393,8 @@
             // 
             this.dsdetalle.DataSetName = "detalles";
             this.dsdetalle.Tables.AddRange(new System.Data.DataTable[] {
-            this.tdetalles});
+            this.tdetalles,
+            this.detallecontable});
             // 
             // tdetalles
             // 
@@ -1730,6 +1769,44 @@
             this.dataColumn69.ColumnName = "tipoempaque";
             this.dataColumn69.DefaultValue = "";
             // 
+            // detallecontable
+            // 
+            this.detallecontable.Columns.AddRange(new System.Data.DataColumn[] {
+            this.dataColumn70,
+            this.dataColumn71,
+            this.dataColumn72,
+            this.dataColumn73,
+            this.dataColumn74});
+            this.detallecontable.TableName = "detallecontable";
+            // 
+            // dataColumn70
+            // 
+            this.dataColumn70.ColumnName = "cuenta";
+            this.dataColumn70.DefaultValue = "";
+            // 
+            // dataColumn71
+            // 
+            this.dataColumn71.ColumnName = "nombre";
+            this.dataColumn71.DefaultValue = "";
+            // 
+            // dataColumn72
+            // 
+            this.dataColumn72.ColumnName = "debito";
+            this.dataColumn72.DataType = typeof(double);
+            this.dataColumn72.DefaultValue = 0D;
+            // 
+            // dataColumn73
+            // 
+            this.dataColumn73.ColumnName = "credito";
+            this.dataColumn73.DataType = typeof(double);
+            this.dataColumn73.DefaultValue = 0D;
+            // 
+            // dataColumn74
+            // 
+            this.dataColumn74.ColumnName = "centrocosto";
+            this.dataColumn74.DataType = typeof(int);
+            this.dataColumn74.DefaultValue = 0;
+            // 
             // groupBox3
             // 
             this.groupBox3.Controls.Add(this.button10);
@@ -1839,12 +1916,12 @@
             // 
             this.gridControl2.DataMember = "detalles";
             this.gridControl2.DataSource = this.dsdetalle;
-            this.gridControl2.EmbeddedNavigator.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.gridControl2.Location = new System.Drawing.Point(5, 43);
+            this.gridControl2.EmbeddedNavigator.Margin = new System.Windows.Forms.Padding(6);
+            this.gridControl2.Location = new System.Drawing.Point(7, 53);
             this.gridControl2.MainView = this.gridView2;
-            this.gridControl2.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.gridControl2.Margin = new System.Windows.Forms.Padding(6);
             this.gridControl2.Name = "gridControl2";
-            this.gridControl2.Size = new System.Drawing.Size(677, 325);
+            this.gridControl2.Size = new System.Drawing.Size(903, 400);
             this.gridControl2.TabIndex = 40;
             this.gridControl2.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.gridView2});
@@ -1860,7 +1937,7 @@
             this.gridColumn9,
             this.gridColumn10,
             this.gridColumn12});
-            this.gridView2.DetailHeight = 554;
+            this.gridView2.DetailHeight = 682;
             this.gridView2.GridControl = this.gridControl2;
             this.gridView2.Name = "gridView2";
             this.gridView2.OptionsSelection.MultiSelect = true;
@@ -1877,13 +1954,13 @@
             this.gridColumn3.AppearanceHeader.Options.UseForeColor = true;
             this.gridColumn3.Caption = "#.";
             this.gridColumn3.FieldName = "items";
-            this.gridColumn3.MaxWidth = 19;
-            this.gridColumn3.MinWidth = 23;
+            this.gridColumn3.MaxWidth = 25;
+            this.gridColumn3.MinWidth = 31;
             this.gridColumn3.Name = "gridColumn3";
             this.gridColumn3.OptionsColumn.AllowEdit = false;
             this.gridColumn3.Visible = true;
             this.gridColumn3.VisibleIndex = 0;
-            this.gridColumn3.Width = 23;
+            this.gridColumn3.Width = 31;
             // 
             // gridColumn4
             // 
@@ -1893,12 +1970,12 @@
             this.gridColumn4.AppearanceHeader.Options.UseForeColor = true;
             this.gridColumn4.Caption = "Código";
             this.gridColumn4.FieldName = "referencia";
-            this.gridColumn4.MinWidth = 23;
+            this.gridColumn4.MinWidth = 31;
             this.gridColumn4.Name = "gridColumn4";
             this.gridColumn4.OptionsColumn.AllowEdit = false;
             this.gridColumn4.Visible = true;
             this.gridColumn4.VisibleIndex = 1;
-            this.gridColumn4.Width = 91;
+            this.gridColumn4.Width = 121;
             // 
             // gridColumn6
             // 
@@ -1908,12 +1985,13 @@
             this.gridColumn6.AppearanceHeader.Options.UseForeColor = true;
             this.gridColumn6.Caption = "Referencia";
             this.gridColumn6.FieldName = "refped";
-            this.gridColumn6.MinWidth = 23;
+            this.gridColumn6.MinWidth = 31;
             this.gridColumn6.Name = "gridColumn6";
             this.gridColumn6.OptionsColumn.AllowEdit = false;
             this.gridColumn6.Visible = true;
             this.gridColumn6.VisibleIndex = 2;
-            this.gridColumn6.Width = 91;
+            this.gridColumn6.Width = 121;
+
             // 
             // gridColumn7
             // 
@@ -1923,12 +2001,12 @@
             this.gridColumn7.AppearanceHeader.Options.UseForeColor = true;
             this.gridColumn7.Caption = "Descripción";
             this.gridColumn7.FieldName = "descripcion";
-            this.gridColumn7.MinWidth = 23;
+            this.gridColumn7.MinWidth = 31;
             this.gridColumn7.Name = "gridColumn7";
             this.gridColumn7.OptionsColumn.AllowEdit = false;
             this.gridColumn7.Visible = true;
             this.gridColumn7.VisibleIndex = 3;
-            this.gridColumn7.Width = 197;
+            this.gridColumn7.Width = 263;
             // 
             // gridColumn8
             // 
@@ -1938,12 +2016,12 @@
             this.gridColumn8.AppearanceHeader.Options.UseForeColor = true;
             this.gridColumn8.Caption = "Cant.";
             this.gridColumn8.FieldName = "cantidad";
-            this.gridColumn8.MinWidth = 23;
+            this.gridColumn8.MinWidth = 31;
             this.gridColumn8.Name = "gridColumn8";
             this.gridColumn8.OptionsColumn.AllowEdit = false;
             this.gridColumn8.Visible = true;
             this.gridColumn8.VisibleIndex = 4;
-            this.gridColumn8.Width = 55;
+            this.gridColumn8.Width = 74;
             // 
             // gridColumn9
             // 
@@ -1953,12 +2031,12 @@
             this.gridColumn9.AppearanceHeader.Options.UseForeColor = true;
             this.gridColumn9.Caption = "Precio";
             this.gridColumn9.FieldName = "precio";
-            this.gridColumn9.MinWidth = 23;
+            this.gridColumn9.MinWidth = 31;
             this.gridColumn9.Name = "gridColumn9";
             this.gridColumn9.OptionsColumn.AllowEdit = false;
             this.gridColumn9.Visible = true;
             this.gridColumn9.VisibleIndex = 5;
-            this.gridColumn9.Width = 66;
+            this.gridColumn9.Width = 88;
             // 
             // gridColumn10
             // 
@@ -1968,12 +2046,12 @@
             this.gridColumn10.AppearanceHeader.Options.UseForeColor = true;
             this.gridColumn10.Caption = "Impuesto";
             this.gridColumn10.FieldName = "impuesto";
-            this.gridColumn10.MinWidth = 23;
+            this.gridColumn10.MinWidth = 31;
             this.gridColumn10.Name = "gridColumn10";
             this.gridColumn10.OptionsColumn.AllowEdit = false;
             this.gridColumn10.Visible = true;
             this.gridColumn10.VisibleIndex = 6;
-            this.gridColumn10.Width = 68;
+            this.gridColumn10.Width = 91;
             // 
             // gridColumn12
             // 
@@ -1983,12 +2061,12 @@
             this.gridColumn12.AppearanceHeader.Options.UseForeColor = true;
             this.gridColumn12.Caption = "Total";
             this.gridColumn12.FieldName = "total";
-            this.gridColumn12.MinWidth = 23;
+            this.gridColumn12.MinWidth = 31;
             this.gridColumn12.Name = "gridColumn12";
             this.gridColumn12.OptionsColumn.AllowEdit = false;
             this.gridColumn12.Visible = true;
             this.gridColumn12.VisibleIndex = 7;
-            this.gridColumn12.Width = 88;
+            this.gridColumn12.Width = 117;
             // 
             // txtprecio
             // 
@@ -2114,10 +2192,9 @@
             this.txtreferencia.FieldName = "";
             this.txtreferencia.IsActivar = true;
             this.txtreferencia.IsLimpiar = true;
-            this.txtreferencia.IsSalvar = true;
-            this.txtreferencia.IsValidar = true;
-            this.txtreferencia.Location = new System.Drawing.Point(5, 21);
-            this.txtreferencia.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtreferencia.IsSalvar = false;
+            this.txtreferencia.IsValidar = false;
+            this.txtreferencia.Location = new System.Drawing.Point(7, 26);
             this.txtreferencia.Name = "txtreferencia";
             this.txtreferencia.Size = new System.Drawing.Size(101, 20);
             this.txtreferencia.TabIndex = 31;
@@ -2139,14 +2216,126 @@
             // 
             // tabPage2
             // 
-            this.tabPage2.Location = new System.Drawing.Point(4, 22);
-            this.tabPage2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tabPage2.Controls.Add(this.gridControl3);
+            this.tabPage2.Controls.Add(this.button15);
+            this.tabPage2.Controls.Add(this.evLabel7);
+            this.tabPage2.Controls.Add(this.cmb_tipofacturas);
+            this.tabPage2.Location = new System.Drawing.Point(4, 25);
             this.tabPage2.Name = "tabPage2";
             this.tabPage2.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.tabPage2.Size = new System.Drawing.Size(686, 373);
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "Detalle Contable";
             this.tabPage2.UseVisualStyleBackColor = true;
+            // 
+            // gridControl3
+            // 
+            this.gridControl3.DataMember = "detallecontable";
+            this.gridControl3.DataSource = this.dsdetalle;
+            this.gridControl3.Location = new System.Drawing.Point(8, 52);
+            this.gridControl3.MainView = this.gridView3;
+            this.gridControl3.Name = "gridControl3";
+            this.gridControl3.Size = new System.Drawing.Size(901, 397);
+            this.gridControl3.TabIndex = 3;
+            this.gridControl3.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
+            this.gridView3});
+            // 
+            // gridView3
+            // 
+            this.gridView3.Columns.AddRange(new DevExpress.XtraGrid.Columns.GridColumn[] {
+            this.colcuenta,
+            this.colnombre,
+            this.coldebito,
+            this.colcredito});
+            this.gridView3.GridControl = this.gridControl3;
+            this.gridView3.Name = "gridView3";
+            this.gridView3.OptionsView.ShowGroupPanel = false;
+            this.gridView3.OptionsView.ShowIndicator = false;
+            // 
+            // colcuenta
+            // 
+            this.colcuenta.Caption = "Cuenta";
+            this.colcuenta.FieldName = "cuenta";
+            this.colcuenta.MinWidth = 25;
+            this.colcuenta.Name = "colcuenta";
+            this.colcuenta.OptionsColumn.AllowEdit = false;
+            this.colcuenta.Visible = true;
+            this.colcuenta.VisibleIndex = 0;
+            this.colcuenta.Width = 94;
+            // 
+            // colnombre
+            // 
+            this.colnombre.Caption = "Descripcion";
+            this.colnombre.FieldName = "nombre";
+            this.colnombre.MinWidth = 25;
+            this.colnombre.Name = "colnombre";
+            this.colnombre.OptionsColumn.AllowEdit = false;
+            this.colnombre.Visible = true;
+            this.colnombre.VisibleIndex = 1;
+            this.colnombre.Width = 94;
+            // 
+            // coldebito
+            // 
+            this.coldebito.Caption = "Debito";
+            this.coldebito.FieldName = "debito";
+            this.coldebito.MinWidth = 25;
+            this.coldebito.Name = "coldebito";
+            this.coldebito.OptionsColumn.AllowEdit = false;
+            this.coldebito.Visible = true;
+            this.coldebito.VisibleIndex = 2;
+            this.coldebito.Width = 94;
+            // 
+            // colcredito
+            // 
+            this.colcredito.Caption = "Credito";
+            this.colcredito.FieldName = "credito";
+            this.colcredito.MinWidth = 25;
+            this.colcredito.Name = "colcredito";
+            this.colcredito.OptionsColumn.AllowEdit = false;
+            this.colcredito.Visible = true;
+            this.colcredito.VisibleIndex = 3;
+            this.colcredito.Width = 94;
+            // 
+            // button15
+            // 
+            this.button15.Location = new System.Drawing.Point(421, 11);
+            this.button15.Name = "button15";
+            this.button15.Size = new System.Drawing.Size(147, 29);
+            this.button15.TabIndex = 2;
+            this.button15.Text = "Codificar";
+            this.button15.UseVisualStyleBackColor = true;
+            this.button15.Click += new System.EventHandler(this.button15_Click);
+            // 
+            // evLabel7
+            // 
+            this.evLabel7.AutoSize = true;
+            this.evLabel7.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.evLabel7.Location = new System.Drawing.Point(16, 17);
+            this.evLabel7.Name = "evLabel7";
+            this.evLabel7.Size = new System.Drawing.Size(130, 17);
+            this.evLabel7.TabIndex = 1;
+            this.evLabel7.Text = "Metodo Codificar";
+            // 
+            // cmb_tipofacturas
+            // 
+            this.cmb_tipofacturas.DisplayMemberName = "f_descripcion";
+            this.cmb_tipofacturas.EnterTab = true;
+            this.cmb_tipofacturas.FieldName = "";
+            this.cmb_tipofacturas.IsActivar = true;
+            this.cmb_tipofacturas.IsLimpiar = true;
+            this.cmb_tipofacturas.IsSalvar = true;
+            this.cmb_tipofacturas.IsValidar = true;
+            this.cmb_tipofacturas.Location = new System.Drawing.Point(149, 14);
+            this.cmb_tipofacturas.Name = "cmb_tipofacturas";
+            this.cmb_tipofacturas.NombreProcedimiento = "p_tipos_factura";
+            this.cmb_tipofacturas.Param = "";
+            this.cmb_tipofacturas.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
+            this.cmb_tipofacturas.Properties.NullText = "";
+            this.cmb_tipofacturas.Size = new System.Drawing.Size(255, 22);
+            this.cmb_tipofacturas.TabIndex = 0;
+            this.cmb_tipofacturas.Valor = null;
+            this.cmb_tipofacturas.ValueMemberName = "f_id";
             // 
             // button13
             // 
@@ -2157,6 +2346,7 @@
             this.button13.TabIndex = 63;
             this.button13.Text = "Autorización [F8]";
             this.button13.UseVisualStyleBackColor = true;
+            this.button13.Click += new System.EventHandler(this.button13_Click);
             // 
             // button14
             // 
@@ -2602,6 +2792,7 @@
             this.groupBox2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dsdetalle)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.tdetalles)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.detallecontable)).EndInit();
             this.groupBox3.ResumeLayout(false);
             this.groupBox4.ResumeLayout(false);
             this.tabControl1.ResumeLayout(false);
@@ -2611,6 +2802,11 @@
             ((System.ComponentModel.ISupportInitialize)(this.gridView2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtprecio.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtcantidad.Properties)).EndInit();
+            this.tabPage2.ResumeLayout(false);
+            this.tabPage2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.gridControl3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridView3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.cmb_tipofacturas.Properties)).EndInit();
             this.tabControl2.ResumeLayout(false);
             this.tabPage3.ResumeLayout(false);
             this.tabPage3.PerformLayout();
@@ -2652,7 +2848,6 @@
         private customcontrols.EvLabel evLabel10;
         private customcontrols.EvLabel evLabel9;
         private customcontrols.EvLabel evLabel8;
-        private customcontrols.EvLabel evLabel7;
         private customcontrols.EvLabel evLabel6;
         private customcontrols.EvLabel evLabel5;
         private customcontrols.EvLabel evLabel4;
@@ -2660,7 +2855,7 @@
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Label lblusuario;
         private customcontrols.EvLabel evLabel2;
-        private customcontrols.EvDateTimePicker evDateTimePicker1;
+        private customcontrols.EvDateTimePicker txtfecha;
         private customcontrols.EvLabel evLabel1;
         private System.Windows.Forms.Panel panel1;
         private customcontrols.EvComboBox cmb_moneda;
@@ -2820,5 +3015,21 @@
         private DevExpress.XtraGrid.Columns.GridColumn gridColumn9;
         private DevExpress.XtraGrid.Columns.GridColumn gridColumn10;
         private DevExpress.XtraGrid.Columns.GridColumn gridColumn12;
+        private System.Windows.Forms.LinkLabel linkLabel4;
+        private System.Data.DataTable detallecontable;
+        private System.Data.DataColumn dataColumn70;
+        private System.Data.DataColumn dataColumn71;
+        private System.Data.DataColumn dataColumn72;
+        private System.Data.DataColumn dataColumn73;
+        private System.Data.DataColumn dataColumn74;
+        private DevExpress.XtraGrid.GridControl gridControl3;
+        private DevExpress.XtraGrid.Views.Grid.GridView gridView3;
+        private DevExpress.XtraGrid.Columns.GridColumn colcuenta;
+        private DevExpress.XtraGrid.Columns.GridColumn colnombre;
+        private DevExpress.XtraGrid.Columns.GridColumn coldebito;
+        private DevExpress.XtraGrid.Columns.GridColumn colcredito;
+        private System.Windows.Forms.Button button15;
+        private customcontrols.EvLabel evLabel7;
+        private customcontrols.EvComboBox cmb_tipofacturas;
     }
 }

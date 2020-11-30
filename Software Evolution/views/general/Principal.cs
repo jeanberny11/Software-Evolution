@@ -3,6 +3,7 @@ using Software_Evolution.utils.clases;
 using Software_Evolution.views.cuentaxpagar;
 using Software_Evolution.views.mantenimientos;
 using Software_Evolution.views.Venta_Y_Facturacion;
+using Software_Evolution.views.Venta_Y_Facturacion.facturacion;
 using Software_Evolution.views.Venta_Y_Facturacion.pedido;
 using System;
 using System.Collections.Generic;
@@ -177,6 +178,12 @@ namespace Software_Evolution.views.general
             ShowOrFocusForm(form);
         }
 
+        private void toolStripMenuItem24_Click(object sender, EventArgs e)
+        {
+            var form = new InFacturacion();
+            ShowOrFocusForm(form);
+        }
+
         private void button1_Click(object sender, EventArgs e)
         {
             var form = new OutSuplidores();
@@ -197,10 +204,7 @@ namespace Software_Evolution.views.general
         private void button5_Click(object sender, EventArgs e)
         {
 
-
-
-      
-    }
+        }
 
         private void maestrosDeDatosToolStripMenuItem_Click(object sender, EventArgs e)
         {

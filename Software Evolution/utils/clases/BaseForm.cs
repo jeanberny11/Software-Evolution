@@ -137,6 +137,15 @@ namespace Software_Evolution.utils.clases
             }
         }
 
+        /// Calcula la sumatoria de una columna en un DataTable
+        /// <remarks>
+        /// Solo Funciona en columnas numericas
+        /// </remarks>
+        public double GetSumatoria(DataTable table,string columnname,string condicion)
+        {
+            return Convert.ToDouble(table.Compute($"Sum({columnname})", condicion));
+        }
+
 
         //limpia todos los objetos de la pantalla.
         /// <remarks>

@@ -225,6 +225,30 @@ namespace Software_Evolution.data
             }
         }
 
+        public string GetSecuenciaNcf(int tipo,DateTime fecha)
+        {
+            var res = Query($"select * from t_ncf where f_codigo={tipo} for update");
+            var secuencia = res.Rows[0].Field<int>("f_secuencia") + 1;
+            var res2 = Query($"select f_fecha_vencimiento from t_solicitud_ncf where f_tipo_ncf={tipo} and {secuencia}>=f_secuencia_inicial and {secuencia}<=f_secuencia_final");
+            if(res2.Rows.Count==0 && res.Rows[0].Field<int>("f_codigo") != 1)
+            {
+                throw new Exception("Se a Agotado la Disponibilidad de Este Tipo de Comprobante...");
+            }
+            if(res2.Rows[0].Field<DateTime>("f_fecha_vencimiento")<fecha && res.Rows[0].Field<int>("f_codigo") != 1)
+            {
+                throw new Exception("Este NCF Está Vencido...");
+            }
+            var ncf = ToWholeNumNcf(res.Rows[0].Field<string>("f_tipo"), secuencia);
+            Execute($"update t_ncf set f_secuencia=f_secuencia+1,f_secuencia_solicitada=f_secuencia_solicitada-1 where f_codigo={tipo}");
+            return ncf;
+        }
+
+        public string ToWholeNumNcf(string tipo,int secuencia)
+        {
+            var res = Query($"select towholenum_2('{tipo}',{secuencia}) as whole");
+            return res.Rows[0].Field<string>("whole");
+        }
+
         public string GetTipoDoc(int tipo)
         {
             try
