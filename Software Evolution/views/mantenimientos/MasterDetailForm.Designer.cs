@@ -59,7 +59,7 @@
             this.tableLayoutPanel1.Controls.Add(this.griddata, 0, 0);
             this.tableLayoutPanel1.Controls.Add(this.content, 1, 0);
             this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 58);
-            this.tableLayoutPanel1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tableLayoutPanel1.Margin = new System.Windows.Forms.Padding(2);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
             this.tableLayoutPanel1.RowCount = 1;
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
@@ -68,10 +68,10 @@
             // 
             // griddata
             // 
-            this.griddata.EmbeddedNavigator.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.griddata.EmbeddedNavigator.Margin = new System.Windows.Forms.Padding(2);
             this.griddata.Location = new System.Drawing.Point(2, 2);
             this.griddata.MainView = this.gridView1;
-            this.griddata.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.griddata.Margin = new System.Windows.Forms.Padding(2);
             this.griddata.Name = "griddata";
             this.griddata.Size = new System.Drawing.Size(296, 364);
             this.griddata.TabIndex = 0;
@@ -126,7 +126,7 @@
             this.content.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 66.40472F));
             this.content.Dock = System.Windows.Forms.DockStyle.Fill;
             this.content.Location = new System.Drawing.Point(305, 2);
-            this.content.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.content.Margin = new System.Windows.Forms.Padding(2);
             this.content.Name = "content";
             this.content.RowCount = 1;
             this.content.RowStyles.Add(new System.Windows.Forms.RowStyle());
@@ -144,7 +144,7 @@
             this.panel1.Controls.Add(this.lbltitulo);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
-            this.panel1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel1.Margin = new System.Windows.Forms.Padding(2);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(692, 41);
             this.panel1.TabIndex = 2;
@@ -155,7 +155,7 @@
             this.btn_editar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_editar.Image = global::Software_Evolution.Properties.Resources.businessregistration_signpen_negocio_inscripcio_2358;
             this.btn_editar.Location = new System.Drawing.Point(527, 2);
-            this.btn_editar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btn_editar.Margin = new System.Windows.Forms.Padding(2);
             this.btn_editar.Name = "btn_editar";
             this.btn_editar.Size = new System.Drawing.Size(36, 33);
             this.btn_editar.TabIndex = 29;
@@ -169,7 +169,7 @@
             this.btn_buscar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_buscar.Image = global::Software_Evolution.Properties.Resources.xmag_search_find_export_locate_5984;
             this.btn_buscar.Location = new System.Drawing.Point(487, 2);
-            this.btn_buscar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btn_buscar.Margin = new System.Windows.Forms.Padding(2);
             this.btn_buscar.Name = "btn_buscar";
             this.btn_buscar.Size = new System.Drawing.Size(36, 33);
             this.btn_buscar.TabIndex = 28;
@@ -198,7 +198,7 @@
             this.btn_cerrar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_cerrar.Image = global::Software_Evolution.Properties.Resources.vcsconflicting_93497;
             this.btn_cerrar.Location = new System.Drawing.Point(649, 3);
-            this.btn_cerrar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btn_cerrar.Margin = new System.Windows.Forms.Padding(2);
             this.btn_cerrar.Name = "btn_cerrar";
             this.btn_cerrar.Size = new System.Drawing.Size(36, 33);
             this.btn_cerrar.TabIndex = 2;
@@ -212,7 +212,7 @@
             this.btn_guardar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_guardar.Image = global::Software_Evolution.Properties.Resources.save_14949;
             this.btn_guardar.Location = new System.Drawing.Point(567, 3);
-            this.btn_guardar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btn_guardar.Margin = new System.Windows.Forms.Padding(2);
             this.btn_guardar.Name = "btn_guardar";
             this.btn_guardar.Size = new System.Drawing.Size(36, 33);
             this.btn_guardar.TabIndex = 1;
@@ -241,6 +241,7 @@
             this.MultipleScreen = true;
             this.Name = "MasterDetailForm";
             this.Text = "MasterDetailForm";
+            this.Load += new System.EventHandler(this.MasterDetailForm_Load);
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider)).EndInit();
             this.tableLayoutPanel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.griddata)).EndInit();

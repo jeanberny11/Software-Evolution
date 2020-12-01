@@ -6,6 +6,7 @@ using System;
 using System.Data;
 using System.Windows.Forms;
 
+
 namespace Software_Evolution.views.cuentaxpagar
 {
     public partial class OutSuplidores : BaseForm
@@ -30,7 +31,8 @@ namespace Software_Evolution.views.cuentaxpagar
                 suplidores = manager.GetSuplidores();
                 gridControl1.DataSource = suplidores;
                 Refresh();
-            }catch(Exception ex)
+            }
+            catch (Exception ex)
             {
                 Mensaje(ex.Message);
             }
@@ -43,7 +45,7 @@ namespace Software_Evolution.views.cuentaxpagar
 
         private void btn_exportar_Click(object sender, EventArgs e)
         {
-            InExportarDatos export = new InExportarDatos(gridControl1,"Lista de suplidores");
+            InExportarDatos export = new InExportarDatos(gridControl1, "Lista de suplidores");
             export.ShowDialog(this);
         }
 
@@ -67,5 +69,25 @@ namespace Software_Evolution.views.cuentaxpagar
         {
             CenterToScreen();
         }
+
+        private void btn_correo_Click(object sender, EventArgs e)
+        {
+            if (ValidarGrid(gridView1))
+            {
+                try
+                {
+                    var suplidor = Convert.ToInt32(gridView1.GetRowCellValue(gridView1.GetSelectedRows()[0], "f_id"));
+                    manager.EnviarEstadoCorreo(this, suplidor, CurrentDate);
+                }
+                catch (Exception ex)
+                {
+                    Mensaje(ex.Message);
+                }
+            }
+        }
+
     }
 }
+    
+    
+

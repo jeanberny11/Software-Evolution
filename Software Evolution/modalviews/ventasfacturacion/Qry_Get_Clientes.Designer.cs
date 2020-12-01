@@ -42,7 +42,6 @@
             this.gridColumn6 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.gridColumn7 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.searchControl1 = new DevExpress.XtraEditors.SearchControl();
-            this.evLabel2 = new Software_Evolution.customcontrols.EvLabel();
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider)).BeginInit();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.gridControl1)).BeginInit();
@@ -241,7 +240,7 @@
             // searchControl1
             // 
             this.searchControl1.Client = this.gridControl1;
-            this.searchControl1.Location = new System.Drawing.Point(154, 46);
+            this.searchControl1.Location = new System.Drawing.Point(389, 46);
             this.searchControl1.Margin = new System.Windows.Forms.Padding(4);
             this.searchControl1.Name = "searchControl1";
             this.searchControl1.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
@@ -249,26 +248,14 @@
             new DevExpress.XtraEditors.Repository.SearchButton()});
             this.searchControl1.Properties.Client = this.gridControl1;
             this.searchControl1.Properties.FindDelay = 100;
-            this.searchControl1.Size = new System.Drawing.Size(419, 20);
+            this.searchControl1.Size = new System.Drawing.Size(184, 20);
             this.searchControl1.TabIndex = 3;
-            // 
-            // evLabel2
-            // 
-            this.evLabel2.AutoSize = true;
-            this.evLabel2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.evLabel2.Location = new System.Drawing.Point(101, 48);
-            this.evLabel2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.evLabel2.Name = "evLabel2";
-            this.evLabel2.Size = new System.Drawing.Size(50, 13);
-            this.evLabel2.TabIndex = 4;
-            this.evLabel2.Text = "Buscar:";
             // 
             // Qry_Get_Clientes
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(576, 366);
-            this.Controls.Add(this.evLabel2);
             this.Controls.Add(this.searchControl1);
             this.Controls.Add(this.gridControl1);
             this.Controls.Add(this.panel1);
@@ -282,7 +269,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.gridView1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.searchControl1.Properties)).EndInit();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
@@ -302,6 +288,5 @@
         private DevExpress.XtraGrid.Columns.GridColumn gridColumn6;
         private DevExpress.XtraGrid.Columns.GridColumn gridColumn7;
         private DevExpress.XtraEditors.SearchControl searchControl1;
-        private customcontrols.EvLabel evLabel2;
     }
 }

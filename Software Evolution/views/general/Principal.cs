@@ -1,4 +1,5 @@
-﻿using Software_Evolution.managers.general;
+﻿using Software_Evolution.managers.cuentaxcobrar;
+using Software_Evolution.managers.general;
 using Software_Evolution.utils.clases;
 using Software_Evolution.views.cuentaxpagar;
 using Software_Evolution.views.mantenimientos;
@@ -14,6 +15,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Software_Evolution.views.cuentasporcobrar;
+
 
 namespace Software_Evolution.views.general
 {
@@ -209,6 +212,21 @@ namespace Software_Evolution.views.general
         private void maestrosDeDatosToolStripMenuItem_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void reportesDeCuentasPorCobrarToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            var form = new ReportesCuentaPorCobrar();
+            ShowOrFocusForm(form);
+            //var reportesmanager = new managers.reportes.FormatoImpresionReportesManager();
+            //CuentaPorCobrarManager cuentaPorCobrarManager = new CuentaPorCobrarManager();
+            // reportesmanager.PrintReport(this, 2001, cuentaPorCobrarManager.GetCuentaPorCobrarFecha("2000/01/01","2020/11/11"), new Dictionary<string, string>());
+        }
+
+        private void cuentasPorPagarToolStripMenuItem3_Click(object sender, EventArgs e)
+        {
+            var form = new ReporteCuentasPorPagar();
+            ShowOrFocusForm(form);
         }
     }
 }

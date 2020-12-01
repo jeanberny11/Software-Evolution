@@ -33,7 +33,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup>
-    <ApplicationIcon>planetMars_planet_2769.ico</ApplicationIcon>
+    <ApplicationIcon>connection_world_22295.ico</ApplicationIcon>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="DevExpress.Charts.v20.1.Core, Version=20.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
@@ -169,6 +169,8 @@
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
     <Compile Include="managers\contabilidad\CuentasContablesManager.cs" />
+    <Compile Include="managers\cuentaxcobrar\CuentaPorCobrarManager.cs" />
+    <Compile Include="managers\cuentaxpagar\CuentasPorPagarManager.cs" />
     <Compile Include="managers\cuentaxpagar\SuplidoresManager.cs" />
     <Compile Include="managers\general\ClientesManager.cs" />
     <Compile Include="managers\general\FleteManager.cs" />
@@ -183,6 +185,7 @@
     <Compile Include="managers\ventas y facturacion\CotizacionManager.cs" />
     <Compile Include="managers\ventas y facturacion\FacturasManager.cs" />
     <Compile Include="managers\ventas y facturacion\PedidosManager.cs" />
+    <Compile Include="manager\QueryProcedure.cs" />
     <Compile Include="modalviews\CuentasContablesGet.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -291,6 +294,12 @@
     <Compile Include="utils\clases\InnerForm.Designer.cs">
       <DependentUpon>InnerForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="views\cuentasporcobrar\ReportesCuentaPorCobrar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="views\cuentasporcobrar\ReportesCuentaPorCobrar.Designer.cs">
+      <DependentUpon>ReportesCuentaPorCobrar.cs</DependentUpon>
+    </Compile>
     <Compile Include="views\cuentaxpagar\InSuplidores.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -302,6 +311,12 @@
     </Compile>
     <Compile Include="views\cuentaxpagar\OutSuplidores.Designer.cs">
       <DependentUpon>OutSuplidores.cs</DependentUpon>
+    </Compile>
+    <Compile Include="views\cuentaxpagar\ReporteCuentasPorPagar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="views\cuentaxpagar\ReporteCuentasPorPagar.Designer.cs">
+      <DependentUpon>ReporteCuentasPorPagar.cs</DependentUpon>
     </Compile>
     <Compile Include="views\general\InCambiarClave.cs">
       <SubType>Form</SubType>
@@ -512,11 +527,17 @@
     <EmbeddedResource Include="utils\clases\InnerForm.resx">
       <DependentUpon>InnerForm.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="views\cuentasporcobrar\ReportesCuentaPorCobrar.resx">
+      <DependentUpon>ReportesCuentaPorCobrar.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="views\cuentaxpagar\InSuplidores.resx">
       <DependentUpon>InSuplidores.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="views\cuentaxpagar\OutSuplidores.resx">
       <DependentUpon>OutSuplidores.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="views\cuentaxpagar\ReporteCuentasPorPagar.resx">
+      <DependentUpon>ReporteCuentasPorPagar.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="views\general\InCambiarClave.resx">
       <DependentUpon>InCambiarClave.cs</DependentUpon>
@@ -605,6 +626,7 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="connection_world_22295.ico" />
     <Content Include="evolutionconfig.xml">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
@@ -737,6 +759,8 @@
     <None Include="Resources\Cost-per-Click-%28CPC%29_icon-icons.com_53723.ico" />
     <None Include="Resources\folder_settings_tools_22597.ico" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Folder Include="managers\archivos\" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

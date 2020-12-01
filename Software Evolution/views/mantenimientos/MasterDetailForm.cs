@@ -281,5 +281,10 @@ namespace Software_Evolution.views.mantenimientos
             Limpiar();
             buscar();
         }
+
+        private void MasterDetailForm_Load(object sender, EventArgs e)
+        {
+            CenterToScreen();
+        }
     }
 }

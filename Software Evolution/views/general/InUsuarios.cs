@@ -166,5 +166,10 @@ namespace Software_Evolution.views.general
             manager.permisos_de_usuarios2((this.MdiParent as Principal).MenuPrincipal, this.txtidusuario.Valor, 2, "t_permisos_usuario");
             permisos.ShowDialog(this);
         }
+
+        private void InUsuarios_Load(object sender, EventArgs e)
+        {
+            CenterToScreen();
+        }
     }
 }

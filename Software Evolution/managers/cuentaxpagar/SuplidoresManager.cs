@@ -1,6 +1,7 @@
 ﻿using Software_Evolution.data;
 using Software_Evolution.modalviews.cuentaxpagar;
 using Software_Evolution.utils.clases;
+using Software_Evolution.views.cuentaxpagar;
 using System;
 using System.Collections.Generic;
 using System.Data;
@@ -71,6 +72,11 @@ namespace Software_Evolution.managers.cuentaxpagar
                 return result.Rows[0];
             }
             return null;
+        }
+
+        internal void EnviarEstadoCorreo(OutSuplidores outSuplidores, int cliente, DateTime currentDate)
+        {
+            throw new NotImplementedException();
         }
 
         public void SalvarSuplidor(bool creando,Dictionary<string,object> datos,DataTable tdescuento)

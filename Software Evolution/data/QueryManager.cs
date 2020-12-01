@@ -14,7 +14,7 @@ namespace Software_Evolution.data
         NpgsqlConnection connection ;
         NpgsqlTransaction tran;
         private bool work;
-        private bool isOpen;
+        private bool isOpen;       
 
         private QueryManager()
         {

@@ -16,5 +16,10 @@ namespace Software_Evolution.utils.clases
         {
             InitializeComponent();
         }
+
+        private void InnerForm_Load(object sender, EventArgs e)
+        {
+            CenterToScreen();
+        }
     }
 }

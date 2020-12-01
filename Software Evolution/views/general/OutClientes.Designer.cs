@@ -83,10 +83,10 @@
             this.btn_correo.FlatAppearance.BorderSize = 0;
             this.btn_correo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_correo.Image = global::Software_Evolution.Properties.Resources.Email_30017;
-            this.btn_correo.Location = new System.Drawing.Point(498, 2);
+            this.btn_correo.Location = new System.Drawing.Point(574, 2);
             this.btn_correo.Margin = new System.Windows.Forms.Padding(2);
             this.btn_correo.Name = "btn_correo";
-            this.btn_correo.Size = new System.Drawing.Size(41, 40);
+            this.btn_correo.Size = new System.Drawing.Size(31, 36);
             this.btn_correo.TabIndex = 31;
             this.btn_correo.UseVisualStyleBackColor = true;
             this.btn_correo.Click += new System.EventHandler(this.btn_correo_Click);
@@ -96,23 +96,24 @@
             this.btn_exportar.FlatAppearance.BorderSize = 0;
             this.btn_exportar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_exportar.Image = global::Software_Evolution.Properties.Resources.Excel_Mac_23559;
-            this.btn_exportar.Location = new System.Drawing.Point(543, 2);
+            this.btn_exportar.Location = new System.Drawing.Point(609, 2);
             this.btn_exportar.Margin = new System.Windows.Forms.Padding(2);
             this.btn_exportar.Name = "btn_exportar";
-            this.btn_exportar.Size = new System.Drawing.Size(41, 40);
+            this.btn_exportar.Size = new System.Drawing.Size(31, 36);
             this.btn_exportar.TabIndex = 30;
             this.Fromtooltip.SetToolTip(this.btn_exportar, "Exportar a excell.");
             this.btn_exportar.UseVisualStyleBackColor = true;
+            this.btn_exportar.Click += new System.EventHandler(this.btn_exportar_Click);
             // 
             // btn_imprimir
             // 
             this.btn_imprimir.FlatAppearance.BorderSize = 0;
             this.btn_imprimir.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_imprimir.Image = global::Software_Evolution.Properties.Resources.actions_document_print_15785;
-            this.btn_imprimir.Location = new System.Drawing.Point(588, 2);
+            this.btn_imprimir.Location = new System.Drawing.Point(641, 2);
             this.btn_imprimir.Margin = new System.Windows.Forms.Padding(2);
             this.btn_imprimir.Name = "btn_imprimir";
-            this.btn_imprimir.Size = new System.Drawing.Size(41, 40);
+            this.btn_imprimir.Size = new System.Drawing.Size(31, 36);
             this.btn_imprimir.TabIndex = 29;
             this.Fromtooltip.SetToolTip(this.btn_imprimir, "Imprimir");
             this.btn_imprimir.UseVisualStyleBackColor = true;
@@ -123,10 +124,10 @@
             this.btn_buscar.FlatAppearance.BorderSize = 0;
             this.btn_buscar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_buscar.Image = global::Software_Evolution.Properties.Resources.xmag_search_find_export_locate_5984;
-            this.btn_buscar.Location = new System.Drawing.Point(633, 2);
+            this.btn_buscar.Location = new System.Drawing.Point(675, 2);
             this.btn_buscar.Margin = new System.Windows.Forms.Padding(2);
             this.btn_buscar.Name = "btn_buscar";
-            this.btn_buscar.Size = new System.Drawing.Size(41, 40);
+            this.btn_buscar.Size = new System.Drawing.Size(31, 36);
             this.btn_buscar.TabIndex = 28;
             this.Fromtooltip.SetToolTip(this.btn_buscar, "Buscar todos los Clientes.");
             this.btn_buscar.UseVisualStyleBackColor = true;
@@ -137,10 +138,10 @@
             this.btn_nuevo.FlatAppearance.BorderSize = 0;
             this.btn_nuevo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_nuevo.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_nuevo.Image = global::Software_Evolution.Properties.Resources.businessregistration_signpen_negocio_inscripcio_2358;
-            this.btn_nuevo.Location = new System.Drawing.Point(679, 2);
+            this.btn_nuevo.Image = global::Software_Evolution.Properties.Resources.new_file_40454;
+            this.btn_nuevo.Location = new System.Drawing.Point(710, 2);
             this.btn_nuevo.Name = "btn_nuevo";
-            this.btn_nuevo.Size = new System.Drawing.Size(41, 40);
+            this.btn_nuevo.Size = new System.Drawing.Size(31, 36);
             this.btn_nuevo.TabIndex = 27;
             this.btn_nuevo.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.Fromtooltip.SetToolTip(this.btn_nuevo, "Crear un nuevo Cliente.");
@@ -152,10 +153,10 @@
             this.btn_cerrar.FlatAppearance.BorderSize = 0;
             this.btn_cerrar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_cerrar.Image = global::Software_Evolution.Properties.Resources.vcsconflicting_93497;
-            this.btn_cerrar.Location = new System.Drawing.Point(725, 2);
+            this.btn_cerrar.Location = new System.Drawing.Point(746, 2);
             this.btn_cerrar.Margin = new System.Windows.Forms.Padding(2);
             this.btn_cerrar.Name = "btn_cerrar";
-            this.btn_cerrar.Size = new System.Drawing.Size(41, 40);
+            this.btn_cerrar.Size = new System.Drawing.Size(31, 36);
             this.btn_cerrar.TabIndex = 2;
             this.Fromtooltip.SetToolTip(this.btn_cerrar, "Cerrar la ventana de Cliente.");
             this.btn_cerrar.UseVisualStyleBackColor = true;
@@ -165,7 +166,7 @@
             // 
             this.lbltitulo.AutoSize = true;
             this.lbltitulo.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbltitulo.Location = new System.Drawing.Point(2, 14);
+            this.lbltitulo.Location = new System.Drawing.Point(-1, 14);
             this.lbltitulo.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lbltitulo.Name = "lbltitulo";
             this.lbltitulo.Size = new System.Drawing.Size(232, 24);
@@ -409,13 +410,13 @@
             // searchControl1
             // 
             this.searchControl1.Client = this.gridControl1;
-            this.searchControl1.Location = new System.Drawing.Point(681, 95);
+            this.searchControl1.Location = new System.Drawing.Point(574, 95);
             this.searchControl1.Name = "searchControl1";
             this.searchControl1.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Repository.ClearButton(),
             new DevExpress.XtraEditors.Repository.SearchButton()});
             this.searchControl1.Properties.Client = this.gridControl1;
-            this.searchControl1.Size = new System.Drawing.Size(97, 20);
+            this.searchControl1.Size = new System.Drawing.Size(204, 20);
             this.searchControl1.TabIndex = 6;
             // 
             // button1
@@ -423,7 +424,7 @@
             this.button1.Location = new System.Drawing.Point(72, 50);
             this.button1.Margin = new System.Windows.Forms.Padding(2);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(53, 34);
+            this.button1.Size = new System.Drawing.Size(63, 34);
             this.button1.TabIndex = 7;
             this.button1.Text = "Historial Cliente";
             this.button1.UseVisualStyleBackColor = true;
